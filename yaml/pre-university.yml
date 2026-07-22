@@ -1,0 +1,6 @@
+charts:
+  - type: bar
+    title: Province of Origin
+    labels: [Ontario, BC, Alberta, Quebec, International]
+    data: [70, 15, 10, 5, 20]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]

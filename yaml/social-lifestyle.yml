@@ -1,0 +1,6 @@
+charts:
+  - type: bar
+    title: How We Spend Free Time
+    labels: [Gaming, Sports, Netflix, Hiking, Cooking]
+    data: [35, 25, 40, 10, 15]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]

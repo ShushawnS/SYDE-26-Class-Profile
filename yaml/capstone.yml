@@ -1,0 +1,6 @@
+charts:
+  - type: doughnut
+    title: Capstone Project Categories
+    labels: [HealthTech, Sustainability, Education, Accessibility, Other]
+    data: [20, 15, 10, 8, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]

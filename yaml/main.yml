@@ -1,0 +1,60 @@
+sections:
+  - id: about
+    title: About
+    description: Learn more about the SYDE 26 class.
+    file: about.yml
+
+  - id: demographics
+    title: Demographics
+    description: A look at the diverse backgrounds of our class.
+    file: demographics.yml
+
+  - id: pre-university
+    title: Pre-University
+    description: Where we came from before Waterloo.
+    file: pre-university.yml
+
+  - id: academics
+    title: Academics
+    description: How we survived the coursework.
+    file: academics.yml
+
+  - id: capstone
+    title: Capstone
+    description: Our fourth-year design project journey.
+    file: capstone.yml
+
+  - id: co-op
+    title: Co-op
+    description: Work experiences throughout the program.
+    file: co-op.yml
+
+  - id: social-lifestyle
+    title: Social & Lifestyle
+    description: Life outside the classroom.
+    file: social-lifestyle.yml
+
+  - id: mental-health-relationships
+    title: Mental Health & Relationships
+    description: How we kept it together.
+    file: mental-health-relationships.yml
+
+  - id: future
+    title: Future
+    description: What's next for SYDE 26.
+    file: future.yml
+
+  - id: ai
+    title: AI
+    description: How AI shaped our university experience.
+    file: ai.yml
+
+  - id: miscellaneous
+    title: Miscellaneous
+    description: Everything else that didn't fit anywhere else.
+    file: miscellaneous.yml
+
+  - id: gallery
+    title: Gallery
+    description: Photos and memories from our journey.
+    file: gallery.yml

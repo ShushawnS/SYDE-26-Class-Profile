@@ -1,0 +1,6 @@
+charts:
+  - type: bar
+    title: Favorite elective stream
+    labels: [Biomedical, Computing, Mechatronics, Management]
+    data: [30, 35, 25, 10]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444"]

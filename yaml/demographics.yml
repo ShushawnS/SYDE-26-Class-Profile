@@ -1,0 +1,6 @@
+charts:
+  - type: pie
+    title: Gender Distribution
+    labels: [Male, Female, Non-binary]
+    data: [55, 40, 5]
+    colors: ["#2563eb", "#ec4899", "#8b5cf6"]

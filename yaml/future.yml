@@ -1,0 +1,6 @@
+charts:
+  - type: pie
+    title: Post-Grad Plans
+    labels: [Industry, Grad School, Startup, Unemployed, Traveling]
+    data: [60, 20, 10, 5, 5]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]

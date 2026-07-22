@@ -1,0 +1,6 @@
+charts:
+  - type: bar
+    title: Top Co-op Industries
+    labels: [Tech, Startup, Consulting, Finance, Government]
+    data: [50, 20, 15, 10, 5]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]

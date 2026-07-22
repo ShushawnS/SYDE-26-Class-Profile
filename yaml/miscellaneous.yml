@@ -1,0 +1,6 @@
+charts:
+  - type: bar
+    title: favourite campus food spot
+    labels: [FedHall, CMH, Pam’s, Subway, V1 Cafe]
+    data: [30, 20, 25, 15, 10]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]

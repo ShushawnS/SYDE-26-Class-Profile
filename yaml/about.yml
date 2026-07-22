@@ -1,0 +1,6 @@
+charts:
+  - type: bar
+    title: Top Reasons for Choosing SYDE
+    labels: [Flexibility, Design, Co-op, People, Waterloo]
+    data: [45, 30, 25, 15, 10]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]

@@ -1,0 +1,6 @@
+charts:
+  - type: bar
+    title: AI Usage in Schoolwork
+    labels: [Never, Rarely, Sometimes, Often, Always]
+    data: [5, 15, 30, 40, 10]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
