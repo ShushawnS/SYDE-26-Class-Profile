@@ -1,6 +1,105 @@
 charts:
+  - type: bar
+    title: Plans After 1st Year
+    total: 115
+    labels: [Industry, Grad School, Startup, Travel, Undecided]
+    data: [45, 20, 15, 10, 25]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#8b5cf6", "#9ca3af"]
+
   - type: pie
-    title: Post-Grad Plans
-    labels: [Industry, Grad School, Startup, Unemployed, Traveling]
-    data: [60, 20, 10, 5, 5]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]
+    title: "Full-Time Job Secured?"
+    total: 115
+    labels: [Yes, No, Still Searching]
+    data: [75, 10, 30]
+    colors: ["#10b981", "#ef4444", "#f59e0b"]
+
+  - type: pie
+    title: Returning to Previous Employer
+    total: 115
+    labels: [Yes, No]
+    data: [35, 80]
+    colors: ["#10b981", "#ef4444"]
+
+  - type: bar
+    title: When Did You Get Your Offer
+    total: 110
+    labels: [Before 4A, During 4A, After Grad, Still Waiting]
+    data: [30, 40, 15, 25]
+    colors: ["#10b981", "#2563eb", "#f59e0b", "#ef4444"]
+
+  - type: bar
+    title: "Where Will You Be Working?"
+    total: 110
+    labels: [Toronto, Kitchener-Waterloo, Vancouver, United States, Remote, Other]
+    data: [40, 20, 15, 18, 10, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: Leaving Canada? Plan to Come Back?
+    total: 110
+    labels: [Staying in Canada, Leaving (Will Return), Leaving (Not Returning)]
+    data: [55, 35, 20]
+    colors: ["#10b981", "#f59e0b", "#ef4444"]
+
+  - type: bar
+    title: If Leaving, When Will You Return
+    total: 55
+    labels: ["1-2 Years", "3-5 Years", "5-10 Years", "Never", "Not Sure"]
+    data: [10, 15, 12, 8, 10]
+    colors: ["#10b981", "#2563eb", "#f59e0b", "#ef4444", "#9ca3af"]
+
+  - type: bar
+    title: Company You'll Be Working At
+    total: 110
+    labels: [Google, Apple, Amazon, Microsoft, Shopify, Startups, Government, Other]
+    data: [12, 8, 10, 7, 15, 28, 15, 15]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#9ca3af"]
+
+  - type: bar
+    title: Base Salary
+    total: 110
+    labels: ["<$60k", "$60-80k", "$80-100k", "$100-120k", "$120-150k", "$150k+"]
+    data: [8, 18, 30, 28, 18, 8]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: bar
+    title: Bonus
+    total: 110
+    labels: [None, "<$5k", "$5-10k", "$10-20k", "$20k+"]
+    data: [30, 25, 22, 20, 13]
+    colors: ["#9ca3af", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: bar
+    title: Plan to Pursue Further Education
+    total: 115
+    labels: [Yes, No, Maybe]
+    data: [25, 55, 35]
+    colors: ["#10b981", "#ef4444", "#f59e0b"]
+
+  - type: bar
+    title: "Get Married By"
+    total: 110
+    labels: ["25", "26-28", "29-31", "32+", Never]
+    data: [12, 28, 30, 20, 20]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: bar
+    title: Age to Have Children
+    total: 110
+    labels: ["25-27", "28-30", "31-33", "34+", Never]
+    data: [10, 30, 35, 20, 15]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: bar
+    title: Grad Trip Locations
+    total: 105
+    labels: [Thailand, Japan, Europe, Mexico, Bali, Other, Not Going]
+    data: [18, 22, 20, 12, 10, 8, 15]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#9ca3af"]
+
+  - type: bar
+    title: Money Spent on Grad Trip
+    total: 100
+    labels: ["<$1k", "$1-2k", "$2-3k", "$3-5k", "$5k+"]
+    data: [12, 25, 28, 22, 13]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]

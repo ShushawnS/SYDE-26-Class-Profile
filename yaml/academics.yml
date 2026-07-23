@@ -1,6 +1,209 @@
 charts:
+  - type: pie
+    title: Original Cohort
+    total: 120
+    labels: [Completed SYDE, Transferred Out, Switched Programs, Dropped Out]
+    data: [100, 8, 7, 5]
+    colors: ["#10b981", "#f59e0b", "#ef4444", "#9ca3af"]
+
   - type: bar
-    title: Favorite elective stream
-    labels: [Biomedical, Computing, Mechatronics, Management]
-    data: [30, 35, 25, 10]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444"]
+    title: Most Interesting Course
+    total: 110
+    labels: [SYDE 101, SYDE 112, SYDE 162, SYDE 223, SYDE 262, SYDE 334, SYDE 352, SYDE 361, SYDE 462, SYDE 548]
+    data: [8, 5, 12, 10, 15, 20, 18, 14, 5, 3]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16", "#f97316", "#6366f1"]
+
+  - type: bar
+    title: Most Useful Course
+    total: 105
+    labels: [SYDE 101, SYDE 112, SYDE 162, SYDE 223, SYDE 262, SYDE 334, SYDE 352, SYDE 361, SYDE 462, SYDE 548]
+    data: [5, 8, 10, 18, 12, 15, 20, 10, 5, 2]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16", "#f97316", "#6366f1"]
+
+  - type: bar
+    title: Most Difficult Course
+    total: 108
+    labels: [SYDE 101, SYDE 112, SYDE 162, SYDE 223, SYDE 262, SYDE 334, SYDE 352, SYDE 361, SYDE 462, SYDE 548]
+    data: [3, 5, 8, 15, 20, 25, 12, 10, 7, 3]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16", "#f97316", "#6366f1"]
+
+  - type: bar
+    title: Non-SYDE Courses Recommended
+    total: 100
+    labels: [CO 250, ECE 105, ECE 108, MATH 239, MATH 235, STAT 206, ENVS 200, SPCOM 223, BUS 111W, Other]
+    data: [18, 12, 10, 15, 8, 7, 5, 10, 8, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16", "#f97316", "#6366f1"]
+
+  - type: bar
+    title: Favourite Professor
+    total: 115
+    labels: [Prof. A, Prof. B, Prof. C, Prof. D, Prof. E, Prof. F, Prof. G, Prof. H]
+    data: [25, 20, 18, 15, 12, 10, 8, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
+
+  - type: bar
+    title: Options Completed
+    total: 105
+    labels: [Biomedical, Computing, Mechatronics, Management, None]
+    data: [28, 32, 25, 12, 8]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#9ca3af"]
+
+  - type: bar
+    title: Minor Completed
+    total: 100
+    labels: [CS, Business, Math, Physics, None, Other]
+    data: [20, 15, 8, 5, 45, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#9ca3af", "#8b5cf6"]
+
+  - type: bar
+    title: Design Course Enjoyability
+    total: 110
+    labels: ["1", "2", "3", "4", "5"]
+    data: [5, 10, 25, 40, 30]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: bar
+    title: Design Course Usefulness
+    total: 108
+    labels: ["1", "2", "3", "4", "5"]
+    data: [8, 12, 22, 38, 28]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: bar
+    title: Stress Level in 1A
+    total: 112
+    labels: ["1", "2", "3", "4", "5"]
+    data: [20, 30, 35, 18, 9]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
+
+  - type: bar
+    title: Stress Level in 1B
+    total: 110
+    labels: ["1", "2", "3", "4", "5"]
+    data: [15, 25, 35, 25, 10]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
+
+  - type: bar
+    title: Stress Level in 2A
+    total: 110
+    labels: ["1", "2", "3", "4", "5"]
+    data: [10, 18, 30, 32, 20]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
+
+  - type: bar
+    title: Stress Level in 2B
+    total: 108
+    labels: ["1", "2", "3", "4", "5"]
+    data: [12, 20, 32, 28, 16]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
+
+  - type: bar
+    title: Stress Level in 3A
+    total: 105
+    labels: ["1", "2", "3", "4", "5"]
+    data: [8, 15, 28, 35, 19]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
+
+  - type: bar
+    title: Stress Level in 3B
+    total: 105
+    labels: ["1", "2", "3", "4", "5"]
+    data: [10, 18, 30, 30, 17]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
+
+  - type: bar
+    title: Stress Level in 4A
+    total: 100
+    labels: ["1", "2", "3", "4", "5"]
+    data: [5, 12, 25, 35, 23]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
+
+  - type: bar
+    title: Stress Level in 4B
+    total: 100
+    labels: ["1", "2", "3", "4", "5"]
+    data: [18, 28, 32, 15, 7]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
+
+  - type: bar
+    title: Hardest Academic Term
+    total: 110
+    labels: [1A, 1B, 2A, 2B, 3A, 3B, 4A, 4B]
+    data: [10, 12, 18, 15, 22, 16, 12, 5]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
+
+  - type: pie
+    title: Would You Pick SYDE Again
+    total: 115
+    labels: [Yes, No, Maybe]
+    data: [85, 10, 20]
+    colors: ["#10b981", "#ef4444", "#f59e0b"]
+
+  - type: bar
+    title: Program If Not SYDE
+    total: 95
+    labels: [CS, MechEng, ElecEng, BME, Management, Science, Math, Other]
+    data: [30, 18, 15, 12, 8, 5, 3, 4]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
+
+  - type: pie
+    title: Failed a Course
+    total: 110
+    labels: [Yes, No]
+    data: [12, 98]
+    colors: ["#ef4444", "#10b981"]
+
+  - type: bar
+    title: Engaged in Cheating Methods
+    total: 100
+    labels: ["Never", "Once or Twice", "Occasionally", "Frequently", "Prefer Not to Say"]
+    data: [55, 20, 12, 3, 10]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#9ca3af"]
+
+  - type: line
+    title: Average cGPA Over the Semesters
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    datasets:
+      - label: Average cGPA
+        data: [3.5, 3.3, 3.1, 3.0, 3.1, 3.0, 3.1, 3.2]
+        color: "#2563eb"
+
+  - type: line
+    title: "% of Lectures Attended Over the Semesters"
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    datasets:
+      - label: Average % Attended
+        data: [88, 82, 75, 70, 68, 65, 62, 60]
+        color: "#10b981"
+
+  - type: line
+    title: "% of Live Sessions Attended Over the Semesters"
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    datasets:
+      - label: Average % Live
+        data: [80, 72, 60, 55, 50, 48, 45, 42]
+        color: "#8b5cf6"
+
+  - type: line
+    title: Average Rent Over the Semesters
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    beginAtZero: false
+    datasets:
+      - label: Average Monthly Rent ($)
+        data: [700, 720, 750, 780, 820, 850, 880, 900]
+        color: "#ef4444"
+
+  - type: line
+    title: "% of Assignments Completed with AI Over the Semesters"
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    datasets:
+      - label: Average % with AI
+        data: [12, 18, 28, 35, 42, 50, 58, 65]
+        color: "#f59e0b"
+
+  - type: bar
+    title: Favorite AI Tool
+    total: 115
+    labels: ["ChatGPT", "GitHub Copilot", "Claude", "Gemini", "Perplexity", "Other"]
+    data: [45, 28, 18, 12, 7, 5]
+    colors: ["#10b981", "#2563eb", "#8b5cf6", "#ef4444", "#f59e0b", "#9ca3af"]

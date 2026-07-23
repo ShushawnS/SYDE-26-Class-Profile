@@ -1,6 +1,105 @@
 charts:
   - type: bar
-    title: Stress Level by Year
-    labels: [1A, 1B, 2A, 2B, 3A, 3B, 4A, 4B]
-    data: [3, 4, 6, 5, 7, 6, 8, 5]
-    colors: ["#10b981", "#10b981", "#f59e0b", "#f59e0b", "#ef4444", "#f59e0b", "#ef4444", "#10b981"]
+    title: Mental Health Concerns
+    total: 115
+    labels: [Anxiety, Depression, Stress, Burnout, Sleep Issues, Loneliness, None]
+    data: [35, 22, 40, 38, 30, 18, 15]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#9ca3af"]
+
+  - type: bar
+    title: Causes for Mental Health
+    total: 110
+    labels: [Academics, Co-op, Relationships, Family, Financial, Social Pressure, Health, Other]
+    data: [42, 30, 22, 15, 18, 20, 10, 8]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#9ca3af"]
+
+  - type: bar
+    title: University Career in Relationships
+    total: 115
+    labels: ["0", "1", "2", "3", "4+"]
+    data: [25, 35, 28, 15, 12]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: bar
+    title: Where You Met Your Significant Other
+    total: 80
+    labels: [SYDE, Other Engineering, Residence, Dating App, High School, Work, Other]
+    data: [12, 10, 18, 15, 10, 8, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#9ca3af"]
+
+  - type: pie
+    title: "Committed Sydecest?"
+    total: 115
+    labels: [Yes, No]
+    data: [18, 97]
+    colors: ["#ef4444", "#10b981"]
+
+  - type: bar
+    title: Relationships During Uni
+    total: 115
+    labels: [None, One, Two, Three, Four+, "Prefer Not to Say"]
+    data: [35, 30, 22, 12, 8, 8]
+    colors: ["#9ca3af", "#10b981", "#2563eb", "#f59e0b", "#ef4444", "#d1d5db"]
+
+  - type: bar
+    title: Situationships During Uni
+    total: 115
+    labels: [None, One, Two, Three, Four+, "Prefer Not to Say"]
+    data: [40, 28, 20, 12, 8, 7]
+    colors: ["#9ca3af", "#10b981", "#2563eb", "#f59e0b", "#ef4444", "#d1d5db"]
+
+  - type: pie
+    title: Currently in a Relationship
+    total: 115
+    labels: [Yes, No]
+    data: [45, 70]
+    colors: ["#10b981", "#ef4444"]
+
+  - type: pie
+    title: "First Kiss?"
+    total: 115
+    labels: [Before Uni, During Uni, Has Not Happened]
+    data: [65, 35, 15]
+    colors: ["#2563eb", "#10b981", "#ef4444"]
+
+  - type: bar
+    title: Unique Kissing Partners
+    total: 110
+    labels: ["0", "1", "2-3", "4-5", "6-10", "10+"]
+    data: [15, 25, 30, 20, 12, 8]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: pie
+    title: "First Sex?"
+    total: 115
+    labels: [Before Uni, During Uni, Has Not Happened]
+    data: [50, 38, 27]
+    colors: ["#2563eb", "#10b981", "#ef4444"]
+
+  - type: bar
+    title: Unique Sexual Partners
+    total: 110
+    labels: ["0", "1", "2-3", "4-5", "6-10", "10+"]
+    data: [20, 28, 25, 18, 12, 7]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: bar
+    title: More Active on Co-op or School Term
+    total: 105
+    labels: [Co-op, School Term, About the Same, Neither]
+    data: [35, 28, 25, 17]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#9ca3af"]
+
+  - type: bar
+    title: Drugs People Have Tried
+    total: 115
+    labels: [Weed, Shrooms, Cocaine, LSD, MDMA, Nicotine, Other, None]
+    data: [55, 25, 15, 12, 10, 35, 8, 20]
+    colors: ["#10b981", "#8b5cf6", "#ef4444", "#f59e0b", "#ec4899", "#2563eb", "#06b6d4", "#9ca3af"]
+
+  - type: bar
+    title: Substance Usage First Year vs 3rd/4th Year
+    total: 110
+    labels: ["Drink (1st)", "Drink (3rd/4th)", "Vape (1st)", "Vape (3rd/4th)", "Weed (1st)", "Weed (3rd/4th)", "Cigs (1st)", "Cigs (3rd/4th)"]
+    data: [3.2, 2.8, 1.8, 2.2, 2.0, 2.8, 1.2, 1.1]
+    colors: ["#2563eb", "#60a5fa", "#10b981", "#34d399", "#f59e0b", "#fbbf24", "#ef4444", "#f87171"]

@@ -1,6 +1,77 @@
 charts:
   - type: bar
-    title: How We Spend Free Time
-    labels: [Gaming, Sports, Netflix, Hiking, Cooking]
-    data: [35, 25, 40, 10, 15]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]
+    title: Favourite Restaurant
+    total: 115
+    labels: [Pizza, Sushi, Thai, Chinese, Indian, Burgers, Mexican, Other]
+    data: [22, 20, 18, 15, 12, 14, 8, 6]
+    colors: ["#ef4444", "#10b981", "#f59e0b", "#2563eb", "#8b5cf6", "#ec4899", "#06b6d4", "#9ca3af"]
+
+  - type: bar
+    title: Friends in SYDE
+    total: 115
+    labels: ["0-5", "6-10", "11-15", "16-20", "20+"]
+    data: [10, 25, 35, 28, 17]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: bar
+    title: Where You Met Your 5 Closest Friends
+    total: 115
+    labels: [SYDE Cohort, Other Engineering, Residence, High School, Outside University, Other]
+    data: [42, 18, 25, 15, 10, 5]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: "Terms Attended a SYDE Social Event"
+    total: 110
+    labels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    data: [85, 78, 65, 55, 48, 40, 35, 30]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
+
+  - type: bar
+    title: Cooking Ability
+    total: 115
+    labels: [Cant Cook, Basic Meals, Intermediate, Advanced, Chef]
+    data: [20, 35, 30, 20, 10]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: bar
+    title: Fitness Level
+    total: 115
+    labels: [Sedentary, Lightly Active, Moderately Active, Very Active, Extremely Active]
+    data: [25, 30, 35, 18, 7]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: pie
+    title: Balding
+    total: 115
+    labels: [Yes, No, Maybe]
+    data: [15, 65, 35]
+    colors: ["#ef4444", "#10b981", "#f59e0b"]
+
+  - type: pie
+    title: "Done Intramurals?"
+    total: 115
+    labels: [Yes, No]
+    data: [48, 67]
+    colors: ["#10b981", "#ef4444"]
+
+  - type: pie
+    title: "Joined Clubs?"
+    total: 115
+    labels: [Yes, No]
+    data: [55, 60]
+    colors: ["#10b981", "#ef4444"]
+
+  - type: bar
+    title: Intramurals Participated In
+    total: 110
+    labels: [Basketball, Soccer, Volleyball, Badminton, Ultimate Frisbee, Dodgeball, Other]
+    data: [22, 28, 18, 15, 12, 8, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#9ca3af"]
+
+  - type: bar
+    title: Clubs Participated In
+    total: 110
+    labels: [Design Team, Hackathon Club, Sports Club, Social Club, Professional Club, Other]
+    data: [25, 20, 18, 22, 15, 10]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]

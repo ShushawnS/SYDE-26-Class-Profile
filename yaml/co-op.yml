@@ -1,6 +1,140 @@
 charts:
   - type: bar
-    title: Top Co-op Industries
-    labels: [Tech, Startup, Consulting, Finance, Government]
-    data: [50, 20, 15, 10, 5]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]
+    title: How You Found a Job
+    total: 115
+    labels: [External, WaterlooWorks, Referral/Networking]
+    data: [45, 35, 35]
+    colors: ["#2563eb", "#10b981", "#f59e0b"]
+
+  - type: bar
+    title: Location of Work
+    total: 115
+    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
+    data: [40, 30, 15, 10, 12, 8]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: Industry Best Describes Company
+    total: 115
+    labels: [Tech, Finance, Consulting, Healthcare, Manufacturing, Government, Other]
+    data: [55, 20, 15, 8, 7, 5, 5]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#9ca3af"]
+
+  - type: bar
+    title: Large Company
+    total: 115
+    labels: [Yes, No]
+    data: [60, 55]
+    colors: ["#2563eb", "#ef4444"]
+
+  - type: bar
+    title: Performance Rating
+    total: 110
+    labels: [Exceeds Expectations, Meets Expectations, Needs Improvement]
+    data: [45, 55, 10]
+    colors: ["#10b981", "#2563eb", "#ef4444"]
+
+  - type: pie
+    title: Reneged a Co-op
+    total: 115
+    labels: [Yes, No]
+    data: [12, 103]
+    colors: ["#ef4444", "#10b981"]
+
+  - type: pie
+    title: Company Rescinded an Offer
+    total: 115
+    labels: [Yes, No]
+    data: [5, 110]
+    colors: ["#ef4444", "#10b981"]
+
+  - type: bar
+    title: Coolest Company Perk
+    total: 110
+    labels: [Free Food, Flexible Hours, Remote Work, Health Benefits, Stock Options, Education Stipend, Other]
+    data: [25, 28, 22, 15, 10, 5, 5]
+    colors: ["#10b981", "#2563eb", "#8b5cf6", "#f59e0b", "#ef4444", "#ec4899", "#9ca3af"]
+
+  - type: bar
+    title: "Co-op #1 Places"
+    total: 115
+    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
+    data: [35, 45, 10, 8, 10, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: "Co-op #2 Places"
+    total: 112
+    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
+    data: [38, 35, 15, 10, 8, 6]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: "Co-op #3 Places"
+    total: 108
+    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
+    data: [42, 28, 15, 8, 10, 5]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: "Co-op #4 Places"
+    total: 105
+    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
+    data: [45, 22, 15, 8, 10, 5]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: "Co-op #5 Places"
+    total: 80
+    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
+    data: [35, 15, 12, 6, 8, 4]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: "Co-op #6 Places"
+    total: 40
+    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
+    data: [18, 8, 5, 3, 4, 2]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: "Earn Co-op #1"
+    total: 115
+    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
+    data: [15, 35, 30, 20, 10, 5]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: bar
+    title: "Earn Co-op #2"
+    total: 112
+    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
+    data: [10, 25, 35, 25, 12, 5]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: bar
+    title: "Earn Co-op #3"
+    total: 108
+    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
+    data: [8, 18, 30, 30, 15, 7]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: bar
+    title: "Earn Co-op #4"
+    total: 105
+    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
+    data: [5, 15, 25, 32, 18, 10]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: bar
+    title: "Earn Co-op #5"
+    total: 80
+    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
+    data: [4, 10, 20, 25, 12, 9]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: bar
+    title: "Earn Co-op #6"
+    total: 40
+    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
+    data: [2, 5, 10, 12, 6, 5]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]

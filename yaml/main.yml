@@ -24,6 +24,11 @@ sections:
     description: Our fourth-year design project journey.
     file: capstone.yml
 
+  - id: exchange
+    title: Exchange
+    description: Our experiences studying abroad.
+    file: exchange.yml
+
   - id: co-op
     title: Co-op
     description: Work experiences throughout the program.

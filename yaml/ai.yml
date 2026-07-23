@@ -1,6 +1,28 @@
 charts:
+  - type: pie
+    title: Is AI Taking Your Job?
+    total: 115
+    labels: [Yes, No, Maybe]
+    data: [20, 45, 50]
+    colors: ["#ef4444", "#10b981", "#f59e0b"]
+
+  - type: pie
+    title: "Pay for AI Subscription?"
+    total: 115
+    labels: [Yes, No]
+    data: [55, 60]
+    colors: ["#2563eb", "#ef4444"]
+
+  - type: pie
+    title: "Should AI Be Regulated?"
+    total: 115
+    labels: [Yes, No, Unsure]
+    data: [65, 20, 30]
+    colors: ["#10b981", "#ef4444", "#f59e0b"]
+
   - type: bar
-    title: AI Usage in Schoolwork
-    labels: [Never, Rarely, Sometimes, Often, Always]
-    data: [5, 15, 30, 40, 10]
-    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]
+    title: Favourite Tech CEO
+    total: 110
+    labels: [Elon Musk, Sam Altman, Tim Cook, Satya Nadella, Jensen Huang, Mark Zuckerberg, Other]
+    data: [22, 25, 10, 15, 18, 8, 12]
+    colors: ["#ef4444", "#2563eb", "#10b981", "#f59e0b", "#8b5cf6", "#ec4899", "#9ca3af"]

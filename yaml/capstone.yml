@@ -1,6 +1,42 @@
 charts:
+  - type: pie
+    title: SYDE or Multidisciplinary
+    total: 110
+    labels: [SYDE, Multidisciplinary]
+    data: [75, 35]
+    colors: ["#2563eb", "#10b981"]
+
   - type: doughnut
-    title: Capstone Project Categories
-    labels: [HealthTech, Sustainability, Education, Accessibility, Other]
-    data: [20, 15, 10, 8, 7]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]
+    title: Problem Space Tackled
+    total: 110
+    labels: [HealthTech, Sustainability, Education, Accessibility, Social Impact, Hardware, Software, Other]
+    data: [22, 15, 12, 10, 8, 15, 13, 5]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
+
+  - type: pie
+    title: Proud of Completed FYDP
+    total: 105
+    labels: [Yes, No, Neutral]
+    data: [70, 15, 20]
+    colors: ["#10b981", "#ef4444", "#f59e0b"]
+
+  - type: pie
+    title: Continue Working on FYDP
+    total: 105
+    labels: [Yes, No, Maybe]
+    data: [25, 50, 30]
+    colors: ["#10b981", "#ef4444", "#f59e0b"]
+
+  - type: pie
+    title: FYDP Group Got Along
+    total: 108
+    labels: [Yes, No, Mixed]
+    data: [60, 18, 30]
+    colors: ["#10b981", "#ef4444", "#f59e0b"]
+
+  - type: bar
+    title: FYDP Software Component Completed with AI
+    total: 100
+    labels: [None, Minor Parts, About Half, Most of It, All of It]
+    data: [15, 30, 25, 20, 10]
+    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#ef4444"]

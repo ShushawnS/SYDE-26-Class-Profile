@@ -1,6 +1,126 @@
 charts:
+  - type: bar
+    title: Hometown
+    total: 118
+    labels: [Toronto, Vancouver, Mississauga, Brampton, Ottawa, Kitchener, Other Ontario, Other Canada, International]
+    data: [25, 12, 10, 8, 7, 6, 15, 18, 17]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16", "#f97316"]
+
   - type: pie
-    title: Gender Distribution
-    labels: [Male, Female, Non-binary]
-    data: [55, 40, 5]
-    colors: ["#2563eb", "#ec4899", "#8b5cf6"]
+    title: Birth Year
+    total: 120
+    labels: [2002, 2003, 2004, 2005, Other]
+    data: [15, 70, 25, 8, 2]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]
+
+  - type: pie
+    title: Family Status
+    total: 115
+    labels: [Immigrants, Born in Canada, Other]
+    data: [55, 50, 10]
+    colors: ["#2563eb", "#10b981", "#f59e0b"]
+
+  - type: pie
+    title: Parents with STEM Background
+    total: 112
+    labels: [Yes, No]
+    data: [60, 52]
+    colors: ["#2563eb", "#ef4444"]
+
+  - type: bar
+    title: Highest Level of Education — Parents
+    total: 110
+    labels: [High School, College, Bachelor's, Master's, PhD, Professional Degree]
+    data: [12, 18, 35, 28, 10, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899"]
+
+  - type: bar
+    title: Average Household Income
+    total: 95
+    labels: ["<50k", "50k-100k", "100k-150k", "150k-200k", "200k-300k", "300k+"]
+    data: [8, 15, 25, 22, 15, 10]
+    colors: ["#ef4444", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6", "#ec4899"]
+
+  - type: bar
+    title: Tuition Covered by Parents
+    total: 108
+    labels: ["0%", "1-25%", "26-50%", "51-75%", "76-99%", "100%"]
+    data: [20, 15, 18, 22, 13, 20]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: bar
+    title: Living Expenses Covered by Parents
+    total: 105
+    labels: ["0%", "1-25%", "26-50%", "51-75%", "76-99%", "100%"]
+    data: [30, 18, 15, 17, 10, 15]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+
+  - type: bar
+    title: Political Alignment
+    total: 110
+    labels: [Far Left, Left, Centre-Left, Centre, Centre-Right, Right, Far Right, Prefer Not to Say]
+    data: [10, 28, 20, 25, 12, 5, 2, 8]
+    colors: ["#dc2626", "#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#1e40af", "#9ca3af"]
+
+  - type: pie
+    title: Voted in a Political Election
+    total: 115
+    labels: [Yes, No]
+    data: [70, 45]
+    colors: ["#10b981", "#ef4444"]
+
+  - type: bar
+    title: Elections Voted In
+    total: 70
+    labels: [Federal Only, Provincial Only, Municipal Only, Federal + Provincial, All Three, Other]
+    data: [15, 5, 3, 20, 18, 9]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899"]
+
+  - type: pie
+    title: Political Viewpoint Change During University
+    total: 100
+    labels: [Shifted Left, Shifted Right, No Change, Unsure]
+    data: [25, 15, 50, 10]
+    colors: ["#ef4444", "#2563eb", "#10b981", "#9ca3af"]
+
+  - type: bar
+    title: Ethnicities
+    total: 120
+    labels: [South Asian, East Asian, Southeast Asian, White, Middle Eastern, Black, Latino, Mixed, Other]
+    data: [30, 22, 10, 25, 10, 8, 5, 5, 5]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16", "#f97316"]
+
+  - type: bar
+    title: Religion
+    total: 115
+    labels: [Hindu, Muslim, Christian, Sikh, Buddhist, Jewish, Atheist/Agnostic, Spiritual, Other]
+    data: [25, 18, 20, 10, 3, 2, 28, 5, 4]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16", "#f97316"]
+
+  - type: pie
+    title: Religiousness Changed During University
+    total: 100
+    labels: [More Religious, Less Religious, No Change]
+    data: [15, 30, 55]
+    colors: ["#2563eb", "#ef4444", "#10b981"]
+
+  - type: pie
+    title: Religion Changed During University
+    total: 105
+    labels: [Yes, No]
+    data: [10, 95]
+    colors: ["#2563eb", "#10b981"]
+
+  - type: bar
+    title: Sexual Identity
+    total: 115
+    labels: [Straight, Gay, Lesbian, Bisexual, Pansexual, Queer, Prefer Not to Say, Other]
+    data: [85, 8, 3, 10, 3, 2, 3, 1]
+    colors: ["#2563eb", "#ef4444", "#ec4899", "#8b5cf6", "#f59e0b", "#10b981", "#9ca3af", "#06b6d4"]
+
+  - type: bar
+    title: Sexuality
+    total: 115
+    labels: [Heterosexual, Homosexual, Bisexual, Pansexual, Asexual, Queer, Prefer Not to Say, Other]
+    data: [82, 10, 10, 4, 2, 3, 3, 1]
+    colors: ["#2563eb", "#ef4444", "#8b5cf6", "#f59e0b", "#06b6d4", "#10b981", "#9ca3af", "#ec4899"]

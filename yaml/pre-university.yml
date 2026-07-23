@@ -1,6 +1,42 @@
 charts:
   - type: bar
-    title: Province of Origin
-    labels: [Ontario, BC, Alberta, Quebec, International]
-    data: [70, 15, 10, 5, 20]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]
+    title: Admission Average
+    total: 115
+    labels: ["80-84", "85-89", "90-94", "95-100"]
+    data: [5, 20, 55, 35]
+    colors: ["#ef4444", "#f59e0b", "#10b981", "#2563eb"]
+
+  - type: bar
+    title: Extracurriculars in High School
+    total: 110
+    labels: ["Sports", "Music/Arts", "Volunteering", "Clubs", "Work", "None"]
+    data: [35, 20, 25, 40, 30, 8]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+
+  - type: bar
+    title: Enrichment Programs
+    total: 100
+    labels: ["None", "Math Contests", "Science Fairs", "Coding Bootcamps", "Summer Programs", "Other"]
+    data: [40, 25, 12, 10, 8, 5]
+    colors: ["#9ca3af", "#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6"]
+
+  - type: bar
+    title: Other Universities Applied To
+    total: 118
+    labels: [UofT, McMaster, Western, Queens, Ottawa, UBC, McGill, Other]
+    data: [65, 40, 50, 35, 20, 25, 15, 30]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
+
+  - type: bar
+    title: Industry Working in
+    total: 110
+    labels: [Tech, Finance, Healthcare, Energy, Consulting, Government, Startup, Other]
+    data: [45, 15, 12, 10, 8, 5, 8, 7]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
+
+  - type: bar
+    title: Other Fields Applied To
+    total: 105
+    labels: [CS, MechEng, ElecEng, BME, Management, Science, Arts, Other]
+    data: [40, 20, 15, 18, 12, 8, 5, 10]
+    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
