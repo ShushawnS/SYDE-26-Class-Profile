@@ -1,6 +1,7 @@
 charts:
   - type: pie
     title: SYDE or Multidisciplinary
+    description: A breakdown of whether our fourth-year design projects were within SYDE or cross-disciplinary.
     total: 110
     labels: [SYDE, Multidisciplinary]
     data: [75, 35]
@@ -8,6 +9,7 @@ charts:
 
   - type: doughnut
     title: Problem Space Tackled
+    description: ""
     total: 110
     labels: [HealthTech, Sustainability, Education, Accessibility, Social Impact, Hardware, Software, Other]
     data: [22, 15, 12, 10, 8, 15, 13, 5]
@@ -15,6 +17,7 @@ charts:
 
   - type: pie
     title: Proud of Completed FYDP
+    description: ""
     total: 105
     labels: [Yes, No, Neutral]
     data: [70, 15, 20]
@@ -22,6 +25,7 @@ charts:
 
   - type: pie
     title: Continue Working on FYDP
+    description: ""
     total: 105
     labels: [Yes, No, Maybe]
     data: [25, 50, 30]
@@ -29,6 +33,7 @@ charts:
 
   - type: pie
     title: FYDP Group Got Along
+    description: ""
     total: 108
     labels: [Yes, No, Mixed]
     data: [60, 18, 30]
@@ -36,6 +41,7 @@ charts:
 
   - type: bar
     title: FYDP Software Component Completed with AI
+    description: ""
     total: 100
     labels: [None, Minor Parts, About Half, Most of It, All of It]
     data: [15, 30, 25, 20, 10]

@@ -1,6 +1,7 @@
 charts:
   - type: bar
     title: Plans After 1st Year
+    description: Where our class envisioned themselves heading after first year — and how things actually turned out.
     total: 115
     labels: [Industry, Grad School, Startup, Travel, Undecided]
     data: [45, 20, 15, 10, 25]
@@ -8,6 +9,7 @@ charts:
 
   - type: pie
     title: "Full-Time Job Secured?"
+    description: ""
     total: 115
     labels: [Yes, No, Still Searching]
     data: [75, 10, 30]
@@ -15,6 +17,7 @@ charts:
 
   - type: pie
     title: Returning to Previous Employer
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [35, 80]
@@ -22,6 +25,7 @@ charts:
 
   - type: bar
     title: When Did You Get Your Offer
+    description: ""
     total: 110
     labels: [Before 4A, During 4A, After Grad, Still Waiting]
     data: [30, 40, 15, 25]
@@ -29,6 +33,7 @@ charts:
 
   - type: bar
     title: "Where Will You Be Working?"
+    description: ""
     total: 110
     labels: [Toronto, Kitchener-Waterloo, Vancouver, United States, Remote, Other]
     data: [40, 20, 15, 18, 10, 7]
@@ -36,6 +41,7 @@ charts:
 
   - type: bar
     title: Leaving Canada? Plan to Come Back?
+    description: ""
     total: 110
     labels: [Staying in Canada, Leaving (Will Return), Leaving (Not Returning)]
     data: [55, 35, 20]
@@ -43,6 +49,7 @@ charts:
 
   - type: bar
     title: If Leaving, When Will You Return
+    description: ""
     total: 55
     labels: ["1-2 Years", "3-5 Years", "5-10 Years", "Never", "Not Sure"]
     data: [10, 15, 12, 8, 10]
@@ -50,6 +57,7 @@ charts:
 
   - type: bar
     title: Company You'll Be Working At
+    description: ""
     total: 110
     labels: [Google, Apple, Amazon, Microsoft, Shopify, Startups, Government, Other]
     data: [12, 8, 10, 7, 15, 28, 15, 15]
@@ -57,6 +65,7 @@ charts:
 
   - type: bar
     title: Base Salary
+    description: ""
     total: 110
     labels: ["<$60k", "$60-80k", "$80-100k", "$100-120k", "$120-150k", "$150k+"]
     data: [8, 18, 30, 28, 18, 8]
@@ -64,6 +73,7 @@ charts:
 
   - type: bar
     title: Bonus
+    description: ""
     total: 110
     labels: [None, "<$5k", "$5-10k", "$10-20k", "$20k+"]
     data: [30, 25, 22, 20, 13]
@@ -71,6 +81,7 @@ charts:
 
   - type: bar
     title: Plan to Pursue Further Education
+    description: ""
     total: 115
     labels: [Yes, No, Maybe]
     data: [25, 55, 35]
@@ -78,6 +89,7 @@ charts:
 
   - type: bar
     title: "Get Married By"
+    description: ""
     total: 110
     labels: ["25", "26-28", "29-31", "32+", Never]
     data: [12, 28, 30, 20, 20]
@@ -85,6 +97,7 @@ charts:
 
   - type: bar
     title: Age to Have Children
+    description: ""
     total: 110
     labels: ["25-27", "28-30", "31-33", "34+", Never]
     data: [10, 30, 35, 20, 15]
@@ -92,6 +105,7 @@ charts:
 
   - type: bar
     title: Grad Trip Locations
+    description: ""
     total: 105
     labels: [Thailand, Japan, Europe, Mexico, Bali, Other, Not Going]
     data: [18, 22, 20, 12, 10, 8, 15]
@@ -99,6 +113,7 @@ charts:
 
   - type: bar
     title: Money Spent on Grad Trip
+    description: ""
     total: 100
     labels: ["<$1k", "$1-2k", "$2-3k", "$3-5k", "$5k+"]
     data: [12, 25, 28, 22, 13]

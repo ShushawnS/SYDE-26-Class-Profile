@@ -1,6 +1,7 @@
 charts:
   - type: bar
     title: Advice for First Years
+    description: Words of wisdom from graduating students to those just starting their SYDE journey.
     total: 115
     labels: [Socialize More, Study Harder, Join Clubs, Network, Mental Health First, Dont Procrastinate, Enjoy It]
     data: [28, 15, 22, 18, 12, 10, 10]
@@ -8,6 +9,7 @@ charts:
 
   - type: bar
     title: Favourite Memory of Undergrad
+    description: ""
     total: 115
     labels: [First Year, Capstone, Exchange, Co-op, Design Team, Rez Life, Grad Trip, Other]
     data: [20, 15, 18, 12, 14, 16, 10, 10]
@@ -15,6 +17,7 @@ charts:
 
   - type: bar
     title: What Was Great About SYDE
+    description: ""
     total: 115
     labels: [People, Cohort Culture, Design Focus, Flexibility, Well-rounded, Professors, Community]
     data: [35, 28, 20, 15, 10, 8, 9]
@@ -22,6 +25,7 @@ charts:
 
   - type: bar
     title: What Excites You About New Grad
+    description: ""
     total: 115
     labels: [Career, Independence, Money, Travelling, Settling Down, Learning, Other]
     data: [30, 22, 18, 15, 12, 10, 8]
@@ -29,6 +33,7 @@ charts:
 
   - type: bar
     title: Dream Job
+    description: ""
     total: 115
     labels: [Big Tech, Startup Founder, FAANG, Consultant, Research, Government, Freelance, Other]
     data: [25, 18, 20, 12, 10, 8, 10, 12]

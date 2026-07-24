@@ -1,6 +1,7 @@
 charts:
   - type: bar
     title: How You Found a Job
+    description: The methods students used to land their co-op positions throughout university.
     total: 115
     labels: [External, WaterlooWorks, Referral/Networking]
     data: [45, 35, 35]
@@ -8,6 +9,7 @@ charts:
 
   - type: bar
     title: Location of Work
+    description: ""
     total: 115
     labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
     data: [40, 30, 15, 10, 12, 8]
@@ -15,6 +17,7 @@ charts:
 
   - type: bar
     title: Industry Best Describes Company
+    description: ""
     total: 115
     labels: [Tech, Finance, Consulting, Healthcare, Manufacturing, Government, Other]
     data: [55, 20, 15, 8, 7, 5, 5]
@@ -22,6 +25,7 @@ charts:
 
   - type: bar
     title: Large Company
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [60, 55]
@@ -29,6 +33,7 @@ charts:
 
   - type: bar
     title: Performance Rating
+    description: ""
     total: 110
     labels: [Exceeds Expectations, Meets Expectations, Needs Improvement]
     data: [45, 55, 10]
@@ -36,6 +41,7 @@ charts:
 
   - type: pie
     title: Reneged a Co-op
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [12, 103]
@@ -43,6 +49,7 @@ charts:
 
   - type: pie
     title: Company Rescinded an Offer
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [5, 110]
@@ -50,6 +57,7 @@ charts:
 
   - type: bar
     title: Coolest Company Perk
+    description: ""
     total: 110
     labels: [Free Food, Flexible Hours, Remote Work, Health Benefits, Stock Options, Education Stipend, Other]
     data: [25, 28, 22, 15, 10, 5, 5]
@@ -57,6 +65,7 @@ charts:
 
   - type: bar
     title: "Co-op #1 Places"
+    description: ""
     total: 115
     labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
     data: [35, 45, 10, 8, 10, 7]
@@ -64,6 +73,7 @@ charts:
 
   - type: bar
     title: "Co-op #2 Places"
+    description: ""
     total: 112
     labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
     data: [38, 35, 15, 10, 8, 6]
@@ -71,6 +81,7 @@ charts:
 
   - type: bar
     title: "Co-op #3 Places"
+    description: ""
     total: 108
     labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
     data: [42, 28, 15, 8, 10, 5]
@@ -78,6 +89,7 @@ charts:
 
   - type: bar
     title: "Co-op #4 Places"
+    description: ""
     total: 105
     labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
     data: [45, 22, 15, 8, 10, 5]
@@ -85,6 +97,7 @@ charts:
 
   - type: bar
     title: "Co-op #5 Places"
+    description: ""
     total: 80
     labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
     data: [35, 15, 12, 6, 8, 4]
@@ -92,6 +105,7 @@ charts:
 
   - type: bar
     title: "Co-op #6 Places"
+    description: ""
     total: 40
     labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
     data: [18, 8, 5, 3, 4, 2]
@@ -99,6 +113,7 @@ charts:
 
   - type: bar
     title: "Earn Co-op #1"
+    description: ""
     total: 115
     labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
     data: [15, 35, 30, 20, 10, 5]
@@ -106,6 +121,7 @@ charts:
 
   - type: bar
     title: "Earn Co-op #2"
+    description: ""
     total: 112
     labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
     data: [10, 25, 35, 25, 12, 5]
@@ -113,6 +129,7 @@ charts:
 
   - type: bar
     title: "Earn Co-op #3"
+    description: ""
     total: 108
     labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
     data: [8, 18, 30, 30, 15, 7]
@@ -120,6 +137,7 @@ charts:
 
   - type: bar
     title: "Earn Co-op #4"
+    description: ""
     total: 105
     labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
     data: [5, 15, 25, 32, 18, 10]
@@ -127,6 +145,7 @@ charts:
 
   - type: bar
     title: "Earn Co-op #5"
+    description: ""
     total: 80
     labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
     data: [4, 10, 20, 25, 12, 9]
@@ -134,6 +153,7 @@ charts:
 
   - type: bar
     title: "Earn Co-op #6"
+    description: ""
     total: 40
     labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
     data: [2, 5, 10, 12, 6, 5]

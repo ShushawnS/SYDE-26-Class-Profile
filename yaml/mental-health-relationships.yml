@@ -1,6 +1,7 @@
 charts:
   - type: bar
     title: Mental Health Concerns
+    description: The most common mental health challenges students faced during university.
     total: 115
     labels: [Anxiety, Depression, Stress, Burnout, Sleep Issues, Loneliness, None]
     data: [35, 22, 40, 38, 30, 18, 15]
@@ -8,6 +9,7 @@ charts:
 
   - type: bar
     title: Causes for Mental Health
+    description: ""
     total: 110
     labels: [Academics, Co-op, Relationships, Family, Financial, Social Pressure, Health, Other]
     data: [42, 30, 22, 15, 18, 20, 10, 8]
@@ -15,6 +17,7 @@ charts:
 
   - type: bar
     title: University Career in Relationships
+    description: ""
     total: 115
     labels: ["0", "1", "2", "3", "4+"]
     data: [25, 35, 28, 15, 12]
@@ -22,6 +25,7 @@ charts:
 
   - type: bar
     title: Where You Met Your Significant Other
+    description: ""
     total: 80
     labels: [SYDE, Other Engineering, Residence, Dating App, High School, Work, Other]
     data: [12, 10, 18, 15, 10, 8, 7]
@@ -29,6 +33,7 @@ charts:
 
   - type: pie
     title: "Committed Sydecest?"
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [18, 97]
@@ -36,6 +41,7 @@ charts:
 
   - type: bar
     title: Relationships During Uni
+    description: ""
     total: 115
     labels: [None, One, Two, Three, Four+, "Prefer Not to Say"]
     data: [35, 30, 22, 12, 8, 8]
@@ -43,6 +49,7 @@ charts:
 
   - type: bar
     title: Situationships During Uni
+    description: ""
     total: 115
     labels: [None, One, Two, Three, Four+, "Prefer Not to Say"]
     data: [40, 28, 20, 12, 8, 7]
@@ -50,6 +57,7 @@ charts:
 
   - type: pie
     title: Currently in a Relationship
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [45, 70]
@@ -57,6 +65,7 @@ charts:
 
   - type: pie
     title: "First Kiss?"
+    description: ""
     total: 115
     labels: [Before Uni, During Uni, Has Not Happened]
     data: [65, 35, 15]
@@ -64,6 +73,7 @@ charts:
 
   - type: bar
     title: Unique Kissing Partners
+    description: ""
     total: 110
     labels: ["0", "1", "2-3", "4-5", "6-10", "10+"]
     data: [15, 25, 30, 20, 12, 8]
@@ -71,6 +81,7 @@ charts:
 
   - type: pie
     title: "First Sex?"
+    description: ""
     total: 115
     labels: [Before Uni, During Uni, Has Not Happened]
     data: [50, 38, 27]
@@ -78,6 +89,7 @@ charts:
 
   - type: bar
     title: Unique Sexual Partners
+    description: ""
     total: 110
     labels: ["0", "1", "2-3", "4-5", "6-10", "10+"]
     data: [20, 28, 25, 18, 12, 7]
@@ -85,6 +97,7 @@ charts:
 
   - type: bar
     title: More Active on Co-op or School Term
+    description: ""
     total: 105
     labels: [Co-op, School Term, About the Same, Neither]
     data: [35, 28, 25, 17]
@@ -92,6 +105,7 @@ charts:
 
   - type: bar
     title: Drugs People Have Tried
+    description: ""
     total: 115
     labels: [Weed, Shrooms, Cocaine, LSD, MDMA, Nicotine, Other, None]
     data: [55, 25, 15, 12, 10, 35, 8, 20]
@@ -99,6 +113,7 @@ charts:
 
   - type: bar
     title: Substance Usage First Year vs 3rd/4th Year
+    description: ""
     total: 110
     labels: ["Drink (1st)", "Drink (3rd/4th)", "Vape (1st)", "Vape (3rd/4th)", "Weed (1st)", "Weed (3rd/4th)", "Cigs (1st)", "Cigs (3rd/4th)"]
     data: [3.2, 2.8, 1.8, 2.2, 2.0, 2.8, 1.2, 1.1]

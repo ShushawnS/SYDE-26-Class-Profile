@@ -1,6 +1,7 @@
 charts:
   - type: bar
     title: Hometown
+    description: Where our class calls home — from across Canada and around the world.
     total: 118
     labels: [Toronto, Vancouver, Mississauga, Brampton, Ottawa, Kitchener, Other Ontario, Other Canada, International]
     data: [25, 12, 10, 8, 7, 6, 15, 18, 17]
@@ -8,6 +9,7 @@ charts:
 
   - type: pie
     title: Birth Year
+    description: ""
     total: 120
     labels: [2002, 2003, 2004, 2005, Other]
     data: [15, 70, 25, 8, 2]
@@ -15,6 +17,7 @@ charts:
 
   - type: pie
     title: Family Status
+    description: ""
     total: 115
     labels: [Immigrants, Born in Canada, Other]
     data: [55, 50, 10]
@@ -22,6 +25,7 @@ charts:
 
   - type: pie
     title: Parents with STEM Background
+    description: ""
     total: 112
     labels: [Yes, No]
     data: [60, 52]
@@ -29,6 +33,7 @@ charts:
 
   - type: bar
     title: Highest Level of Education — Parents
+    description: ""
     total: 110
     labels: [High School, College, Bachelor's, Master's, PhD, Professional Degree]
     data: [12, 18, 35, 28, 10, 7]
@@ -36,6 +41,7 @@ charts:
 
   - type: bar
     title: Average Household Income
+    description: ""
     total: 95
     labels: ["<50k", "50k-100k", "100k-150k", "150k-200k", "200k-300k", "300k+"]
     data: [8, 15, 25, 22, 15, 10]
@@ -43,6 +49,7 @@ charts:
 
   - type: bar
     title: Tuition Covered by Parents
+    description: ""
     total: 108
     labels: ["0%", "1-25%", "26-50%", "51-75%", "76-99%", "100%"]
     data: [20, 15, 18, 22, 13, 20]
@@ -50,6 +57,7 @@ charts:
 
   - type: bar
     title: Living Expenses Covered by Parents
+    description: ""
     total: 105
     labels: ["0%", "1-25%", "26-50%", "51-75%", "76-99%", "100%"]
     data: [30, 18, 15, 17, 10, 15]
@@ -57,6 +65,7 @@ charts:
 
   - type: bar
     title: Political Alignment
+    description: ""
     total: 110
     labels: [Far Left, Left, Centre-Left, Centre, Centre-Right, Right, Far Right, Prefer Not to Say]
     data: [10, 28, 20, 25, 12, 5, 2, 8]
@@ -64,6 +73,7 @@ charts:
 
   - type: pie
     title: Voted in a Political Election
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [70, 45]
@@ -71,6 +81,7 @@ charts:
 
   - type: bar
     title: Elections Voted In
+    description: ""
     total: 70
     labels: [Federal Only, Provincial Only, Municipal Only, Federal + Provincial, All Three, Other]
     data: [15, 5, 3, 20, 18, 9]
@@ -78,6 +89,7 @@ charts:
 
   - type: pie
     title: Political Viewpoint Change During University
+    description: ""
     total: 100
     labels: [Shifted Left, Shifted Right, No Change, Unsure]
     data: [25, 15, 50, 10]
@@ -85,6 +97,7 @@ charts:
 
   - type: bar
     title: Ethnicities
+    description: ""
     total: 120
     labels: [South Asian, East Asian, Southeast Asian, White, Middle Eastern, Black, Latino, Mixed, Other]
     data: [30, 22, 10, 25, 10, 8, 5, 5, 5]
@@ -92,6 +105,7 @@ charts:
 
   - type: bar
     title: Religion
+    description: ""
     total: 115
     labels: [Hindu, Muslim, Christian, Sikh, Buddhist, Jewish, Atheist/Agnostic, Spiritual, Other]
     data: [25, 18, 20, 10, 3, 2, 28, 5, 4]
@@ -99,6 +113,7 @@ charts:
 
   - type: pie
     title: Religiousness Changed During University
+    description: ""
     total: 100
     labels: [More Religious, Less Religious, No Change]
     data: [15, 30, 55]
@@ -106,6 +121,7 @@ charts:
 
   - type: pie
     title: Religion Changed During University
+    description: ""
     total: 105
     labels: [Yes, No]
     data: [10, 95]
@@ -113,6 +129,7 @@ charts:
 
   - type: bar
     title: Sexual Identity
+    description: ""
     total: 115
     labels: [Straight, Gay, Lesbian, Bisexual, Pansexual, Queer, Prefer Not to Say, Other]
     data: [85, 8, 3, 10, 3, 2, 3, 1]
@@ -120,6 +137,7 @@ charts:
 
   - type: bar
     title: Sexuality
+    description: ""
     total: 115
     labels: [Heterosexual, Homosexual, Bisexual, Pansexual, Asexual, Queer, Prefer Not to Say, Other]
     data: [82, 10, 10, 4, 2, 3, 3, 1]

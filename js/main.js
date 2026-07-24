@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", async () => {
           title.textContent = chart.title;
           chartWrap.appendChild(title);
 
+          if (chart.description) {
+            const desc = document.createElement("p");
+            desc.textContent = chart.description;
+            chartWrap.appendChild(desc);
+          }
+
           const canvas = document.createElement("canvas");
           chartWrap.appendChild(canvas);
           sectionEl.appendChild(chartWrap);

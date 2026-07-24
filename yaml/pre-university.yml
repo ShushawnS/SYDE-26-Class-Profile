@@ -1,6 +1,7 @@
 charts:
   - type: bar
     title: Admission Average
+    description: A snapshot of how our class performed in high school before entering Waterloo.
     total: 115
     labels: ["80-84", "85-89", "90-94", "95-100"]
     data: [5, 20, 55, 35]
@@ -8,6 +9,7 @@ charts:
 
   - type: bar
     title: Extracurriculars in High School
+    description: ""
     total: 110
     labels: ["Sports", "Music/Arts", "Volunteering", "Clubs", "Work", "None"]
     data: [35, 20, 25, 40, 30, 8]
@@ -15,6 +17,7 @@ charts:
 
   - type: bar
     title: Enrichment Programs
+    description: ""
     total: 100
     labels: ["None", "Math Contests", "Science Fairs", "Coding Bootcamps", "Summer Programs", "Other"]
     data: [40, 25, 12, 10, 8, 5]
@@ -22,6 +25,7 @@ charts:
 
   - type: bar
     title: Other Universities Applied To
+    description: ""
     total: 118
     labels: [UofT, McMaster, Western, Queens, Ottawa, UBC, McGill, Other]
     data: [65, 40, 50, 35, 20, 25, 15, 30]
@@ -29,6 +33,7 @@ charts:
 
   - type: bar
     title: Industry Working in
+    description: ""
     total: 110
     labels: [Tech, Finance, Healthcare, Energy, Consulting, Government, Startup, Other]
     data: [45, 15, 12, 10, 8, 5, 8, 7]
@@ -36,6 +41,7 @@ charts:
 
   - type: bar
     title: Other Fields Applied To
+    description: ""
     total: 105
     labels: [CS, MechEng, ElecEng, BME, Management, Science, Arts, Other]
     data: [40, 20, 15, 18, 12, 8, 5, 10]

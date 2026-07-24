@@ -1,6 +1,7 @@
 charts:
   - type: pie
     title: Is AI Taking Your Job?
+    description: How our class feels about the impact of AI on their future careers.
     total: 115
     labels: [Yes, No, Maybe]
     data: [20, 45, 50]
@@ -8,6 +9,7 @@ charts:
 
   - type: pie
     title: "Pay for AI Subscription?"
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [55, 60]
@@ -15,6 +17,7 @@ charts:
 
   - type: pie
     title: "Should AI Be Regulated?"
+    description: ""
     total: 115
     labels: [Yes, No, Unsure]
     data: [65, 20, 30]
@@ -22,6 +25,7 @@ charts:
 
   - type: bar
     title: Favourite Tech CEO
+    description: ""
     total: 110
     labels: [Elon Musk, Sam Altman, Tim Cook, Satya Nadella, Jensen Huang, Mark Zuckerberg, Other]
     data: [22, 25, 10, 15, 18, 8, 12]

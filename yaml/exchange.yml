@@ -1,6 +1,7 @@
 charts:
   - type: pie
     title: Went on Exchange
+    description: How many students in our class took the opportunity to study abroad during university.
     total: 118
     labels: [Yes, No]
     data: [38, 80]
@@ -8,6 +9,7 @@ charts:
 
   - type: bar
     title: Reasons for Not Going on Exchange
+    description: ""
     total: 78
     labels: [Co-op Timing, Cost, Personal Reasons, Academic Delay, Didn't Want To, Other]
     data: [22, 18, 14, 10, 8, 6]
@@ -15,6 +17,7 @@ charts:
 
   - type: bar
     title: Reasons for Going on Exchange
+    description: ""
     total: 38
     labels: [Adventure, Academics, Family, Career, Language, Culture, Other]
     data: [12, 8, 5, 4, 3, 4, 2]
@@ -22,6 +25,7 @@ charts:
 
   - type: bar
     title: Places Went on Exchange
+    description: ""
     total: 38
     labels: [Europe, Asia, Australia, South America, North America, Other]
     data: [16, 8, 5, 4, 3, 2]
@@ -29,6 +33,7 @@ charts:
 
   - type: pie
     title: Exchange Term
+    description: ""
     total: 38
     labels: [Fall, Winter]
     data: [20, 18]
@@ -36,6 +41,7 @@ charts:
 
   - type: pie
     title: Recommend Exchange for Future Students
+    description: ""
     total: 36
     labels: [Yes, No, Maybe]
     data: [30, 2, 4]
@@ -43,6 +49,7 @@ charts:
 
   - type: pie
     title: Same or Different Uni in Hindsight
+    description: ""
     total: 35
     labels: [Same, Different, No Preference]
     data: [20, 10, 5]
@@ -50,6 +57,7 @@ charts:
 
   - type: bar
     title: Reasons for Different Uni
+    description: ""
     total: 10
     labels: [Location, Course Variety, Reputation, Cost, Social Scene, Other]
     data: [3, 2, 2, 1, 1, 1]
@@ -57,6 +65,7 @@ charts:
 
   - type: pie
     title: Did Exchange Impact Co-op Search
+    description: ""
     total: 36
     labels: [Yes, No, Slightly]
     data: [10, 18, 8]
@@ -64,6 +73,7 @@ charts:
 
   - type: pie
     title: Ability to Finish Courses for Graduation
+    description: ""
     total: 36
     labels: [Yes, No, Delayed Grad]
     data: [25, 3, 8]
@@ -71,6 +81,7 @@ charts:
 
   - type: bar
     title: Total Spend on Exchange
+    description: ""
     total: 34
     labels: ["<$5k", "$5k-10k", "$10k-15k", "$15k-20k", "$20k+"]
     data: [4, 10, 12, 5, 3]

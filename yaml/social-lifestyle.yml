@@ -1,6 +1,7 @@
 charts:
   - type: bar
     title: Favourite Restaurant
+    description: The food spots that kept our class going through late-night study sessions.
     total: 115
     labels: [Pizza, Sushi, Thai, Chinese, Indian, Burgers, Mexican, Other]
     data: [22, 20, 18, 15, 12, 14, 8, 6]
@@ -8,6 +9,7 @@ charts:
 
   - type: bar
     title: Friends in SYDE
+    description: ""
     total: 115
     labels: ["0-5", "6-10", "11-15", "16-20", "20+"]
     data: [10, 25, 35, 28, 17]
@@ -15,6 +17,7 @@ charts:
 
   - type: bar
     title: Where You Met Your 5 Closest Friends
+    description: ""
     total: 115
     labels: [SYDE Cohort, Other Engineering, Residence, High School, Outside University, Other]
     data: [42, 18, 25, 15, 10, 5]
@@ -22,6 +25,7 @@ charts:
 
   - type: bar
     title: "Terms Attended a SYDE Social Event"
+    description: ""
     total: 110
     labels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
     data: [85, 78, 65, 55, 48, 40, 35, 30]
@@ -29,6 +33,7 @@ charts:
 
   - type: bar
     title: Cooking Ability
+    description: ""
     total: 115
     labels: [Cant Cook, Basic Meals, Intermediate, Advanced, Chef]
     data: [20, 35, 30, 20, 10]
@@ -36,6 +41,7 @@ charts:
 
   - type: bar
     title: Fitness Level
+    description: ""
     total: 115
     labels: [Sedentary, Lightly Active, Moderately Active, Very Active, Extremely Active]
     data: [25, 30, 35, 18, 7]
@@ -43,6 +49,7 @@ charts:
 
   - type: pie
     title: Balding
+    description: ""
     total: 115
     labels: [Yes, No, Maybe]
     data: [15, 65, 35]
@@ -50,6 +57,7 @@ charts:
 
   - type: pie
     title: "Done Intramurals?"
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [48, 67]
@@ -57,6 +65,7 @@ charts:
 
   - type: pie
     title: "Joined Clubs?"
+    description: ""
     total: 115
     labels: [Yes, No]
     data: [55, 60]
@@ -64,6 +73,7 @@ charts:
 
   - type: bar
     title: Intramurals Participated In
+    description: ""
     total: 110
     labels: [Basketball, Soccer, Volleyball, Badminton, Ultimate Frisbee, Dodgeball, Other]
     data: [22, 28, 18, 15, 12, 8, 7]
@@ -71,6 +81,7 @@ charts:
 
   - type: bar
     title: Clubs Participated In
+    description: ""
     total: 110
     labels: [Design Team, Hackathon Club, Sports Club, Social Club, Professional Club, Other]
     data: [25, 20, 18, 22, 15, 10]
