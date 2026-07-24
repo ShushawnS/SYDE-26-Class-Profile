@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  Chart.register(ChartDataLabels);
-
   const res = await fetch("yaml/main.yml");
   const text = await res.text();
   const config = jsyaml.load(text);
@@ -42,84 +40,98 @@ document.addEventListener("DOMContentLoaded", async () => {
             chartWrap.appendChild(desc);
           }
 
-          const canvas = document.createElement("canvas");
-          chartWrap.appendChild(canvas);
+          const chartDiv = document.createElement("div");
+          chartWrap.appendChild(chartDiv);
           sectionEl.appendChild(chartWrap);
 
           if (chart.type === "line") {
-            const datasets = chart.datasets.map((ds) => ({
-              label: ds.label,
+            const series = chart.datasets.map((ds) => ({
+              name: ds.label,
               data: ds.data,
-              borderColor: ds.color,
-              backgroundColor: ds.color + "1A",
-              tension: 0.3,
-              fill: false,
-              pointRadius: 4,
-              pointHoverRadius: 6,
             }));
 
-            new Chart(canvas.getContext("2d"), {
-              type: "line",
-              data: { labels: chart.xLabels, datasets },
-              plugins: [ChartDataLabels],
-              options: {
-                responsive: true,
-                plugins: {
-                  legend: { display: datasets.length > 1 },
-                  datalabels: { display: false },
-                },
-                scales: {
-                  y: { beginAtZero: chart.beginAtZero !== false },
+            new ApexCharts(chartDiv, {
+              chart: { type: "line", height: 350 },
+              series: series,
+              xaxis: { categories: chart.xLabels },
+              colors: chart.datasets.map((ds) => ds.color),
+              stroke: { curve: "smooth", width: 2 },
+              markers: { size: 4, hover: { size: 6 } },
+              dataLabels: { enabled: false },
+              legend: { show: series.length > 1, position: "top" },
+              yaxis: { show: chart.beginAtZero === false ? true : { min: 0 } },
+              tooltip: { shared: true, intersect: false },
+            }).render();
+            continue;
+          }
+
+          const isPie = chart.type === "pie" || chart.type === "doughnut";
+
+          if (isPie) {
+            new ApexCharts(chartDiv, {
+              chart: { type: chart.type, height: 350 },
+              series: chart.data,
+              labels: chart.labels,
+              colors: chart.colors,
+              dataLabels: {
+                enabled: true,
+                formatter: (val) => val.toFixed(1) + "%",
+                style: { fontWeight: "bold", fontSize: "14px" },
+                dropShadow: { enabled: false },
+              },
+              legend: { position: "right" },
+              tooltip: {
+                y: {
+                  formatter: (val, { seriesIndex }) =>
+                    `${chart.labels[seriesIndex]}: ${val.toFixed(1)}% (${chart.data[seriesIndex]})`,
                 },
               },
-            });
+              title: {
+                text: `${chart.title} (n=${chart.total || chart.data.reduce((a, b) => a + b, 0)})`,
+                align: "center",
+                style: { fontSize: "14px" },
+              },
+            }).render();
             continue;
           }
 
           const total = chart.data.reduce((a, b) => a + b, 0);
           const percentages = chart.data.map((v) => +((v / total) * 100).toFixed(1));
 
-          title.textContent = `${chart.title} (n=${chart.total || total})`;
-
-          const isPie = chart.type === "pie" || chart.type === "doughnut";
-
-          const chartConfig = {
-            type: chart.type,
-            data: {
-              labels: chart.labels,
-              datasets: [
-                {
-                  label: chart.title,
-                  data: percentages,
-                  backgroundColor: chart.colors,
-                },
-              ],
+          new ApexCharts(chartDiv, {
+            chart: { type: "bar", height: 350 },
+            series: [{ name: chart.title, data: percentages }],
+            xaxis: { categories: chart.labels },
+            colors: chart.colors,
+            dataLabels: {
+              enabled: true,
+              formatter: (val) => val + "%",
+              style: { fontWeight: "bold", fontSize: "12px" },
+              offsetY: -5,
             },
-            plugins: [ChartDataLabels],
-            options: {
-              responsive: true,
-              plugins: {
-                legend: { display: isPie },
-                datalabels: {
-                  color: isPie ? "#fff" : "#000",
-                  formatter: (v) => v + "%",
-                  font: { weight: "bold", size: isPie ? 14 : 12 },
-                  display: (ctx) => ctx.dataset.data[ctx.dataIndex] > 5,
-                },
-                tooltip: {
-                  callbacks: {
-                    label: (ctx) => {
-                      const idx = ctx.dataIndex;
-                      return `${ctx.label}: ${percentages[idx]}% (${chart.data[idx]})`;
-                    },
-                  },
-                },
+            legend: { show: false },
+            yaxis: {
+              min: 0,
+              labels: { formatter: (v) => v + "%" },
+            },
+            tooltip: {
+              y: {
+                formatter: (val, { dataPointIndex }) =>
+                  `${chart.labels[dataPointIndex]}: ${val}% (${chart.data[dataPointIndex]})`,
               },
-              scales: isPie ? {} : { y: { beginAtZero: true, ticks: { callback: (v) => v + "%" } } },
             },
-          };
-
-          new Chart(canvas.getContext("2d"), chartConfig);
+            title: {
+              text: `${chart.title} (n=${chart.total || total})`,
+              align: "center",
+              style: { fontSize: "14px" },
+            },
+            plotOptions: {
+              bar: {
+                columnWidth: "60%",
+                dataLabels: { position: "top" },
+              },
+            },
+          }).render();
         }
       }
 
