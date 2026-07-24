@@ -1,40 +1,67 @@
 charts:
-  - type: bar
+  - type: wordcloud
     title: Advice for First Years
     description: Words of wisdom from graduating students to those just starting their SYDE journey.
     total: 115
-    labels: [Socialize More, Study Harder, Join Clubs, Network, Mental Health First, Dont Procrastinate, Enjoy It]
-    data: [28, 15, 22, 18, 12, 10, 10]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4"]
+    words:
+      - { text: "Socialize More", weight: 28 }
+      - { text: "Join Clubs", weight: 22 }
+      - { text: "Network", weight: 18 }
+      - { text: "Study Harder", weight: 15 }
+      - { text: "Mental Health First", weight: 12 }
+      - { text: "Don't Procrastinate", weight: 10 }
+      - { text: "Enjoy It", weight: 10 }
 
-  - type: bar
+  - type: wordcloud
     title: Favourite Memory of Undergrad
     description: ""
     total: 115
-    labels: [First Year, Capstone, Exchange, Co-op, Design Team, Rez Life, Grad Trip, Other]
-    data: [20, 15, 18, 12, 14, 16, 10, 10]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#9ca3af"]
+    words:
+      - { text: "First Year", weight: 20 }
+      - { text: "Exchange", weight: 18 }
+      - { text: "Rez Life", weight: 16 }
+      - { text: "Capstone", weight: 15 }
+      - { text: "Design Team", weight: 14 }
+      - { text: "Co-op", weight: 12 }
+      - { text: "Grad Trip", weight: 10 }
+      - { text: "Other", weight: 10 }
 
-  - type: bar
+  - type: wordcloud
     title: What Was Great About SYDE
     description: ""
     total: 115
-    labels: [People, Cohort Culture, Design Focus, Flexibility, Well-rounded, Professors, Community]
-    data: [35, 28, 20, 15, 10, 8, 9]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4"]
+    words:
+      - { text: "People", weight: 35 }
+      - { text: "Cohort Culture", weight: 28 }
+      - { text: "Design Focus", weight: 20 }
+      - { text: "Flexibility", weight: 15 }
+      - { text: "Well-rounded", weight: 10 }
+      - { text: "Community", weight: 9 }
+      - { text: "Professors", weight: 8 }
 
-  - type: bar
+  - type: wordcloud
     title: What Excites You About New Grad
     description: ""
     total: 115
-    labels: [Career, Independence, Money, Travelling, Settling Down, Learning, Other]
-    data: [30, 22, 18, 15, 12, 10, 8]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#9ca3af"]
+    words:
+      - { text: "Career", weight: 30 }
+      - { text: "Independence", weight: 22 }
+      - { text: "Money", weight: 18 }
+      - { text: "Travelling", weight: 15 }
+      - { text: "Settling Down", weight: 12 }
+      - { text: "Learning", weight: 10 }
+      - { text: "Other", weight: 8 }
 
-  - type: bar
+  - type: wordcloud
     title: Dream Job
     description: ""
     total: 115
-    labels: [Big Tech, Startup Founder, FAANG, Consultant, Research, Government, Freelance, Other]
-    data: [25, 18, 20, 12, 10, 8, 10, 12]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#9ca3af"]
+    words:
+      - { text: "Big Tech", weight: 25 }
+      - { text: "FAANG", weight: 20 }
+      - { text: "Startup Founder", weight: 18 }
+      - { text: "Consultant", weight: 12 }
+      - { text: "Research", weight: 10 }
+      - { text: "Freelance", weight: 10 }
+      - { text: "Government", weight: 8 }
+      - { text: "Other", weight: 12 }

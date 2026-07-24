@@ -1,43 +1,105 @@
 charts:
-  - type: bar
-    title: How You Found a Job
+  - type: stacked-bar
+    title: How You Found a Job Over the Semesters
     description: The methods students used to land their co-op positions throughout university.
-    total: 115
-    labels: [External, WaterlooWorks, Referral/Networking]
-    data: [45, 35, 35]
-    colors: ["#2563eb", "#10b981", "#f59e0b"]
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    datasets:
+      - label: External
+        data: [20, 25, 30, 35, 40, 42, 45, 48]
+        color: "#2563eb"
+      - label: WaterlooWorks
+        data: [50, 45, 40, 35, 30, 28, 25, 22]
+        color: "#10b981"
+      - label: Referral/Networking
+        data: [15, 20, 22, 25, 25, 25, 25, 25]
+        color: "#f59e0b"
+      - label: Other
+        data: [15, 10, 8, 5, 5, 5, 5, 5]
+        color: "#9ca3af"
 
-  - type: bar
-    title: Location of Work
+  - type: stacked-bar
+    title: Location of Work Over the Semesters
     description: ""
-    total: 115
-    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
-    data: [40, 30, 15, 10, 12, 8]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    datasets:
+      - label: Toronto
+        data: [15, 20, 25, 30, 35, 38, 40, 42]
+        color: "#2563eb"
+      - label: Kitchener-Waterloo
+        data: [55, 50, 40, 35, 28, 22, 18, 15]
+        color: "#10b981"
+      - label: Vancouver
+        data: [5, 8, 10, 12, 14, 15, 15, 15]
+        color: "#f59e0b"
+      - label: Montreal
+        data: [5, 5, 8, 8, 10, 10, 10, 10]
+        color: "#ef4444"
+      - label: Remote
+        data: [10, 10, 10, 10, 8, 10, 12, 13]
+        color: "#8b5cf6"
+      - label: Other
+        data: [10, 7, 7, 5, 5, 5, 5, 5]
+        color: "#9ca3af"
 
-  - type: bar
-    title: Industry Best Describes Company
+  - type: stacked-bar
+    title: Industry Over the Semesters
     description: ""
-    total: 115
-    labels: [Tech, Finance, Consulting, Healthcare, Manufacturing, Government, Other]
-    data: [55, 20, 15, 8, 7, 5, 5]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#9ca3af"]
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    datasets:
+      - label: Tech
+        data: [40, 42, 45, 48, 50, 52, 55, 55]
+        color: "#2563eb"
+      - label: Finance
+        data: [10, 12, 15, 18, 20, 22, 20, 20]
+        color: "#10b981"
+      - label: Consulting
+        data: [5, 8, 10, 12, 14, 15, 15, 15]
+        color: "#f59e0b"
+      - label: Healthcare
+        data: [5, 5, 8, 8, 8, 8, 8, 8]
+        color: "#ef4444"
+      - label: Manufacturing
+        data: [20, 18, 15, 12, 10, 8, 7, 7]
+        color: "#8b5cf6"
+      - label: Government
+        data: [15, 10, 5, 5, 5, 5, 5, 5]
+        color: "#ec4899"
+      - label: Other
+        data: [5, 5, 2, 0, 0, 0, 0, 0]
+        color: "#9ca3af"
 
-  - type: bar
-    title: Large Company
+  - type: stacked-bar
+    title: Company Size Over the Semesters
     description: ""
-    total: 115
-    labels: [Yes, No]
-    data: [60, 55]
-    colors: ["#2563eb", "#ef4444"]
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    datasets:
+      - label: Startup
+        data: [15, 18, 22, 25, 20, 18, 15, 12]
+        color: "#f59e0b"
+      - label: Mid-size
+        data: [25, 28, 30, 32, 30, 28, 25, 22]
+        color: "#2563eb"
+      - label: Large
+        data: [50, 48, 42, 38, 45, 48, 55, 60]
+        color: "#10b981"
+      - label: Other
+        data: [10, 6, 6, 5, 5, 6, 5, 6]
+        color: "#9ca3af"
 
-  - type: bar
-    title: Performance Rating
+  - type: stacked-bar
+    title: Performance Rating Over the Semesters
     description: ""
-    total: 110
-    labels: [Exceeds Expectations, Meets Expectations, Needs Improvement]
-    data: [45, 55, 10]
-    colors: ["#10b981", "#2563eb", "#ef4444"]
+    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
+    datasets:
+      - label: Exceeds Expectations
+        data: [30, 32, 35, 38, 40, 42, 45, 48]
+        color: "#10b981"
+      - label: Meets Expectations
+        data: [60, 58, 55, 52, 50, 48, 45, 42]
+        color: "#2563eb"
+      - label: Needs Improvement
+        data: [10, 10, 10, 10, 10, 10, 10, 10]
+        color: "#ef4444"
 
   - type: pie
     title: Reneged a Co-op
@@ -55,106 +117,111 @@ charts:
     data: [5, 110]
     colors: ["#ef4444", "#10b981"]
 
-  - type: bar
+  - type: wordcloud
+    title: "Co-op #1 Places"
+    description: ""
+    total: 110
+    words:
+      - { text: "Google", weight: 8 }
+      - { text: "RIM", weight: 7 }
+      - { text: "Manulife", weight: 6 }
+      - { text: "TD Bank", weight: 5 }
+      - { text: "Blackberry", weight: 5 }
+      - { text: "Shopify", weight: 4 }
+      - { text: "Desire2Learn", weight: 4 }
+      - { text: "OpenText", weight: 4 }
+      - { text: "Other", weight: 77 }
+
+  - type: wordcloud
+    title: "Co-op #2 Places"
+    description: ""
+    total: 110
+    words:
+      - { text: "Google", weight: 10 }
+      - { text: "Amazon", weight: 8 }
+      - { text: "Shopify", weight: 7 }
+      - { text: "Microsoft", weight: 6 }
+      - { text: "RIM", weight: 5 }
+      - { text: "Manulife", weight: 5 }
+      - { text: "OpenText", weight: 4 }
+      - { text: "Other", weight: 65 }
+
+  - type: wordcloud
+    title: "Co-op #3 Places"
+    description: ""
+    total: 110
+    words:
+      - { text: "Google", weight: 12 }
+      - { text: "Amazon", weight: 9 }
+      - { text: "Microsoft", weight: 8 }
+      - { text: "Shopify", weight: 7 }
+      - { text: "Apple", weight: 5 }
+      - { text: "Meta", weight: 4 }
+      - { text: "Other", weight: 65 }
+
+  - type: wordcloud
+    title: "Co-op #4 Places"
+    description: ""
+    total: 110
+    words:
+      - { text: "Google", weight: 14 }
+      - { text: "Amazon", weight: 10 }
+      - { text: "Microsoft", weight: 9 }
+      - { text: "Apple", weight: 7 }
+      - { text: "Meta", weight: 6 }
+      - { text: "Shopify", weight: 5 }
+      - { text: "Other", weight: 59 }
+
+  - type: wordcloud
+    title: "Co-op #5 Places"
+    description: ""
+    total: 110
+    words:
+      - { text: "Google", weight: 15 }
+      - { text: "Amazon", weight: 11 }
+      - { text: "Microsoft", weight: 10 }
+      - { text: "Apple", weight: 8 }
+      - { text: "Meta", weight: 7 }
+      - { text: "Uber", weight: 4 }
+      - { text: "Other", weight: 55 }
+
+  - type: wordcloud
+    title: "Co-op #6 Places"
+    description: ""
+    total: 110
+    words:
+      - { text: "Google", weight: 16 }
+      - { text: "Amazon", weight: 12 }
+      - { text: "Microsoft", weight: 10 }
+      - { text: "Apple", weight: 9 }
+      - { text: "Meta", weight: 8 }
+      - { text: "Uber", weight: 5 }
+      - { text: "Other", weight: 50 }
+
+  - type: wordcloud
     title: Coolest Company Perk
     description: ""
     total: 110
-    labels: [Free Food, Flexible Hours, Remote Work, Health Benefits, Stock Options, Education Stipend, Other]
-    data: [25, 28, 22, 15, 10, 5, 5]
-    colors: ["#10b981", "#2563eb", "#8b5cf6", "#f59e0b", "#ef4444", "#ec4899", "#9ca3af"]
+    words:
+      - { text: "Flexible Hours", weight: 28 }
+      - { text: "Free Food", weight: 25 }
+      - { text: "Remote Work", weight: 22 }
+      - { text: "Health Benefits", weight: 15 }
+      - { text: "Stock Options", weight: 10 }
+      - { text: "Education Stipend", weight: 5 }
+      - { text: "Other", weight: 5 }
 
-  - type: bar
-    title: "Co-op #1 Places"
+  - type: boxplot
+    title: Co-op Earnings Over the Semesters
     description: ""
-    total: 115
-    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
-    data: [35, 45, 10, 8, 10, 7]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
-
-  - type: bar
-    title: "Co-op #2 Places"
-    description: ""
-    total: 112
-    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
-    data: [38, 35, 15, 10, 8, 6]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
-
-  - type: bar
-    title: "Co-op #3 Places"
-    description: ""
-    total: 108
-    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
-    data: [42, 28, 15, 8, 10, 5]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
-
-  - type: bar
-    title: "Co-op #4 Places"
-    description: ""
-    total: 105
-    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
-    data: [45, 22, 15, 8, 10, 5]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
-
-  - type: bar
-    title: "Co-op #5 Places"
-    description: ""
-    total: 80
-    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
-    data: [35, 15, 12, 6, 8, 4]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
-
-  - type: bar
-    title: "Co-op #6 Places"
-    description: ""
-    total: 40
-    labels: [Toronto, Kitchener-Waterloo, Vancouver, Montreal, Remote, Other]
-    data: [18, 8, 5, 3, 4, 2]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
-
-  - type: bar
-    title: "Earn Co-op #1"
-    description: ""
-    total: 115
-    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
-    data: [15, 35, 30, 20, 10, 5]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
-
-  - type: bar
-    title: "Earn Co-op #2"
-    description: ""
-    total: 112
-    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
-    data: [10, 25, 35, 25, 12, 5]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
-
-  - type: bar
-    title: "Earn Co-op #3"
-    description: ""
-    total: 108
-    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
-    data: [8, 18, 30, 30, 15, 7]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
-
-  - type: bar
-    title: "Earn Co-op #4"
-    description: ""
-    total: 105
-    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
-    data: [5, 15, 25, 32, 18, 10]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
-
-  - type: bar
-    title: "Earn Co-op #5"
-    description: ""
-    total: 80
-    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
-    data: [4, 10, 20, 25, 12, 9]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
-
-  - type: bar
-    title: "Earn Co-op #6"
-    description: ""
-    total: 40
-    labels: ["<$20/hr", "$20-25/hr", "$25-30/hr", "$30-35/hr", "$35-40/hr", "$40+/hr"]
-    data: [2, 5, 10, 12, 6, 5]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+    labels: ["Co-op #1", "Co-op #2", "Co-op #3", "Co-op #4", "Co-op #5", "Co-op #6"]
+    data:
+      - [18, 22, 26, 30, 38]
+      - [20, 25, 28, 32, 40]
+      - [22, 28, 32, 36, 45]
+      - [25, 30, 35, 38, 48]
+      - [28, 32, 36, 40, 50]
+      - [30, 35, 38, 42, 55]
+    colors:
+      fill: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899"]
+      stroke: ["#1e40af", "#047857", "#b45309", "#b91c1c", "#6d28d9", "#be185d"]

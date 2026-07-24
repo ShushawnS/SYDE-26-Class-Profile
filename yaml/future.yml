@@ -55,21 +55,39 @@ charts:
     data: [10, 15, 12, 8, 10]
     colors: ["#10b981", "#2563eb", "#f59e0b", "#ef4444", "#9ca3af"]
 
-  - type: bar
+  - type: wordcloud
     title: Company You'll Be Working At
     description: ""
     total: 110
-    labels: [Google, Apple, Amazon, Microsoft, Shopify, Startups, Government, Other]
-    data: [12, 8, 10, 7, 15, 28, 15, 15]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#9ca3af"]
+    words:
+      - { text: "Shopify", weight: 15 }
+      - { text: "Startups", weight: 28 }
+      - { text: "Government", weight: 15 }
+      - { text: "Google", weight: 12 }
+      - { text: "Amazon", weight: 10 }
+      - { text: "Apple", weight: 8 }
+      - { text: "Microsoft", weight: 7 }
+      - { text: "Other", weight: 15 }
 
-  - type: bar
+  - type: boxplot
     title: Base Salary
     description: ""
-    total: 110
-    labels: ["<$60k", "$60-80k", "$80-100k", "$100-120k", "$120-150k", "$150k+"]
-    data: [8, 18, 30, 28, 18, 8]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
+    labels: ["Base Salary"]
+    data:
+      - [50, 75, 95, 110, 160]
+    colors:
+      fill: ["#2563eb"]
+      stroke: ["#1e40af"]
+
+  - type: boxplot
+    title: Total Compensation
+    description: ""
+    labels: ["Total Compensation"]
+    data:
+      - [55, 85, 110, 135, 200]
+    colors:
+      fill: ["#10b981"]
+      stroke: ["#047857"]
 
   - type: bar
     title: Bonus
@@ -103,13 +121,18 @@ charts:
     data: [10, 30, 35, 20, 15]
     colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
 
-  - type: bar
+  - type: wordcloud
     title: Grad Trip Locations
     description: ""
     total: 105
-    labels: [Thailand, Japan, Europe, Mexico, Bali, Other, Not Going]
-    data: [18, 22, 20, 12, 10, 8, 15]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#9ca3af"]
+    words:
+      - { text: "Japan", weight: 22 }
+      - { text: "Europe", weight: 20 }
+      - { text: "Thailand", weight: 18 }
+      - { text: "Mexico", weight: 12 }
+      - { text: "Bali", weight: 10 }
+      - { text: "Not Going", weight: 15 }
+      - { text: "Other", weight: 8 }
 
   - type: bar
     title: Money Spent on Grad Trip

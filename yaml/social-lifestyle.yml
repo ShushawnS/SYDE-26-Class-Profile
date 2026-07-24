@@ -1,51 +1,57 @@
 charts:
-  - type: bar
+  - type: wordcloud
     title: Favourite Restaurant
     description: The food spots that kept our class going through late-night study sessions.
     total: 115
-    labels: [Pizza, Sushi, Thai, Chinese, Indian, Burgers, Mexican, Other]
-    data: [22, 20, 18, 15, 12, 14, 8, 6]
-    colors: ["#ef4444", "#10b981", "#f59e0b", "#2563eb", "#8b5cf6", "#ec4899", "#06b6d4", "#9ca3af"]
+    words:
+      - { text: "Pizza", weight: 22 }
+      - { text: "Sushi", weight: 20 }
+      - { text: "Thai", weight: 18 }
+      - { text: "Chinese", weight: 15 }
+      - { text: "Burgers", weight: 14 }
+      - { text: "Indian", weight: 12 }
+      - { text: "Mexican", weight: 8 }
+      - { text: "Other", weight: 6 }
 
   - type: bar
-    title: Friends in SYDE
+    title: How Many of Your 5 Closest Uni Friends Are in SYDE
     description: ""
     total: 115
-    labels: ["0-5", "6-10", "11-15", "16-20", "20+"]
-    data: [10, 25, 35, 28, 17]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+    labels: ["0", "1", "2", "3", "4", "5"]
+    data: [5, 12, 20, 30, 28, 20]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
 
   - type: bar
-    title: Where You Met Your 5 Closest Friends
-    description: ""
-    total: 115
-    labels: [SYDE Cohort, Other Engineering, Residence, High School, Outside University, Other]
-    data: [42, 18, 25, 15, 10, 5]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
-
-  - type: bar
-    title: "Terms Attended a SYDE Social Event"
+    title: "Number of Terms Attended a SYDE Social Event"
     description: ""
     total: 110
-    labels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
-    data: [85, 78, 65, 55, 48, 40, 35, 30]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
+    labels: ["1", "2", "3", "4", "5", "6", "7", "8"]
+    data: [10, 12, 18, 22, 20, 15, 8, 5]
+    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6", "#ec4899", "#06b6d4"]
 
-  - type: bar
-    title: Cooking Ability
+  - type: line
+    title: Cooking Ability — Pre Uni vs After Uni
     description: ""
-    total: 115
-    labels: [Cant Cook, Basic Meals, Intermediate, Advanced, Chef]
-    data: [20, 35, 30, 20, 10]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+    xLabels: ["1", "2", "3", "4", "5"]
+    datasets:
+      - label: Pre Uni
+        data: [25, 35, 25, 10, 5]
+        color: "#ef4444"
+      - label: After Uni
+        data: [10, 20, 35, 25, 10]
+        color: "#2563eb"
 
-  - type: bar
-    title: Fitness Level
+  - type: line
+    title: Fitness Level — Pre Uni vs After Uni
     description: ""
-    total: 115
-    labels: [Sedentary, Lightly Active, Moderately Active, Very Active, Extremely Active]
-    data: [25, 30, 35, 18, 7]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
+    xLabels: ["1", "2", "3", "4", "5"]
+    datasets:
+      - label: Pre Uni
+        data: [15, 20, 30, 25, 10]
+        color: "#ef4444"
+      - label: After Uni
+        data: [25, 30, 25, 15, 5]
+        color: "#2563eb"
 
   - type: pie
     title: Balding
@@ -71,18 +77,27 @@ charts:
     data: [55, 60]
     colors: ["#10b981", "#ef4444"]
 
-  - type: bar
+  - type: wordcloud
     title: Intramurals Participated In
     description: ""
     total: 110
-    labels: [Basketball, Soccer, Volleyball, Badminton, Ultimate Frisbee, Dodgeball, Other]
-    data: [22, 28, 18, 15, 12, 8, 7]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#9ca3af"]
+    words:
+      - { text: "Soccer", weight: 28 }
+      - { text: "Basketball", weight: 22 }
+      - { text: "Volleyball", weight: 18 }
+      - { text: "Badminton", weight: 15 }
+      - { text: "Ultimate Frisbee", weight: 12 }
+      - { text: "Dodgeball", weight: 8 }
+      - { text: "Other", weight: 7 }
 
-  - type: bar
+  - type: wordcloud
     title: Clubs Participated In
     description: ""
     total: 110
-    labels: [Design Team, Hackathon Club, Sports Club, Social Club, Professional Club, Other]
-    data: [25, 20, 18, 22, 15, 10]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#9ca3af"]
+    words:
+      - { text: "Design Team", weight: 25 }
+      - { text: "Social Club", weight: 22 }
+      - { text: "Hackathon Club", weight: 20 }
+      - { text: "Sports Club", weight: 18 }
+      - { text: "Professional Club", weight: 15 }
+      - { text: "Other", weight: 10 }

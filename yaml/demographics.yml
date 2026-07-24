@@ -127,7 +127,7 @@ charts:
     data: [10, 95]
     colors: ["#2563eb", "#10b981"]
 
-  - type: bar
+  - type: pie
     title: Sexual Identity
     description: ""
     total: 115
@@ -135,7 +135,7 @@ charts:
     data: [85, 8, 3, 10, 3, 2, 3, 1]
     colors: ["#2563eb", "#ef4444", "#ec4899", "#8b5cf6", "#f59e0b", "#10b981", "#9ca3af", "#06b6d4"]
 
-  - type: bar
+  - type: pie
     title: Sexuality
     description: ""
     total: 115

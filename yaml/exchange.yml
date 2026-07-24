@@ -7,21 +7,30 @@ charts:
     data: [38, 80]
     colors: ["#10b981", "#ef4444"]
 
-  - type: bar
+  - type: wordcloud
     title: Reasons for Not Going on Exchange
     description: ""
     total: 78
-    labels: [Co-op Timing, Cost, Personal Reasons, Academic Delay, Didn't Want To, Other]
-    data: [22, 18, 14, 10, 8, 6]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899"]
+    words:
+      - { text: "Co-op Timing", weight: 22 }
+      - { text: "Cost", weight: 18 }
+      - { text: "Personal Reasons", weight: 14 }
+      - { text: "Academic Delay", weight: 10 }
+      - { text: "Didn't Want To", weight: 8 }
+      - { text: "Other", weight: 6 }
 
-  - type: bar
+  - type: wordcloud
     title: Reasons for Going on Exchange
     description: ""
     total: 38
-    labels: [Adventure, Academics, Family, Career, Language, Culture, Other]
-    data: [12, 8, 5, 4, 3, 4, 2]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4"]
+    words:
+      - { text: "Adventure", weight: 12 }
+      - { text: "Academics", weight: 8 }
+      - { text: "Family", weight: 5 }
+      - { text: "Culture", weight: 4 }
+      - { text: "Career", weight: 4 }
+      - { text: "Language", weight: 3 }
+      - { text: "Other", weight: 2 }
 
   - type: bar
     title: Places Went on Exchange
@@ -55,13 +64,17 @@ charts:
     data: [20, 10, 5]
     colors: ["#2563eb", "#10b981", "#9ca3af"]
 
-  - type: bar
+  - type: wordcloud
     title: Reasons for Different Uni
     description: ""
     total: 10
-    labels: [Location, Course Variety, Reputation, Cost, Social Scene, Other]
-    data: [3, 2, 2, 1, 1, 1]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899"]
+    words:
+      - { text: "Location", weight: 3 }
+      - { text: "Course Variety", weight: 2 }
+      - { text: "Reputation", weight: 2 }
+      - { text: "Cost", weight: 1 }
+      - { text: "Social Scene", weight: 1 }
+      - { text: "Other", weight: 1 }
 
   - type: pie
     title: Did Exchange Impact Co-op Search

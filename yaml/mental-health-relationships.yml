@@ -111,10 +111,12 @@ charts:
     data: [55, 25, 15, 12, 10, 35, 8, 20]
     colors: ["#10b981", "#8b5cf6", "#ef4444", "#f59e0b", "#ec4899", "#2563eb", "#06b6d4", "#9ca3af"]
 
-  - type: bar
+  - type: grouped-bar
     title: Substance Usage First Year vs 3rd/4th Year
     description: ""
     total: 110
-    labels: ["Drink (1st)", "Drink (3rd/4th)", "Vape (1st)", "Vape (3rd/4th)", "Weed (1st)", "Weed (3rd/4th)", "Cigs (1st)", "Cigs (3rd/4th)"]
-    data: [3.2, 2.8, 1.8, 2.2, 2.0, 2.8, 1.2, 1.1]
-    colors: ["#2563eb", "#60a5fa", "#10b981", "#34d399", "#f59e0b", "#fbbf24", "#ef4444", "#f87171"]
+    unit: ""
+    xLabels: [Drink, Vape, Weed, Cigs]
+    datasets:
+      - { label: 1st Year, data: [3.2, 1.8, 2.0, 1.2], color: "#60a5fa" }
+      - { label: 3rd/4th Year, data: [2.8, 2.2, 2.8, 1.1], color: "#2563eb" }
