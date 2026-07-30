@@ -32,6 +32,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     const data = yamlResults[i];
     sectionEl.dataset.charts = JSON.stringify(data.charts || []);
     sectionEl.dataset.images = JSON.stringify(data.images || []);
+    sectionEl.dataset.sectionKey = config.sections[i].file.replace(/\.(yml|yaml)$/, "");
+  }
+
+  function slugify(text) {
+    return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
 
   const renderChart = (chart, sectionEl) => {
@@ -50,35 +55,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     if (chart.type === "wordcloud") {
-      const canvas = document.createElement("canvas");
-      canvas.width = 600;
-      canvas.height = 350;
-      chartWrap.appendChild(canvas);
+      const img = document.createElement("img");
+      img.alt = chart.title;
+      img.style.maxWidth = "100%";
+      img.style.height = "auto";
+      img.style.display = "block";
+      img.style.margin = "0 auto";
+      chartWrap.appendChild(img);
       sectionEl.appendChild(chartWrap);
 
-      const maxWeight = Math.max(...chart.words.map((w) => w.weight));
-      const wordList = chart.words.map((w) => [w.text, w.weight]);
-      const wcColors = ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4"];
-
-      requestIdleCallback(
-        () => {
-          WordCloud(canvas, {
-            list: wordList,
-            gridSize: 14,
-            weightFactor: function (size) {
-              return (size / maxWeight) * 50 + 10;
-            },
-            fontFamily: "Inter, sans-serif",
-            color: function () {
-              return wcColors[Math.floor(Math.random() * wcColors.length)];
-            },
-            rotateRatio: 0.3,
-            backgroundColor: "transparent",
-            shuffle: true,
-          });
-        },
-        { timeout: 300 }
-      );
+      const sectionKey = sectionEl.dataset.sectionKey;
+      img.src = `images/wordclouds/${sectionKey}-${slugify(chart.title)}.png`;
       return;
     }
 
@@ -297,11 +284,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       } catch (e) {
         console.warn(`Could not render chart "${chart.title}"`, e);
       }
-      if (chart.type === "wordcloud") {
-        setTimeout(next, 80);
-      } else {
-        requestAnimationFrame(next);
-      }
+      requestAnimationFrame(next);
     };
     requestAnimationFrame(next);
   };

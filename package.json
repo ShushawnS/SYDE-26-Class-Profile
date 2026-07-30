@@ -1,0 +1,12 @@
+{
+  "name": "syde26-class-profile",
+  "private": true,
+  "scripts": {
+    "generate-wordclouds": "node scripts/generate-wordclouds.js"
+  },
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "d3-cloud": "^1.2.7",
+    "js-yaml": "^4.1.0"
+  }
+}
