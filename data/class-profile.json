@@ -1,0 +1,4300 @@
+{
+  "sections": [
+    {
+      "id": "about",
+      "title": "About",
+      "description": "Learn more about the SYDE 26 class.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Top Reasons for Choosing SYDE",
+          "description": "A look at what drew our class to Systems Design Engineering over other programs.",
+          "labels": [
+            "Flexibility",
+            "Design",
+            "Co-op",
+            "People",
+            "Waterloo"
+          ],
+          "data": [
+            45,
+            30,
+            25,
+            15,
+            10
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6"
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "demographics",
+      "title": "Demographics",
+      "description": "A look at the diverse backgrounds of our class.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Hometown",
+          "description": "Where our class calls home \u2014 from across Canada and around the world.",
+          "total": 118,
+          "labels": [
+            "Toronto",
+            "Vancouver",
+            "Mississauga",
+            "Brampton",
+            "Ottawa",
+            "Kitchener",
+            "Other Ontario",
+            "Other Canada",
+            "International"
+          ],
+          "data": [
+            25,
+            12,
+            10,
+            8,
+            7,
+            6,
+            15,
+            18,
+            17
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16",
+            "#f97316"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Birth Year",
+          "description": "",
+          "total": 120,
+          "labels": [
+            2002,
+            2003,
+            2004,
+            2005,
+            "Other"
+          ],
+          "data": [
+            15,
+            70,
+            25,
+            8,
+            2
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Family Status",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "Immigrants",
+            "Born in Canada",
+            "Other"
+          ],
+          "data": [
+            55,
+            50,
+            10
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Parents with STEM Background",
+          "description": "",
+          "total": 112,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            60,
+            52
+          ],
+          "colors": [
+            "#2563eb",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Highest Level of Education \u2014 Parents",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "High School",
+            "College",
+            "Bachelor's",
+            "Master's",
+            "PhD",
+            "Professional Degree"
+          ],
+          "data": [
+            12,
+            18,
+            35,
+            28,
+            10,
+            7
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Average Household Income",
+          "description": "",
+          "total": 95,
+          "labels": [
+            "<50k",
+            "50k-100k",
+            "100k-150k",
+            "150k-200k",
+            "200k-300k",
+            "300k+"
+          ],
+          "data": [
+            8,
+            15,
+            25,
+            22,
+            15,
+            10
+          ],
+          "colors": [
+            "#ef4444",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb",
+            "#8b5cf6",
+            "#ec4899"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Tuition Covered by Parents",
+          "description": "",
+          "total": 108,
+          "labels": [
+            "0%",
+            "1-25%",
+            "26-50%",
+            "51-75%",
+            "76-99%",
+            "100%"
+          ],
+          "data": [
+            20,
+            15,
+            18,
+            22,
+            13,
+            20
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb",
+            "#8b5cf6"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Living Expenses Covered by Parents",
+          "description": "",
+          "total": 105,
+          "labels": [
+            "0%",
+            "1-25%",
+            "26-50%",
+            "51-75%",
+            "76-99%",
+            "100%"
+          ],
+          "data": [
+            30,
+            18,
+            15,
+            17,
+            10,
+            15
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb",
+            "#8b5cf6"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Political Alignment",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "Far Left",
+            "Left",
+            "Centre-Left",
+            "Centre",
+            "Centre-Right",
+            "Right",
+            "Far Right",
+            "Prefer Not to Say"
+          ],
+          "data": [
+            10,
+            28,
+            20,
+            25,
+            12,
+            5,
+            2,
+            8
+          ],
+          "colors": [
+            "#dc2626",
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb",
+            "#1e40af",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Voted in a Political Election",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            70,
+            45
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Elections Voted In",
+          "description": "",
+          "total": 70,
+          "labels": [
+            "Federal Only",
+            "Provincial Only",
+            "Municipal Only",
+            "Federal + Provincial",
+            "All Three",
+            "Other"
+          ],
+          "data": [
+            15,
+            5,
+            3,
+            20,
+            18,
+            9
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Political Viewpoint Change During University",
+          "description": "",
+          "total": 100,
+          "labels": [
+            "Shifted Left",
+            "Shifted Right",
+            "No Change",
+            "Unsure"
+          ],
+          "data": [
+            25,
+            15,
+            50,
+            10
+          ],
+          "colors": [
+            "#ef4444",
+            "#2563eb",
+            "#10b981",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Ethnicities",
+          "description": "",
+          "total": 120,
+          "labels": [
+            "South Asian",
+            "East Asian",
+            "Southeast Asian",
+            "White",
+            "Middle Eastern",
+            "Black",
+            "Latino",
+            "Mixed",
+            "Other"
+          ],
+          "data": [
+            30,
+            22,
+            10,
+            25,
+            10,
+            8,
+            5,
+            5,
+            5
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16",
+            "#f97316"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Religion",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "Hindu",
+            "Muslim",
+            "Christian",
+            "Sikh",
+            "Buddhist",
+            "Jewish",
+            "Atheist/Agnostic",
+            "Spiritual",
+            "Other"
+          ],
+          "data": [
+            25,
+            18,
+            20,
+            10,
+            3,
+            2,
+            28,
+            5,
+            4
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16",
+            "#f97316"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Religiousness Changed During University",
+          "description": "",
+          "total": 100,
+          "labels": [
+            "More Religious",
+            "Less Religious",
+            "No Change"
+          ],
+          "data": [
+            15,
+            30,
+            55
+          ],
+          "colors": [
+            "#2563eb",
+            "#ef4444",
+            "#10b981"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Religion Changed During University",
+          "description": "",
+          "total": 105,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            10,
+            95
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Sexual Identity",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "Straight",
+            "Gay",
+            "Lesbian",
+            "Bisexual",
+            "Pansexual",
+            "Queer",
+            "Prefer Not to Say",
+            "Other"
+          ],
+          "data": [
+            85,
+            8,
+            3,
+            10,
+            3,
+            2,
+            3,
+            1
+          ],
+          "colors": [
+            "#2563eb",
+            "#ef4444",
+            "#ec4899",
+            "#8b5cf6",
+            "#f59e0b",
+            "#10b981",
+            "#9ca3af",
+            "#06b6d4"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Sexuality",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "Heterosexual",
+            "Homosexual",
+            "Bisexual",
+            "Pansexual",
+            "Asexual",
+            "Queer",
+            "Prefer Not to Say",
+            "Other"
+          ],
+          "data": [
+            82,
+            10,
+            10,
+            4,
+            2,
+            3,
+            3,
+            1
+          ],
+          "colors": [
+            "#2563eb",
+            "#ef4444",
+            "#8b5cf6",
+            "#f59e0b",
+            "#06b6d4",
+            "#10b981",
+            "#9ca3af",
+            "#ec4899"
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "pre-university",
+      "title": "Pre-University",
+      "description": "Where we came from before Waterloo.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Admission Average",
+          "description": "A snapshot of how our class performed in high school before entering Waterloo.",
+          "total": 115,
+          "labels": [
+            "80-84",
+            "85-89",
+            "90-94",
+            "95-100"
+          ],
+          "data": [
+            5,
+            20,
+            55,
+            35
+          ],
+          "colors": [
+            "#ef4444",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Extracurriculars in High School",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "Sports",
+            "Music/Arts",
+            "Volunteering",
+            "Clubs",
+            "Work",
+            "None"
+          ],
+          "data": [
+            35,
+            20,
+            25,
+            40,
+            30,
+            8
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Enrichment Programs",
+          "description": "",
+          "total": 100,
+          "labels": [
+            "None",
+            "Math Contests",
+            "Science Fairs",
+            "Coding Bootcamps",
+            "Summer Programs",
+            "Other"
+          ],
+          "data": [
+            40,
+            25,
+            12,
+            10,
+            8,
+            5
+          ],
+          "colors": [
+            "#9ca3af",
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Other Universities Applied To",
+          "description": "",
+          "total": 118,
+          "labels": [
+            "UofT",
+            "McMaster",
+            "Western",
+            "Queens",
+            "Ottawa",
+            "UBC",
+            "McGill",
+            "Other"
+          ],
+          "data": [
+            65,
+            40,
+            50,
+            35,
+            20,
+            25,
+            15,
+            30
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Industry Working in",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "Tech",
+            "Finance",
+            "Healthcare",
+            "Energy",
+            "Consulting",
+            "Government",
+            "Startup",
+            "Other"
+          ],
+          "data": [
+            45,
+            15,
+            12,
+            10,
+            8,
+            5,
+            8,
+            7
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Other Fields Applied To",
+          "description": "",
+          "total": 105,
+          "labels": [
+            "CS",
+            "MechEng",
+            "ElecEng",
+            "BME",
+            "Management",
+            "Science",
+            "Arts",
+            "Other"
+          ],
+          "data": [
+            40,
+            20,
+            15,
+            18,
+            12,
+            8,
+            5,
+            10
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16"
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "academics",
+      "title": "Academics",
+      "description": "How we survived the coursework.",
+      "charts": [
+        {
+          "type": "pie",
+          "title": "Original Cohort",
+          "description": "Out of the original class, here's how many made it through SYDE to graduation.",
+          "total": 120,
+          "labels": [
+            "Completed SYDE",
+            "Transferred Out",
+            "Switched Programs",
+            "Dropped Out"
+          ],
+          "data": [
+            100,
+            8,
+            7,
+            5
+          ],
+          "colors": [
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Most Interesting Course",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "SYDE 352",
+              "weight": 20
+            },
+            {
+              "text": "SYDE 334",
+              "weight": 18
+            },
+            {
+              "text": "SYDE 361",
+              "weight": 14
+            },
+            {
+              "text": "SYDE 262",
+              "weight": 15
+            },
+            {
+              "text": "SYDE 223",
+              "weight": 10
+            },
+            {
+              "text": "SYDE 162",
+              "weight": 12
+            },
+            {
+              "text": "SYDE 101",
+              "weight": 8
+            },
+            {
+              "text": "SYDE 462",
+              "weight": 5
+            },
+            {
+              "text": "SYDE 548",
+              "weight": 3
+            },
+            {
+              "text": "SYDE 112",
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Most Useful Course",
+          "description": "",
+          "total": 105,
+          "words": [
+            {
+              "text": "SYDE 352",
+              "weight": 20
+            },
+            {
+              "text": "SYDE 223",
+              "weight": 18
+            },
+            {
+              "text": "SYDE 334",
+              "weight": 15
+            },
+            {
+              "text": "SYDE 262",
+              "weight": 12
+            },
+            {
+              "text": "SYDE 361",
+              "weight": 10
+            },
+            {
+              "text": "SYDE 162",
+              "weight": 10
+            },
+            {
+              "text": "SYDE 112",
+              "weight": 8
+            },
+            {
+              "text": "SYDE 462",
+              "weight": 5
+            },
+            {
+              "text": "SYDE 548",
+              "weight": 2
+            },
+            {
+              "text": "SYDE 101",
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Most Difficult Course",
+          "description": "",
+          "total": 108,
+          "words": [
+            {
+              "text": "SYDE 334",
+              "weight": 25
+            },
+            {
+              "text": "SYDE 262",
+              "weight": 20
+            },
+            {
+              "text": "SYDE 223",
+              "weight": 15
+            },
+            {
+              "text": "SYDE 352",
+              "weight": 12
+            },
+            {
+              "text": "SYDE 361",
+              "weight": 10
+            },
+            {
+              "text": "SYDE 162",
+              "weight": 8
+            },
+            {
+              "text": "SYDE 462",
+              "weight": 7
+            },
+            {
+              "text": "SYDE 112",
+              "weight": 5
+            },
+            {
+              "text": "SYDE 101",
+              "weight": 3
+            },
+            {
+              "text": "SYDE 548",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Non-SYDE Courses Recommended",
+          "description": "",
+          "total": 100,
+          "words": [
+            {
+              "text": "CO 250",
+              "weight": 18
+            },
+            {
+              "text": "MATH 239",
+              "weight": 15
+            },
+            {
+              "text": "ECE 105",
+              "weight": 12
+            },
+            {
+              "text": "SPCOM 223",
+              "weight": 10
+            },
+            {
+              "text": "ECE 108",
+              "weight": 10
+            },
+            {
+              "text": "MATH 235",
+              "weight": 8
+            },
+            {
+              "text": "BUS 111W",
+              "weight": 8
+            },
+            {
+              "text": "STAT 206",
+              "weight": 7
+            },
+            {
+              "text": "ENVS 200",
+              "weight": 5
+            },
+            {
+              "text": "Other",
+              "weight": 7
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Favourite Professor",
+          "description": "",
+          "total": 115,
+          "words": [
+            {
+              "text": "Prof. A",
+              "weight": 25
+            },
+            {
+              "text": "Prof. B",
+              "weight": 20
+            },
+            {
+              "text": "Prof. C",
+              "weight": 18
+            },
+            {
+              "text": "Prof. D",
+              "weight": 15
+            },
+            {
+              "text": "Prof. E",
+              "weight": 12
+            },
+            {
+              "text": "Prof. F",
+              "weight": 10
+            },
+            {
+              "text": "Prof. G",
+              "weight": 8
+            },
+            {
+              "text": "Prof. H",
+              "weight": 7
+            }
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Options Completed",
+          "description": "",
+          "total": 105,
+          "labels": [
+            "Biomedical",
+            "Computing",
+            "Mechatronics",
+            "Management",
+            "None"
+          ],
+          "data": [
+            28,
+            32,
+            25,
+            12,
+            8
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Minor Completed",
+          "description": "",
+          "total": 100,
+          "labels": [
+            "CS",
+            "Business",
+            "Math",
+            "Physics",
+            "None",
+            "Other"
+          ],
+          "data": [
+            20,
+            15,
+            8,
+            5,
+            45,
+            7
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#9ca3af",
+            "#8b5cf6"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Design Course Enjoyability",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "data": [
+            5,
+            10,
+            25,
+            40,
+            30
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Design Course Usefulness",
+          "description": "",
+          "total": 108,
+          "labels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "data": [
+            8,
+            12,
+            22,
+            38,
+            28
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb"
+          ]
+        },
+        {
+          "type": "line",
+          "title": "Average Stress Level Over Semesters",
+          "description": "Average self-reported stress level (1 = lowest, 5 = highest) across all academic terms.",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "Average Stress",
+              "data": [
+                2.7,
+                2.9,
+                3.3,
+                3.2,
+                3.4,
+                3.3,
+                3.6,
+                2.7
+              ],
+              "color": "#ef4444"
+            }
+          ],
+          "fill": true
+        },
+        {
+          "type": "bar",
+          "title": "Hardest Academic Term",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "data": [
+            10,
+            12,
+            18,
+            15,
+            22,
+            16,
+            12,
+            5
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Would You Pick SYDE Again",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false,
+            "Maybe"
+          ],
+          "data": [
+            85,
+            10,
+            20
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Program If Not SYDE",
+          "description": "",
+          "total": 95,
+          "labels": [
+            "CS",
+            "MechEng",
+            "ElecEng",
+            "BME",
+            "Management",
+            "Science",
+            "Math",
+            "Other"
+          ],
+          "data": [
+            30,
+            18,
+            15,
+            12,
+            8,
+            5,
+            3,
+            4
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Failed a Course",
+          "description": "",
+          "total": 110,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            12,
+            98
+          ],
+          "colors": [
+            "#ef4444",
+            "#10b981"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Engaged in Cheating Methods",
+          "description": "",
+          "total": 100,
+          "labels": [
+            "Never",
+            "Once or Twice",
+            "Occasionally",
+            "Frequently",
+            "Prefer Not to Say"
+          ],
+          "data": [
+            55,
+            20,
+            12,
+            3,
+            10
+          ],
+          "colors": [
+            "#10b981",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "line",
+          "title": "Average cGPA Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "Average cGPA",
+              "data": [
+                3.5,
+                3.3,
+                3.1,
+                3.0,
+                3.1,
+                3.0,
+                3.1,
+                3.2
+              ],
+              "color": "#2563eb"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "title": "% of Lectures Attended Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "Average % Attended",
+              "data": [
+                88,
+                82,
+                75,
+                70,
+                68,
+                65,
+                62,
+                60
+              ],
+              "color": "#10b981"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "title": "% of Live Sessions Attended Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "Average % Live",
+              "data": [
+                80,
+                72,
+                60,
+                55,
+                50,
+                48,
+                45,
+                42
+              ],
+              "color": "#8b5cf6"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "title": "Average Rent Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "beginAtZero": false,
+          "datasets": [
+            {
+              "label": "Average Monthly Rent ($)",
+              "data": [
+                700,
+                720,
+                750,
+                780,
+                820,
+                850,
+                880,
+                900
+              ],
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "title": "% of Assignments Completed with AI Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "Average % with AI",
+              "data": [
+                12,
+                18,
+                28,
+                35,
+                42,
+                50,
+                58,
+                65
+              ],
+              "color": "#f59e0b"
+            }
+          ]
+        },
+        {
+          "type": "stacked-bar",
+          "title": "Favorite AI Tool Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "ChatGPT",
+              "data": [
+                5,
+                15,
+                30,
+                40,
+                45,
+                50,
+                52,
+                55
+              ],
+              "color": "#10b981"
+            },
+            {
+              "label": "GitHub Copilot",
+              "data": [
+                2,
+                5,
+                10,
+                15,
+                20,
+                22,
+                24,
+                25
+              ],
+              "color": "#2563eb"
+            },
+            {
+              "label": "Claude",
+              "data": [
+                0,
+                0,
+                2,
+                5,
+                8,
+                12,
+                14,
+                15
+              ],
+              "color": "#8b5cf6"
+            },
+            {
+              "label": "Gemini",
+              "data": [
+                0,
+                0,
+                1,
+                3,
+                5,
+                7,
+                8,
+                10
+              ],
+              "color": "#ef4444"
+            },
+            {
+              "label": "Perplexity",
+              "data": [
+                0,
+                0,
+                0,
+                2,
+                4,
+                5,
+                6,
+                7
+              ],
+              "color": "#f59e0b"
+            },
+            {
+              "label": "Other",
+              "data": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "color": "#9ca3af"
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "capstone",
+      "title": "Capstone",
+      "description": "Our fourth-year design project journey.",
+      "charts": [
+        {
+          "type": "pie",
+          "title": "SYDE or Multidisciplinary",
+          "description": "A breakdown of whether our fourth-year design projects were within SYDE or cross-disciplinary.",
+          "total": 110,
+          "labels": [
+            "SYDE",
+            "Multidisciplinary"
+          ],
+          "data": [
+            75,
+            35
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981"
+          ]
+        },
+        {
+          "type": "doughnut",
+          "title": "Problem Space Tackled",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "HealthTech",
+            "Sustainability",
+            "Education",
+            "Accessibility",
+            "Social Impact",
+            "Hardware",
+            "Software",
+            "Other"
+          ],
+          "data": [
+            22,
+            15,
+            12,
+            10,
+            8,
+            15,
+            13,
+            5
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Proud of Completed FYDP",
+          "description": "",
+          "total": 105,
+          "labels": [
+            true,
+            false,
+            "Neutral"
+          ],
+          "data": [
+            70,
+            15,
+            20
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Continue Working on FYDP",
+          "description": "",
+          "total": 105,
+          "labels": [
+            true,
+            false,
+            "Maybe"
+          ],
+          "data": [
+            25,
+            50,
+            30
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "FYDP Group Got Along",
+          "description": "",
+          "total": 108,
+          "labels": [
+            true,
+            false,
+            "Mixed"
+          ],
+          "data": [
+            60,
+            18,
+            30
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "FYDP Software Component Completed with AI",
+          "description": "",
+          "total": 100,
+          "labels": [
+            "None",
+            "Minor Parts",
+            "About Half",
+            "Most of It",
+            "All of It"
+          ],
+          "data": [
+            15,
+            30,
+            25,
+            20,
+            10
+          ],
+          "colors": [
+            "#10b981",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#ef4444"
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "exchange",
+      "title": "Exchange",
+      "description": "Our experiences studying abroad.",
+      "charts": [
+        {
+          "type": "pie",
+          "title": "Went on Exchange",
+          "description": "How many students in our class took the opportunity to study abroad during university.",
+          "total": 118,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            38,
+            80
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Reasons for Not Going on Exchange",
+          "description": "",
+          "total": 78,
+          "words": [
+            {
+              "text": "Co-op Timing",
+              "weight": 22
+            },
+            {
+              "text": "Cost",
+              "weight": 18
+            },
+            {
+              "text": "Personal Reasons",
+              "weight": 14
+            },
+            {
+              "text": "Academic Delay",
+              "weight": 10
+            },
+            {
+              "text": "Didn't Want To",
+              "weight": 8
+            },
+            {
+              "text": "Other",
+              "weight": 6
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Reasons for Going on Exchange",
+          "description": "",
+          "total": 38,
+          "words": [
+            {
+              "text": "Adventure",
+              "weight": 12
+            },
+            {
+              "text": "Academics",
+              "weight": 8
+            },
+            {
+              "text": "Family",
+              "weight": 5
+            },
+            {
+              "text": "Culture",
+              "weight": 4
+            },
+            {
+              "text": "Career",
+              "weight": 4
+            },
+            {
+              "text": "Language",
+              "weight": 3
+            },
+            {
+              "text": "Other",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Places Went on Exchange",
+          "description": "",
+          "total": 38,
+          "labels": [
+            "Europe",
+            "Asia",
+            "Australia",
+            "South America",
+            "North America",
+            "Other"
+          ],
+          "data": [
+            16,
+            8,
+            5,
+            4,
+            3,
+            2
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Exchange Term",
+          "description": "",
+          "total": 38,
+          "labels": [
+            "Fall",
+            "Winter"
+          ],
+          "data": [
+            20,
+            18
+          ],
+          "colors": [
+            "#2563eb",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Recommend Exchange for Future Students",
+          "description": "",
+          "total": 36,
+          "labels": [
+            true,
+            false,
+            "Maybe"
+          ],
+          "data": [
+            30,
+            2,
+            4
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Same or Different Uni in Hindsight",
+          "description": "",
+          "total": 35,
+          "labels": [
+            "Same",
+            "Different",
+            "No Preference"
+          ],
+          "data": [
+            20,
+            10,
+            5
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Reasons for Different Uni",
+          "description": "",
+          "total": 10,
+          "words": [
+            {
+              "text": "Location",
+              "weight": 3
+            },
+            {
+              "text": "Course Variety",
+              "weight": 2
+            },
+            {
+              "text": "Reputation",
+              "weight": 2
+            },
+            {
+              "text": "Cost",
+              "weight": 1
+            },
+            {
+              "text": "Social Scene",
+              "weight": 1
+            },
+            {
+              "text": "Other",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Did Exchange Impact Co-op Search",
+          "description": "",
+          "total": 36,
+          "labels": [
+            true,
+            false,
+            "Slightly"
+          ],
+          "data": [
+            10,
+            18,
+            8
+          ],
+          "colors": [
+            "#ef4444",
+            "#10b981",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Ability to Finish Courses for Graduation",
+          "description": "",
+          "total": 36,
+          "labels": [
+            true,
+            false,
+            "Delayed Grad"
+          ],
+          "data": [
+            25,
+            3,
+            8
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Total Spend on Exchange",
+          "description": "",
+          "total": 34,
+          "labels": [
+            "<$5k",
+            "$5k-10k",
+            "$10k-15k",
+            "$15k-20k",
+            "$20k+"
+          ],
+          "data": [
+            4,
+            10,
+            12,
+            5,
+            3
+          ],
+          "colors": [
+            "#10b981",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#ef4444"
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "co-op",
+      "title": "Co-op",
+      "description": "Work experiences throughout the program.",
+      "charts": [
+        {
+          "type": "stacked-bar",
+          "title": "How You Found a Job Over the Semesters",
+          "description": "The methods students used to land their co-op positions throughout university.",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "External",
+              "data": [
+                20,
+                25,
+                30,
+                35,
+                40,
+                42,
+                45,
+                48
+              ],
+              "color": "#2563eb"
+            },
+            {
+              "label": "WaterlooWorks",
+              "data": [
+                50,
+                45,
+                40,
+                35,
+                30,
+                28,
+                25,
+                22
+              ],
+              "color": "#10b981"
+            },
+            {
+              "label": "Referral/Networking",
+              "data": [
+                15,
+                20,
+                22,
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "color": "#f59e0b"
+            },
+            {
+              "label": "Other",
+              "data": [
+                15,
+                10,
+                8,
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "color": "#9ca3af"
+            }
+          ]
+        },
+        {
+          "type": "stacked-bar",
+          "title": "Location of Work Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "Toronto",
+              "data": [
+                15,
+                20,
+                25,
+                30,
+                35,
+                38,
+                40,
+                42
+              ],
+              "color": "#2563eb"
+            },
+            {
+              "label": "Kitchener-Waterloo",
+              "data": [
+                55,
+                50,
+                40,
+                35,
+                28,
+                22,
+                18,
+                15
+              ],
+              "color": "#10b981"
+            },
+            {
+              "label": "Vancouver",
+              "data": [
+                5,
+                8,
+                10,
+                12,
+                14,
+                15,
+                15,
+                15
+              ],
+              "color": "#f59e0b"
+            },
+            {
+              "label": "Montreal",
+              "data": [
+                5,
+                5,
+                8,
+                8,
+                10,
+                10,
+                10,
+                10
+              ],
+              "color": "#ef4444"
+            },
+            {
+              "label": "Remote",
+              "data": [
+                10,
+                10,
+                10,
+                10,
+                8,
+                10,
+                12,
+                13
+              ],
+              "color": "#8b5cf6"
+            },
+            {
+              "label": "Other",
+              "data": [
+                10,
+                7,
+                7,
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "color": "#9ca3af"
+            }
+          ]
+        },
+        {
+          "type": "stacked-bar",
+          "title": "Industry Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "Tech",
+              "data": [
+                40,
+                42,
+                45,
+                48,
+                50,
+                52,
+                55,
+                55
+              ],
+              "color": "#2563eb"
+            },
+            {
+              "label": "Finance",
+              "data": [
+                10,
+                12,
+                15,
+                18,
+                20,
+                22,
+                20,
+                20
+              ],
+              "color": "#10b981"
+            },
+            {
+              "label": "Consulting",
+              "data": [
+                5,
+                8,
+                10,
+                12,
+                14,
+                15,
+                15,
+                15
+              ],
+              "color": "#f59e0b"
+            },
+            {
+              "label": "Healthcare",
+              "data": [
+                5,
+                5,
+                8,
+                8,
+                8,
+                8,
+                8,
+                8
+              ],
+              "color": "#ef4444"
+            },
+            {
+              "label": "Manufacturing",
+              "data": [
+                20,
+                18,
+                15,
+                12,
+                10,
+                8,
+                7,
+                7
+              ],
+              "color": "#8b5cf6"
+            },
+            {
+              "label": "Government",
+              "data": [
+                15,
+                10,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "color": "#ec4899"
+            },
+            {
+              "label": "Other",
+              "data": [
+                5,
+                5,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "color": "#9ca3af"
+            }
+          ]
+        },
+        {
+          "type": "stacked-bar",
+          "title": "Company Size Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "Startup",
+              "data": [
+                15,
+                18,
+                22,
+                25,
+                20,
+                18,
+                15,
+                12
+              ],
+              "color": "#f59e0b"
+            },
+            {
+              "label": "Mid-size",
+              "data": [
+                25,
+                28,
+                30,
+                32,
+                30,
+                28,
+                25,
+                22
+              ],
+              "color": "#2563eb"
+            },
+            {
+              "label": "Large",
+              "data": [
+                50,
+                48,
+                42,
+                38,
+                45,
+                48,
+                55,
+                60
+              ],
+              "color": "#10b981"
+            },
+            {
+              "label": "Other",
+              "data": [
+                10,
+                6,
+                6,
+                5,
+                5,
+                6,
+                5,
+                6
+              ],
+              "color": "#9ca3af"
+            }
+          ]
+        },
+        {
+          "type": "stacked-bar",
+          "title": "Performance Rating Over the Semesters",
+          "description": "",
+          "xLabels": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A",
+            "3B",
+            "4A",
+            "4B"
+          ],
+          "datasets": [
+            {
+              "label": "Exceeds Expectations",
+              "data": [
+                30,
+                32,
+                35,
+                38,
+                40,
+                42,
+                45,
+                48
+              ],
+              "color": "#10b981"
+            },
+            {
+              "label": "Meets Expectations",
+              "data": [
+                60,
+                58,
+                55,
+                52,
+                50,
+                48,
+                45,
+                42
+              ],
+              "color": "#2563eb"
+            },
+            {
+              "label": "Needs Improvement",
+              "data": [
+                10,
+                10,
+                10,
+                10,
+                10,
+                10,
+                10,
+                10
+              ],
+              "color": "#ef4444"
+            }
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Reneged a Co-op",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            12,
+            103
+          ],
+          "colors": [
+            "#ef4444",
+            "#10b981"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Company Rescinded an Offer",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            5,
+            110
+          ],
+          "colors": [
+            "#ef4444",
+            "#10b981"
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Co-op #1 Places",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Google",
+              "weight": 8
+            },
+            {
+              "text": "RIM",
+              "weight": 7
+            },
+            {
+              "text": "Manulife",
+              "weight": 6
+            },
+            {
+              "text": "TD Bank",
+              "weight": 5
+            },
+            {
+              "text": "Blackberry",
+              "weight": 5
+            },
+            {
+              "text": "Shopify",
+              "weight": 4
+            },
+            {
+              "text": "Desire2Learn",
+              "weight": 4
+            },
+            {
+              "text": "OpenText",
+              "weight": 4
+            },
+            {
+              "text": "Other",
+              "weight": 77
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Co-op #2 Places",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Google",
+              "weight": 10
+            },
+            {
+              "text": "Amazon",
+              "weight": 8
+            },
+            {
+              "text": "Shopify",
+              "weight": 7
+            },
+            {
+              "text": "Microsoft",
+              "weight": 6
+            },
+            {
+              "text": "RIM",
+              "weight": 5
+            },
+            {
+              "text": "Manulife",
+              "weight": 5
+            },
+            {
+              "text": "OpenText",
+              "weight": 4
+            },
+            {
+              "text": "Other",
+              "weight": 65
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Co-op #3 Places",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Google",
+              "weight": 12
+            },
+            {
+              "text": "Amazon",
+              "weight": 9
+            },
+            {
+              "text": "Microsoft",
+              "weight": 8
+            },
+            {
+              "text": "Shopify",
+              "weight": 7
+            },
+            {
+              "text": "Apple",
+              "weight": 5
+            },
+            {
+              "text": "Meta",
+              "weight": 4
+            },
+            {
+              "text": "Other",
+              "weight": 65
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Co-op #4 Places",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Google",
+              "weight": 14
+            },
+            {
+              "text": "Amazon",
+              "weight": 10
+            },
+            {
+              "text": "Microsoft",
+              "weight": 9
+            },
+            {
+              "text": "Apple",
+              "weight": 7
+            },
+            {
+              "text": "Meta",
+              "weight": 6
+            },
+            {
+              "text": "Shopify",
+              "weight": 5
+            },
+            {
+              "text": "Other",
+              "weight": 59
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Co-op #5 Places",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Google",
+              "weight": 15
+            },
+            {
+              "text": "Amazon",
+              "weight": 11
+            },
+            {
+              "text": "Microsoft",
+              "weight": 10
+            },
+            {
+              "text": "Apple",
+              "weight": 8
+            },
+            {
+              "text": "Meta",
+              "weight": 7
+            },
+            {
+              "text": "Uber",
+              "weight": 4
+            },
+            {
+              "text": "Other",
+              "weight": 55
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Co-op #6 Places",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Google",
+              "weight": 16
+            },
+            {
+              "text": "Amazon",
+              "weight": 12
+            },
+            {
+              "text": "Microsoft",
+              "weight": 10
+            },
+            {
+              "text": "Apple",
+              "weight": 9
+            },
+            {
+              "text": "Meta",
+              "weight": 8
+            },
+            {
+              "text": "Uber",
+              "weight": 5
+            },
+            {
+              "text": "Other",
+              "weight": 50
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Coolest Company Perk",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Flexible Hours",
+              "weight": 28
+            },
+            {
+              "text": "Free Food",
+              "weight": 25
+            },
+            {
+              "text": "Remote Work",
+              "weight": 22
+            },
+            {
+              "text": "Health Benefits",
+              "weight": 15
+            },
+            {
+              "text": "Stock Options",
+              "weight": 10
+            },
+            {
+              "text": "Education Stipend",
+              "weight": 5
+            },
+            {
+              "text": "Other",
+              "weight": 5
+            }
+          ]
+        },
+        {
+          "type": "boxplot",
+          "title": "Co-op Earnings Over the Semesters",
+          "description": "",
+          "labels": [
+            "Co-op #1",
+            "Co-op #2",
+            "Co-op #3",
+            "Co-op #4",
+            "Co-op #5",
+            "Co-op #6"
+          ],
+          "data": [
+            [
+              18,
+              22,
+              26,
+              30,
+              38
+            ],
+            [
+              20,
+              25,
+              28,
+              32,
+              40
+            ],
+            [
+              22,
+              28,
+              32,
+              36,
+              45
+            ],
+            [
+              25,
+              30,
+              35,
+              38,
+              48
+            ],
+            [
+              28,
+              32,
+              36,
+              40,
+              50
+            ],
+            [
+              30,
+              35,
+              38,
+              42,
+              55
+            ]
+          ],
+          "colors": {
+            "fill": [
+              "#2563eb",
+              "#10b981",
+              "#f59e0b",
+              "#ef4444",
+              "#8b5cf6",
+              "#ec4899"
+            ],
+            "stroke": [
+              "#1e40af",
+              "#047857",
+              "#b45309",
+              "#b91c1c",
+              "#6d28d9",
+              "#be185d"
+            ]
+          }
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "social-lifestyle",
+      "title": "Social & Lifestyle",
+      "description": "Life outside the classroom.",
+      "charts": [
+        {
+          "type": "wordcloud",
+          "title": "Favourite Restaurant",
+          "description": "The food spots that kept our class going through late-night study sessions.",
+          "total": 115,
+          "words": [
+            {
+              "text": "Pizza",
+              "weight": 22
+            },
+            {
+              "text": "Sushi",
+              "weight": 20
+            },
+            {
+              "text": "Thai",
+              "weight": 18
+            },
+            {
+              "text": "Chinese",
+              "weight": 15
+            },
+            {
+              "text": "Burgers",
+              "weight": 14
+            },
+            {
+              "text": "Indian",
+              "weight": 12
+            },
+            {
+              "text": "Mexican",
+              "weight": 8
+            },
+            {
+              "text": "Other",
+              "weight": 6
+            }
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "How Many of Your 5 Closest Uni Friends Are in SYDE",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "data": [
+            5,
+            12,
+            20,
+            30,
+            28,
+            20
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb",
+            "#8b5cf6"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Number of Terms Attended a SYDE Social Event",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "data": [
+            10,
+            12,
+            18,
+            22,
+            20,
+            15,
+            8,
+            5
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4"
+          ]
+        },
+        {
+          "type": "line",
+          "title": "Cooking Ability \u2014 Pre Uni vs After Uni",
+          "description": "",
+          "xLabels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "datasets": [
+            {
+              "label": "Pre Uni",
+              "data": [
+                25,
+                35,
+                25,
+                10,
+                5
+              ],
+              "color": "#ef4444"
+            },
+            {
+              "label": "After Uni",
+              "data": [
+                10,
+                20,
+                35,
+                25,
+                10
+              ],
+              "color": "#2563eb"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "title": "Fitness Level \u2014 Pre Uni vs After Uni",
+          "description": "",
+          "xLabels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "datasets": [
+            {
+              "label": "Pre Uni",
+              "data": [
+                15,
+                20,
+                30,
+                25,
+                10
+              ],
+              "color": "#ef4444"
+            },
+            {
+              "label": "After Uni",
+              "data": [
+                25,
+                30,
+                25,
+                15,
+                5
+              ],
+              "color": "#2563eb"
+            }
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Balding",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false,
+            "Maybe"
+          ],
+          "data": [
+            15,
+            65,
+            35
+          ],
+          "colors": [
+            "#ef4444",
+            "#10b981",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Done Intramurals?",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            48,
+            67
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Joined Clubs?",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            55,
+            60
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Intramurals Participated In",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Soccer",
+              "weight": 28
+            },
+            {
+              "text": "Basketball",
+              "weight": 22
+            },
+            {
+              "text": "Volleyball",
+              "weight": 18
+            },
+            {
+              "text": "Badminton",
+              "weight": 15
+            },
+            {
+              "text": "Ultimate Frisbee",
+              "weight": 12
+            },
+            {
+              "text": "Dodgeball",
+              "weight": 8
+            },
+            {
+              "text": "Other",
+              "weight": 7
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Clubs Participated In",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Design Team",
+              "weight": 25
+            },
+            {
+              "text": "Social Club",
+              "weight": 22
+            },
+            {
+              "text": "Hackathon Club",
+              "weight": 20
+            },
+            {
+              "text": "Sports Club",
+              "weight": 18
+            },
+            {
+              "text": "Professional Club",
+              "weight": 15
+            },
+            {
+              "text": "Other",
+              "weight": 10
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "mental-health-relationships",
+      "title": "Mental Health & Relationships",
+      "description": "How we kept it together.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Mental Health Concerns",
+          "description": "The most common mental health challenges students faced during university.",
+          "total": 115,
+          "labels": [
+            "Anxiety",
+            "Depression",
+            "Stress",
+            "Burnout",
+            "Sleep Issues",
+            "Loneliness",
+            "None"
+          ],
+          "data": [
+            35,
+            22,
+            40,
+            38,
+            30,
+            18,
+            15
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Causes for Mental Health",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "Academics",
+            "Co-op",
+            "Relationships",
+            "Family",
+            "Financial",
+            "Social Pressure",
+            "Health",
+            "Other"
+          ],
+          "data": [
+            42,
+            30,
+            22,
+            15,
+            18,
+            20,
+            10,
+            8
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "University Career in Relationships",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4+"
+          ],
+          "data": [
+            25,
+            35,
+            28,
+            15,
+            12
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Where You Met Your Significant Other",
+          "description": "",
+          "total": 80,
+          "labels": [
+            "SYDE",
+            "Other Engineering",
+            "Residence",
+            "Dating App",
+            "High School",
+            "Work",
+            "Other"
+          ],
+          "data": [
+            12,
+            10,
+            18,
+            15,
+            10,
+            8,
+            7
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Committed Sydecest?",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            18,
+            97
+          ],
+          "colors": [
+            "#ef4444",
+            "#10b981"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Relationships During Uni",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "Four+",
+            "Prefer Not to Say"
+          ],
+          "data": [
+            35,
+            30,
+            22,
+            12,
+            8,
+            8
+          ],
+          "colors": [
+            "#9ca3af",
+            "#10b981",
+            "#2563eb",
+            "#f59e0b",
+            "#ef4444",
+            "#d1d5db"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Situationships During Uni",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "None",
+            "One",
+            "Two",
+            "Three",
+            "Four+",
+            "Prefer Not to Say"
+          ],
+          "data": [
+            40,
+            28,
+            20,
+            12,
+            8,
+            7
+          ],
+          "colors": [
+            "#9ca3af",
+            "#10b981",
+            "#2563eb",
+            "#f59e0b",
+            "#ef4444",
+            "#d1d5db"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Currently in a Relationship",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            45,
+            70
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "First Kiss?",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "Before Uni",
+            "During Uni",
+            "Has Not Happened"
+          ],
+          "data": [
+            65,
+            35,
+            15
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Unique Kissing Partners",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "0",
+            "1",
+            "2-3",
+            "4-5",
+            "6-10",
+            "10+"
+          ],
+          "data": [
+            15,
+            25,
+            30,
+            20,
+            12,
+            8
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb",
+            "#8b5cf6"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "First Sex?",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "Before Uni",
+            "During Uni",
+            "Has Not Happened"
+          ],
+          "data": [
+            50,
+            38,
+            27
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Unique Sexual Partners",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "0",
+            "1",
+            "2-3",
+            "4-5",
+            "6-10",
+            "10+"
+          ],
+          "data": [
+            20,
+            28,
+            25,
+            18,
+            12,
+            7
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb",
+            "#8b5cf6"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "More Active on Co-op or School Term",
+          "description": "",
+          "total": 105,
+          "labels": [
+            "Co-op",
+            "School Term",
+            "About the Same",
+            "Neither"
+          ],
+          "data": [
+            35,
+            28,
+            25,
+            17
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Drugs People Have Tried",
+          "description": "",
+          "total": 115,
+          "labels": [
+            "Weed",
+            "Shrooms",
+            "Cocaine",
+            "LSD",
+            "MDMA",
+            "Nicotine",
+            "Other",
+            "None"
+          ],
+          "data": [
+            55,
+            25,
+            15,
+            12,
+            10,
+            35,
+            8,
+            20
+          ],
+          "colors": [
+            "#10b981",
+            "#8b5cf6",
+            "#ef4444",
+            "#f59e0b",
+            "#ec4899",
+            "#2563eb",
+            "#06b6d4",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "grouped-bar",
+          "title": "Substance Usage First Year vs 3rd/4th Year",
+          "description": "",
+          "total": 110,
+          "unit": "",
+          "xLabels": [
+            "Drink",
+            "Vape",
+            "Weed",
+            "Cigs"
+          ],
+          "datasets": [
+            {
+              "label": "1st Year",
+              "data": [
+                3.2,
+                1.8,
+                2.0,
+                1.2
+              ],
+              "color": "#60a5fa"
+            },
+            {
+              "label": "3rd/4th Year",
+              "data": [
+                2.8,
+                2.2,
+                2.8,
+                1.1
+              ],
+              "color": "#2563eb"
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "future",
+      "title": "Future",
+      "description": "What's next for SYDE 26.",
+      "charts": [
+        {
+          "type": "bar",
+          "title": "Plans After 1st Year",
+          "description": "Where our class envisioned themselves heading after first year \u2014 and how things actually turned out.",
+          "total": 115,
+          "labels": [
+            "Industry",
+            "Grad School",
+            "Startup",
+            "Travel",
+            "Undecided"
+          ],
+          "data": [
+            45,
+            20,
+            15,
+            10,
+            25
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#8b5cf6",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Full-Time Job Secured?",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false,
+            "Still Searching"
+          ],
+          "data": [
+            75,
+            10,
+            30
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Returning to Previous Employer",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            35,
+            80
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "When Did You Get Your Offer",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "Before 4A",
+            "During 4A",
+            "After Grad",
+            "Still Waiting"
+          ],
+          "data": [
+            30,
+            40,
+            15,
+            25
+          ],
+          "colors": [
+            "#10b981",
+            "#2563eb",
+            "#f59e0b",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Where Will You Be Working?",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "Toronto",
+            "Kitchener-Waterloo",
+            "Vancouver",
+            "United States",
+            "Remote",
+            "Other"
+          ],
+          "data": [
+            40,
+            20,
+            15,
+            18,
+            10,
+            7
+          ],
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Leaving Canada? Plan to Come Back?",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "Staying in Canada",
+            "Leaving (Will Return)",
+            "Leaving (Not Returning)"
+          ],
+          "data": [
+            55,
+            35,
+            20
+          ],
+          "colors": [
+            "#10b981",
+            "#f59e0b",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "If Leaving, When Will You Return",
+          "description": "",
+          "total": 55,
+          "labels": [
+            "1-2 Years",
+            "3-5 Years",
+            "5-10 Years",
+            "Never",
+            "Not Sure"
+          ],
+          "data": [
+            10,
+            15,
+            12,
+            8,
+            10
+          ],
+          "colors": [
+            "#10b981",
+            "#2563eb",
+            "#f59e0b",
+            "#ef4444",
+            "#9ca3af"
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Company You'll Be Working At",
+          "description": "",
+          "total": 110,
+          "words": [
+            {
+              "text": "Shopify",
+              "weight": 15
+            },
+            {
+              "text": "Startups",
+              "weight": 28
+            },
+            {
+              "text": "Government",
+              "weight": 15
+            },
+            {
+              "text": "Google",
+              "weight": 12
+            },
+            {
+              "text": "Amazon",
+              "weight": 10
+            },
+            {
+              "text": "Apple",
+              "weight": 8
+            },
+            {
+              "text": "Microsoft",
+              "weight": 7
+            },
+            {
+              "text": "Other",
+              "weight": 15
+            }
+          ]
+        },
+        {
+          "type": "boxplot",
+          "title": "Base Salary",
+          "description": "",
+          "labels": [
+            "Base Salary"
+          ],
+          "data": [
+            [
+              50,
+              75,
+              95,
+              110,
+              160
+            ]
+          ],
+          "colors": {
+            "fill": [
+              "#2563eb"
+            ],
+            "stroke": [
+              "#1e40af"
+            ]
+          }
+        },
+        {
+          "type": "boxplot",
+          "title": "Total Compensation",
+          "description": "",
+          "labels": [
+            "Total Compensation"
+          ],
+          "data": [
+            [
+              55,
+              85,
+              110,
+              135,
+              200
+            ]
+          ],
+          "colors": {
+            "fill": [
+              "#10b981"
+            ],
+            "stroke": [
+              "#047857"
+            ]
+          }
+        },
+        {
+          "type": "bar",
+          "title": "Bonus",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "None",
+            "<$5k",
+            "$5-10k",
+            "$10-20k",
+            "$20k+"
+          ],
+          "data": [
+            30,
+            25,
+            22,
+            20,
+            13
+          ],
+          "colors": [
+            "#9ca3af",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Plan to Pursue Further Education",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false,
+            "Maybe"
+          ],
+          "data": [
+            25,
+            55,
+            35
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Get Married By",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "25",
+            "26-28",
+            "29-31",
+            "32+",
+            "Never"
+          ],
+          "data": [
+            12,
+            28,
+            30,
+            20,
+            20
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Age to Have Children",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "25-27",
+            "28-30",
+            "31-33",
+            "34+",
+            "Never"
+          ],
+          "data": [
+            10,
+            30,
+            35,
+            20,
+            15
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb"
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Grad Trip Locations",
+          "description": "",
+          "total": 105,
+          "words": [
+            {
+              "text": "Japan",
+              "weight": 22
+            },
+            {
+              "text": "Europe",
+              "weight": 20
+            },
+            {
+              "text": "Thailand",
+              "weight": 18
+            },
+            {
+              "text": "Mexico",
+              "weight": 12
+            },
+            {
+              "text": "Bali",
+              "weight": 10
+            },
+            {
+              "text": "Not Going",
+              "weight": 15
+            },
+            {
+              "text": "Other",
+              "weight": 8
+            }
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Money Spent on Grad Trip",
+          "description": "",
+          "total": 100,
+          "labels": [
+            "<$1k",
+            "$1-2k",
+            "$2-3k",
+            "$3-5k",
+            "$5k+"
+          ],
+          "data": [
+            12,
+            25,
+            28,
+            22,
+            13
+          ],
+          "colors": [
+            "#ef4444",
+            "#f97316",
+            "#f59e0b",
+            "#10b981",
+            "#2563eb"
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "description": "How AI shaped our university experience.",
+      "charts": [
+        {
+          "type": "pie",
+          "title": "Is AI Taking Your Job?",
+          "description": "How our class feels about the impact of AI on their future careers.",
+          "total": 115,
+          "labels": [
+            true,
+            false,
+            "Maybe"
+          ],
+          "data": [
+            20,
+            45,
+            50
+          ],
+          "colors": [
+            "#ef4444",
+            "#10b981",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Pay for AI Subscription?",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false
+          ],
+          "data": [
+            55,
+            60
+          ],
+          "colors": [
+            "#2563eb",
+            "#ef4444"
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Should AI Be Regulated?",
+          "description": "",
+          "total": 115,
+          "labels": [
+            true,
+            false,
+            "Unsure"
+          ],
+          "data": [
+            65,
+            20,
+            30
+          ],
+          "colors": [
+            "#10b981",
+            "#ef4444",
+            "#f59e0b"
+          ]
+        },
+        {
+          "type": "bar",
+          "title": "Favourite Tech CEO",
+          "description": "",
+          "total": 110,
+          "labels": [
+            "Elon Musk",
+            "Sam Altman",
+            "Tim Cook",
+            "Satya Nadella",
+            "Jensen Huang",
+            "Mark Zuckerberg",
+            "Other"
+          ],
+          "data": [
+            22,
+            25,
+            10,
+            15,
+            18,
+            8,
+            12
+          ],
+          "colors": [
+            "#ef4444",
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#8b5cf6",
+            "#ec4899",
+            "#9ca3af"
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "miscellaneous",
+      "title": "Miscellaneous",
+      "description": "Everything else that didn't fit anywhere else.",
+      "charts": [
+        {
+          "type": "wordcloud",
+          "title": "Advice for First Years",
+          "description": "Words of wisdom from graduating students to those just starting their SYDE journey.",
+          "total": 115,
+          "words": [
+            {
+              "text": "Socialize More",
+              "weight": 28
+            },
+            {
+              "text": "Join Clubs",
+              "weight": 22
+            },
+            {
+              "text": "Network",
+              "weight": 18
+            },
+            {
+              "text": "Study Harder",
+              "weight": 15
+            },
+            {
+              "text": "Mental Health First",
+              "weight": 12
+            },
+            {
+              "text": "Don't Procrastinate",
+              "weight": 10
+            },
+            {
+              "text": "Enjoy It",
+              "weight": 10
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Favourite Memory of Undergrad",
+          "description": "",
+          "total": 115,
+          "words": [
+            {
+              "text": "First Year",
+              "weight": 20
+            },
+            {
+              "text": "Exchange",
+              "weight": 18
+            },
+            {
+              "text": "Rez Life",
+              "weight": 16
+            },
+            {
+              "text": "Capstone",
+              "weight": 15
+            },
+            {
+              "text": "Design Team",
+              "weight": 14
+            },
+            {
+              "text": "Co-op",
+              "weight": 12
+            },
+            {
+              "text": "Grad Trip",
+              "weight": 10
+            },
+            {
+              "text": "Other",
+              "weight": 10
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "What Was Great About SYDE",
+          "description": "",
+          "total": 115,
+          "words": [
+            {
+              "text": "People",
+              "weight": 35
+            },
+            {
+              "text": "Cohort Culture",
+              "weight": 28
+            },
+            {
+              "text": "Design Focus",
+              "weight": 20
+            },
+            {
+              "text": "Flexibility",
+              "weight": 15
+            },
+            {
+              "text": "Well-rounded",
+              "weight": 10
+            },
+            {
+              "text": "Community",
+              "weight": 9
+            },
+            {
+              "text": "Professors",
+              "weight": 8
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "What Excites You About New Grad",
+          "description": "",
+          "total": 115,
+          "words": [
+            {
+              "text": "Career",
+              "weight": 30
+            },
+            {
+              "text": "Independence",
+              "weight": 22
+            },
+            {
+              "text": "Money",
+              "weight": 18
+            },
+            {
+              "text": "Travelling",
+              "weight": 15
+            },
+            {
+              "text": "Settling Down",
+              "weight": 12
+            },
+            {
+              "text": "Learning",
+              "weight": 10
+            },
+            {
+              "text": "Other",
+              "weight": 8
+            }
+          ]
+        },
+        {
+          "type": "wordcloud",
+          "title": "Dream Job",
+          "description": "",
+          "total": 115,
+          "words": [
+            {
+              "text": "Big Tech",
+              "weight": 25
+            },
+            {
+              "text": "FAANG",
+              "weight": 20
+            },
+            {
+              "text": "Startup Founder",
+              "weight": 18
+            },
+            {
+              "text": "Consultant",
+              "weight": 12
+            },
+            {
+              "text": "Research",
+              "weight": 10
+            },
+            {
+              "text": "Freelance",
+              "weight": 10
+            },
+            {
+              "text": "Government",
+              "weight": 8
+            },
+            {
+              "text": "Other",
+              "weight": 12
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "gallery",
+      "title": "Gallery",
+      "description": "Photos and memories from our journey.",
+      "charts": [],
+      "images": [
+        {
+          "src": "https://placehold.co/600x400",
+          "alt": "SYDE 26 group photo"
+        },
+        {
+          "src": "https://placehold.co/600x400",
+          "alt": "Capstone presentation day"
+        },
+        {
+          "src": "https://placehold.co/600x400",
+          "end": "FRC team photo"
+        }
+      ]
+    }
+  ]
+}

@@ -2,11 +2,8 @@
   "name": "syde26-class-profile",
   "private": true,
   "scripts": {
-    "generate-wordclouds": "node scripts/generate-wordclouds.js"
-  },
-  "dependencies": {
-    "canvas": "^2.11.2",
-    "d3-cloud": "^1.2.7",
-    "js-yaml": "^4.1.0"
+    "build": "python3 scripts/generate-wordclouds.py && python3 scripts/build-data.py",
+    "generate-wordclouds": "python3 scripts/generate-wordclouds.py",
+    "build-data": "python3 scripts/build-data.py"
   }
 }

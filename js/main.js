@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const res = await fetch("yaml/main.yml");
-  const config = jsyaml.load(await res.text());
+  const res = await fetch("data/class-profile.json");
+  const config = JSON.parse(await res.text());
 
   const navLinks = document.getElementById("nav-links");
   const sectionsContainer = document.getElementById("sections");
+
+  function slugify(text) {
+    return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  }
 
   for (const section of config.sections) {
     const li = document.createElement("li");
@@ -16,27 +20,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       <h2>${section.title}</h2>
       <p>${section.description}</p>
     `;
+    sectionEl.dataset.charts = JSON.stringify(section.charts || []);
+    sectionEl.dataset.images = JSON.stringify(section.images || []);
+    sectionEl.dataset.sectionKey = slugify(section.title);
     sectionsContainer.appendChild(sectionEl);
-  }
-
-  const yamlResults = await Promise.all(
-    config.sections.map((s) =>
-      fetch(`yaml/${s.file}`)
-        .then((r) => r.text())
-        .then((t) => jsyaml.load(t))
-    )
-  );
-
-  for (let i = 0; i < config.sections.length; i++) {
-    const sectionEl = document.getElementById(config.sections[i].id);
-    const data = yamlResults[i];
-    sectionEl.dataset.charts = JSON.stringify(data.charts || []);
-    sectionEl.dataset.images = JSON.stringify(data.images || []);
-    sectionEl.dataset.sectionKey = config.sections[i].file.replace(/\.(yml|yaml)$/, "");
-  }
-
-  function slugify(text) {
-    return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
 
   const renderChart = (chart, sectionEl) => {
