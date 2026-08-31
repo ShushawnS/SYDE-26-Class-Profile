@@ -26,6 +26,30 @@ document.addEventListener("DOMContentLoaded", async () => {
     sectionsContainer.appendChild(sectionEl);
   }
 
+  const rotatedAxis = (labels) => {
+    const hasLong = (labels || []).some((l) => l.length > 18);
+    return hasLong ? { rotate: -45, style: { fontSize: "12px" } } : {};
+  };
+
+  const axisTitleConfig = (text) =>
+    text && text.length ? { title: { text } } : {};
+
+  const sumData = (chart) => chart.data.reduce((a, b) => a + b, 0);
+
+  const niceMax = (values) => {
+    const top = Math.max(...values);
+    return Math.ceil((top * 1.1) / 10) * 10;
+  };
+
+  const respondentCount = (chart) =>
+    chart.total ??
+    (["bar", "pie", "doughnut"].includes(chart.type) &&
+    Array.isArray(chart.data) &&
+    chart.data.length &&
+    typeof chart.data[0] === "number"
+      ? sumData(chart)
+      : null);
+
   const renderChart = (chart, sectionEl) => {
     const chartWrap = document.createElement("div");
     chartWrap.style.maxWidth = "600px";
@@ -34,6 +58,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     const title = document.createElement("h3");
     title.textContent = chart.title;
     chartWrap.appendChild(title);
+
+    const count = respondentCount(chart);
+    if (count) {
+      const countEl = document.createElement("p");
+      countEl.className = "chart-count";
+      countEl.textContent = `Number of respondents: ${count}`;
+      title.after(countEl);
+    }
 
     if (chart.description) {
       const desc = document.createElement("p");
@@ -71,37 +103,56 @@ document.addEventListener("DOMContentLoaded", async () => {
         series: series,
         xaxis: { categories: chart.xLabels },
         colors: chart.datasets.map((ds) => ds.color),
-        stroke: { curve: "smooth", width: 2 },
+        stroke: { curve: "smooth", width: 3 },
         fill: chart.fill
           ? { type: "gradient", opacity: 0.3 }
           : { type: "solid", opacity: 1 },
         markers: { size: 4, hover: { size: 6 } },
         dataLabels: { enabled: false },
         legend: { show: series.length > 1, position: "top" },
-        yaxis: {
-          show: chart.beginAtZero === false ? true : { min: 0 },
-        },
+        yaxis: chart.beginAtZero === false ? {} : { min: 0 },
         tooltip: { shared: true, intersect: false },
       }).render();
       return;
     }
 
-    if (chart.type === "stacked-bar") {
+    if (
+      chart.type === "stacked-bar" ||
+      chart.type === "percent-stacked-bar"
+    ) {
       const series = chart.datasets.map((ds) => ({
         name: ds.label,
         data: ds.data,
       }));
 
+      const cols = series[0]?.data.length || 0;
+      const colTotal = Array.from({ length: cols }, (_, i) =>
+        series.reduce((a, s) => a + (s.data[i] || 0), 0)
+      );
+      const pctSeries =
+        chart.type === "percent-stacked-bar"
+          ? series.map((s) => ({
+              ...s,
+              data: s.data.map((v, i) =>
+                colTotal[i] ? +((v / colTotal[i]) * 100).toFixed(1) : 0
+              ),
+            }))
+          : series;
+
       new ApexCharts(chartDiv, {
         chart: { type: "bar", height: 350, stacked: true },
-        series: series,
-        xaxis: { categories: chart.xLabels },
+        series: pctSeries,
+        xaxis: {
+          categories: chart.xLabels,
+          ...axisTitleConfig(chart.xAxisTitle),
+        },
         colors: chart.datasets.map((ds) => ds.color),
         dataLabels: { enabled: false },
         legend: { show: true, position: "top" },
         yaxis: {
           min: 0,
           max: 100,
+          ...axisTitleConfig(chart.yAxisTitle || "% of responses"),
           labels: { formatter: (v) => v + "%" },
         },
         tooltip: {
@@ -121,17 +172,22 @@ document.addEventListener("DOMContentLoaded", async () => {
         name: ds.label,
         data: ds.data,
       }));
+      const top = Math.max(...series.flatMap((s) => s.data), 0);
 
       new ApexCharts(chartDiv, {
         chart: { type: "bar", height: 350 },
         series: series,
-        xaxis: { categories: chart.xLabels },
+        xaxis: {
+          categories: chart.xLabels,
+          ...axisTitleConfig(chart.xAxisTitle),
+        },
         colors: chart.datasets.map((ds) => ds.color),
         dataLabels: { enabled: false },
         legend: { show: true, position: "top" },
         yaxis: {
           min: 0,
-          max: chart.max || undefined,
+          max: chart.max || (top > 10 ? niceMax([top]) : undefined),
+          ...axisTitleConfig(chart.yAxisTitle || "Number of respondents"),
           labels: {
             formatter: (v) => (chart.unit ? v + chart.unit : v),
           },
@@ -151,6 +207,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     if (chart.type === "boxplot") {
+      const fmt = (v) =>
+        chart.boxFormat ? chart.boxFormat.replace("%s", v) : v;
+      const unit = chart.unit ? ` ${chart.unit}` : "";
       const series = [
         {
           name: chart.title,
@@ -170,22 +229,50 @@ document.addEventListener("DOMContentLoaded", async () => {
         dataLabels: { enabled: false },
         legend: { show: false },
         yaxis: {
-          labels: { formatter: (v) => "$" + v + "/hr" },
+          min: chart.yMin || undefined,
+          ...axisTitleConfig(chart.yAxisTitle),
+          labels: { formatter: (v) => fmt(v) },
         },
         tooltip: {
           y: {
             formatter: (val) => {
               if (Array.isArray(val)) {
-                return `Min: $${val[0]}/hr | Q1: $${val[1]}/hr | Median: $${val[2]}/hr | Q3: $${val[3]}/hr | Max: $${val[4]}/hr`;
+                return `Min: ${fmt(val[0])}${unit} | Q1: ${fmt(val[1])}${unit} | Median: ${fmt(val[2])}${unit} | Q3: ${fmt(val[3])}${unit} | Max: ${fmt(val[4])}${unit}`;
               }
-              return val;
+              return fmt(val) + unit;
             },
           },
         },
-        title: {
-          text: chart.title,
-          align: "center",
-          style: { fontSize: "14px" },
+      }).render();
+      return;
+    }
+
+    if (chart.type === "metrics-bar") {
+      const top = Math.max(...chart.data, 0);
+      new ApexCharts(chartDiv, {
+        chart: { type: "bar", height: 350 },
+        series: [{ name: chart.title, data: chart.data }],
+        xaxis: {
+          categories: chart.labels,
+          ...axisTitleConfig(chart.xAxisTitle || "Response"),
+          labels: rotatedAxis(chart.labels),
+        },
+        colors: chart.colors,
+        dataLabels: { enabled: false },
+        legend: { show: false },
+        yaxis: {
+          min: 0,
+          max: chart.max || (top > 10 ? niceMax(chart.data) : undefined),
+          ...axisTitleConfig(chart.yAxisTitle || "Number of respondents"),
+        },
+        tooltip: {
+          y: {
+            formatter: (val, { dataPointIndex }) =>
+              `${chart.labels[dataPointIndex]}: ${val}`,
+          },
+        },
+        plotOptions: {
+          bar: { columnWidth: "60%" },
         },
       }).render();
       return;
@@ -200,23 +287,21 @@ document.addEventListener("DOMContentLoaded", async () => {
         series: chart.data,
         labels: chart.labels,
         colors: chart.colors,
-        dataLabels: {
-          enabled: true,
-          formatter: (val) => val.toFixed(1) + "%",
-          style: { fontWeight: "bold", fontSize: "14px" },
-          dropShadow: { enabled: false },
+        dataLabels: { enabled: false },
+        plotOptions: {
+          pie: {
+            dataLabels: { offset: -8 },
+          },
         },
         legend: { position: "right" },
         tooltip: {
           y: {
-            formatter: (val, { seriesIndex }) =>
-              `${chart.labels[seriesIndex]}: ${val.toFixed(1)}% (${chart.data[seriesIndex]})`,
+            formatter: (val, { seriesIndex }) => {
+              const denom = chart.total ?? sumData(chart);
+              const pct = denom ? +((val / denom) * 100).toFixed(1) : 0;
+              return `${val} (${pct}%)`;
+            },
           },
-        },
-        title: {
-          text: `${chart.title} (n=${chart.total || chart.data.reduce((a, b) => a + b, 0)})`,
-          align: "center",
-          style: { fontSize: "14px" },
         },
       }).render();
       return;
@@ -228,34 +313,29 @@ document.addEventListener("DOMContentLoaded", async () => {
     new ApexCharts(chartDiv, {
       chart: { type: "bar", height: 350 },
       series: [{ name: chart.title, data: percentages }],
-      xaxis: { categories: chart.labels },
-      colors: chart.colors,
-      dataLabels: {
-        enabled: true,
-        formatter: (val) => val + "%",
-        style: { fontWeight: "bold", fontSize: "12px" },
-        offsetY: -5,
+      xaxis: {
+        categories: chart.labels,
+        ...axisTitleConfig(chart.xAxisTitle || "Response"),
+        labels: rotatedAxis(chart.labels),
       },
+      colors: chart.colors,
+      dataLabels: { enabled: false },
       legend: { show: false },
       yaxis: {
         min: 0,
+        ...axisTitleConfig(chart.yAxisTitle || "Percentage of respondents"),
         labels: { formatter: (v) => v + "%" },
       },
       tooltip: {
         y: {
           formatter: (val, { dataPointIndex }) =>
-            `${chart.labels[dataPointIndex]}: ${val}% (${chart.data[dataPointIndex]})`,
+            `${chart.labels[dataPointIndex]}: ${val}%`,
         },
-      },
-      title: {
-        text: `${chart.title} (n=${chart.total || total})`,
-        align: "center",
-        style: { fontSize: "14px" },
       },
       plotOptions: {
         bar: {
           columnWidth: "60%",
-          dataLabels: { position: "top" },
+          dataLabels: { position: "center" },
         },
       },
     }).render();
