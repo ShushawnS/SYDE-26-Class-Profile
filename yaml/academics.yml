@@ -1,238 +1,820 @@
 charts:
-  - type: pie
-    title: Original Cohort
-    description: Out of the original class, here's how many made it through SYDE to graduation.
-    total: 120
-    labels: [Completed SYDE, Transferred Out, Switched Programs, Dropped Out]
-    data: [100, 8, 7, 5]
-    colors: ["#10b981", "#f59e0b", "#ef4444", "#9ca3af"]
-
-  - type: wordcloud
-    title: Most Interesting Course
-    description: ""
-    total: 110
-    words:
-      - { text: "SYDE 352", weight: 20 }
-      - { text: "SYDE 334", weight: 18 }
-      - { text: "SYDE 361", weight: 14 }
-      - { text: "SYDE 262", weight: 15 }
-      - { text: "SYDE 223", weight: 10 }
-      - { text: "SYDE 162", weight: 12 }
-      - { text: "SYDE 101", weight: 8 }
-      - { text: "SYDE 462", weight: 5 }
-      - { text: "SYDE 548", weight: 3 }
-      - { text: "SYDE 112", weight: 5 }
-
-  - type: wordcloud
-    title: Most Useful Course
-    description: ""
-    total: 105
-    words:
-      - { text: "SYDE 352", weight: 20 }
-      - { text: "SYDE 223", weight: 18 }
-      - { text: "SYDE 334", weight: 15 }
-      - { text: "SYDE 262", weight: 12 }
-      - { text: "SYDE 361", weight: 10 }
-      - { text: "SYDE 162", weight: 10 }
-      - { text: "SYDE 112", weight: 8 }
-      - { text: "SYDE 462", weight: 5 }
-      - { text: "SYDE 548", weight: 2 }
-      - { text: "SYDE 101", weight: 5 }
-
-  - type: wordcloud
-    title: Most Difficult Course
-    description: ""
-    total: 108
-    words:
-      - { text: "SYDE 334", weight: 25 }
-      - { text: "SYDE 262", weight: 20 }
-      - { text: "SYDE 223", weight: 15 }
-      - { text: "SYDE 352", weight: 12 }
-      - { text: "SYDE 361", weight: 10 }
-      - { text: "SYDE 162", weight: 8 }
-      - { text: "SYDE 462", weight: 7 }
-      - { text: "SYDE 112", weight: 5 }
-      - { text: "SYDE 101", weight: 3 }
-      - { text: "SYDE 548", weight: 3 }
-
-  - type: wordcloud
-    title: Non-SYDE Courses Recommended
-    description: ""
-    total: 100
-    words:
-      - { text: "CO 250", weight: 18 }
-      - { text: "MATH 239", weight: 15 }
-      - { text: "ECE 105", weight: 12 }
-      - { text: "SPCOM 223", weight: 10 }
-      - { text: "ECE 108", weight: 10 }
-      - { text: "MATH 235", weight: 8 }
-      - { text: "BUS 111W", weight: 8 }
-      - { text: "STAT 206", weight: 7 }
-      - { text: "ENVS 200", weight: 5 }
-      - { text: "Other", weight: 7 }
-
-  - type: wordcloud
-    title: Favourite Professor
-    description: ""
-    total: 115
-    words:
-      - { text: "Prof. A", weight: 25 }
-      - { text: "Prof. B", weight: 20 }
-      - { text: "Prof. C", weight: 18 }
-      - { text: "Prof. D", weight: 15 }
-      - { text: "Prof. E", weight: 12 }
-      - { text: "Prof. F", weight: 10 }
-      - { text: "Prof. G", weight: 8 }
-      - { text: "Prof. H", weight: 7 }
-
-  - type: bar
-    title: Options Completed
-    description: ""
-    total: 105
-    labels: [Biomedical, Computing, Mechatronics, Management, None]
-    data: [28, 32, 25, 12, 8]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#9ca3af"]
-
-  - type: bar
-    title: Minor Completed
-    description: ""
-    total: 100
-    labels: [CS, Business, Math, Physics, None, Other]
-    data: [20, 15, 8, 5, 45, 7]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#9ca3af", "#8b5cf6"]
-
-  - type: bar
-    title: Design Course Enjoyability
-    description: ""
-    total: 110
-    labels: ["1", "2", "3", "4", "5"]
-    data: [5, 10, 25, 40, 30]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
-
-  - type: bar
-    title: Design Course Usefulness
-    description: ""
-    total: 108
-    labels: ["1", "2", "3", "4", "5"]
-    data: [8, 12, 22, 38, 28]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb"]
-
-  - type: line
-    title: Average Stress Level Over Semesters
-    description: Average self-reported stress level (1 = lowest, 5 = highest) across all academic terms.
-    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
-    datasets:
-      - label: Average Stress
-        data: [2.7, 2.9, 3.3, 3.2, 3.4, 3.3, 3.6, 2.7]
-        color: "#ef4444"
-    fill: true
-
-  - type: bar
-    title: Hardest Academic Term
-    description: ""
-    total: 110
-    labels: [1A, 1B, 2A, 2B, 3A, 3B, 4A, 4B]
-    data: [10, 12, 18, 15, 22, 16, 12, 5]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
-
-  - type: pie
-    title: Would You Pick SYDE Again
-    description: ""
-    total: 115
-    labels: [Yes, No, Maybe]
-    data: [85, 10, 20]
-    colors: ["#10b981", "#ef4444", "#f59e0b"]
-
-  - type: bar
-    title: Program If Not SYDE
-    description: ""
-    total: 95
-    labels: [CS, MechEng, ElecEng, BME, Management, Science, Math, Other]
-    data: [30, 18, 15, 12, 8, 5, 3, 4]
-    colors: ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#ec4899", "#06b6d4", "#84cc16"]
-
-  - type: pie
-    title: Failed a Course
-    description: ""
-    total: 110
-    labels: [Yes, No]
-    data: [12, 98]
-    colors: ["#ef4444", "#10b981"]
-
-  - type: bar
-    title: Engaged in Cheating Methods
-    description: ""
-    total: 100
-    labels: ["Never", "Once or Twice", "Occasionally", "Frequently", "Prefer Not to Say"]
-    data: [55, 20, 12, 3, 10]
-    colors: ["#10b981", "#10b981", "#f59e0b", "#ef4444", "#9ca3af"]
-
-  - type: line
-    title: Average cGPA Over the Semesters
-    description: ""
-    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
-    datasets:
-      - label: Average cGPA
-        data: [3.5, 3.3, 3.1, 3.0, 3.1, 3.0, 3.1, 3.2]
-        color: "#2563eb"
-
-  - type: line
-    title: "% of Lectures Attended Over the Semesters"
-    description: ""
-    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
-    datasets:
-      - label: Average % Attended
-        data: [88, 82, 75, 70, 68, 65, 62, 60]
-        color: "#10b981"
-
-  - type: line
-    title: "% of Live Sessions Attended Over the Semesters"
-    description: ""
-    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
-    datasets:
-      - label: Average % Live
-        data: [80, 72, 60, 55, 50, 48, 45, 42]
-        color: "#8b5cf6"
-
-  - type: line
-    title: Average Rent Over the Semesters
-    description: ""
-    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
-    beginAtZero: false
-    datasets:
-      - label: Average Monthly Rent ($)
-        data: [700, 720, 750, 780, 820, 850, 880, 900]
-        color: "#ef4444"
-
-  - type: line
-    title: "% of Assignments Completed with AI Over the Semesters"
-    description: ""
-    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
-    datasets:
-      - label: Average % with AI
-        data: [12, 18, 28, 35, 42, 50, 58, 65]
-        color: "#f59e0b"
-
-  - type: stacked-bar
-    title: Favorite AI Tool Over the Semesters
-    description: ""
-    xLabels: ["1A", "1B", "2A", "2B", "3A", "3B", "4A", "4B"]
-    datasets:
-      - label: ChatGPT
-        data: [5, 15, 30, 40, 45, 50, 52, 55]
-        color: "#10b981"
-      - label: GitHub Copilot
-        data: [2, 5, 10, 15, 20, 22, 24, 25]
-        color: "#2563eb"
-      - label: Claude
-        data: [0, 0, 2, 5, 8, 12, 14, 15]
-        color: "#8b5cf6"
-      - label: Gemini
-        data: [0, 0, 1, 3, 5, 7, 8, 10]
-        color: "#ef4444"
-      - label: Perplexity
-        data: [0, 0, 0, 2, 4, 5, 6, 7]
-        color: "#f59e0b"
-      - label: Other
-        data: [1, 2, 3, 4, 5, 6, 7, 8]
-        color: "#9ca3af"
+- type: wordcloud
+  title: Most Interesting Course
+  description: ''
+  total: 62
+  words:
+  - text: SYDE 101L
+    weight: 5
+  - text: SYDE 263
+    weight: 5
+  - text: SYDE 252
+    weight: 4
+  - text: SYDE 543
+    weight: 4
+  - text: SYDE 223
+    weight: 4
+  - text: SYDE 584
+    weight: 4
+  - text: SYDE 352L
+    weight: 3
+  - text: SYDE 361
+    weight: 3
+  - text: SYDE 381
+    weight: 3
+  - text: SYDE 542
+    weight: 2
+  - text: SYDE 383
+    weight: 2
+  - text: SYDE 552
+    weight: 2
+  - text: SYDE 192
+    weight: 2
+  - text: SYDE 362
+    weight: 2
+  - text: SYDE 292L
+    weight: 2
+  - text: SYDE 283
+    weight: 2
+  - text: SYDE 535
+    weight: 2
+  - text: SYDE 162
+    weight: 2
+  - text: SYDE 577
+    weight: 1
+  - text: SYDE 352
+    weight: 1
+  - text: SYDE 532
+    weight: 1
+  - text: SYDE 161
+    weight: 1
+  - text: SYDE 113
+    weight: 1
+  - text: SYDE 351
+    weight: 1
+  - text: SYDE 262
+    weight: 1
+  - text: SYDE 211
+    weight: 1
+  - text: SYDE 286
+    weight: 1
+- type: wordcloud
+  title: Most Useful Course
+  description: ''
+  total: 59
+  words:
+  - text: SYDE 223
+    weight: 23
+  - text: SYDE 461/462
+    weight: 4
+  - text: SYDE 361
+    weight: 4
+  - text: SYDE 292L
+    weight: 3
+  - text: SYDE 352
+    weight: 2
+  - text: SYDE 577
+    weight: 2
+  - text: SYDE 101L
+    weight: 2
+  - text: SYDE 162
+    weight: 2
+  - text: SYDE 548
+    weight: 1
+  - text: SYSE 192
+    weight: 1
+  - text: NONE
+    weight: 1
+  - text: SYDE 111
+    weight: 1
+  - text: SYDE 212
+    weight: 1
+  - text: SYDE 575
+    weight: 1
+  - text: SYDE 283
+    weight: 1
+  - text: SYDE 381
+    weight: 1
+  - text: SYDE 252
+    weight: 1
+  - text: SYDE 411
+    weight: 1
+  - text: MSE 343
+    weight: 1
+  - text: SYDE 285
+    weight: 1
+  - text: SYDE 263
+    weight: 1
+  - text: SYDE 294
+    weight: 1
+  - text: SYDE 542
+    weight: 1
+  - text: SYDE 211
+    weight: 1
+  - text: SYDE 286
+    weight: 1
+- type: wordcloud
+  title: Most Difficult Course
+  description: ''
+  total: 61
+  words:
+  - text: SYDE 252
+    weight: 12
+  - text: SYDE 381
+    weight: 6
+  - text: SYDE 311
+    weight: 6
+  - text: SYDE 283
+    weight: 6
+  - text: SYDE 383
+    weight: 6
+  - text: SYDE 111
+    weight: 4
+  - text: SYDE 112
+    weight: 4
+  - text: SYDE 211
+    weight: 4
+  - text: SYDE 114
+    weight: 3
+  - text: SYDE 113
+    weight: 3
+  - text: SYDE 182
+    weight: 2
+  - text: SYDE 286
+    weight: 1
+  - text: SYDE 361
+    weight: 1
+  - text: SYDE 212
+    weight: 1
+  - text: SYDE 552
+    weight: 1
+  - text: SYDE 577
+    weight: 1
+- type: wordcloud
+  title: Non-SYDE Courses Recommended
+  description: ''
+  total: 56
+  words:
+  - text: ECE 459
+    weight: 5
+  - text: SCI 206
+    weight: 3
+  - text: CIVE 440
+    weight: 3
+  - text: CLAS 104
+    weight: 3
+  - text: ECE 452
+    weight: 2
+  - text: PSYCH 101
+    weight: 2
+  - text: MSE 343
+    weight: 2
+  - text: MUSIC 140
+    weight: 2
+  - text: ME 599
+    weight: 2
+  - text: ECE 358
+    weight: 2
+  - text: GENE 404
+    weight: 1
+  - text: SCI 208
+    weight: 1
+  - text: JAPAN 101R
+    weight: 1
+  - text: RS 235
+    weight: 1
+  - text: STV 208
+    weight: 1
+  - text: SPAN 101
+    weight: 1
+  - text: PHIL 121
+    weight: 1
+  - text: BME 550
+    weight: 1
+  - text: PHIL 125
+    weight: 1
+  - text: CIVE 341
+    weight: 1
+  - text: PSCI 252
+    weight: 1
+  - text: ME 436
+    weight: 1
+  - text: BIOL239
+    weight: 1
+  - text: ME 536
+    weight: 1
+  - text: ECE 252
+    weight: 1
+  - text: SYDE 223
+    weight: 1
+  - text: BME 540/550
+    weight: 1
+  - text: BET 320
+    weight: 1
+  - text: ECE 493T
+    weight: 1
+  - text: BET 100
+    weight: 1
+  - text: MTE 325
+    weight: 1
+  - text: PHIL 285J
+    weight: 1
+  - text: BET 580
+    weight: 1
+  - text: GRK 101
+    weight: 1
+  - text: MUSIC 246
+    weight: 1
+  - text: SI 121R
+    weight: 1
+  - text: PSCI359
+    weight: 1
+  - text: BET 460
+    weight: 1
+  - text: BET 350
+    weight: 1
+  - text: SDS 131R
+    weight: 1
+- type: wordcloud
+  title: Favourite Professor
+  description: ''
+  total: 62
+  words:
+  - text: Reem Roufail
+    weight: 13
+  - text: Shi Cao
+    weight: 12
+  - text: Roydon Fraser
+    weight: 9
+  - text: Jintao Deng
+    weight: 7
+  - text: Charbel Azzi
+    weight: 5
+  - text: John Zelek
+    weight: 3
+  - text: Siby Samuel
+    weight: 2
+  - text: Peter Balka
+    weight: 1
+  - text: Jessie Ma
+    weight: 1
+  - text: Matt Borland
+    weight: 1
+  - text: Stefan Idziak
+    weight: 1
+  - text: John McPhee
+    weight: 1
+  - text: Nasser Lashgarian Azad
+    weight: 1
+  - text: James Tung
+    weight: 1
+  - text: David Rose
+    weight: 1
+  - text: Bruno Tremblay
+    weight: 1
+  - text: Chrystopher Nehaniv
+    weight: 1
+  - text: Ali Mahmood
+    weight: 1
+- type: bar
+  title: Options Completed
+  xAxisTitle: Option
+  description: ''
+  total: 66
+  labels:
+  - None
+  - Computing
+  - Management Science
+  - Intelligent and Automated Systems
+  - Physical and Mechatronic Systems
+  - Human Factors and Interfaces
+  - Mechatronics
+  data:
+  - 35
+  - 24
+  - 3
+  - 1
+  - 1
+  - 1
+  - 1
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#9ca3af'
+  - '#2563eb'
+  - '#10b981'
+- type: bar
+  title: Minor Completed
+  xAxisTitle: Minor
+  description: ''
+  total: 66
+  labels:
+  - None
+  - Philosophy
+  - Politics and Business
+  - Fine Arts Studio
+  data:
+  - 63
+  - 1
+  - 1
+  - 1
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+- type: grouped-bar
+  title: Design Course Enjoyability vs Usefulness
+  description: How the design courses landed — enjoyment vs how useful they felt (1
+    = lowest, 5 = highest).
+  xAxisTitle: Rating (1 = lowest, 5 = highest)
+  xLabels:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  datasets:
+  - label: Enjoyability
+    data:
+    - 4
+    - 12
+    - 27
+    - 17
+    - 5
+    color: '#f59e0b'
+  - label: Usefulness
+    data:
+    - 4
+    - 20
+    - 19
+    - 19
+    - 3
+    color: '#2563eb'
+- type: metrics-bar
+  title: Average Stress Level Over Semesters
+  xAxisTitle: Academic term (1 = lowest, 5 = highest)
+  description: Average self-reported stress level (1 = lowest, 5 = highest) across
+    all academic terms.
+  max: 5
+  labels:
+  - 1A
+  - 1B
+  - 2A
+  - 2B
+  - 3A
+  - 3B
+  - 4A
+  - 4B
+  data:
+  - 3.37
+  - 2.15
+  - 3.11
+  - 4.06
+  - 3.71
+  - 2.16
+  - 2.34
+  - 2.31
+  colors:
+  - '#ef4444'
+  total: 65
+- type: bar
+  title: Hardest Academic Term
+  description: ''
+  xAxisTitle: Term
+  total: 66
+  labels:
+  - 1A
+  - 1B
+  - 2A
+  - 2B
+  - 3A
+  - 3B
+  - 4A
+  - 4B
+  data:
+  - 7
+  - 2
+  - 7
+  - 22
+  - 25
+  - 0
+  - 1
+  - 2
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+  - '#ec4899'
+  - '#06b6d4'
+  - '#84cc16'
+- type: pie
+  title: Would You Pick SYDE Again
+  description: ''
+  total: 64
+  labels:
+  - 'Yes'
+  - 'No'
+  data:
+  - 57
+  - 7
+  colors:
+  - '#10b981'
+  - '#ef4444'
+- type: wordcloud
+  title: Program If Not SYDE
+  description: ''
+  total: 47
+  words:
+  - text: Mechatronics
+    weight: 6
+  - text: Track One Engineering
+    weight: 6
+  - text: Computer Engineering
+    weight: 5
+  - text: Computer Science
+    weight: 5
+  - text: Management Engineering
+    weight: 2
+  - text: Mechanical Engineering
+    weight: 2
+  - text: Engineering Science
+    weight: 2
+  - text: Software Engineering
+    weight: 2
+  - text: Not sure
+    weight: 2
+  - text: Informatics
+    weight: 1
+  - text: Global Business & Digital Arts
+    weight: 1
+  - text: Engineering Physics
+    weight: 1
+  - text: Cognitve Science
+    weight: 1
+  - text: Interaction Design
+    weight: 1
+  - text: Math
+    weight: 1
+  - text: University of Toronto
+    weight: 1
+  - text: McMaster Software Engineering
+    weight: 1
+  - text: Knowledge Integration
+    weight: 1
+  - text: Electrical Engineering
+    weight: 1
+  - text: Mechatronics Engineering
+    weight: 1
+  - text: but not STEM related
+    weight: 1
+  - text: Ivey + Eng
+    weight: 1
+  - text: Business
+    weight: 1
+  - text: Engineering + Master of Managment
+    weight: 1
+  - text: Planning
+    weight: 1
+  - text: idk
+    weight: 1
+  - text: Gap Year
+    weight: 1
+  - text: Data Science
+    weight: 1
+  - text: UofT Track One Engineering
+    weight: 1
+- type: pie
+  title: Failed a Course
+  description: ''
+  total: 66
+  labels:
+  - 'Yes'
+  - 'No'
+  data:
+  - 15
+  - 51
+  colors:
+  - '#ef4444'
+  - '#10b981'
+- type: bar
+  title: Engaged in Cheating Methods
+  xAxisTitle: Method
+  description: ''
+  total: 57
+  labels:
+  - Unauthorized collaboration on individual assignments
+  - Using AI tools in restricted contexts (if not permitted)
+  - Copying assignments/homework
+  - Fabricating Data
+  - Plagiarism (using someone else's work without credit)
+  - Using unauthorized materials/notes during an exam
+  - Having someone else complete work for you
+  - I decline to answer this question lol
+  - None of the above
+  - Gaslighting professors
+  data:
+  - 51
+  - 45
+  - 44
+  - 37
+  - 21
+  - 14
+  - 12
+  - 1
+  - 1
+  - 1
+  colors:
+  - '#10b981'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#9ca3af'
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+- type: boxplot
+  title: Average cGPA Over the Semesters
+  description: ''
+  boxFormat: '%s%'
+  yMin: 40
+  labels:
+  - 1A
+  - 1B
+  - 2A
+  - 2B
+  - 3A
+  - 3B
+  - 4A
+  - 4B
+  data:
+  - - 72.0
+    - 83.8
+    - 86.6
+    - 89.2
+    - 95.0
+  - - 63.0
+    - 82.8
+    - 86.2
+    - 89.0
+    - 94.9
+  - - 75.0
+    - 84.4
+    - 87.3
+    - 90.0
+    - 95.5
+  - - 72.0
+    - 78.0
+    - 82.7
+    - 86.1
+    - 95.0
+  - - 72.8
+    - 78.7
+    - 82.0
+    - 85.9
+    - 93.8
+  - - 60.0
+    - 78.0
+    - 83.0
+    - 86.8
+    - 90.0
+  - - 73.7
+    - 82.0
+    - 86.0
+    - 90.0
+    - 94.0
+  - - 68.0
+    - 82.0
+    - 85.6
+    - 88.0
+    - 94.0
+- type: boxplot
+  title: '% of Lectures Attended Over the Semesters'
+  description: ''
+  boxFormat: '%s%'
+  labels:
+  - 1A
+  - 1B
+  - 2A
+  - 2B
+  - 3A
+  - 3B
+  - 4A
+  - 4B
+  data:
+  - - 0.0
+    - 26.2
+    - 55.0
+    - 75.0
+    - 99.0
+  - - 0.0
+    - 30.0
+    - 50.0
+    - 80.0
+    - 100.0
+  - - 0.0
+    - 30.0
+    - 50.0
+    - 70.0
+    - 100.0
+  - - 0.0
+    - 25.0
+    - 45.0
+    - 57.5
+    - 90.0
+  - - 10.0
+    - 25.0
+    - 40.0
+    - 70.0
+    - 90.0
+  - - 0.0
+    - 15.0
+    - 30.0
+    - 60.0
+    - 100.0
+  - - 0.0
+    - 10.0
+    - 30.0
+    - 70.0
+    - 90.0
+  - - 0.0
+    - 10.0
+    - 30.0
+    - 60.0
+    - 100.0
+- type: boxplot
+  title: Average Rent Over the Semesters
+  description: ''
+  boxFormat: '%s'
+  unit: CAD/mo
+  yAxisTitle: CAD/mo
+  labels:
+  - 1A
+  - 1B
+  - 2A
+  - 2B
+  - 3A
+  - 3B
+  - 4A
+  - 4B
+  data:
+  - - 500.0
+    - 1000.0
+    - 1050.0
+    - 1100.0
+    - 1500.0
+  - - 500.0
+    - 700.0
+    - 1012.0
+    - 1094.0
+    - 1500.0
+  - - 600.0
+    - 800.0
+    - 900.0
+    - 1000.0
+    - 1500.0
+  - - 110.0
+    - 750.0
+    - 900.0
+    - 1000.0
+    - 1350.0
+  - - 480.0
+    - 750.0
+    - 900.0
+    - 1000.0
+    - 1900.0
+  - - 100.0
+    - 750.0
+    - 900.0
+    - 1000.0
+    - 1900.0
+  - - 350.0
+    - 900.0
+    - 1100.0
+    - 1216.0
+    - 1850.0
+  - - 350.0
+    - 922.0
+    - 1100.0
+    - 1216.0
+    - 1800.0
+- type: line
+  title: '% of Assignments Completed with AI Over the Semesters'
+  description: ''
+  xLabels:
+  - 1A
+  - 1B
+  - 2A
+  - 2B
+  - 3A
+  - 3B
+  - 4A
+  - 4B
+  datasets:
+  - label: Average % with AI
+    data:
+    - 0.0
+    - 0.0
+    - 12.1
+    - 22.9
+    - 35.2
+    - 53.3
+    - 64.9
+    - 68.0
+    color: '#f59e0b'
+- type: percent-stacked-bar
+  title: Favorite AI Tool Over the Semesters
+  description: ''
+  xLabels:
+  - 1A
+  - 1B
+  - 2A
+  - 2B
+  - 3A
+  - 3B
+  - 4A
+  - 4B
+  datasets:
+  - label: ChatGPT
+    data:
+    - 0
+    - 0
+    - 41
+    - 51
+    - 55
+    - 41
+    - 20
+    - 13
+    color: '#2563eb'
+  - label: Claude
+    data:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 3
+    - 9
+    - 25
+    - 35
+    color: '#10b981'
+  - label: Gemini
+    data:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 16
+    - 13
+    color: '#f59e0b'
+  - label: Deepseek
+    data:
+    - 0
+    - 0
+    - 1
+    - 2
+    - 2
+    - 4
+    - 0
+    - 0
+    color: '#ef4444'
+  - label: NotebookLM
+    data:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    color: '#8b5cf6'
+  - label: Perplexity
+    data:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    color: '#ec4899'
+  - label: Other
+    data:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    color: '#06b6d4'

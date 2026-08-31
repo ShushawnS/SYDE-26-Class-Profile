@@ -1,67 +1,625 @@
 charts:
-  - type: wordcloud
-    title: Advice for First Years
-    description: Words of wisdom from graduating students to those just starting their SYDE journey.
-    total: 115
-    words:
-      - { text: "Socialize More", weight: 28 }
-      - { text: "Join Clubs", weight: 22 }
-      - { text: "Network", weight: 18 }
-      - { text: "Study Harder", weight: 15 }
-      - { text: "Mental Health First", weight: 12 }
-      - { text: "Don't Procrastinate", weight: 10 }
-      - { text: "Enjoy It", weight: 10 }
-
-  - type: wordcloud
-    title: Favourite Memory of Undergrad
-    description: ""
-    total: 115
-    words:
-      - { text: "First Year", weight: 20 }
-      - { text: "Exchange", weight: 18 }
-      - { text: "Rez Life", weight: 16 }
-      - { text: "Capstone", weight: 15 }
-      - { text: "Design Team", weight: 14 }
-      - { text: "Co-op", weight: 12 }
-      - { text: "Grad Trip", weight: 10 }
-      - { text: "Other", weight: 10 }
-
-  - type: wordcloud
-    title: What Was Great About SYDE
-    description: ""
-    total: 115
-    words:
-      - { text: "People", weight: 35 }
-      - { text: "Cohort Culture", weight: 28 }
-      - { text: "Design Focus", weight: 20 }
-      - { text: "Flexibility", weight: 15 }
-      - { text: "Well-rounded", weight: 10 }
-      - { text: "Community", weight: 9 }
-      - { text: "Professors", weight: 8 }
-
-  - type: wordcloud
-    title: What Excites You About New Grad
-    description: ""
-    total: 115
-    words:
-      - { text: "Career", weight: 30 }
-      - { text: "Independence", weight: 22 }
-      - { text: "Money", weight: 18 }
-      - { text: "Travelling", weight: 15 }
-      - { text: "Settling Down", weight: 12 }
-      - { text: "Learning", weight: 10 }
-      - { text: "Other", weight: 8 }
-
-  - type: wordcloud
-    title: Dream Job
-    description: ""
-    total: 115
-    words:
-      - { text: "Big Tech", weight: 25 }
-      - { text: "FAANG", weight: 20 }
-      - { text: "Startup Founder", weight: 18 }
-      - { text: "Consultant", weight: 12 }
-      - { text: "Research", weight: 10 }
-      - { text: "Freelance", weight: 10 }
-      - { text: "Government", weight: 8 }
-      - { text: "Other", weight: 12 }
+- type: wordcloud
+  title: Advice for First Years
+  description: Words of wisdom from graduating students to those just starting their
+    SYDE journey.
+  total: 50
+  words:
+  - text: try new things
+    weight: 2
+  - text: It’s okay to fuck up
+    weight: 1
+  - text: focus above all on making memories and having novel experiences. Say no
+      to studying for that one party
+    weight: 1
+  - text: ask that girl or guy out if you’re interested
+    weight: 1
+  - text: Plan activities. Do more than you think you can. Go on exchangeS
+    weight: 1
+  - text: Don’t worry about grades too much
+    weight: 1
+  - text: keep trying things until something sticks!
+    weight: 1
+  - text: Don’t be an avoidant - you grow from challenging yourself and getting out
+      of your comfort zone
+    weight: 1
+  - text: Nothing is a big deal
+    weight: 1
+  - text: Focus on co-ops early
+    weight: 1
+  - text: ignore academics
+    weight: 1
+  - text: You will find your people even if it takes a while! Say yes to everything
+      in first year and remember that people change a lot (including you) throughout
+      5 years.
+    weight: 1
+  - text: Give yourself time to have fun
+    weight: 1
+  - text: school isn’t everything
+    weight: 1
+  - text: your grades aren’t everything. You’ll remember the fun more than anything
+      else.
+    weight: 1
+  - text: Don't let the grind consume you!!!!! pls!!!!!!!!!!!!!!!!!!!!!!
+    weight: 1
+  - text: Make fun friends :)
+    weight: 1
+  - text: Don't take things too seriously.
+    weight: 1
+  - text: Have fun! Don’t stress too much and put in the effort to enjoy your five
+      years!
+    weight: 1
+  - text: Take video journals every term and don't watch them until final year when
+      you piece it all together.
+    weight: 1
+  - text: Focus on building good relationships (but don't fail)
+    weight: 1
+  - text: Get out of the house every day
+    weight: 1
+  - text: join clubs
+    weight: 1
+  - text: stay active
+    weight: 1
+  - text: be proactive in applying to jobs
+    weight: 1
+  - text: Make friends
+    weight: 1
+  - text: learn how to take of yourself
+    weight: 1
+  - text: have fun
+    weight: 1
+  - text: don’t put too much pressure on yourself
+    weight: 1
+  - text: it’s really not that deep
+    weight: 1
+  - text: I have only once had a prospective employer ask for grades. Also dont limit
+      your search to Waterlooworks. Also have fun.
+    weight: 1
+  - text: Reach out to somebody if you need help
+    weight: 1
+  - text: our advisors are great
+    weight: 1
+  - text: Be open but honest with yourself when making new friends
+    weight: 1
+  - text: Have fun and find what makes you happy!
+    weight: 1
+  - text: enjoy every moment
+    weight: 1
+  - text: it's a really special time
+    weight: 1
+  - text: The first few weeks of Uni are the best possible time to get to know as
+      many people as possible - it gets way harder to make new friends after that
+      - make best use of it!
+    weight: 1
+  - text: I know that graduation seems like something so far away
+    weight: 1
+  - text: almost like it won't even happen to you
+    weight: 1
+  - text: but if you keep your head down and keep grinding
+    weight: 1
+  - text: it'll come up behind you in the blink of an eye. Make sure you take that
+      initiative
+    weight: 1
+  - text: get out of your comfort zone
+    weight: 1
+  - text: and make memories
+    weight: 1
+  - text: both good and bad
+    weight: 1
+  - text: with your friends in uni. EveNanyang Technological University (NTU)
+    weight: 1
+  - text: Singapore
+    weight: 1
+  - text: Singaporeally
+    weight: 1
+  - text: you'll realize that grades or even money doesn't matter - there's always
+      going to be someone smarter
+    weight: 1
+  - text: richer
+    weight: 1
+  - text: or more successful than you
+    weight: 1
+  - text: but what matters is that you're doing the things that make you happy
+    weight: 1
+  - text: and the people around you make you happy too.
+    weight: 1
+  - text: go on exchange
+    weight: 1
+  - text: Don't neglect your hobbies and interests
+    weight: 1
+  - text: It's okay to try hard
+    weight: 1
+  - text: prioritize relationships over school & coops
+    weight: 1
+  - text: be yourself and trust in the process that you will get to where you wanna
+      be.
+    weight: 1
+  - text: join clubs! meet anyone and everyone!
+    weight: 1
+  - text: have fun!
+    weight: 1
+  - text: read the bhagavad gita
+    weight: 1
+  - text: Spend your time on things you love
+    weight: 1
+  - text: not just things for money/grades
+    weight: 1
+  - text: Don’t worry about gunning for big co-ops or high paying jobs
+    weight: 1
+  - text: they will come as long as you put in some work. Make good friends and help
+      each other out. Undergrad is a marathon not a sprint and having good friends
+      around you will make the experience so much more fun and so much more enjoyable
+    weight: 1
+  - text: Join clubs and go to social events!!
+    weight: 1
+  - text: Take it seriously because this actually does matter for your future. But
+      within that
+    weight: 1
+  - text: get your work done early so you can say yes to spontaneous fun with friends.  Oh
+      also
+    weight: 1
+  - text: embrace your design courses because a cynical attitude will remove all value
+      you can draw from them.  Oh ALSO you can literally just do things! Things are
+      not out of reach for you. You go to Waterloo. With time
+    weight: 1
+  - text: effort
+    weight: 1
+  - text: and a friendly attitude you can do impossible things with those around you.
+    weight: 1
+  - text: Don’t stress so much about school/co-op
+    weight: 1
+  - text: meet new people
+    weight: 1
+  - text: and try to enjoy this time!
+    weight: 1
+  - text: Don't stress
+    weight: 1
+  - text: try having a life outside of school and co-ops
+    weight: 1
+  - text: that's what you will remember the most after graduating!
+    weight: 1
+  - text: Expect eng to be harder than you expect it to be. Throw yourself at studying
+      and applying to jobs and side projects while also balancing personal life. It
+      will take time to find a good balance.
+    weight: 1
+  - text: It’s never that serious - the best part about university is the life outside
+      of class
+    weight: 1
+  - text: Be involved in design teams and clubs!
+    weight: 1
+  - text: Talk to as many people as possible - that’s the whole point!
+    weight: 1
+  - text: Uni will feel very different
+    weight: 1
+  - text: and maybe uncomfortable
+    weight: 1
+  - text: but just push through it. It will ALWAYS get better.   Talk to everyone
+      and be open to making friends but be comfortable with knowing that they may
+      change throughout university.
+    weight: 1
+  - text: Academics should be your lowest priority. Funmaxx instead
+    weight: 1
+  - text: Talk to as many people as you can
+    weight: 1
+  - text: branch outside of your program
+    weight: 1
+  - text: join clubs to explore your interest even if you don’t think you would.
+    weight: 1
+  - text: Do everything
+    weight: 1
+  - text: TRY NEW THINGS
+    weight: 1
+  - text: Have fun! Very few moments in life where you are waking distance to people
+      your age who want to meet people and have fun - take advantage of it to form
+      life long connections :)
+    weight: 1
+- type: wordcloud
+  title: Favourite Memory of Undergrad
+  description: ''
+  total: 43
+  words:
+  - text: Exchange
+    weight: 2
+  - text: Going on exchange
+    weight: 2
+  - text: When I got my first big coop and my friends were dragging me across the
+      party room and celebrating or just any time in Vancouver/Seattle
+    weight: 1
+  - text: A week to chill with friends after exams in 1B.
+    weight: 1
+  - text: Playing frisbee/spikeball in summerloo
+    weight: 1
+  - text: grad pranks
+    weight: 1
+  - text: Partyin
+    weight: 1
+  - text: Catan nights with the guys
+    weight: 1
+  - text: Darty in 1B
+    weight: 1
+  - text: Spontaneous snowball fights outside of E7
+    weight: 1
+  - text: All-nighters in exam season with the boys.
+    weight: 1
+  - text: Smoking weed in first year
+    weight: 1
+  - text: Living with my best friends
+    weight: 1
+  - text: too many!
+    weight: 1
+  - text: Hanging out with friends
+    weight: 1
+  - text: Hide and seek
+    weight: 1
+  - text: Eng Day
+    weight: 1
+  - text: Skipping school to hit the beach
+    weight: 1
+  - text: Climbing Mt Batur during exchange
+    weight: 1
+  - text: Grad Pranks Night
+    weight: 1
+  - text: Going to a cottage with my best friends
+    weight: 1
+  - text: hanging out with friends
+    weight: 1
+  - text: All the little apartment hangouts
+    weight: 1
+  - text: so many! coffeehouse
+    weight: 1
+  - text: intramural sports
+    weight: 1
+  - text: reading week trips
+    weight: 1
+  - text: hangouts with friends
+    weight: 1
+  - text: going to portugal
+    weight: 1
+  - text: so many
+    weight: 1
+  - text: intramurals
+    weight: 1
+  - text: frisbee at Waterloo park
+    weight: 1
+  - text: coffeehouse
+    weight: 1
+  - text: ASG
+    weight: 1
+  - text: snowball fights
+    weight: 1
+  - text: Drugs
+    weight: 1
+  - text: Shooting the shit with friends on a random night
+    weight: 1
+  - text: Exchange!!
+    weight: 1
+  - text: Throwing dinner parties with friends.
+    weight: 1
+  - text: So many deep friendships that I know will last a long time
+    weight: 1
+  - text: Grad prank decorating!
+    weight: 1
+  - text: Hanging out with my roommates and the late night study sessions on campus
+    weight: 1
+  - text: Finishing my last exam
+    weight: 1
+  - text: Every night at Lester
+    weight: 1
+  - text: 1B summer walks.
+    weight: 1
+  - text: Every ASG ever
+    weight: 1
+  - text: SYDE Cofeehouse
+    weight: 1
+  - text: ASG post-party hangs
+    weight: 1
+  - text: first year in general + Shawn man
+    weight: 1
+  - text: Snowball fight
+    weight: 1
+- type: wordcloud
+  title: What Was Great About SYDE
+  description: ''
+  total: 50
+  words:
+  - text: The people
+    weight: 5
+  - text: The community
+    weight: 4
+  - text: The people!
+    weight: 2
+  - text: Upper year support network
+    weight: 1
+  - text: The community. The diversity and outgoingness of the class.
+    weight: 1
+  - text: we’re “multifaceted” - prof nasser
+    weight: 1
+  - text: It’s eng but chill and fun
+    weight: 1
+  - text: Design Projects
+    weight: 1
+  - text: my classmates
+    weight: 1
+  - text: ASG
+    weight: 1
+  - text: The people and our traditions
+    weight: 1
+  - text: The people! So much intelligence in one class in so many different forms
+    weight: 1
+  - text: and so many friends to make!
+    weight: 1
+  - text: The people are so fun and motivating
+    weight: 1
+  - text: How connected everyone is
+    weight: 1
+  - text: The community!
+    weight: 1
+  - text: Understanding and kind community.
+    weight: 1
+  - text: That it's so chill
+    weight: 1
+  - text: You’re on good terms with everyone and can chat with the whole class when
+      you run into them
+    weight: 1
+  - text: no matter how long it’s been since you saw them last
+    weight: 1
+  - text: people
+    weight: 1
+  - text: fun courses and projects
+    weight: 1
+  - text: Schools not that hard relative to other engs
+    weight: 1
+  - text: relatively social
+    weight: 1
+  - text: cohort system
+    weight: 1
+  - text: ambiguous program allowing for career flexibility
+    weight: 1
+  - text: You can describe it however you want
+    weight: 1
+  - text: You can take any pathway you’d like
+    weight: 1
+  - text: how close the community is and how inspiring everyone is
+    weight: 1
+  - text: Incredibly well split (personality
+    weight: 1
+  - text: gender etc) and well socialized class
+    weight: 1
+  - text: Variety of very ambitious
+    weight: 1
+  - text: unique
+    weight: 1
+  - text: and successful (but very friendly!!) people that inspire you to try harder
+      and do more
+    weight: 1
+  - text: while having each other's backs no matter what
+    weight: 1
+  - text: the community
+    weight: 1
+  - text: The different perspectives
+    weight: 1
+  - text: community & mentorship
+    weight: 1
+  - text: good ratio
+    weight: 1
+  - text: get to meet a lot of unique and very smart people.
+    weight: 1
+  - text: how collaborative and uncompetitive it is
+    weight: 1
+  - text: awesome social events and people are open
+    weight: 1
+  - text: It helps you understand non-dual philosophies better
+    weight: 1
+  - text: The people is what makes SYDE so great. There are so many fun
+    weight: 1
+  - text: interesting people in the program that you won’t find in other programs.
+    weight: 1
+  - text: You are influenced to think of real human beings as you build. Technology
+      for technology's sake is shallow and SYDE helps you realize that.
+    weight: 1
+  - text: Academically
+    weight: 1
+  - text: it's really great that we get to learn about and get hands on with many
+      difference engineering aspects (from hardware
+    weight: 1
+  - text: software
+    weight: 1
+  - text: design etc). I also think the community syde has is great
+    weight: 1
+  - text: everyone is willing to help out and hang out!!
+    weight: 1
+  - text: It is a good introduction to multiple fields of engineering so it makes
+      it easier to pick your path. With that being said
+    weight: 1
+  - text: you are not an expert in any one field unless you find co ops in it and/or
+      focus on side projects for it.
+    weight: 1
+  - text: and the diversity of projects/courses you will work on.
+    weight: 1
+  - text: The community and the co-op prospects!
+    weight: 1
+  - text: type of people the program atteacts
+    weight: 1
+  - text: The flexibility
+    weight: 1
+  - text: the cohort. Make friends
+    weight: 1
+  - text: get close
+    weight: 1
+  - text: don't take things personally.
+    weight: 1
+  - text: Everything
+    weight: 1
+  - text: People value community and kindness
+    weight: 1
+- type: wordcloud
+  title: What Excites You About New Grad
+  description: ''
+  total: 44
+  words:
+  - text: Money
+    weight: 2
+  - text: Not working after 5pm
+    weight: 1
+  - text: Working to be someone successful in my job.
+    weight: 1
+  - text: Nothing highkey
+    weight: 1
+  - text: Making money and growing my career
+    weight: 1
+  - text: having my own place
+    weight: 1
+  - text: Adulthood
+    weight: 1
+  - text: exploring a new city and meeting new people!
+    weight: 1
+  - text: Stability lol
+    weight: 1
+  - text: Moving to NYC (dream city!)
+    weight: 1
+  - text: Being able to visit friends in different places
+    weight: 1
+  - text: Financial freedom
+    weight: 1
+  - text: Not having to move out every four months
+    weight: 1
+  - text: The possibility of what lies in the unknown!
+    weight: 1
+  - text: Stability and being in the same city for a longer time
+    weight: 1
+  - text: more free time
+    weight: 1
+  - text: Making money
+    weight: 1
+  - text: Doing random things with minimal direction
+    weight: 1
+  - text: The world is your oyster
+    weight: 1
+  - text: Freedom
+    weight: 1
+  - text: more time for family
+    weight: 1
+  - text: friends
+    weight: 1
+  - text: and hobbies
+    weight: 1
+  - text: Being able to build routines and habits for more than 4 months at a time!
+    weight: 1
+  - text: Making a lot of money and not stressing about exams or hw on weekends lol
+    weight: 1
+  - text: starting new life
+    weight: 1
+  - text: Building a life with your friends
+    weight: 1
+  - text: no school
+    weight: 1
+  - text: 1) No more engineering! 2) I have money from co ops and I'm not in debt
+      so this enables me to have a lot of freedom to do the activities I want to do
+    weight: 1
+  - text: and travel for a while
+    weight: 1
+  - text: no more moving around
+    weight: 1
+  - text: living in a city making money and new friends
+    weight: 1
+  - text: It helps you understand non-dual philosophies better
+    weight: 1
+  - text: The world is your playground
+    weight: 1
+  - text: Not having to move every 4 months
+    weight: 1
+  - text: Meeting new people and living some place new
+    weight: 1
+  - text: I want to act upon my free will and see how that can benefit my communities.
+      I'm not told what classes to take anymore.
+    weight: 1
+  - text: The freedom to do anything you want
+    weight: 1
+  - text: Figuring out my new daily routine and meeting new people.
+    weight: 1
+  - text: Never have to study again
+    weight: 1
+  - text: Not having to do schoolwork
+    weight: 1
+  - text: Moving somewhere new
+    weight: 1
+  - text: I can set a consistent routine without having to worry about assignment
+      deadlines or exams.
+    weight: 1
+  - text: Having money and free time to live my life
+    weight: 1
+  - text: Living in one place for more than 4 months.
+    weight: 1
+  - text: Having money
+    weight: 1
+  - text: Live a life worth living
+    weight: 1
+- type: wordcloud
+  title: Dream Job
+  description: ''
+  total: 30
+  words:
+  - text: Creative Director in Entertainment
+    weight: 1
+  - text: Ontario Power Generation Design Engineer
+    weight: 1
+  - text: Cafe and Mechanic Shop Owners
+    weight: 1
+  - text: Exec at a tech company
+    weight: 1
+  - text: Tattoo artist
+    weight: 1
+  - text: An explorer :D
+    weight: 1
+  - text: Prime minister
+    weight: 1
+  - text: Aerospace Engineer at SpaceX
+    weight: 1
+  - text: Idk
+    weight: 1
+  - text: Open a cafe in japan and be a barista
+    weight: 1
+  - text: Transit planner
+    weight: 1
+  - text: Building dumb robots
+    weight: 1
+  - text: Astronaut
+    weight: 1
+  - text: travel and get paid while doing it
+    weight: 1
+  - text: Creating my own company or non profit
+    weight: 1
+  - text: live on a self-sustaining farm
+    weight: 1
+  - text: owning a bakery/cafe
+    weight: 1
+  - text: Noveau Riche Wastrel
+    weight: 1
+  - text: Something that brings myself and others joy
+    weight: 1
+  - text: Product manager
+    weight: 1
+  - text: Athlete
+    weight: 1
+  - text: investor
+    weight: 1
+  - text: and literature teacher.
+    weight: 1
+  - text: Musician
+    weight: 1
+  - text: Teaching
+    weight: 1
+  - text: Sports journalist
+    weight: 1
+  - text: Movie director
+    weight: 1
+  - text: Cheese taster
+    weight: 1
+  - text: Underwater photographer
+    weight: 1
+  - text: CPO of some awesome tech company
+    weight: 1
+  - text: To help people idc what it us
+    weight: 1
+  - text: Teacher
+    weight: 1

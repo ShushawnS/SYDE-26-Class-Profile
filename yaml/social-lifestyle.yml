@@ -1,103 +1,450 @@
 charts:
-  - type: wordcloud
-    title: Favourite Restaurant
-    description: The food spots that kept our class going through late-night study sessions.
-    total: 115
-    words:
-      - { text: "Pizza", weight: 22 }
-      - { text: "Sushi", weight: 20 }
-      - { text: "Thai", weight: 18 }
-      - { text: "Chinese", weight: 15 }
-      - { text: "Burgers", weight: 14 }
-      - { text: "Indian", weight: 12 }
-      - { text: "Mexican", weight: 8 }
-      - { text: "Other", weight: 6 }
-
-  - type: bar
-    title: How Many of Your 5 Closest Uni Friends Are in SYDE
-    description: ""
-    total: 115
-    labels: ["0", "1", "2", "3", "4", "5"]
-    data: [5, 12, 20, 30, 28, 20]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6"]
-
-  - type: bar
-    title: "Number of Terms Attended a SYDE Social Event"
-    description: ""
-    total: 110
-    labels: ["1", "2", "3", "4", "5", "6", "7", "8"]
-    data: [10, 12, 18, 22, 20, 15, 8, 5]
-    colors: ["#ef4444", "#f97316", "#f59e0b", "#10b981", "#2563eb", "#8b5cf6", "#ec4899", "#06b6d4"]
-
-  - type: line
-    title: Cooking Ability — Pre Uni vs After Uni
-    description: ""
-    xLabels: ["1", "2", "3", "4", "5"]
-    datasets:
-      - label: Pre Uni
-        data: [25, 35, 25, 10, 5]
-        color: "#ef4444"
-      - label: After Uni
-        data: [10, 20, 35, 25, 10]
-        color: "#2563eb"
-
-  - type: line
-    title: Fitness Level — Pre Uni vs After Uni
-    description: ""
-    xLabels: ["1", "2", "3", "4", "5"]
-    datasets:
-      - label: Pre Uni
-        data: [15, 20, 30, 25, 10]
-        color: "#ef4444"
-      - label: After Uni
-        data: [25, 30, 25, 15, 5]
-        color: "#2563eb"
-
-  - type: pie
-    title: Balding
-    description: ""
-    total: 115
-    labels: [Yes, No, Maybe]
-    data: [15, 65, 35]
-    colors: ["#ef4444", "#10b981", "#f59e0b"]
-
-  - type: pie
-    title: "Done Intramurals?"
-    description: ""
-    total: 115
-    labels: [Yes, No]
-    data: [48, 67]
-    colors: ["#10b981", "#ef4444"]
-
-  - type: pie
-    title: "Joined Clubs?"
-    description: ""
-    total: 115
-    labels: [Yes, No]
-    data: [55, 60]
-    colors: ["#10b981", "#ef4444"]
-
-  - type: wordcloud
-    title: Intramurals Participated In
-    description: ""
-    total: 110
-    words:
-      - { text: "Soccer", weight: 28 }
-      - { text: "Basketball", weight: 22 }
-      - { text: "Volleyball", weight: 18 }
-      - { text: "Badminton", weight: 15 }
-      - { text: "Ultimate Frisbee", weight: 12 }
-      - { text: "Dodgeball", weight: 8 }
-      - { text: "Other", weight: 7 }
-
-  - type: wordcloud
-    title: Clubs Participated In
-    description: ""
-    total: 110
-    words:
-      - { text: "Design Team", weight: 25 }
-      - { text: "Social Club", weight: 22 }
-      - { text: "Hackathon Club", weight: 20 }
-      - { text: "Sports Club", weight: 18 }
-      - { text: "Professional Club", weight: 15 }
-      - { text: "Other", weight: 10 }
+- type: wordcloud
+  title: Favourite Restaurant
+  description: The food spots that kept our class going through late-night study sessions.
+  total: 58
+  words:
+  - text: Eby Street Bodega
+    weight: 3
+  - text: Bao Sandwich Bar
+    weight: 3
+  - text: Pho Anh Vu
+    weight: 2
+  - text: Arabesque
+    weight: 2
+  - text: Kinton Ramen
+    weight: 2
+  - text: Kabob Shack
+    weight: 2
+  - text: Shinwa
+    weight: 2
+  - text: Onnuri
+    weight: 2
+  - text: Lancaster Smokehouse
+    weight: 2
+  - text: Top Chicken
+    weight: 2
+  - text: Zay Zaman
+    weight: 1
+  - text: Izne Poke Plus
+    weight: 1
+  - text: Korner Kitchen
+    weight: 1
+  - text: Watami Sushi
+    weight: 1
+  - text: Ken’s Sushi
+    weight: 1
+  - text: Champa's Kitchen
+    weight: 1
+  - text: Arabella Beer Park
+    weight: 1
+  - text: Loloan Lobby Bar
+    weight: 1
+  - text: Mediterraneo
+    weight: 1
+  - text: Mel’s Diner
+    weight: 1
+  - text: Gol's
+    weight: 1
+  - text: Myungga
+    weight: 1
+  - text: Williams Cafe
+    weight: 1
+  - text: IPHO
+    weight: 1
+  - text: Yunshang Rice Noodles
+    weight: 1
+  - text: Shawerma Plus
+    weight: 1
+  - text: Daldongnae Korean BBQ - Waterloo
+    weight: 1
+  - text: iPotato
+    weight: 1
+  - text: Del's
+    weight: 1
+  - text: Lazeez
+    weight: 1
+  - text: Champas Kitchen
+    weight: 1
+  - text: Kingyu
+    weight: 1
+  - text: Yunshang Rice Noodle
+    weight: 1
+  - text: Pho Ben Thanh
+    weight: 1
+  - text: Oka Sushi
+    weight: 1
+  - text: Tamasha
+    weight: 1
+  - text: Dinestation
+    weight: 1
+  - text: Watami
+    weight: 1
+  - text: Now Tea
+    weight: 1
+  - text: Shinwa's
+    weight: 1
+  - text: Sole
+    weight: 1
+  - text: Abe Erb
+    weight: 1
+  - text: Union burger (they closed)
+    weight: 1
+  - text: The Poke Box
+    weight: 1
+  - text: fresh burrito
+    weight: 1
+  - text: Score pizza
+    weight: 1
+  - text: On Coal
+    weight: 1
+- type: bar
+  title: How Many of Your 5 Closest Uni Friends Are in SYDE
+  xAxisTitle: Friends in SYDE
+  description: ''
+  total: 63
+  labels:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  data:
+  - 3
+  - 2
+  - 7
+  - 15
+  - 11
+  - 25
+  colors:
+  - '#ef4444'
+  - '#f97316'
+  - '#f59e0b'
+  - '#10b981'
+  - '#2563eb'
+  - '#8b5cf6'
+- type: bar
+  title: Number of Terms Attended a SYDE Social Event
+  xAxisTitle: Terms attended
+  description: ''
+  total: 60
+  labels:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  data:
+  - 0
+  - 2
+  - 4
+  - 2
+  - 4
+  - 7
+  - 7
+  - 34
+  colors:
+  - '#ef4444'
+  - '#f97316'
+  - '#f59e0b'
+  - '#10b981'
+  - '#2563eb'
+  - '#8b5cf6'
+  - '#ec4899'
+  - '#06b6d4'
+- type: line
+  title: Cooking Ability — Pre Uni vs After Uni
+  description: ''
+  xLabels:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  datasets:
+  - label: Pre Uni
+    data:
+    - 23
+    - 15
+    - 8
+    - 1
+    - 2
+    color: '#ef4444'
+  - label: After Uni
+    data:
+    - 3
+    - 10
+    - 29
+    - 17
+    - 3
+    color: '#2563eb'
+- type: line
+  title: Fitness Level — Pre Uni vs After Uni
+  description: ''
+  xLabels:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  datasets:
+  - label: Pre Uni
+    data:
+    - 17
+    - 15
+    - 14
+    - 6
+    - 5
+    color: '#ef4444'
+  - label: After Uni
+    data:
+    - 4
+    - 14
+    - 26
+    - 16
+    - 1
+    color: '#2563eb'
+- type: pie
+  title: Balding
+  description: ''
+  total: 64
+  labels:
+  - Not balding
+  - Balding likely caused by coming to Waterloo
+  - Balding but NOT due to Waterloo
+  data:
+  - 40
+  - 22
+  - 2
+  colors:
+  - '#ef4444'
+  - '#10b981'
+  - '#f59e0b'
+- type: pie
+  title: Done Intramurals?
+  description: ''
+  total: 63
+  labels:
+  - 'Yes'
+  - 'No'
+  data:
+  - 45
+  - 18
+  colors:
+  - '#10b981'
+  - '#ef4444'
+- type: pie
+  title: Joined Clubs?
+  description: ''
+  total: 63
+  labels:
+  - 'Yes'
+  - 'No'
+  data:
+  - 52
+  - 11
+  colors:
+  - '#10b981'
+  - '#ef4444'
+- type: wordcloud
+  title: Intramurals Participated In
+  description: ''
+  total: 42
+  words:
+  - text: Volleyball
+    weight: 24
+  - text: Ultimate Frisbee
+    weight: 15
+  - text: Soccer
+    weight: 14
+  - text: Dodgeball
+    weight: 13
+  - text: Basketball
+    weight: 12
+  - text: Multi-Sport
+    weight: 12
+  - text: Frisbee
+    weight: 7
+  - text: Hockey
+    weight: 5
+  - text: Flag Football
+    weight: 5
+  - text: Water Polo
+    weight: 4
+  - text: Multisport
+    weight: 3
+  - text: Spikeball
+    weight: 2
+  - text: Ultimate
+    weight: 1
+  - text: Softball
+    weight: 1
+- type: wordcloud
+  title: Clubs Participated In
+  description: ''
+  total: 47
+  words:
+  - text: UW Blueprint
+    weight: 14
+  - text: Tech+
+    weight: 7
+  - text: Hack the North
+    weight: 6
+  - text: UW PM
+    weight: 4
+  - text: Socratica
+    weight: 3
+  - text: UW K-Pop Club
+    weight: 2
+  - text: WiE
+    weight: 2
+  - text: UW Hip Hop
+    weight: 2
+  - text: Blueprint
+    weight: 2
+  - text: Watolink
+    weight: 2
+  - text: Waterloop
+    weight: 2
+  - text: WAT AI
+    weight: 2
+  - text: UW WiSTEM
+    weight: 2
+  - text: HanVoice
+    weight: 1
+  - text: Engineering Ambassador
+    weight: 1
+  - text: Korean Christian Fellowship
+    weight: 1
+  - text: Power to Change
+    weight: 1
+  - text: UW Animusic Ensembles
+    weight: 1
+  - text: UW Pokémon TCG Club
+    weight: 1
+  - text: UW Book Club
+    weight: 1
+  - text: UW Cheese Club
+    weight: 1
+  - text: UW Yugioh
+    weight: 1
+  - text: UWCCF
+    weight: 1
+  - text: Archery
+    weight: 1
+  - text: UW/UX
+    weight: 1
+  - text: WASA
+    weight: 1
+  - text: TechNova
+    weight: 1
+  - text: Tech Plus
+    weight: 1
+  - text: Jam Network
+    weight: 1
+  - text: Women in Engineering
+    weight: 1
+  - text: UW Data Science club
+    weight: 1
+  - text: Technova
+    weight: 1
+  - text: Wloo Climbing Club
+    weight: 1
+  - text: UWaterloo NDP Club
+    weight: 1
+  - text: University of Waterloo Young Liberals
+    weight: 1
+  - text: UW Campus Conservatives
+    weight: 1
+  - text: Animusic
+    weight: 1
+  - text: Concert Band
+    weight: 1
+  - text: Dragonboat
+    weight: 1
+  - text: UW Orbital
+    weight: 1
+  - text: UW Chess
+    weight: 1
+  - text: UW Comedy
+    weight: 1
+  - text: Waterloo Formula Electric
+    weight: 1
+  - text: Tech+UW
+    weight: 1
+  - text: UW DSC
+    weight: 1
+  - text: Badminton
+    weight: 1
+  - text: Poker Club
+    weight: 1
+  - text: SERVE
+    weight: 1
+  - text: UW Entepreneurship
+    weight: 1
+  - text: Consulting
+    weight: 1
+  - text: Pokémon Club
+    weight: 1
+  - text: Cooking Club
+    weight: 1
+  - text: Orchestra
+    weight: 1
+  - text: Varsity Tennis Team
+    weight: 1
+  - text: Waterloo Snow Coalition
+    weight: 1
+  - text: WARG
+    weight: 1
+  - text: UWAFT
+    weight: 1
+  - text: SERVE volleyball club
+    weight: 1
+  - text: CS Club
+    weight: 1
+  - text: WiSTEM
+    weight: 1
+  - text: Watsfic
+    weight: 1
+  - text: UW Improv
+    weight: 1
+  - text: JamNet
+    weight: 1
+  - text: EngSoc
+    weight: 1
+  - text: WATOLINK
+    weight: 1
+  - text: Design Team
+    weight: 1
+  - text: Masters Swim
+    weight: 1
+  - text: Electrium Mobility
+    weight: 1
+  - text: Book Club
+    weight: 1
+  - text: UWaterloo RAAS Dance Team
+    weight: 1
+  - text: UX/UX
+    weight: 1
+  - text: UW Deception Board Games
+    weight: 1
+  - text: Iron Warrior
+    weight: 1
+  - text: Juggling Club
+    weight: 1
+  - text: Dance
+    weight: 1
+  - text: Concert Band Club
+    weight: 1
+  - text: Cheese Club
+    weight: 1
+  - text: Acapella Club
+    weight: 1
+  - text: Engineering Society
+    weight: 1
+  - text: Data Science
+    weight: 1
