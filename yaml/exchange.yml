@@ -18,132 +18,132 @@ charts:
   description: ''
   total: 25
   words:
-  - text: Wanted to focus on job search and capstone
-    weight: 1
-  - text: Homesick from coop
-    weight: 1
-  - text: too scared about school
-    weight: 1
-  - text: Didn't want to take extra courses in my final semesters.
-    weight: 1
-  - text: Cost and lack of housing
-    weight: 1
-  - text: Money and active in community at home
-    weight: 1
-  - text: Didn't want to plan everything and choose courses etc, so I did not apply.
-    weight: 1
-  - text: Co-op
-    weight: 1
-  - text: did not give a shit
-    weight: 1
   - text: Avg not high enough
     weight: 1
   - text: Bad marks
     weight: 1
-  - text: Money, preferences
+  - text: Co-op
     weight: 1
-  - text: Schedule alignment
+  - text: Cost and lack of housing
     weight: 1
-  - text: Internship
+  - text: Course Offerings
+    weight: 1
+  - text: did not give a shit
+    weight: 1
+  - text: Didn't want to plan everything and choose courses etc, so I did not apply.
+    weight: 1
+  - text: Didn't want to take extra courses in my final semesters.
     weight: 1
   - text: Enjoy travelling without stress of school
     weight: 1
   - text: Extended Co-Op Term
     weight: 1
-  - text: Like focusing on school or travel, not both, and I wanted to stay closer
-      to family and friends
+  - text: Homesick from coop
+    weight: 1
+  - text: I'd rather go on vacation to a different country
     weight: 1
   - text: I'm a brokie
     weight: 1
-  - text: Course Offerings
+  - text: Internship
+    weight: 1
+  - text: Like focusing on school or travel, not both, and I wanted to stay closer
+      to family and friends
+    weight: 1
+  - text: Money and active in community at home
+    weight: 1
+  - text: Money, preferences
+    weight: 1
+  - text: Not enough research on course equivalences and forgot to apply
+    weight: 1
+  - text: pursued internship 😭
+    weight: 1
+  - text: Schedule alignment
+    weight: 1
+  - text: too lazy to apply
+    weight: 1
+  - text: too scared about school
+    weight: 1
+  - text: Wanted to focus on job search and capstone
     weight: 1
   - text: Would rather travel during co-op or in between terms
     weight: 1
   - text: Would've made 4A/4B more stressful + want to travel without pressures of
       school
     weight: 1
-  - text: Not enough research on course equivalences and forgot to apply
-    weight: 1
-  - text: too lazy to apply
-    weight: 1
-  - text: I'd rather go on vacation to a different country
-    weight: 1
-  - text: pursued internship 😭
-    weight: 1
 - type: wordcloud
   title: Reasons for Going on Exchange
   description: ''
   total: 34
   words:
-  - text: Needed to delay coop
-    weight: 1
-  - text: Fun, putting my self out there, language learning
-    weight: 1
-  - text: wanted to travel and less focus on schoolwork
-    weight: 1
-  - text: wanted to have fun travel meet new people
-    weight: 1
   - text: Because everyone else did it
     weight: 1
-  - text: See more of the world
+  - text: Chance to live in a new country, travel, and have fun
     weight: 1
-  - text: Wanted to experience living in another country for a couple months. Wanted
-      to travel around Europe and make friends from around the world!
-    weight: 1
-  - text: I love to travel and meet new people!
+  - text: Cultural immersement and travelling
     weight: 1
   - text: Experience other cultures, leave Waterloo
     weight: 1
   - text: Explore a new country. Meet new people. Travel. Experiences.
     weight: 1
-  - text: once in a lifetime opportunity to study abroad, wanted to challenge myself,
-      wanted to travel
+  - text: For fun, try something new
     weight: 1
-  - text: Leave Waterloo/Canada
+  - text: Fun, Pass/Fail
     weight: 1
-  - text: Travel
-    weight: 1
-  - text: Chance to live in a new country, travel, and have fun
-    weight: 1
-  - text: Step out of my comfort zone, learn a new language, meet new people
-    weight: 1
-  - text: Travel the world dawg + not care about school
-    weight: 1
-  - text: To experience a different culture
-    weight: 1
-  - text: Meet people, explore different places, broaden worldview
-    weight: 1
-  - text: Cultural immersement and travelling
+  - text: Fun, putting my self out there, language learning
     weight: 1
   - text: Fun, yolo, once in a lifetime, haven't travelled in a while
     weight: 1
-  - text: Fun, Pass/Fail
+  - text: I love to travel and meet new people!
+    weight: 1
+  - text: I wanted to try having my home base somewhere different
+    weight: 1
+  - text: Leave Waterloo/Canada
+    weight: 1
+  - text: Meet people, explore different places, broaden worldview
+    weight: 1
+  - text: Needed to delay coop
+    weight: 1
+  - text: once in a lifetime opportunity to study abroad, wanted to challenge myself,
+      wanted to travel
+    weight: 1
+  - text: One of a kind experience, love for travel
+    weight: 1
+  - text: See more of the world
+    weight: 1
+  - text: See the world outside North America and try something new :)
+    weight: 1
+  - text: Step out of my comfort zone, learn a new language, meet new people
+    weight: 1
+  - text: To escape Waterloo
+    weight: 1
+  - text: To experience a different culture
+    weight: 1
+  - text: To have fun, learn how to live in a new place alone
+    weight: 1
+  - text: Travel
+    weight: 1
+  - text: Travel and have fun
+    weight: 1
+  - text: Travel the world dawg + not care about school
+    weight: 1
+  - text: Travel, meet new people, get away from Waterloo
     weight: 1
   - text: Wanted immersion in culture, experience living (far) away from home, Pass/Fail
       hard courses to have an easier workload/electives when I get back
     weight: 1
-  - text: Wanted to see what education and life was like in a different country &
-      wanted to travel to more countries
-    weight: 1
-  - text: I wanted to try having my home base somewhere different
-    weight: 1
-  - text: To escape Waterloo
-    weight: 1
-  - text: For fun, try something new
+  - text: Wanted to experience living in another country for a couple months. Wanted
+      to travel around Europe and make friends from around the world!
     weight: 1
   - text: wanted to explore new city and live in europe
     weight: 1
-  - text: One of a kind experience, love for travel
-    weight: 1
-  - text: Travel and have fun
-    weight: 1
-  - text: See the world outside North America and try something new :)
-    weight: 1
-  - text: To have fun, learn how to live in a new place alone
-    weight: 1
-  - text: Travel, meet new people, get away from Waterloo
-    weight: 1
   - text: Wanted to have fun in Asia lol
+    weight: 1
+  - text: wanted to have fun travel meet new people
+    weight: 1
+  - text: Wanted to see what education and life was like in a different country &
+      wanted to travel to more countries
+    weight: 1
+  - text: wanted to travel and less focus on schoolwork
     weight: 1
   - text: Was craving a new experience
     weight: 1
@@ -153,26 +153,26 @@ charts:
   description: ''
   total: 38
   labels:
-  - Madrid
-  - Singapore
-  - Hong Kong
-  - Lund
-  - Delft
-  - Leeds
   - Ankara
+  - Delft
+  - Hong Kong
   - Lausanne
+  - Leeds
+  - Lund
+  - Madrid
   - Seoul
+  - Singapore
   - Tampere
   data:
-  - 14
-  - 9
+  - 1
+  - 1
   - 6
+  - 1
+  - 1
   - 3
+  - 14
   - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 9
   - 1
   colors:
   - '#2563eb'
@@ -235,17 +235,8 @@ charts:
   description: ''
   total: 9
   words:
-  - text: I think Europe is a better exchange experience due to the nature of its
-      culture (ie locals r more relaxed and chill ppl that r less locked in to school)
-    weight: 1
-  - text: would’ve preferred a bigger uni in singapore but didn’t have the grades
-    weight: 1
   - text: Go to an Asian one, easier grading (or so I've heard), kinder profs, cheaper
       Cost of Living, plus I'd prefer exploring Asia
-    weight: 1
-  - text: Larger university to make more friends outside of Waterloo
-    weight: 1
-  - text: Would've liked an english-speaking country
     weight: 1
   - text: Going to Europe would be a better exchange experience, as I believe there's
       more to experience by living in Europe vs Asia. You can leave asia for travelling
@@ -253,10 +244,19 @@ charts:
     weight: 1
   - text: I learned that Spain wasn’t quite right for me
     weight: 1
+  - text: I think Europe is a better exchange experience due to the nature of its
+      culture (ie locals r more relaxed and chill ppl that r less locked in to school)
+    weight: 1
+  - text: Larger university to make more friends outside of Waterloo
+    weight: 1
   - text: school was harder than expected in Singapore, didn't get to travel as much
       as others did
     weight: 1
   - text: Too much like UW
+    weight: 1
+  - text: Would've liked an english-speaking country
+    weight: 1
+  - text: would’ve preferred a bigger uni in singapore but didn’t have the grades
     weight: 1
 - type: pie
   title: Did Exchange Impact Co-op Search

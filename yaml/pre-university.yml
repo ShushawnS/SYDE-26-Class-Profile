@@ -50,26 +50,26 @@ charts:
   description: ''
   total: 66
   labels:
-  - Volunteer Experience
   - Club
-  - Sports
   - Club Leader
+  - Eng Job/Tech Internship
   - Non-Eng Job
   - Performing/Visual Arts
-  - Student Council
-  - Eng Job/Tech Internship
   - Religious Activity
+  - Sports
+  - Student Council
+  - Volunteer Experience
   - Writing
   data:
-  - 59
   - 50
-  - 48
   - 43
+  - 16
   - 43
   - 29
-  - 18
-  - 16
   - 15
+  - 48
+  - 18
+  - 59
   - 1
   colors:
   - '#2563eb'
@@ -88,23 +88,23 @@ charts:
   description: ''
   total: 66
   labels:
-  - None
   - AP
-  - IB
-  - Private School
-  - IBT
+  - French Immersion
   - Gifted
+  - IB
+  - IBT
+  - None
+  - Private School
   - TOPS
   - Visual Arts Program
-  - French Immersion
   data:
   - 21
-  - 21
-  - 13
-  - 10
-  - 4
-  - 2
   - 1
+  - 2
+  - 13
+  - 4
+  - 21
+  - 10
   - 1
   - 1
   colors:
@@ -123,29 +123,29 @@ charts:
   description: ''
   total: 65
   labels:
-  - University of Toronto
-  - McMaster University
-  - Western University
-  - Queen's University
-  - University of British Columbia
-  - McGill University
-  - Ottawa/Carleton University
-  - College outside Canada
   - Brock University
-  - University of Victoria
+  - College outside Canada
+  - McGill University
+  - McMaster University
+  - Ottawa/Carleton University
+  - Queen's University
   - Toronto Metropolitan University
+  - University of British Columbia
+  - University of Toronto
+  - University of Victoria
+  - Western University
   data:
-  - 51
-  - 44
-  - 35
-  - 31
-  - 20
-  - 17
-  - 12
+  - 1
   - 9
+  - 17
+  - 44
+  - 12
+  - 31
   - 1
+  - 20
+  - 51
   - 1
-  - 1
+  - 35
   colors:
   - '#2563eb'
   - '#10b981'
@@ -164,28 +164,28 @@ charts:
   description: ''
   total: 66
   labels:
+  - Academia/Research
+  - Government/Advocacy
+  - Hardware
+  - Healthcare/Biotech
   - I had no idea
+  - Management Consulting
+  - Manufacturing
+  - Product Management
   - Software Engineering
   - Tech/Design Consulting
-  - Hardware
-  - Management Consulting
   - Writing
-  - Product Management
-  - Healthcare/Biotech
-  - Manufacturing
-  - Government/Advocacy
-  - Academia/Research
   data:
-  - 29
-  - 15
-  - 10
+  - 1
+  - 1
   - 4
+  - 1
+  - 29
   - 2
   - 1
   - 1
-  - 1
-  - 1
-  - 1
+  - 15
+  - 10
   - 1
   colors:
   - '#2563eb'
@@ -205,22 +205,22 @@ charts:
   description: ''
   total: 66
   labels:
-  - Math
   - Business
-  - Life and Physical Science
+  - Computer Science
+  - Creative Arts
   - Health
   - Humanities
-  - Creative Arts
-  - Computer Science
+  - Life and Physical Science
+  - Math
   - Physics
   data:
-  - 20
   - 18
-  - 12
+  - 1
+  - 2
   - 8
   - 4
-  - 2
-  - 1
+  - 12
+  - 20
   - 1
   colors:
   - '#2563eb'

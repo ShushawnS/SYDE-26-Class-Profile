@@ -347,696 +347,696 @@ charts:
   description: ''
   total: 56
   words:
-  - text: Home Trust
-    weight: 2
-  - text: SAP
-    weight: 2
-  - text: TD Bank
-    weight: 2
-  - text: Government of Canada
-    weight: 2
-  - text: Autotrader
-    weight: 2
-  - text: Sonova
-    weight: 2
-  - text: UHN
-    weight: 2
-  - text: Deloitte
-    weight: 2
-  - text: Unyte Health
+  - text: Aceage
     weight: 1
   - text: Altium
     weight: 1
-  - text: OANDA
+  - text: ApplyBoard
     weight: 1
-  - text: Weavik
+  - text: Arkose Labs
     weight: 1
-  - text: Ford Motor Company
+  - text: Autotrader
+    weight: 2
+  - text: Bank of Montreal
+    weight: 1
+  - text: BMO
+    weight: 1
+  - text: Coinsquare
+    weight: 1
+  - text: Communitech
     weight: 1
   - text: CRMedia
     weight: 1
-  - text: Aceage
+  - text: Deep Trekker
+    weight: 1
+  - text: Deloitte
+    weight: 2
+  - text: EON
+    weight: 1
+  - text: FINTRAC
+    weight: 1
+  - text: Ford Motor Company
+    weight: 1
+  - text: Front Rush
+    weight: 1
+  - text: Government
+    weight: 1
+  - text: Government of Canada
+    weight: 2
+  - text: Grand River Foods LTD
+    weight: 1
+  - text: Home Trust
+    weight: 2
+  - text: Intelliculture
+    weight: 1
+  - text: Irdeto
+    weight: 1
+  - text: Jana Corporation
+    weight: 1
+  - text: Kaleidescape
     weight: 1
   - text: Kenna
     weight: 1
-  - text: Tigercat
+  - text: Lifeplan Investments
     weight: 1
-  - text: Teranet
+  - text: Nokia
     weight: 1
-  - text: Teledyne Flir
-    weight: 1
-  - text: Communitech
+  - text: OANDA
     weight: 1
   - text: OpenText
     weight: 1
   - text: Polar
     weight: 1
-  - text: University of Waterloo
-    weight: 1
-  - text: ApplyBoard
-    weight: 1
-  - text: Bank of Montreal
-    weight: 1
-  - text: BMO
-    weight: 1
-  - text: Studica
-    weight: 1
-  - text: Rogers
-    weight: 1
-  - text: Government
-    weight: 1
-  - text: Arkose Labs
-    weight: 1
-  - text: Lifeplan Investments
-    weight: 1
-  - text: EON
-    weight: 1
   - text: Purolator
-    weight: 1
-  - text: FINTRAC
     weight: 1
   - text: Relogix
     weight: 1
+  - text: Rogers
+    weight: 1
+  - text: SAP
+    weight: 2
   - text: Scotiabank
-    weight: 1
-  - text: University Health Network
-    weight: 1
-  - text: Yuja
-    weight: 1
-  - text: Deep Trekker
-    weight: 1
-  - text: Grand River Foods LTD
-    weight: 1
-  - text: Jana Corporation
-    weight: 1
-  - text: Coinsquare
     weight: 1
   - text: Sentia Solutions
     weight: 1
-  - text: Kaleidescape
+  - text: Sonova
+    weight: 2
+  - text: Studica
     weight: 1
-  - text: Intelliculture
+  - text: TD Bank
+    weight: 2
+  - text: Teledyne Flir
     weight: 1
-  - text: Front Rush
+  - text: Teranet
     weight: 1
-  - text: Irdeto
+  - text: Tigercat
     weight: 1
-  - text: Nokia
+  - text: UHN
+    weight: 2
+  - text: University Health Network
+    weight: 1
+  - text: University of Waterloo
+    weight: 1
+  - text: Unyte Health
+    weight: 1
+  - text: Weavik
+    weight: 1
+  - text: Yuja
     weight: 1
 - type: wordcloud
   title: 'Co-op #2 Places'
   description: ''
   total: 55
   words:
-  - text: TribalScale
-    weight: 2
-  - text: The Globe and Mail
-    weight: 2
-  - text: CIBC
-    weight: 2
-  - text: Polaris Intelligence Inc
-    weight: 1
-  - text: Tersa
-    weight: 1
-  - text: IBM
-    weight: 1
-  - text: Thoughtworks
-    weight: 1
-  - text: University of Waterloo
-    weight: 1
-  - text: Relay Financial
-    weight: 1
-  - text: Daily Blends
-    weight: 1
-  - text: Omniscient neurotechnology
-    weight: 1
-  - text: Deep Trekker
-    weight: 1
-  - text: Stratosphere.io
-    weight: 1
-  - text: Skygauge Robotics
-    weight: 1
-  - text: Manulife
-    weight: 1
-  - text: VTS Lane
-    weight: 1
-  - text: managemate
-    weight: 1
-  - text: Ford
-    weight: 1
-  - text: Plooto
-    weight: 1
-  - text: Modulize
-    weight: 1
-  - text: Maxon Computer
-    weight: 1
-  - text: Sky View Suites
-    weight: 1
-  - text: Uvaro
-    weight: 1
-  - text: BMO
-    weight: 1
-  - text: CoreAVI
-    weight: 1
-  - text: Mission Control
-    weight: 1
-  - text: Geotab
-    weight: 1
-  - text: Manorlead
-    weight: 1
-  - text: Blackberry
-    weight: 1
-  - text: Rich Media
-    weight: 1
-  - text: Arkose Labs
-    weight: 1
-  - text: Digital Extremes
-    weight: 1
-  - text: Royal Canadian Air Force
-    weight: 1
-  - text: Skyjack
-    weight: 1
-  - text: XE
-    weight: 1
-  - text: Level Home
-    weight: 1
-  - text: PiinPoint
-    weight: 1
-  - text: Portable Intelligence
-    weight: 1
-  - text: Ford Motor Company
-    weight: 1
-  - text: Nova
-    weight: 1
-  - text: Magna
-    weight: 1
-  - text: ATS Corporation
-    weight: 1
-  - text: PointClickCare
+  - text: A.U.G. Signals
     weight: 1
   - text: Arctic Wolf Networks
     weight: 1
-  - text: National Bank of Canada
+  - text: Arkose Labs
     weight: 1
-  - text: Yubico
+  - text: ATS Corporation
     weight: 1
-  - text: Untether AI
+  - text: Blackberry
     weight: 1
-  - text: Vidyard
+  - text: BMO
     weight: 1
-  - text: A.U.G. Signals
+  - text: CIBC
+    weight: 2
+  - text: CoreAVI
     weight: 1
-  - text: Grantmatch
+  - text: Daily Blends
+    weight: 1
+  - text: Deep Trekker
+    weight: 1
+  - text: Digital Extremes
+    weight: 1
+  - text: Ford
+    weight: 1
+  - text: Ford Motor Company
     weight: 1
   - text: Front Rush
     weight: 1
+  - text: Geotab
+    weight: 1
+  - text: Grantmatch
+    weight: 1
+  - text: IBM
+    weight: 1
+  - text: Level Home
+    weight: 1
+  - text: Magna
+    weight: 1
+  - text: managemate
+    weight: 1
+  - text: Manorlead
+    weight: 1
+  - text: Manulife
+    weight: 1
+  - text: Maxon Computer
+    weight: 1
+  - text: Mission Control
+    weight: 1
+  - text: Modulize
+    weight: 1
+  - text: National Bank of Canada
+    weight: 1
+  - text: Nova
+    weight: 1
+  - text: Omniscient neurotechnology
+    weight: 1
+  - text: PiinPoint
+    weight: 1
+  - text: Plooto
+    weight: 1
+  - text: PointClickCare
+    weight: 1
+  - text: Polaris Intelligence Inc
+    weight: 1
+  - text: Portable Intelligence
+    weight: 1
+  - text: Relay Financial
+    weight: 1
+  - text: Rich Media
+    weight: 1
+  - text: Royal Canadian Air Force
+    weight: 1
+  - text: Sky View Suites
+    weight: 1
+  - text: Skygauge Robotics
+    weight: 1
+  - text: Skyjack
+    weight: 1
+  - text: Stratosphere.io
+    weight: 1
+  - text: Tersa
+    weight: 1
+  - text: The Globe and Mail
+    weight: 2
+  - text: Thoughtworks
+    weight: 1
   - text: Trend Micro
+    weight: 1
+  - text: TribalScale
+    weight: 2
+  - text: University of Waterloo
+    weight: 1
+  - text: Untether AI
+    weight: 1
+  - text: Uvaro
+    weight: 1
+  - text: Vidyard
+    weight: 1
+  - text: VTS Lane
+    weight: 1
+  - text: XE
+    weight: 1
+  - text: Yubico
     weight: 1
 - type: wordcloud
   title: 'Co-op #3 Places'
   description: ''
   total: 53
   words:
-  - text: Tablz
-    weight: 2
-  - text: Microsoft
-    weight: 1
-  - text: Eleven-X
-    weight: 1
-  - text: Cognixion
-    weight: 1
-  - text: UBC
-    weight: 1
-  - text: Harmonic
-    weight: 1
-  - text: Bloomberg
-    weight: 1
-  - text: GaN Systems
-    weight: 1
-  - text: Tecsys
-    weight: 1
-  - text: Arctic Wolf
-    weight: 1
-  - text: Running Tide
-    weight: 1
-  - text: Gentext
-    weight: 1
-  - text: MakeSens
-    weight: 1
-  - text: University of Waterloo
-    weight: 1
-  - text: Quantolio
-    weight: 1
-  - text: Junip
-    weight: 1
-  - text: Bleacher Rentals
-    weight: 1
-  - text: Questrade
-    weight: 1
-  - text: Soho VFX
+  - text: 1Password
     weight: 1
   - text: ApplyBoard
     weight: 1
-  - text: FlexJourney
-    weight: 1
-  - text: Mackenzie investments
-    weight: 1
-  - text: Blackberry QNX
-    weight: 1
-  - text: Trexo Robotics
-    weight: 1
-  - text: Volkswagen
-    weight: 1
-  - text: MPI Morheat
-    weight: 1
-  - text: Miovision
-    weight: 1
-  - text: BTC
-    weight: 1
-  - text: UWaterloo
+  - text: Arctic Wolf
     weight: 1
   - text: Arkose Labs
     weight: 1
-  - text: Sunlife Canada
+  - text: Bell
     weight: 1
-  - text: Mantle
+  - text: Blackberry QNX
     weight: 1
-  - text: Level Home
+  - text: Bleacher Rentals
     weight: 1
-  - text: FINTRAC
+  - text: Bloomberg
     weight: 1
-  - text: PiinPoint
+  - text: BTC
     weight: 1
-  - text: Tunnelbear
+  - text: Cognixion
     weight: 1
-  - text: Ford Motor Company
-    weight: 1
-  - text: Innovapost
-    weight: 1
-  - text: 1Password
+  - text: Eleven-X
     weight: 1
   - text: Faire
     weight: 1
-  - text: Teledyne Flir
+  - text: FINTRAC
     weight: 1
-  - text: Skydio
+  - text: FlexJourney
     weight: 1
-  - text: Memetica
+  - text: Ford Motor Company
     weight: 1
-  - text: NAV Canada
-    weight: 1
-  - text: Vidyard
-    weight: 1
-  - text: RELAYTO
-    weight: 1
-  - text: The Weather Network
-    weight: 1
-  - text: LCBO
-    weight: 1
-  - text: theScore
-    weight: 1
-  - text: Bell
+  - text: GaN Systems
     weight: 1
   - text: Genesys
     weight: 1
+  - text: Gentext
+    weight: 1
+  - text: Harmonic
+    weight: 1
+  - text: Innovapost
+    weight: 1
+  - text: Junip
+    weight: 1
+  - text: LCBO
+    weight: 1
+  - text: Level Home
+    weight: 1
+  - text: Mackenzie investments
+    weight: 1
+  - text: MakeSens
+    weight: 1
+  - text: Mantle
+    weight: 1
+  - text: Memetica
+    weight: 1
+  - text: Microsoft
+    weight: 1
+  - text: Miovision
+    weight: 1
+  - text: MPI Morheat
+    weight: 1
+  - text: NAV Canada
+    weight: 1
   - text: Nokia
+    weight: 1
+  - text: PiinPoint
+    weight: 1
+  - text: Quantolio
+    weight: 1
+  - text: Questrade
+    weight: 1
+  - text: RELAYTO
+    weight: 1
+  - text: Running Tide
+    weight: 1
+  - text: Skydio
+    weight: 1
+  - text: Soho VFX
+    weight: 1
+  - text: Sunlife Canada
+    weight: 1
+  - text: Tablz
+    weight: 2
+  - text: Tecsys
+    weight: 1
+  - text: Teledyne Flir
+    weight: 1
+  - text: The Weather Network
+    weight: 1
+  - text: theScore
+    weight: 1
+  - text: Trexo Robotics
+    weight: 1
+  - text: Tunnelbear
+    weight: 1
+  - text: UBC
+    weight: 1
+  - text: University of Waterloo
+    weight: 1
+  - text: UWaterloo
+    weight: 1
+  - text: Vidyard
+    weight: 1
+  - text: Volkswagen
     weight: 1
 - type: wordcloud
   title: 'Co-op #4 Places'
   description: ''
   total: 54
   words:
-  - text: Tesla
-    weight: 3
-  - text: theScore
-    weight: 3
-  - text: Floodbase
-    weight: 2
-  - text: Keplar
-    weight: 1
-  - text: TD Canada Trust
-    weight: 1
-  - text: Ontario Institute for Cancer Research
-    weight: 1
-  - text: BTC
-    weight: 1
-  - text: Harmonic
-    weight: 1
-  - text: Bloomberg
-    weight: 1
-  - text: Uncaught Exceptions
-    weight: 1
-  - text: Moleculight
-    weight: 1
-  - text: CIBC
-    weight: 1
-  - text: Kortex
-    weight: 1
-  - text: University of Waterloo
-    weight: 1
-  - text: QEYnet
-    weight: 1
-  - text: BlackBerry
-    weight: 1
-  - text: Deck
-    weight: 1
-  - text: Cobionix
-    weight: 1
-  - text: UW
-    weight: 1
-  - text: Teledyne Dalsa
-    weight: 1
-  - text: Martinrea
-    weight: 1
-  - text: BHF Robotics
-    weight: 1
-  - text: Dayforce
+  - text: Arcadis
     weight: 1
   - text: Athelas
     weight: 1
-  - text: Iron Focus Design
+  - text: ATS
     weight: 1
-  - text: Ford
+  - text: ATS Corporation
+    weight: 1
+  - text: BHF Robotics
+    weight: 1
+  - text: BlackBerry
+    weight: 1
+  - text: BLG
+    weight: 1
+  - text: Bloomberg
+    weight: 1
+  - text: BTC
+    weight: 1
+  - text: CIBC
     weight: 1
   - text: Clearpath Robotics
     weight: 1
-  - text: Texada
-    weight: 1
-  - text: Hydrolix
-    weight: 1
-  - text: Purolator
-    weight: 1
-  - text: ATS
-    weight: 1
-  - text: Texas Instruments
-    weight: 1
-  - text: NVIDIA
-    weight: 1
-  - text: EY
-    weight: 1
-  - text: Vidyard
+  - text: Cobionix
     weight: 1
   - text: Cohere
     weight: 1
-  - text: Miovision
+  - text: Dandelion Networks
+    weight: 1
+  - text: Dayforce
+    weight: 1
+  - text: Deck
+    weight: 1
+  - text: EY
+    weight: 1
+  - text: Floodbase
+    weight: 2
+  - text: Ford
+    weight: 1
+  - text: Gastronomous
+    weight: 1
+  - text: Harmonic
+    weight: 1
+  - text: HAWE Hydraulik
+    weight: 1
+  - text: Hydrolix
     weight: 1
   - text: IBM
     weight: 1
   - text: IESO
     weight: 1
-  - text: ATS Corporation
+  - text: Iron Focus Design
     weight: 1
-  - text: BLG
+  - text: Keplar
     weight: 1
-  - text: Nebula Block
+  - text: Kortex
+    weight: 1
+  - text: Martinrea
     weight: 1
   - text: Media Ecosystems Analysis Group
     weight: 1
-  - text: HAWE Hydraulik
+  - text: Miovision
     weight: 1
-  - text: Dandelion Networks
+  - text: Moleculight
     weight: 1
-  - text: Arcadis
-    weight: 1
-  - text: Gastronomous
-    weight: 1
-  - text: Zynga
+  - text: Nebula Block
     weight: 1
   - text: Nokia
+    weight: 1
+  - text: NVIDIA
+    weight: 1
+  - text: Ontario Institute for Cancer Research
+    weight: 1
+  - text: Purolator
+    weight: 1
+  - text: QEYnet
+    weight: 1
+  - text: TD Canada Trust
+    weight: 1
+  - text: Teledyne Dalsa
+    weight: 1
+  - text: Tesla
+    weight: 3
+  - text: Texada
+    weight: 1
+  - text: Texas Instruments
+    weight: 1
+  - text: theScore
+    weight: 3
+  - text: Uncaught Exceptions
+    weight: 1
+  - text: University of Waterloo
+    weight: 1
+  - text: UW
+    weight: 1
+  - text: Vidyard
+    weight: 1
+  - text: Zynga
     weight: 1
 - type: wordcloud
   title: 'Co-op #5 Places'
   description: ''
   total: 53
   words:
-  - text: Apple
-    weight: 4
-  - text: Zipline
-    weight: 2
-  - text: Heygen
-    weight: 2
-  - text: Twitter/X
-    weight: 2
-  - text: Shoplogix
-    weight: 2
-  - text: Multimatic
-    weight: 1
-  - text: Bristol Gate Capital
-    weight: 1
-  - text: Athelas/Commure
-    weight: 1
-  - text: Reinova
-    weight: 1
-  - text: Harmonic
-    weight: 1
-  - text: MAGI
-    weight: 1
-  - text: NTT Data
-    weight: 1
-  - text: Interac
+  - text: ABI Ltd
     weight: 1
   - text: Adentro
     weight: 1
-  - text: Kenna
-    weight: 1
-  - text: ABI Ltd
-    weight: 1
-  - text: Clearpath Robotics
-    weight: 1
-  - text: IRB
-    weight: 1
-  - text: Junip
-    weight: 1
-  - text: Self Employed
-    weight: 1
-  - text: Christie Digital
-    weight: 1
-  - text: Valence Labs
-    weight: 1
-  - text: Voiceflow
-    weight: 1
-  - text: Northguide
-    weight: 1
-  - text: Jaza
-    weight: 1
-  - text: Sony Interactive Entertainment
-    weight: 1
-  - text: Ford
-    weight: 1
-  - text: Energy Aspects
+  - text: Apple
+    weight: 4
+  - text: Arcadis
     weight: 1
   - text: Athelas
     weight: 1
-  - text: Electronic Arts
+  - text: Athelas/Commure
     weight: 1
   - text: ATS
     weight: 1
-  - text: Miovision
-    weight: 1
-  - text: Super.com
-    weight: 1
-  - text: Federato
-    weight: 1
-  - text: GlossGenius
-    weight: 1
-  - text: DRDC (Defense Canada)
-    weight: 1
   - text: ATS Corporation
     weight: 1
-  - text: D2L
-    weight: 1
-  - text: Nebula Block
-    weight: 1
-  - text: UBC Systopia Lab
-    weight: 1
-  - text: Curtiss-Wright
-    weight: 1
-  - text: Shopify
-    weight: 1
-  - text: Arcadis
-    weight: 1
-  - text: Cube Exchange
-    weight: 1
-  - text: Video Hero
+  - text: Bristol Gate Capital
     weight: 1
   - text: Cerebras Systems
     weight: 1
+  - text: Christie Digital
+    weight: 1
+  - text: Clearpath Robotics
+    weight: 1
+  - text: Cube Exchange
+    weight: 1
+  - text: Curtiss-Wright
+    weight: 1
+  - text: D2L
+    weight: 1
+  - text: DRDC (Defense Canada)
+    weight: 1
+  - text: Electronic Arts
+    weight: 1
+  - text: Energy Aspects
+    weight: 1
+  - text: Federato
+    weight: 1
+  - text: Ford
+    weight: 1
+  - text: GlossGenius
+    weight: 1
+  - text: Harmonic
+    weight: 1
+  - text: Heygen
+    weight: 2
+  - text: Interac
+    weight: 1
+  - text: IRB
+    weight: 1
+  - text: Jaza
+    weight: 1
+  - text: Junip
+    weight: 1
+  - text: Kenna
+    weight: 1
+  - text: MAGI
+    weight: 1
+  - text: Miovision
+    weight: 1
+  - text: Multimatic
+    weight: 1
+  - text: Nebula Block
+    weight: 1
+  - text: Northguide
+    weight: 1
+  - text: NTT Data
+    weight: 1
+  - text: Reinova
+    weight: 1
+  - text: Self Employed
+    weight: 1
+  - text: Shopify
+    weight: 1
+  - text: Shoplogix
+    weight: 2
+  - text: Sony Interactive Entertainment
+    weight: 1
+  - text: Super.com
+    weight: 1
+  - text: Twitter/X
+    weight: 2
+  - text: UBC Systopia Lab
+    weight: 1
+  - text: Valence Labs
+    weight: 1
+  - text: Video Hero
+    weight: 1
+  - text: Voiceflow
+    weight: 1
+  - text: Zipline
+    weight: 2
 - type: wordcloud
   title: 'Co-op #6 Places'
   description: ''
   total: 49
   words:
-  - text: Apple
-    weight: 3
-  - text: Microsoft
-    weight: 3
-  - text: Nvidia
-    weight: 2
+  - text: Altruist
+    weight: 1
   - text: Amazon
     weight: 2
-  - text: AWS
-    weight: 2
-  - text: Snowflake
-    weight: 1
-  - text: Verily
-    weight: 1
-  - text: Heygen
+  - text: Apple
+    weight: 3
+  - text: Arctic Wolf
     weight: 1
   - text: Athelas/Commure
     weight: 1
-  - text: Reinova
+  - text: AWS
+    weight: 2
+  - text: Bloomberg
+    weight: 1
+  - text: Curtiss-Wright
+    weight: 1
+  - text: dConstruct Robotics
+    weight: 1
+  - text: DRDC (Defense Canada)
+    weight: 1
+  - text: Energy Aspects
+    weight: 1
+  - text: Ford
+    weight: 1
+  - text: GlossGenius
+    weight: 1
+  - text: Google
+    weight: 1
+  - text: Groq
     weight: 1
   - text: Harmonic
     weight: 1
-  - text: Bloomberg
+  - text: Heygen
+    weight: 1
+  - text: Industrial Light & Magic
+    weight: 1
+  - text: Junip
+    weight: 1
+  - text: Meta
+    weight: 1
+  - text: Microsoft
+    weight: 3
+  - text: Miovision
+    weight: 1
+  - text: Nightingale Security
+    weight: 1
+  - text: NVIDIA
+    weight: 1
+  - text: Nvidia
+    weight: 2
+  - text: Plusgrade
+    weight: 1
+  - text: Purolator
+    weight: 1
+  - text: Reinova
+    weight: 1
+  - text: Relay
+    weight: 1
+  - text: Roblox
+    weight: 1
+  - text: Shopify
+    weight: 1
+  - text: Snowflake
+    weight: 1
+  - text: Sony Interactive Entertainment
     weight: 1
   - text: Statsig
     weight: 1
   - text: Tiktok
     weight: 1
-  - text: Relay
-    weight: 1
-  - text: Nightingale Security
-    weight: 1
-  - text: Junip
-    weight: 1
-  - text: Zipline
-    weight: 1
-  - text: Groq
-    weight: 1
-  - text: Industrial Light & Magic
+  - text: Twitter/X
     weight: 1
   - text: Uber
     weight: 1
   - text: Upside Robotics
     weight: 1
-  - text: dConstruct Robotics
-    weight: 1
-  - text: Energy Aspects
-    weight: 1
-  - text: DRDC (Defense Canada)
-    weight: 1
-  - text: Miovision
-    weight: 1
-  - text: NVIDIA
-    weight: 1
-  - text: Arctic Wolf
-    weight: 1
-  - text: Twitter/X
-    weight: 1
-  - text: GlossGenius
-    weight: 1
-  - text: Plusgrade
-    weight: 1
-  - text: Google
+  - text: Verily
     weight: 1
   - text: Vision and Image Processing Group
     weight: 1
-  - text: Ford
-    weight: 1
-  - text: Altruist
-    weight: 1
-  - text: Meta
-    weight: 1
-  - text: Curtiss-Wright
-    weight: 1
-  - text: Shopify
-    weight: 1
   - text: Zenblen
     weight: 1
-  - text: Purolator
-    weight: 1
-  - text: Sony Interactive Entertainment
-    weight: 1
-  - text: Roblox
+  - text: Zipline
     weight: 1
 - type: wordcloud
   title: Coolest Company Perk
   description: ''
   total: 52
   words:
-  - text: Free lunch and snacks
-    weight: 15
-  - text: Perks plus (400 USD reimbursement)
+  - text: and frequent fun company outings
     weight: 1
-  - text: In-house bar
+  - text: Broadway Show
     weight: 1
-  - text: Really cheap car rentals
-    weight: 1
-  - text: Free games
-    weight: 1
-  - text: Travel paid for by the company
-    weight: 1
-  - text: Free drinks
-    weight: 1
-  - text: north face puffer jacket
-    weight: 1
-  - text: Free GSW and 49ers tickets.
-    weight: 1
-  - text: Wellness benefits that could be used for basically anything
+  - text: Broadway show
     weight: 1
   - text: Business travel
     weight: 1
   - text: Company Retreat in Downtown Toronto
     weight: 1
-  - text: Broadway show
-    weight: 1
-  - text: Lululemon Monthly Credits
+  - text: Concerts + food trucks
     weight: 1
   - text: Defense Canada
     weight: 1
-  - text: Uber Eats Lunch every day
-    weight: 1
-  - text: lots of stipends
-    weight: 1
-  - text: Free company product
-    weight: 1
-  - text: Concerts + food trucks
-    weight: 1
-  - text: housing stipend 🤣 and intern events
-    weight: 1
   - text: Discount at the stores
     weight: 1
-  - text: Unlimited snacks of your choice in company kitchen
+  - text: Dogs at the office
     weight: 1
   - text: Either getting to keep a free brand new 4k monitor I got when requesting
       peripherals
     weight: 1
-  - text: or being able to order from Ritual for lunch whenever I was in person
+  - text: Free company product
     weight: 1
-  - text: Tiramusu Tuesday
-    weight: 1
-  - text: Free playstation
-    weight: 1
-  - text: Free stuff
-    weight: 1
-  - text: Gym at the office I guess
-    weight: 1
-  - text: Free WeWork access across any location in North America
+  - text: Free drinks
     weight: 1
   - text: Free flights to different cities
     weight: 1
-  - text: Free rent and flights
+  - text: Free food
     weight: 1
-  - text: Broadway Show
+  - text: Free games
     weight: 1
-  - text: Dogs at the office
+  - text: Free GSW and 49ers tickets.
     weight: 1
-  - text: Gym
-    weight: 1
-  - text: Nothing
-    weight: 1
+  - text: Free lunch and snacks
+    weight: 15
   - text: Free movies!
+    weight: 1
+  - text: Free playstation
+    weight: 1
+  - text: Free rent and flights
     weight: 1
   - text: Free snacks from vending machines
     weight: 1
-  - text: and frequent fun company outings
+  - text: Free stuff
+    weight: 1
+  - text: Free WeWork access across any location in North America
+    weight: 1
+  - text: golf simulator in office
     weight: 1
   - text: Got to keep my brand new M1 MacBook Pro
     weight: 1
-  - text: Free food
+  - text: Gym
     weight: 1
-  - text: golf simulator in office
+  - text: Gym at the office I guess
+    weight: 1
+  - text: housing stipend 🤣 and intern events
+    weight: 1
+  - text: In-house bar
+    weight: 1
+  - text: lots of stipends
+    weight: 1
+  - text: Lululemon Monthly Credits
+    weight: 1
+  - text: north face puffer jacket
+    weight: 1
+  - text: Nothing
+    weight: 1
+  - text: or being able to order from Ritual for lunch whenever I was in person
+    weight: 1
+  - text: Perks plus (400 USD reimbursement)
+    weight: 1
+  - text: Really cheap car rentals
+    weight: 1
+  - text: Tiramusu Tuesday
+    weight: 1
+  - text: Travel paid for by the company
+    weight: 1
+  - text: Uber Eats Lunch every day
+    weight: 1
+  - text: Unlimited snacks of your choice in company kitchen
+    weight: 1
+  - text: Wellness benefits that could be used for basically anything
     weight: 1
 - type: boxplot
   title: Co-op Earnings Over the Semesters

@@ -6,146 +6,146 @@ charts:
   words:
   - text: SYDE 101L
     weight: 5
-  - text: SYDE 263
-    weight: 5
-  - text: SYDE 252
-    weight: 4
-  - text: SYDE 543
-    weight: 4
+  - text: SYDE 113
+    weight: 1
+  - text: SYDE 161
+    weight: 1
+  - text: SYDE 162
+    weight: 2
+  - text: SYDE 192
+    weight: 2
+  - text: SYDE 211
+    weight: 1
   - text: SYDE 223
     weight: 4
-  - text: SYDE 584
+  - text: SYDE 252
     weight: 4
+  - text: SYDE 262
+    weight: 1
+  - text: SYDE 263
+    weight: 5
+  - text: SYDE 283
+    weight: 2
+  - text: SYDE 286
+    weight: 1
+  - text: SYDE 292L
+    weight: 2
+  - text: SYDE 351
+    weight: 1
+  - text: SYDE 352
+    weight: 1
   - text: SYDE 352L
     weight: 3
   - text: SYDE 361
     weight: 3
-  - text: SYDE 381
-    weight: 3
-  - text: SYDE 542
-    weight: 2
-  - text: SYDE 383
-    weight: 2
-  - text: SYDE 552
-    weight: 2
-  - text: SYDE 192
-    weight: 2
   - text: SYDE 362
     weight: 2
-  - text: SYDE 292L
+  - text: SYDE 381
+    weight: 3
+  - text: SYDE 383
     weight: 2
-  - text: SYDE 283
-    weight: 2
+  - text: SYDE 532
+    weight: 1
   - text: SYDE 535
     weight: 2
-  - text: SYDE 162
+  - text: SYDE 542
+    weight: 2
+  - text: SYDE 543
+    weight: 4
+  - text: SYDE 552
     weight: 2
   - text: SYDE 577
     weight: 1
-  - text: SYDE 352
-    weight: 1
-  - text: SYDE 532
-    weight: 1
-  - text: SYDE 161
-    weight: 1
-  - text: SYDE 113
-    weight: 1
-  - text: SYDE 351
-    weight: 1
-  - text: SYDE 262
-    weight: 1
-  - text: SYDE 211
-    weight: 1
-  - text: SYDE 286
-    weight: 1
+  - text: SYDE 584
+    weight: 4
 - type: wordcloud
   title: Most Useful Course
   description: ''
   total: 59
   words:
-  - text: SYDE 223
-    weight: 23
-  - text: SYDE 461/462
-    weight: 4
-  - text: SYDE 361
-    weight: 4
-  - text: SYDE 292L
-    weight: 3
-  - text: SYDE 352
-    weight: 2
-  - text: SYDE 577
-    weight: 2
-  - text: SYDE 101L
-    weight: 2
-  - text: SYDE 162
-    weight: 2
-  - text: SYDE 548
-    weight: 1
-  - text: SYSE 192
+  - text: MSE 343
     weight: 1
   - text: NONE
     weight: 1
+  - text: SYDE 101L
+    weight: 2
   - text: SYDE 111
+    weight: 1
+  - text: SYDE 162
+    weight: 2
+  - text: SYDE 211
     weight: 1
   - text: SYDE 212
     weight: 1
-  - text: SYDE 575
-    weight: 1
-  - text: SYDE 283
-    weight: 1
-  - text: SYDE 381
-    weight: 1
+  - text: SYDE 223
+    weight: 23
   - text: SYDE 252
-    weight: 1
-  - text: SYDE 411
-    weight: 1
-  - text: MSE 343
-    weight: 1
-  - text: SYDE 285
     weight: 1
   - text: SYDE 263
     weight: 1
-  - text: SYDE 294
+  - text: SYDE 283
     weight: 1
-  - text: SYDE 542
-    weight: 1
-  - text: SYDE 211
+  - text: SYDE 285
     weight: 1
   - text: SYDE 286
+    weight: 1
+  - text: SYDE 292L
+    weight: 3
+  - text: SYDE 294
+    weight: 1
+  - text: SYDE 352
+    weight: 2
+  - text: SYDE 361
+    weight: 4
+  - text: SYDE 381
+    weight: 1
+  - text: SYDE 411
+    weight: 1
+  - text: SYDE 461/462
+    weight: 4
+  - text: SYDE 542
+    weight: 1
+  - text: SYDE 548
+    weight: 1
+  - text: SYDE 575
+    weight: 1
+  - text: SYDE 577
+    weight: 2
+  - text: SYSE 192
     weight: 1
 - type: wordcloud
   title: Most Difficult Course
   description: ''
   total: 61
   words:
-  - text: SYDE 252
-    weight: 12
-  - text: SYDE 381
-    weight: 6
-  - text: SYDE 311
-    weight: 6
-  - text: SYDE 283
-    weight: 6
-  - text: SYDE 383
-    weight: 6
   - text: SYDE 111
     weight: 4
   - text: SYDE 112
     weight: 4
-  - text: SYDE 211
-    weight: 4
-  - text: SYDE 114
-    weight: 3
   - text: SYDE 113
+    weight: 3
+  - text: SYDE 114
     weight: 3
   - text: SYDE 182
     weight: 2
-  - text: SYDE 286
-    weight: 1
-  - text: SYDE 361
-    weight: 1
+  - text: SYDE 211
+    weight: 4
   - text: SYDE 212
     weight: 1
+  - text: SYDE 252
+    weight: 12
+  - text: SYDE 283
+    weight: 6
+  - text: SYDE 286
+    weight: 1
+  - text: SYDE 311
+    weight: 6
+  - text: SYDE 361
+    weight: 1
+  - text: SYDE 381
+    weight: 6
+  - text: SYDE 383
+    weight: 6
   - text: SYDE 552
     weight: 1
   - text: SYDE 577
@@ -155,126 +155,126 @@ charts:
   description: ''
   total: 56
   words:
-  - text: ECE 459
-    weight: 5
-  - text: SCI 206
-    weight: 3
+  - text: BET 100
+    weight: 1
+  - text: BET 320
+    weight: 1
+  - text: BET 350
+    weight: 1
+  - text: BET 460
+    weight: 1
+  - text: BET 580
+    weight: 1
+  - text: BIOL239
+    weight: 1
+  - text: BME 540/550
+    weight: 1
+  - text: BME 550
+    weight: 1
+  - text: CIVE 341
+    weight: 1
   - text: CIVE 440
     weight: 3
   - text: CLAS 104
     weight: 3
-  - text: ECE 452
-    weight: 2
-  - text: PSYCH 101
-    weight: 2
-  - text: MSE 343
-    weight: 2
-  - text: MUSIC 140
-    weight: 2
-  - text: ME 599
-    weight: 2
-  - text: ECE 358
-    weight: 2
-  - text: GENE 404
-    weight: 1
-  - text: SCI 208
-    weight: 1
-  - text: JAPAN 101R
-    weight: 1
-  - text: RS 235
-    weight: 1
-  - text: STV 208
-    weight: 1
-  - text: SPAN 101
-    weight: 1
-  - text: PHIL 121
-    weight: 1
-  - text: BME 550
-    weight: 1
-  - text: PHIL 125
-    weight: 1
-  - text: CIVE 341
-    weight: 1
-  - text: PSCI 252
-    weight: 1
-  - text: ME 436
-    weight: 1
-  - text: BIOL239
-    weight: 1
-  - text: ME 536
-    weight: 1
   - text: ECE 252
     weight: 1
-  - text: SYDE 223
-    weight: 1
-  - text: BME 540/550
-    weight: 1
-  - text: BET 320
-    weight: 1
+  - text: ECE 358
+    weight: 2
+  - text: ECE 452
+    weight: 2
+  - text: ECE 459
+    weight: 5
   - text: ECE 493T
     weight: 1
-  - text: BET 100
-    weight: 1
-  - text: MTE 325
-    weight: 1
-  - text: PHIL 285J
-    weight: 1
-  - text: BET 580
+  - text: GENE 404
     weight: 1
   - text: GRK 101
     weight: 1
+  - text: JAPAN 101R
+    weight: 1
+  - text: ME 436
+    weight: 1
+  - text: ME 536
+    weight: 1
+  - text: ME 599
+    weight: 2
+  - text: MSE 343
+    weight: 2
+  - text: MTE 325
+    weight: 1
+  - text: MUSIC 140
+    weight: 2
   - text: MUSIC 246
     weight: 1
-  - text: SI 121R
+  - text: PHIL 121
+    weight: 1
+  - text: PHIL 125
+    weight: 1
+  - text: PHIL 285J
+    weight: 1
+  - text: PSCI 252
     weight: 1
   - text: PSCI359
     weight: 1
-  - text: BET 460
+  - text: PSYCH 101
+    weight: 2
+  - text: RS 235
     weight: 1
-  - text: BET 350
+  - text: SCI 206
+    weight: 3
+  - text: SCI 208
     weight: 1
   - text: SDS 131R
+    weight: 1
+  - text: SI 121R
+    weight: 1
+  - text: SPAN 101
+    weight: 1
+  - text: STV 208
+    weight: 1
+  - text: SYDE 223
     weight: 1
 - type: wordcloud
   title: Favourite Professor
   description: ''
   total: 62
   words:
-  - text: Reem Roufail
-    weight: 13
-  - text: Shi Cao
-    weight: 12
-  - text: Roydon Fraser
-    weight: 9
-  - text: Jintao Deng
-    weight: 7
-  - text: Charbel Azzi
-    weight: 5
-  - text: John Zelek
-    weight: 3
-  - text: Siby Samuel
-    weight: 2
-  - text: Peter Balka
-    weight: 1
-  - text: Jessie Ma
-    weight: 1
-  - text: Matt Borland
-    weight: 1
-  - text: Stefan Idziak
-    weight: 1
-  - text: John McPhee
-    weight: 1
-  - text: Nasser Lashgarian Azad
-    weight: 1
-  - text: James Tung
-    weight: 1
-  - text: David Rose
+  - text: Ali Mahmood
     weight: 1
   - text: Bruno Tremblay
     weight: 1
+  - text: Charbel Azzi
+    weight: 5
   - text: Chrystopher Nehaniv
     weight: 1
-  - text: Ali Mahmood
+  - text: David Rose
+    weight: 1
+  - text: James Tung
+    weight: 1
+  - text: Jessie Ma
+    weight: 1
+  - text: Jintao Deng
+    weight: 7
+  - text: John McPhee
+    weight: 1
+  - text: John Zelek
+    weight: 3
+  - text: Matt Borland
+    weight: 1
+  - text: Nasser Lashgarian Azad
+    weight: 1
+  - text: Peter Balka
+    weight: 1
+  - text: Reem Roufail
+    weight: 13
+  - text: Roydon Fraser
+    weight: 9
+  - text: Shi Cao
+    weight: 12
+  - text: Siby Samuel
+    weight: 2
+  - text: Stefan Idziak
     weight: 1
 - type: bar
   title: Options Completed
@@ -282,20 +282,20 @@ charts:
   description: ''
   total: 66
   labels:
-  - None
   - Computing
-  - Management Science
-  - Intelligent and Automated Systems
-  - Physical and Mechatronic Systems
   - Human Factors and Interfaces
+  - Intelligent and Automated Systems
+  - Management Science
   - Mechatronics
+  - None
+  - Physical and Mechatronic Systems
   data:
-  - 35
   - 24
+  - 1
+  - 1
   - 3
   - 1
-  - 1
-  - 1
+  - 35
   - 1
   colors:
   - '#2563eb'
@@ -311,13 +311,13 @@ charts:
   description: ''
   total: 66
   labels:
+  - Fine Arts Studio
   - None
   - Philosophy
   - Politics and Business
-  - Fine Arts Studio
   data:
-  - 63
   - 1
+  - 63
   - 1
   - 1
   colors:
@@ -430,61 +430,61 @@ charts:
   description: ''
   total: 47
   words:
-  - text: Mechatronics
-    weight: 6
-  - text: Track One Engineering
-    weight: 6
+  - text: Business
+    weight: 1
+  - text: but not STEM related
+    weight: 1
+  - text: Cognitve Science
+    weight: 1
   - text: Computer Engineering
     weight: 5
   - text: Computer Science
     weight: 5
-  - text: Management Engineering
-    weight: 2
-  - text: Mechanical Engineering
-    weight: 2
-  - text: Engineering Science
-    weight: 2
-  - text: Software Engineering
-    weight: 2
-  - text: Not sure
-    weight: 2
-  - text: Informatics
-    weight: 1
-  - text: Global Business & Digital Arts
-    weight: 1
-  - text: Engineering Physics
-    weight: 1
-  - text: Cognitve Science
-    weight: 1
-  - text: Interaction Design
-    weight: 1
-  - text: Math
-    weight: 1
-  - text: University of Toronto
-    weight: 1
-  - text: McMaster Software Engineering
-    weight: 1
-  - text: Knowledge Integration
+  - text: Data Science
     weight: 1
   - text: Electrical Engineering
     weight: 1
-  - text: Mechatronics Engineering
-    weight: 1
-  - text: but not STEM related
-    weight: 1
-  - text: Ivey + Eng
-    weight: 1
-  - text: Business
-    weight: 1
   - text: Engineering + Master of Managment
     weight: 1
-  - text: Planning
+  - text: Engineering Physics
+    weight: 1
+  - text: Engineering Science
+    weight: 2
+  - text: Gap Year
+    weight: 1
+  - text: Global Business & Digital Arts
     weight: 1
   - text: idk
     weight: 1
-  - text: Gap Year
+  - text: Informatics
     weight: 1
-  - text: Data Science
+  - text: Interaction Design
+    weight: 1
+  - text: Ivey + Eng
+    weight: 1
+  - text: Knowledge Integration
+    weight: 1
+  - text: Management Engineering
+    weight: 2
+  - text: Math
+    weight: 1
+  - text: McMaster Software Engineering
+    weight: 1
+  - text: Mechanical Engineering
+    weight: 2
+  - text: Mechatronics
+    weight: 6
+  - text: Mechatronics Engineering
+    weight: 1
+  - text: Not sure
+    weight: 2
+  - text: Planning
+    weight: 1
+  - text: Software Engineering
+    weight: 2
+  - text: Track One Engineering
+    weight: 6
+  - text: University of Toronto
     weight: 1
   - text: UofT Track One Engineering
     weight: 1
@@ -507,27 +507,27 @@ charts:
   description: ''
   total: 57
   labels:
-  - Unauthorized collaboration on individual assignments
-  - Using AI tools in restricted contexts (if not permitted)
   - Copying assignments/homework
   - Fabricating Data
-  - Plagiarism (using someone else's work without credit)
-  - Using unauthorized materials/notes during an exam
+  - Gaslighting professors
   - Having someone else complete work for you
   - I decline to answer this question lol
   - None of the above
-  - Gaslighting professors
+  - Plagiarism (using someone else's work without credit)
+  - Unauthorized collaboration on individual assignments
+  - Using AI tools in restricted contexts (if not permitted)
+  - Using unauthorized materials/notes during an exam
   data:
-  - 51
-  - 45
   - 44
   - 37
-  - 21
-  - 14
+  - 1
   - 12
   - 1
   - 1
-  - 1
+  - 21
+  - 51
+  - 45
+  - 14
   colors:
   - '#10b981'
   - '#10b981'

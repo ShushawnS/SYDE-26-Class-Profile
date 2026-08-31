@@ -98,7 +98,17 @@ def multi_n(field):
     return int(multi.loc[multi["field"] == field, "respondent_id"].nunique())
 
 
+def _sort_key(lbl):
+    """Natural sort: numeric-prefixed labels first (numerically), else text."""
+    s = str(lbl)
+    m = re.match(r"^\s*(\d+(?:\.\d+)?)", s)
+    if m:
+        return (0, float(m.group(1)), s.lower())
+    return (1, s.lower(), s)
+
+
 def sorted_items(d):
+    """Sort by count descending (used for top-N category selection)."""
     return sorted(d.items(), key=lambda kv: -kv[1])
 
 
@@ -119,7 +129,7 @@ def set_bar(chart, d, order=None):
         items = [(o, int(next((v for k, v in d.items() if _eq(k, o)), 0)))
                  for o in order]
     else:
-        items = sorted_items(d)
+        items = sorted(d.items(), key=lambda kv: _sort_key(kv[0]))
     chart["labels"] = [l for l, _ in items]
     chart["data"] = [v for _, v in items]
     chart["total"] = int(sum(v for _, v in items))
@@ -176,8 +186,8 @@ def coop_wordcloud(chart, coop_num, n=None):
     s = coops.loc[idx, "company"].map(clean).dropna()
     if n is None:
         n = len(s.value_counts())
-    chart["words"] = [{"text": str(t), "weight": int(w)} for t, w in
-                      s.value_counts().head(n).items()]
+    items = sorted(s.value_counts().items(), key=lambda kv: _sort_key(kv[0]))
+    chart["words"] = [{"text": str(t), "weight": int(w)} for t, w in items[:n]]
     chart["total"] = int(s.notna().sum())
 
 
@@ -201,7 +211,8 @@ def phrase_cloud(series):
     Returns (words, total_respondents)."""
     s = series.map(clean).dropna()
     c = s.value_counts()
-    words = [{"text": str(t), "weight": int(w)} for t, w in c.items()]
+    items = sorted(c.items(), key=lambda kv: _sort_key(kv[0]))
+    words = [{"text": str(t), "weight": int(w)} for t, w in items]
     return words, int(s.notna().sum())
 
 
@@ -297,7 +308,8 @@ def split_freq_words(series, n=None):
             part = part.strip()
             if part:
                 c[part] += 1
-    words = [{"text": t, "weight": int(w)} for t, w in c.most_common(n)]
+    items = sorted(c.items(), key=lambda kv: _sort_key(kv[0]))
+    words = [{"text": t, "weight": int(w)} for t, w in items[:n]]
     return words, int(series.map(clean).notna().sum())
 
 

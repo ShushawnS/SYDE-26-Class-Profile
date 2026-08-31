@@ -5,25 +5,25 @@ charts:
   description: The most common mental health challenges students faced during university.
   total: 63
   labels:
+  - Addictive Disorder
   - Anxiety
-  - None
   - Depression
   - Disassociation
   - Eating Disorder
-  - Suicidal Thoughts
-  - PTSD
-  - Addictive Disorder
+  - None
   - OCD
+  - PTSD
+  - Suicidal Thoughts
   data:
+  - 1
   - 32
-  - 18
   - 11
   - 3
   - 2
+  - 18
+  - 1
   - 2
   - 2
-  - 1
-  - 1
   colors:
   - '#2563eb'
   - '#10b981'
@@ -40,23 +40,23 @@ charts:
   description: ''
   total: 45
   labels:
-  - Co-op/Jobs
   - Academics
-  - Relationships
-  - Friends
-  - Family
-  - Extracurricular
+  - Co-op/Jobs
   - Cohort
   - Environment
+  - Extracurricular
+  - Family
+  - Friends
+  - Relationships
   data:
-  - 35
   - 31
-  - 26
-  - 11
-  - 9
+  - 35
+  - 1
+  - 1
   - 5
-  - 1
-  - 1
+  - 9
+  - 11
+  - 26
   colors:
   - '#2563eb'
   - '#10b981'
@@ -110,25 +110,25 @@ charts:
   description: ''
   total: 49
   labels:
-  - SYDE 2026
-  - High School
-  - Online/App
-  - Friends
-  - Party/Social Event
+  - Co-op
   - Exchange
   - Extracurricular
-  - Co-op
+  - Friends
+  - High School
+  - Online/App
+  - Party/Social Event
   - Residence
+  - SYDE 2026
   data:
-  - 13
+  - 3
+  - 5
+  - 5
+  - 10
   - 11
   - 10
-  - 10
   - 9
-  - 5
-  - 5
-  - 3
   - 2
+  - 13
   colors:
   - '#2563eb'
   - '#10b981'
@@ -307,22 +307,22 @@ charts:
   description: ''
   total: 57
   labels:
+  - Adderall
   - Alcohol
+  - Ketamine
+  - LSD
   - Marijuana
   - MDMA/Ecstasy
-  - LSD
   - Shrooms
-  - Adderall
-  - Ketamine
   - Vyvanse but I have ADHD lol
   data:
+  - 2
   - 56
+  - 2
+  - 5
   - 37
   - 5
-  - 5
   - 4
-  - 2
-  - 2
   - 1
   colors:
   - '#10b981'

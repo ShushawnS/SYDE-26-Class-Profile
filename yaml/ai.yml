@@ -50,36 +50,36 @@ charts:
   description: ''
   total: 42
   labels:
-  - Jensen Huang
-  - Steve Jobs
-  - Dario Amodei
-  - Tim Cook
-  - Peter Thiel
-  - Mark Zuckerberg
-  - Ew
-  - I hate them all.
-  - Sundar Pichai
-  - These people are all evil 👍
-  - Hate them all!!
-  - they all suck
-  - why would i have a favourite tech CEO
-  - The palantir fucker
   - bruh.
+  - Dario Amodei
+  - Ew
+  - Hate them all!!
+  - I hate them all.
+  - Jensen Huang
+  - Mark Zuckerberg
+  - Peter Thiel
+  - Steve Jobs
+  - Sundar Pichai
+  - The palantir fucker
+  - These people are all evil 👍
+  - they all suck
+  - Tim Cook
+  - why would i have a favourite tech CEO
   data:
-  - 16
-  - 5
+  - 1
   - 4
-  - 3
-  - 3
+  - 1
+  - 1
+  - 1
+  - 16
   - 2
+  - 3
+  - 5
   - 1
   - 1
   - 1
   - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  - 3
   - 1
   colors:
   - '#ef4444'

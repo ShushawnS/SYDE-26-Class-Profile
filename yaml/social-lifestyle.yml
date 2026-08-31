@@ -4,39 +4,49 @@ charts:
   description: The food spots that kept our class going through late-night study sessions.
   total: 58
   words:
-  - text: Eby Street Bodega
-    weight: 3
-  - text: Bao Sandwich Bar
-    weight: 3
-  - text: Pho Anh Vu
-    weight: 2
+  - text: Abe Erb
+    weight: 1
+  - text: Arabella Beer Park
+    weight: 1
   - text: Arabesque
     weight: 2
-  - text: Kinton Ramen
-    weight: 2
-  - text: Kabob Shack
-    weight: 2
-  - text: Shinwa
-    weight: 2
-  - text: Onnuri
-    weight: 2
-  - text: Lancaster Smokehouse
-    weight: 2
-  - text: Top Chicken
-    weight: 2
-  - text: Zay Zaman
+  - text: Bao Sandwich Bar
+    weight: 3
+  - text: Champa's Kitchen
+    weight: 1
+  - text: Champas Kitchen
+    weight: 1
+  - text: Daldongnae Korean BBQ - Waterloo
+    weight: 1
+  - text: Del's
+    weight: 1
+  - text: Dinestation
+    weight: 1
+  - text: Eby Street Bodega
+    weight: 3
+  - text: fresh burrito
+    weight: 1
+  - text: Gol's
+    weight: 1
+  - text: IPHO
+    weight: 1
+  - text: iPotato
     weight: 1
   - text: Izne Poke Plus
     weight: 1
-  - text: Korner Kitchen
-    weight: 1
-  - text: Watami Sushi
-    weight: 1
+  - text: Kabob Shack
+    weight: 2
   - text: Ken’s Sushi
     weight: 1
-  - text: Champa's Kitchen
+  - text: Kingyu
     weight: 1
-  - text: Arabella Beer Park
+  - text: Kinton Ramen
+    weight: 2
+  - text: Korner Kitchen
+    weight: 1
+  - text: Lancaster Smokehouse
+    weight: 2
+  - text: Lazeez
     weight: 1
   - text: Loloan Lobby Bar
     weight: 1
@@ -44,59 +54,49 @@ charts:
     weight: 1
   - text: Mel’s Diner
     weight: 1
-  - text: Gol's
-    weight: 1
   - text: Myungga
-    weight: 1
-  - text: Williams Cafe
-    weight: 1
-  - text: IPHO
-    weight: 1
-  - text: Yunshang Rice Noodles
-    weight: 1
-  - text: Shawerma Plus
-    weight: 1
-  - text: Daldongnae Korean BBQ - Waterloo
-    weight: 1
-  - text: iPotato
-    weight: 1
-  - text: Del's
-    weight: 1
-  - text: Lazeez
-    weight: 1
-  - text: Champas Kitchen
-    weight: 1
-  - text: Kingyu
-    weight: 1
-  - text: Yunshang Rice Noodle
-    weight: 1
-  - text: Pho Ben Thanh
-    weight: 1
-  - text: Oka Sushi
-    weight: 1
-  - text: Tamasha
-    weight: 1
-  - text: Dinestation
-    weight: 1
-  - text: Watami
     weight: 1
   - text: Now Tea
     weight: 1
+  - text: Oka Sushi
+    weight: 1
+  - text: On Coal
+    weight: 1
+  - text: Onnuri
+    weight: 2
+  - text: Pho Anh Vu
+    weight: 2
+  - text: Pho Ben Thanh
+    weight: 1
+  - text: Score pizza
+    weight: 1
+  - text: Shawerma Plus
+    weight: 1
+  - text: Shinwa
+    weight: 2
   - text: Shinwa's
     weight: 1
   - text: Sole
     weight: 1
-  - text: Abe Erb
-    weight: 1
-  - text: Union burger (they closed)
+  - text: Tamasha
     weight: 1
   - text: The Poke Box
     weight: 1
-  - text: fresh burrito
+  - text: Top Chicken
+    weight: 2
+  - text: Union burger (they closed)
     weight: 1
-  - text: Score pizza
+  - text: Watami
     weight: 1
-  - text: On Coal
+  - text: Watami Sushi
+    weight: 1
+  - text: Williams Cafe
+    weight: 1
+  - text: Yunshang Rice Noodle
+    weight: 1
+  - text: Yunshang Rice Noodles
+    weight: 1
+  - text: Zay Zaman
     weight: 1
 - type: bar
   title: How Many of Your 5 Closest Uni Friends Are in SYDE
@@ -213,13 +213,13 @@ charts:
   description: ''
   total: 64
   labels:
-  - Not balding
-  - Balding likely caused by coming to Waterloo
   - Balding but NOT due to Waterloo
+  - Balding likely caused by coming to Waterloo
+  - Not balding
   data:
-  - 40
-  - 22
   - 2
+  - 22
+  - 40
   colors:
   - '#ef4444'
   - '#10b981'
@@ -255,196 +255,196 @@ charts:
   description: ''
   total: 42
   words:
-  - text: Volleyball
-    weight: 24
-  - text: Ultimate Frisbee
-    weight: 15
-  - text: Soccer
-    weight: 14
-  - text: Dodgeball
-    weight: 13
   - text: Basketball
     weight: 12
-  - text: Multi-Sport
-    weight: 12
+  - text: Dodgeball
+    weight: 13
+  - text: Flag Football
+    weight: 5
   - text: Frisbee
     weight: 7
   - text: Hockey
     weight: 5
-  - text: Flag Football
-    weight: 5
-  - text: Water Polo
-    weight: 4
+  - text: Multi-Sport
+    weight: 12
   - text: Multisport
     weight: 3
+  - text: Soccer
+    weight: 14
+  - text: Softball
+    weight: 1
   - text: Spikeball
     weight: 2
   - text: Ultimate
     weight: 1
-  - text: Softball
-    weight: 1
+  - text: Ultimate Frisbee
+    weight: 15
+  - text: Volleyball
+    weight: 24
+  - text: Water Polo
+    weight: 4
 - type: wordcloud
   title: Clubs Participated In
   description: ''
   total: 47
   words:
-  - text: UW Blueprint
-    weight: 14
-  - text: Tech+
-    weight: 7
-  - text: Hack the North
-    weight: 6
-  - text: UW PM
-    weight: 4
-  - text: Socratica
-    weight: 3
-  - text: UW K-Pop Club
-    weight: 2
-  - text: WiE
-    weight: 2
-  - text: UW Hip Hop
-    weight: 2
-  - text: Blueprint
-    weight: 2
-  - text: Watolink
-    weight: 2
-  - text: Waterloop
-    weight: 2
-  - text: WAT AI
-    weight: 2
-  - text: UW WiSTEM
-    weight: 2
-  - text: HanVoice
-    weight: 1
-  - text: Engineering Ambassador
-    weight: 1
-  - text: Korean Christian Fellowship
-    weight: 1
-  - text: Power to Change
-    weight: 1
-  - text: UW Animusic Ensembles
-    weight: 1
-  - text: UW Pokémon TCG Club
-    weight: 1
-  - text: UW Book Club
-    weight: 1
-  - text: UW Cheese Club
-    weight: 1
-  - text: UW Yugioh
-    weight: 1
-  - text: UWCCF
-    weight: 1
-  - text: Archery
-    weight: 1
-  - text: UW/UX
-    weight: 1
-  - text: WASA
-    weight: 1
-  - text: TechNova
-    weight: 1
-  - text: Tech Plus
-    weight: 1
-  - text: Jam Network
-    weight: 1
-  - text: Women in Engineering
-    weight: 1
-  - text: UW Data Science club
-    weight: 1
-  - text: Technova
-    weight: 1
-  - text: Wloo Climbing Club
-    weight: 1
-  - text: UWaterloo NDP Club
-    weight: 1
-  - text: University of Waterloo Young Liberals
-    weight: 1
-  - text: UW Campus Conservatives
+  - text: Acapella Club
     weight: 1
   - text: Animusic
     weight: 1
+  - text: Archery
+    weight: 1
+  - text: Badminton
+    weight: 1
+  - text: Blueprint
+    weight: 2
+  - text: Book Club
+    weight: 1
+  - text: Cheese Club
+    weight: 1
   - text: Concert Band
+    weight: 1
+  - text: Concert Band Club
+    weight: 1
+  - text: Consulting
+    weight: 1
+  - text: Cooking Club
+    weight: 1
+  - text: CS Club
+    weight: 1
+  - text: Dance
+    weight: 1
+  - text: Data Science
+    weight: 1
+  - text: Design Team
     weight: 1
   - text: Dragonboat
     weight: 1
-  - text: UW Orbital
+  - text: Electrium Mobility
+    weight: 1
+  - text: Engineering Ambassador
+    weight: 1
+  - text: Engineering Society
+    weight: 1
+  - text: EngSoc
+    weight: 1
+  - text: Hack the North
+    weight: 6
+  - text: HanVoice
+    weight: 1
+  - text: Iron Warrior
+    weight: 1
+  - text: Jam Network
+    weight: 1
+  - text: JamNet
+    weight: 1
+  - text: Juggling Club
+    weight: 1
+  - text: Korean Christian Fellowship
+    weight: 1
+  - text: Masters Swim
+    weight: 1
+  - text: Orchestra
+    weight: 1
+  - text: Poker Club
+    weight: 1
+  - text: Pokémon Club
+    weight: 1
+  - text: Power to Change
+    weight: 1
+  - text: SERVE
+    weight: 1
+  - text: SERVE volleyball club
+    weight: 1
+  - text: Socratica
+    weight: 3
+  - text: Tech Plus
+    weight: 1
+  - text: Tech+
+    weight: 7
+  - text: Tech+UW
+    weight: 1
+  - text: TechNova
+    weight: 1
+  - text: Technova
+    weight: 1
+  - text: University of Waterloo Young Liberals
+    weight: 1
+  - text: UW Animusic Ensembles
+    weight: 1
+  - text: UW Blueprint
+    weight: 14
+  - text: UW Book Club
+    weight: 1
+  - text: UW Campus Conservatives
+    weight: 1
+  - text: UW Cheese Club
     weight: 1
   - text: UW Chess
     weight: 1
   - text: UW Comedy
     weight: 1
-  - text: Waterloo Formula Electric
-    weight: 1
-  - text: Tech+UW
-    weight: 1
-  - text: UW DSC
-    weight: 1
-  - text: Badminton
-    weight: 1
-  - text: Poker Club
-    weight: 1
-  - text: SERVE
-    weight: 1
-  - text: UW Entepreneurship
-    weight: 1
-  - text: Consulting
-    weight: 1
-  - text: Pokémon Club
-    weight: 1
-  - text: Cooking Club
-    weight: 1
-  - text: Orchestra
-    weight: 1
-  - text: Varsity Tennis Team
-    weight: 1
-  - text: Waterloo Snow Coalition
-    weight: 1
-  - text: WARG
-    weight: 1
-  - text: UWAFT
-    weight: 1
-  - text: SERVE volleyball club
-    weight: 1
-  - text: CS Club
-    weight: 1
-  - text: WiSTEM
-    weight: 1
-  - text: Watsfic
-    weight: 1
-  - text: UW Improv
-    weight: 1
-  - text: JamNet
-    weight: 1
-  - text: EngSoc
-    weight: 1
-  - text: WATOLINK
-    weight: 1
-  - text: Design Team
-    weight: 1
-  - text: Masters Swim
-    weight: 1
-  - text: Electrium Mobility
-    weight: 1
-  - text: Book Club
-    weight: 1
-  - text: UWaterloo RAAS Dance Team
-    weight: 1
-  - text: UX/UX
+  - text: UW Data Science club
     weight: 1
   - text: UW Deception Board Games
     weight: 1
-  - text: Iron Warrior
+  - text: UW DSC
     weight: 1
-  - text: Juggling Club
+  - text: UW Entepreneurship
     weight: 1
-  - text: Dance
+  - text: UW Hip Hop
+    weight: 2
+  - text: UW Improv
     weight: 1
-  - text: Concert Band Club
+  - text: UW K-Pop Club
+    weight: 2
+  - text: UW Orbital
     weight: 1
-  - text: Cheese Club
+  - text: UW PM
+    weight: 4
+  - text: UW Pokémon TCG Club
     weight: 1
-  - text: Acapella Club
+  - text: UW WiSTEM
+    weight: 2
+  - text: UW Yugioh
     weight: 1
-  - text: Engineering Society
+  - text: UW/UX
     weight: 1
-  - text: Data Science
+  - text: UWAFT
+    weight: 1
+  - text: UWaterloo NDP Club
+    weight: 1
+  - text: UWaterloo RAAS Dance Team
+    weight: 1
+  - text: UWCCF
+    weight: 1
+  - text: UX/UX
+    weight: 1
+  - text: Varsity Tennis Team
+    weight: 1
+  - text: WARG
+    weight: 1
+  - text: WASA
+    weight: 1
+  - text: WAT AI
+    weight: 2
+  - text: Waterloo Formula Electric
+    weight: 1
+  - text: Waterloo Snow Coalition
+    weight: 1
+  - text: Waterloop
+    weight: 2
+  - text: WATOLINK
+    weight: 1
+  - text: Watolink
+    weight: 2
+  - text: Watsfic
+    weight: 1
+  - text: WiE
+    weight: 2
+  - text: WiSTEM
+    weight: 1
+  - text: Wloo Climbing Club
+    weight: 1
+  - text: Women in Engineering
     weight: 1

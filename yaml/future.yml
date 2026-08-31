@@ -5,17 +5,17 @@ charts:
     how things actually turned out.
   total: 64
   labels:
-  - Work
-  - Not sure
   - Continuing education
-  - Travelling
   - Entreprenuership
+  - Not sure
+  - Travelling
+  - Work
   data:
-  - 58
+  - 1
+  - 1
   - 3
   - 1
-  - 1
-  - 1
+  - 58
   colors:
   - '#2563eb'
   - '#10b981'
@@ -102,28 +102,28 @@ charts:
   total: 61
   labels:
   - California
+  - KW
+  - NYC
+  - Other Canada
+  - Other International
+  - Other Ontario
+  - Other USA
+  - Ottawa
+  - Remote/At-Home
   - Toronto/GTA
   - Unemployed
-  - NYC
-  - KW
-  - Other USA
-  - Other International
-  - Other Canada
-  - Remote/At-Home
-  - Other Ontario
-  - Ottawa
   data:
   - 18
+  - 4
+  - 7
+  - 2
+  - 2
+  - 1
+  - 3
+  - 1
+  - 2
   - 11
   - 10
-  - 7
-  - 4
-  - 3
-  - 2
-  - 2
-  - 2
-  - 1
-  - 1
   colors:
   - '#2563eb'
   - '#10b981'
@@ -142,13 +142,13 @@ charts:
   description: ''
   total: 37
   labels:
-  - 'Yes'
-  - Not sure
   - 'No'
+  - Not sure
+  - 'Yes'
   data:
-  - 21
-  - 11
   - 5
+  - 11
+  - 21
   colors:
   - '#10b981'
   - '#f59e0b'
@@ -159,19 +159,19 @@ charts:
   description: ''
   total: 31
   labels:
-  - 4-7 years
-  - Not Sure
+  - 1 year
   - 2-3 years
+  - 4-7 years
   - 7-10 years
   - 20+ years
-  - 1 year
+  - Not Sure
   data:
-  - 9
-  - 9
+  - 1
   - 5
+  - 9
   - 5
   - 2
-  - 1
+  - 9
   colors:
   - '#10b981'
   - '#2563eb'
@@ -183,67 +183,67 @@ charts:
   title: Company You'll Be Working At
   description: ''
   words:
+  - text: Altruist
+    weight: 1
   - text: Apple
     weight: 3
-  - text: Microsoft
-    weight: 2
-  - text: Manulife
-    weight: 1
-  - text: Energy Aspects
-    weight: 1
   - text: AWS
-    weight: 1
-  - text: EliseAI
-    weight: 1
-  - text: Imperial Oil
-    weight: 1
-  - text: Etched
     weight: 1
   - text: BinSentry
     weight: 1
-  - text: Ramp
-    weight: 1
-  - text: xAI
-    weight: 1
-  - text: GlossGenius
-    weight: 1
-  - text: University of Waterloo
-    weight: 1
-  - text: Altruist
+  - text: Bloomberg
     weight: 1
   - text: Bombardier
     weight: 1
-  - text: Shopify
+  - text: Dominion Dynamics
     weight: 1
-  - text: Proofpoint
+  - text: EliseAI
     weight: 1
   - text: Empire Life
     weight: 1
-  - text: Kodiak Robotics
+  - text: Energy Aspects
     weight: 1
-  - text: Dominion Dynamics
+  - text: Etched
+    weight: 1
+  - text: GlossGenius
     weight: 1
   - text: Harmonic
     weight: 1
-  - text: TikTok
-    weight: 1
-  - text: Relay
-    weight: 1
-  - text: Upside Robotics
-    weight: 1
-  - text: Siemens
-    weight: 1
-  - text: Junip
-    weight: 1
-  - text: Latent Health
+  - text: Imperial Oil
     weight: 1
   - text: Intelliware
     weight: 1
-  - text: Uber
+  - text: Junip
     weight: 1
+  - text: Kodiak Robotics
+    weight: 1
+  - text: Latent Health
+    weight: 1
+  - text: Manulife
+    weight: 1
+  - text: Microsoft
+    weight: 2
   - text: Nvidia
     weight: 1
-  - text: Bloomberg
+  - text: Proofpoint
+    weight: 1
+  - text: Ramp
+    weight: 1
+  - text: Relay
+    weight: 1
+  - text: Shopify
+    weight: 1
+  - text: Siemens
+    weight: 1
+  - text: TikTok
+    weight: 1
+  - text: Uber
+    weight: 1
+  - text: University of Waterloo
+    weight: 1
+  - text: Upside Robotics
+    weight: 1
+  - text: xAI
     weight: 1
   total: 34
 - type: boxplot
@@ -381,92 +381,92 @@ charts:
   description: ''
   total: 50
   words:
-  - text: Japan
-    weight: 26
-  - text: Thailand
-    weight: 14
-  - text: Hong Kong
-    weight: 13
-  - text: Vietnam
-    weight: 13
-  - text: Portugal
-    weight: 12
-  - text: China
-    weight: 11
-  - text: Spain
-    weight: 11
-  - text: South Korea
-    weight: 10
-  - text: Italy
-    weight: 9
-  - text: Croatia
-    weight: 8
-  - text: Philippines
-    weight: 7
-  - text: United Kingdom
-    weight: 7
   - text: Austria
     weight: 5
-  - text: Korea
-    weight: 5
+  - text: Bosnia
+    weight: 2
+  - text: Canada
+    weight: 2
+  - text: China
+    weight: 11
+  - text: Croatia
+    weight: 8
   - text: France
     weight: 5
-  - text: Turkey
+  - text: Germany
+    weight: 4
+  - text: Greece
+    weight: 3
+  - text: Guatemala
+    weight: 1
+  - text: Hong Kong
+    weight: 13
+  - text: India
+    weight: 1
+  - text: Indonesia
+    weight: 3
+  - text: Ireland
+    weight: 1
+  - text: Italy
+    weight: 9
+  - text: Japan
+    weight: 26
+  - text: japan
+    weight: 1
+  - text: Korea
     weight: 5
   - text: Laos
     weight: 4
-  - text: Germany
-    weight: 4
+  - text: Liechtenstein
+    weight: 2
+  - text: Mainland China
+    weight: 1
+  - text: Malaysia
+    weight: 3
   - text: Malta
     weight: 4
   - text: Mexico
     weight: 4
-  - text: Taiwan
-    weight: 4
-  - text: Vatican City
-    weight: 3
-  - text: Greece
-    weight: 3
-  - text: Malaysia
-    weight: 3
-  - text: Indonesia
-    weight: 3
-  - text: Switzerland
-    weight: 2
-  - text: Liechtenstein
-    weight: 2
   - text: Netherlands
     weight: 2
-  - text: Slovenia
-    weight: 2
-  - text: Bosnia
-    weight: 2
+  - text: Philippines
+    weight: 7
   - text: Phillipines
     weight: 2
-  - text: Canada
-    weight: 2
-  - text: USA
-    weight: 1
-  - text: Ireland
-    weight: 1
-  - text: Sweden
-    weight: 1
-  - text: India
-    weight: 1
-  - text: United States
-    weight: 1
   - text: Poland
     weight: 1
+  - text: Portugal
+    weight: 12
   - text: Serbia
     weight: 1
   - text: Singapore
     weight: 1
-  - text: Mainland China
+  - text: Slovenia
+    weight: 2
+  - text: South Korea
+    weight: 10
+  - text: Spain
+    weight: 11
+  - text: Sweden
     weight: 1
-  - text: japan
+  - text: Switzerland
+    weight: 2
+  - text: Taiwan
+    weight: 4
+  - text: Thailand
+    weight: 14
+  - text: Turkey
+    weight: 5
+  - text: United Kingdom
+    weight: 7
+  - text: United States
     weight: 1
-  - text: Guatemala
+  - text: USA
     weight: 1
+  - text: Vatican City
+    weight: 3
+  - text: Vietnam
+    weight: 13
 - type: bar
   title: Money Spent on Grad Trip
   xAxisTitle: Spend range

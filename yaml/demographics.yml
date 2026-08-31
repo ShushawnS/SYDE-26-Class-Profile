@@ -52,13 +52,13 @@ charts:
   description: ''
   total: 66
   labels:
+  - Born in Canada
   - Immigrants
   - Native Born
-  - Born in Canada
   data:
+  - 1
   - 49
   - 16
-  - 1
   colors:
   - '#2563eb'
   - '#10b981'
@@ -82,15 +82,15 @@ charts:
   description: ''
   total: 66
   labels:
-  - Undergraduate
   - Graduate
-  - No Education/Elementary
   - High School
+  - No Education/Elementary
+  - Undergraduate
   data:
-  - 39
   - 25
   - 1
   - 1
+  - 39
   colors:
   - '#2563eb'
   - '#10b981'
@@ -181,21 +181,21 @@ charts:
   description: ''
   total: 59
   labels:
-  - Liberal
   - Centrist
   - Conservative
+  - Free
+  - Liberal
+  - Libertarian
   - Progressive
   - Socialist
-  - Libertarian
-  - Free
   data:
-  - 21
   - 11
   - 9
+  - 1
+  - 21
+  - 2
   - 9
   - 6
-  - 2
-  - 1
   colors:
   - '#dc2626'
   - '#ef4444'
@@ -209,13 +209,13 @@ charts:
   description: ''
   total: 65
   labels:
-  - 'Yes'
   - 'No'
   - No (international student)
+  - 'Yes'
   data:
-  - 54
   - 7
   - 4
+  - 54
   colors:
   - '#10b981'
   - '#ef4444'
@@ -255,25 +255,25 @@ charts:
   description: ''
   total: 64
   labels:
-  - East Asian
-  - South Asian
-  - European
-  - Southeast Asian
-  - Central Asian
-  - Caribbean
-  - Latin American
-  - Caucasian
   - Arab
+  - Caribbean
+  - Caucasian
+  - Central Asian
+  - East Asian
+  - European
+  - Latin American
+  - South Asian
+  - Southeast Asian
   data:
+  - 1
+  - 1
+  - 1
+  - 1
   - 28
-  - 24
   - 7
+  - 1
+  - 24
   - 5
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
   colors:
   - '#2563eb'
   - '#10b981'
@@ -291,23 +291,23 @@ charts:
   total: 63
   labels:
   - Agnosticism
+  - Atheism
   - Christianity
   - Hinduism
-  - Atheism
   - Islam
-  - Sikhism
   - Jain
-  - Unity
   - Judaism
+  - Sikhism
+  - Unity
   data:
   - 17
+  - 8
   - 15
   - 12
-  - 8
   - 4
-  - 3
   - 2
   - 1
+  - 3
   - 1
   colors:
   - '#2563eb'
@@ -350,13 +350,13 @@ charts:
   description: ''
   total: 66
   labels:
-  - Male
   - Female
   - Gender Fluid
+  - Male
   data:
-  - 35
   - 30
   - 1
+  - 35
   colors:
   - '#2563eb'
   - '#ef4444'
@@ -366,12 +366,12 @@ charts:
   description: ''
   total: 65
   labels:
-  - Heterosexual
   - Bisexual
+  - Heterosexual
   - Pansexual
   data:
-  - 60
   - 4
+  - 60
   - 1
   colors:
   - '#2563eb'

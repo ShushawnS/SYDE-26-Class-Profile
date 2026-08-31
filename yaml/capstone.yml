@@ -18,25 +18,25 @@ charts:
   description: ''
   total: 65
   labels:
-  - Health
-  - Environment and sustainability
-  - Education
-  - Security
-  - Music
-  - Cleaning
-  - Infrastructure
   - Art and Creativity
+  - Cleaning
   - Communication
+  - Education
+  - Environment and sustainability
+  - Health
+  - Infrastructure
+  - Music
+  - Security
   data:
-  - 27
-  - 24
+  - 1
+  - 1
+  - 1
   - 7
-  - 5
+  - 24
+  - 27
+  - 1
   - 2
-  - 1
-  - 1
-  - 1
-  - 1
+  - 5
   colors:
   - '#2563eb'
   - '#10b981'
