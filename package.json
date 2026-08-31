@@ -2,7 +2,9 @@
   "name": "syde26-class-profile",
   "private": true,
   "scripts": {
-    "build": "python3 scripts/generate-wordclouds.py && python3 scripts/build-data.py",
+    "build": "python3 scripts/clean_data.py && python3 scripts/populate_yaml.py && python3 scripts/generate-wordclouds.py && python3 scripts/build-data.py",
+    "clean-data": "python3 scripts/clean_data.py",
+    "populate-yaml": "python3 scripts/populate_yaml.py",
     "generate-wordclouds": "python3 scripts/generate-wordclouds.py",
     "build-data": "python3 scripts/build-data.py"
   }

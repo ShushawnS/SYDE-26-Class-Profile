@@ -45,15 +45,18 @@ for fname in sorted(os.listdir(yaml_dir)):
         img_path = os.path.join(OUTPUT_DIR, f"{slug}.png")
 
         wc = WordCloud(
-            width=600,
-            height=350,
+            width=2000,
+            height=1150,
             background_color=None,
             mode="RGBA",
             color_func=color_func,
             prefer_horizontal=0.7,
-            relative_scaling=0,
+            relative_scaling=1.0,
             collocations=False,
-            font_step=2,
+            min_font_size=10,
+            max_font_size=220,
+            max_words=len(freq),
+            random_state=42,
         ).generate_from_frequencies(freq)
 
         wc.to_file(img_path)
@@ -62,5 +65,11 @@ for fname in sorted(os.listdir(yaml_dir)):
 
 with open(os.path.join(OUTPUT_DIR, "manifest.json"), "w") as f:
     json.dump(manifest, f, indent=2)
+
+known = {os.path.basename(p) for p in manifest.values()}
+for f in sorted(os.listdir(OUTPUT_DIR)):
+    if f.endswith(".png") and f not in known:
+        os.remove(os.path.join(OUTPUT_DIR, f))
+        print(f"  removed orphan {f}")
 
 print(f"\nDone — {len(manifest)} word clouds generated")
