@@ -246,66 +246,22 @@ charts:
   - text: xAI
     weight: 1
   total: 34
-- type: boxplot
-  title: Base Salary
-  description: ''
-  boxFormat: '%sk CAD/yr'
-  labels:
-  - Base Salary
-  data:
-  - - 35.0
-    - 100.0
-    - 177.0
-    - 212.0
-    - 292.0
-  colors:
-    fill:
-    - '#2563eb'
-    stroke:
-    - '#1e40af'
 - type: grouped-bar
   title: Total Compensation by Region
-  description: Average first-year base salary and bonus, split between the US and
-    everywhere else.
+  description: Average first-year total compensation (base + bonus), split between
+    the US and everywhere else.
   xLabels:
   - USA
   - Rest of World
   unit: k CAD
+  yAxisTitle: Average total compensation (k CAD)
   datasets:
-  - label: Average Base (k CAD)
+  - label: Average Total Compensation (k CAD)
     data:
-    - 205
-    - 103
+    - 255
+    - 117
     color: '#2563eb'
-  - label: Average Bonus (k CAD)
-    data:
-    - 50
-    - 14
-    color: '#10b981'
   total: 43
-- type: bar
-  title: Bonus
-  xAxisTitle: Bonus amount
-  description: ''
-  total: 66
-  labels:
-  - None
-  - <$5k
-  - $5-10k
-  - $10-20k
-  - $20k+
-  data:
-  - 35
-  - 0
-  - 4
-  - 7
-  - 20
-  colors:
-  - '#9ca3af'
-  - '#f97316'
-  - '#f59e0b'
-  - '#10b981'
-  - '#2563eb'
 - type: doughnut
   title: Plan to Pursue Further Education
   description: ''

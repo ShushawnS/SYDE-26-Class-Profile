@@ -139,6 +139,611 @@ charts:
     - 10
     - 17
     color: '#06b6d4'
+- type: sankey
+  title: Co-op Location Journey
+  description: How students moved between work locations across their co-op terms.
+    Each column is a co-op term; the width of each flow is the number of students
+    who went from one location to the next.
+  nodes:
+  - id: c1:Toronto/GTA
+    title: Toronto/GTA
+    color: '#2563eb'
+  - id: c1:KW
+    title: KW
+    color: '#10b981'
+  - id: c1:Ottawa
+    title: Ottawa
+    color: '#f59e0b'
+  - id: c1:Other Ontario
+    title: Other Ontario
+    color: '#84cc16'
+  - id: c1:Other Canada
+    title: Other Canada
+    color: '#06b6d4'
+  - id: c1:California
+    title: California
+    color: '#ef4444'
+  - id: c1:Remote/At-Home
+    title: Remote/At-Home
+    color: '#14b8a6'
+  - id: c2:Toronto/GTA
+    title: Toronto/GTA
+    color: '#2563eb'
+  - id: c2:KW
+    title: KW
+    color: '#10b981'
+  - id: c2:Ottawa
+    title: Ottawa
+    color: '#f59e0b'
+  - id: c2:Other Ontario
+    title: Other Ontario
+    color: '#84cc16'
+  - id: c2:Other Canada
+    title: Other Canada
+    color: '#06b6d4'
+  - id: c2:California
+    title: California
+    color: '#ef4444'
+  - id: c2:Other International
+    title: Other International
+    color: '#f97316'
+  - id: c2:Remote/At-Home
+    title: Remote/At-Home
+    color: '#14b8a6'
+  - id: c3:Toronto/GTA
+    title: Toronto/GTA
+    color: '#2563eb'
+  - id: c3:KW
+    title: KW
+    color: '#10b981'
+  - id: c3:Ottawa
+    title: Ottawa
+    color: '#f59e0b'
+  - id: c3:Other Ontario
+    title: Other Ontario
+    color: '#84cc16'
+  - id: c3:Other Canada
+    title: Other Canada
+    color: '#06b6d4'
+  - id: c3:California
+    title: California
+    color: '#ef4444'
+  - id: c3:NYC
+    title: NYC
+    color: '#8b5cf6'
+  - id: c3:Other USA
+    title: Other USA
+    color: '#ec4899'
+  - id: c3:Other International
+    title: Other International
+    color: '#f97316'
+  - id: c3:Remote/At-Home
+    title: Remote/At-Home
+    color: '#14b8a6'
+  - id: c3:Unemployed
+    title: Unemployed
+    color: '#9ca3af'
+  - id: c4:Toronto/GTA
+    title: Toronto/GTA
+    color: '#2563eb'
+  - id: c4:KW
+    title: KW
+    color: '#10b981'
+  - id: c4:Ottawa
+    title: Ottawa
+    color: '#f59e0b'
+  - id: c4:Other Ontario
+    title: Other Ontario
+    color: '#84cc16'
+  - id: c4:Other Canada
+    title: Other Canada
+    color: '#06b6d4'
+  - id: c4:California
+    title: California
+    color: '#ef4444'
+  - id: c4:NYC
+    title: NYC
+    color: '#8b5cf6'
+  - id: c4:Other USA
+    title: Other USA
+    color: '#ec4899'
+  - id: c4:Other International
+    title: Other International
+    color: '#f97316'
+  - id: c4:Remote/At-Home
+    title: Remote/At-Home
+    color: '#14b8a6'
+  - id: c5:Toronto/GTA
+    title: Toronto/GTA
+    color: '#2563eb'
+  - id: c5:KW
+    title: KW
+    color: '#10b981'
+  - id: c5:Ottawa
+    title: Ottawa
+    color: '#f59e0b'
+  - id: c5:Other Ontario
+    title: Other Ontario
+    color: '#84cc16'
+  - id: c5:Other Canada
+    title: Other Canada
+    color: '#06b6d4'
+  - id: c5:California
+    title: California
+    color: '#ef4444'
+  - id: c5:NYC
+    title: NYC
+    color: '#8b5cf6'
+  - id: c5:Other USA
+    title: Other USA
+    color: '#ec4899'
+  - id: c5:Other International
+    title: Other International
+    color: '#f97316'
+  - id: c5:Remote/At-Home
+    title: Remote/At-Home
+    color: '#14b8a6'
+  - id: c5:Unemployed
+    title: Unemployed
+    color: '#9ca3af'
+  - id: c6:Toronto/GTA
+    title: Toronto/GTA
+    color: '#2563eb'
+  - id: c6:KW
+    title: KW
+    color: '#10b981'
+  - id: c6:Ottawa
+    title: Ottawa
+    color: '#f59e0b'
+  - id: c6:Other Ontario
+    title: Other Ontario
+    color: '#84cc16'
+  - id: c6:Other Canada
+    title: Other Canada
+    color: '#06b6d4'
+  - id: c6:California
+    title: California
+    color: '#ef4444'
+  - id: c6:NYC
+    title: NYC
+    color: '#8b5cf6'
+  - id: c6:Other USA
+    title: Other USA
+    color: '#ec4899'
+  - id: c6:Other International
+    title: Other International
+    color: '#f97316'
+  - id: c6:Remote/At-Home
+    title: Remote/At-Home
+    color: '#14b8a6'
+  - id: c6:Unemployed
+    title: Unemployed
+    color: '#9ca3af'
+  edges:
+  - source: c1:Remote/At-Home
+    target: c2:KW
+    value: 1
+  - source: c2:KW
+    target: c3:Other USA
+    value: 2
+  - source: c3:Other USA
+    target: c4:KW
+    value: 1
+  - source: c4:KW
+    target: c5:Toronto/GTA
+    value: 5
+  - source: c5:Toronto/GTA
+    target: c6:Other Canada
+    value: 3
+  - source: c1:KW
+    target: c2:KW
+    value: 3
+  - source: c2:KW
+    target: c3:Remote/At-Home
+    value: 2
+  - source: c3:Remote/At-Home
+    target: c4:Toronto/GTA
+    value: 8
+  - source: c4:Toronto/GTA
+    target: c5:Other International
+    value: 1
+  - source: c5:Other International
+    target: c6:Other International
+    value: 2
+  - source: c1:California
+    target: c2:Toronto/GTA
+    value: 1
+  - source: c2:Toronto/GTA
+    target: c3:Toronto/GTA
+    value: 8
+  - source: c3:Toronto/GTA
+    target: c4:Toronto/GTA
+    value: 10
+  - source: c4:Toronto/GTA
+    target: c5:California
+    value: 4
+  - source: c5:California
+    target: c6:Other USA
+    value: 1
+  - source: c2:KW
+    target: c3:KW
+    value: 2
+  - source: c3:KW
+    target: c4:KW
+    value: 4
+  - source: c5:Toronto/GTA
+    target: c6:Unemployed
+    value: 3
+  - source: c1:Remote/At-Home
+    target: c2:Remote/At-Home
+    value: 23
+  - source: c2:Remote/At-Home
+    target: c3:Remote/At-Home
+    value: 15
+  - source: c3:Remote/At-Home
+    target: c4:KW
+    value: 4
+  - source: c4:KW
+    target: c5:Other Canada
+    value: 2
+  - source: c5:Other Canada
+    target: c6:KW
+    value: 1
+  - source: c2:Remote/At-Home
+    target: c3:KW
+    value: 2
+  - source: c3:KW
+    target: c4:Remote/At-Home
+    value: 3
+  - source: c4:Remote/At-Home
+    target: c5:Unemployed
+    value: 1
+  - source: c5:Unemployed
+    target: c6:Other International
+    value: 1
+  - source: c1:Remote/At-Home
+    target: c2:Other Ontario
+    value: 1
+  - source: c2:Other Ontario
+    target: c3:Unemployed
+    value: 1
+  - source: c3:Unemployed
+    target: c4:Other Ontario
+    value: 1
+  - source: c4:Other Ontario
+    target: c5:Other Ontario
+    value: 1
+  - source: c5:Other Ontario
+    target: c6:Other Ontario
+    value: 1
+  - source: c1:Remote/At-Home
+    target: c2:Toronto/GTA
+    value: 12
+  - source: c4:Toronto/GTA
+    target: c5:Remote/At-Home
+    value: 3
+  - source: c5:Remote/At-Home
+    target: c6:Other USA
+    value: 1
+  - source: c1:Toronto/GTA
+    target: c2:California
+    value: 1
+  - source: c2:California
+    target: c3:California
+    value: 1
+  - source: c3:California
+    target: c4:California
+    value: 2
+  - source: c4:California
+    target: c5:Other USA
+    value: 1
+  - source: c5:Other USA
+    target: c6:California
+    value: 1
+  - source: c1:Other Canada
+    target: c2:Other Canada
+    value: 1
+  - source: c2:Other Canada
+    target: c3:Other Canada
+    value: 1
+  - source: c3:Other Canada
+    target: c4:Other Canada
+    value: 1
+  - source: c4:Other Canada
+    target: c5:Remote/At-Home
+    value: 1
+  - source: c5:Remote/At-Home
+    target: c6:Remote/At-Home
+    value: 2
+  - source: c2:Toronto/GTA
+    target: c3:Remote/At-Home
+    value: 6
+  - source: c3:Remote/At-Home
+    target: c4:Other Canada
+    value: 2
+  - source: c4:Other Canada
+    target: c5:Toronto/GTA
+    value: 1
+  - source: c5:Toronto/GTA
+    target: c6:Other USA
+    value: 3
+  - source: c1:Ottawa
+    target: c2:KW
+    value: 1
+  - source: c4:Remote/At-Home
+    target: c5:Remote/At-Home
+    value: 7
+  - source: c5:Remote/At-Home
+    target: c6:KW
+    value: 1
+  - source: c3:Toronto/GTA
+    target: c4:Remote/At-Home
+    value: 4
+  - source: c5:Remote/At-Home
+    target: c6:NYC
+    value: 2
+  - source: c1:Toronto/GTA
+    target: c2:Remote/At-Home
+    value: 1
+  - source: c2:Remote/At-Home
+    target: c3:Toronto/GTA
+    value: 6
+  - source: c5:Remote/At-Home
+    target: c6:Toronto/GTA
+    value: 4
+  - source: c4:Toronto/GTA
+    target: c5:NYC
+    value: 1
+  - source: c5:NYC
+    target: c6:California
+    value: 2
+  - source: c1:Toronto/GTA
+    target: c2:Toronto/GTA
+    value: 7
+  - source: c3:Toronto/GTA
+    target: c4:KW
+    value: 2
+  - source: c4:KW
+    target: c5:NYC
+    value: 1
+  - source: c5:NYC
+    target: c6:NYC
+    value: 2
+  - source: c4:Toronto/GTA
+    target: c5:Toronto/GTA
+    value: 6
+  - source: c5:Toronto/GTA
+    target: c6:Toronto/GTA
+    value: 5
+  - source: c3:Remote/At-Home
+    target: c4:California
+    value: 1
+  - source: c4:California
+    target: c5:California
+    value: 2
+  - source: c5:California
+    target: c6:California
+    value: 8
+  - source: c4:Toronto/GTA
+    target: c5:Ottawa
+    value: 1
+  - source: c5:Ottawa
+    target: c6:Ottawa
+    value: 2
+  - source: c2:KW
+    target: c3:Other International
+    value: 1
+  - source: c3:Other International
+    target: c4:KW
+    value: 1
+  - source: c4:KW
+    target: c5:KW
+    value: 3
+  - source: c5:KW
+    target: c6:KW
+    value: 2
+  - source: c3:Remote/At-Home
+    target: c4:Ottawa
+    value: 1
+  - source: c4:Ottawa
+    target: c5:Remote/At-Home
+    value: 1
+  - source: c3:Remote/At-Home
+    target: c4:Remote/At-Home
+    value: 9
+  - source: c4:Remote/At-Home
+    target: c5:KW
+    value: 3
+  - source: c5:KW
+    target: c6:Other USA
+    value: 1
+  - source: c5:Remote/At-Home
+    target: c6:California
+    value: 2
+  - source: c1:Other Canada
+    target: c2:Remote/At-Home
+    value: 1
+  - source: c2:Remote/At-Home
+    target: c3:California
+    value: 1
+  - source: c3:California
+    target: c4:Other USA
+    value: 1
+  - source: c4:Other USA
+    target: c5:California
+    value: 1
+  - source: c1:Remote/At-Home
+    target: c2:Ottawa
+    value: 2
+  - source: c2:Ottawa
+    target: c3:Remote/At-Home
+    value: 1
+  - source: c4:Other Canada
+    target: c5:Other Canada
+    value: 1
+  - source: c2:Toronto/GTA
+    target: c3:Ottawa
+    value: 2
+  - source: c3:Ottawa
+    target: c4:Toronto/GTA
+    value: 1
+  - source: c4:Remote/At-Home
+    target: c5:Toronto/GTA
+    value: 4
+  - source: c1:KW
+    target: c2:Toronto/GTA
+    value: 5
+  - source: c2:Remote/At-Home
+    target: c3:Other International
+    value: 1
+  - source: c3:Other International
+    target: c4:Remote/At-Home
+    value: 1
+  - source: c4:Toronto/GTA
+    target: c5:Other USA
+    value: 1
+  - source: c5:Other USA
+    target: c6:Other USA
+    value: 2
+  - source: c5:Remote/At-Home
+    target: c6:Other Ontario
+    value: 1
+  - source: c1:Other Canada
+    target: c2:KW
+    value: 1
+  - source: c1:Ottawa
+    target: c2:Remote/At-Home
+    value: 1
+  - source: c5:KW
+    target: c6:Remote/At-Home
+    value: 2
+  - source: c2:Toronto/GTA
+    target: c3:Other Ontario
+    value: 1
+  - source: c3:Other Ontario
+    target: c4:Remote/At-Home
+    value: 1
+  - source: c4:Remote/At-Home
+    target: c5:Ottawa
+    value: 1
+  - source: c2:Toronto/GTA
+    target: c3:KW
+    value: 5
+  - source: c5:Other Canada
+    target: c6:California
+    value: 2
+  - source: c4:Remote/At-Home
+    target: c5:California
+    value: 1
+  - source: c5:Toronto/GTA
+    target: c6:KW
+    value: 2
+  - source: c1:Remote/At-Home
+    target: c2:Other Canada
+    value: 1
+  - source: c2:Other Canada
+    target: c3:Toronto/GTA
+    value: 1
+  - source: c4:KW
+    target: c5:Other USA
+    value: 1
+  - source: c4:Remote/At-Home
+    target: c5:Other International
+    value: 1
+  - source: c2:Toronto/GTA
+    target: c3:NYC
+    value: 1
+  - source: c3:NYC
+    target: c4:NYC
+    value: 1
+  - source: c4:NYC
+    target: c5:NYC
+    value: 1
+  - source: c3:Ottawa
+    target: c4:Remote/At-Home
+    value: 1
+  - source: c3:KW
+    target: c4:Other International
+    value: 1
+  - source: c4:Other International
+    target: c5:Toronto/GTA
+    value: 1
+  - source: c1:Other Ontario
+    target: c2:KW
+    value: 1
+  - source: c3:Other USA
+    target: c4:California
+    value: 1
+  - source: c2:Toronto/GTA
+    target: c3:Other Canada
+    value: 1
+  - source: c3:Other Canada
+    target: c4:KW
+    value: 1
+  - source: c2:Remote/At-Home
+    target: c3:Other Ontario
+    value: 1
+  - source: c3:Other Ontario
+    target: c4:KW
+    value: 1
+  - source: c4:KW
+    target: c5:California
+    value: 1
+  - source: c1:KW
+    target: c2:Other International
+    value: 1
+  - source: c2:Other International
+    target: c3:Remote/At-Home
+    value: 1
+  - source: c4:KW
+    target: c5:Remote/At-Home
+    value: 1
+  - source: c5:KW
+    target: c6:Other Canada
+    value: 1
+  - source: c3:KW
+    target: c4:Toronto/GTA
+    value: 1
+  - source: c4:Remote/At-Home
+    target: c5:Other Canada
+    value: 1
+  - source: c4:Toronto/GTA
+    target: c5:Unemployed
+    value: 1
+  - source: c5:Unemployed
+    target: c6:California
+    value: 1
+  - source: c2:Ottawa
+    target: c3:Toronto/GTA
+    value: 1
+  - source: c4:Toronto/GTA
+    target: c5:KW
+    value: 1
+  - source: c5:KW
+    target: c6:California
+    value: 1
+  - source: c5:Toronto/GTA
+    target: c6:California
+    value: 1
+  - source: c2:Toronto/GTA
+    target: c3:California
+    value: 1
+  - source: c4:California
+    target: c5:NYC
+    value: 1
+  - source: c1:Ottawa
+    target: c2:Ottawa
+    value: 1
+  - source: c2:Ottawa
+    target: c3:Ottawa
+    value: 1
+  - source: c3:Ottawa
+    target: c4:Ottawa
+    value: 1
+  - source: c4:Ottawa
+    target: c5:Toronto/GTA
+    value: 1
+  total: 66
 - type: percent-stacked-bar
   title: Industry Over the Semesters
   description: ''
@@ -1042,6 +1647,9 @@ charts:
   title: Co-op Earnings Over the Semesters
   description: ''
   boxFormat: '%s CAD/hr'
+
+
+
   labels:
   - 'Co-op #1'
   - 'Co-op #2'

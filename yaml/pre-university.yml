@@ -159,7 +159,7 @@ charts:
   - '#10b981'
   - '#f59e0b'
 - type: bar
-  title: Industry Working in
+  title: Expected Industry Before University
   xAxisTitle: Field
   description: ''
   total: 66

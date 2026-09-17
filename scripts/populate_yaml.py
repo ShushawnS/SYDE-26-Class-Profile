@@ -27,6 +27,22 @@ DEFAULT_COLORS = [
     "#06b6d4", "#84cc16", "#f97316", "#9ca3af",
 ]
 
+# Stable colour + display order for co-op work locations (used by the Sankey).
+COOP_LOCATION_COLORS = {
+    "Toronto/GTA": "#2563eb",
+    "KW": "#10b981",
+    "Ottawa": "#f59e0b",
+    "Other Ontario": "#84cc16",
+    "Other Canada": "#06b6d4",
+    "California": "#ef4444",
+    "NYC": "#8b5cf6",
+    "Other USA": "#ec4899",
+    "Other International": "#f97316",
+    "Remote/At-Home": "#14b8a6",
+    "Unemployed": "#9ca3af",
+}
+COOP_LOCATION_ORDER = list(COOP_LOCATION_COLORS)
+
 AI_MIDPOINT = {
     "0": 0.0, "1 - 25%": 12.5, "26 - 50%": 38.0, "51 - 75%": 63.0,
     "75 - 99%": 87.0, "100%": 100.0,
@@ -456,7 +472,7 @@ def _(r, c):
     c["total"] = multi_n("universities_applied")
 
 
-@handler("pre-university.yml", "Industry Working in")
+@handler("pre-university.yml", "Expected Industry Before University")
 def _(r, c):
     set_bar(c, split_count(r["industry_expected"]))
 
@@ -615,6 +631,46 @@ def _(r, c):
 @handler("co-op.yml", "Location of Work Over the Semesters")
 def _(r, c):
     stacked_chart(c, "work_location", top_n=6)
+
+
+@handler("co-op.yml", "Co-op Location Journey")
+def _(r, c):
+    """Sankey of location moves between consecutive co-op terms.
+
+    One column per co-op term; a flow from column k to k+1 counts the students
+    who worked in location A during co-op k and location B during co-op k+1.
+    """
+    cols = [f"coop{k}_work_location" for k in range(1, 7)]
+    edge_counts = Counter()
+    nodes_seen = {}  # node id -> (stage, location)
+    for _, row in r.iterrows():
+        seq = [clean(row[col]) for col in cols]
+        for k in range(5):
+            a, b = seq[k], seq[k + 1]
+            if not isinstance(a, str) or not isinstance(b, str):
+                continue
+            sid, tid = f"c{k + 1}:{a}", f"c{k + 2}:{b}"
+            nodes_seen[sid] = (k + 1, a)
+            nodes_seen[tid] = (k + 2, b)
+            edge_counts[(sid, tid)] += 1
+
+    def loc_rank(loc):
+        return COOP_LOCATION_ORDER.index(loc) if loc in COOP_LOCATION_ORDER \
+            else len(COOP_LOCATION_ORDER)
+
+    ordered = sorted(nodes_seen,
+                     key=lambda nid: (nodes_seen[nid][0], loc_rank(nodes_seen[nid][1])))
+    c["nodes"] = [
+        {"id": nid,
+         "title": nodes_seen[nid][1],
+         "color": COOP_LOCATION_COLORS.get(nodes_seen[nid][1], "#9ca3af")}
+        for nid in ordered
+    ]
+    c["edges"] = [
+        {"source": s, "target": t, "value": int(v)}
+        for (s, t), v in edge_counts.items()
+    ]
+    c["total"] = int(len(r))
 
 
 @handler("co-op.yml", "Industry Over the Semesters")
@@ -1075,68 +1131,36 @@ def _(r, c):
     word_cloud(c, *split_freq_words(r["company_school"]))
 
 
-@handler("future.yml", "Base Salary")
-def _(r, c):
-    s = r["base_salary_cad"].dropna() / 1000.0
-    boxplot(c, s, nd=0)
-
-
 @handler("future.yml", "Total Compensation by Region")
 def _(r, c):
-    base = r["base_salary_cad"].dropna()
-    if len(base) == 0:
+    def single(usa_val, row_val):
         c["xLabels"] = ["USA", "Rest of World"]
         c["datasets"] = [
-            {"label": "Average Base (k CAD)", "data": [0, 0], "color": "#2563eb"},
-            {"label": "Average Bonus (k CAD)", "data": [0, 0], "color": "#10b981"},
+            {"label": "Average Total Compensation (k CAD)",
+             "data": [usa_val, row_val], "color": "#2563eb"},
         ]
+        c["unit"] = "k CAD"
+
+    base = r["base_salary_cad"].dropna()
+    if len(base) == 0:
+        single(0, 0)
         c["total"] = 0
         return
     loc = r.loc[base.index, "working_location"].map(clean)
     bonus = r.loc[base.index, "bonus_cad"].fillna(0).astype(float)
     usa = {"California", "NYC", "Other USA"}
-    rows = {"USA": {"base": [], "bonus": []}, "Rest of World": {"base": [], "bonus": []}}
+    rows = {"USA": [], "Rest of World": []}
     for idx in base.index:
         l = loc.get(idx)
         if not l:
             continue
         key = "USA" if l in usa else "Rest of World"
-        rows[key]["base"].append(base[idx] / 1000.0)
-        rows[key]["bonus"].append(bonus[idx] / 1000.0)
-    c["xLabels"] = ["USA", "Rest of World"]
-    c["datasets"] = [
-        {"label": "Average Base (k CAD)",
-         "data": [round(float(np.mean(rows["USA"]["base"]))) if rows["USA"]["base"] else 0,
-                  round(float(np.mean(rows["Rest of World"]["base"]))) if rows["Rest of World"]["base"] else 0],
-         "color": "#2563eb"},
-        {"label": "Average Bonus (k CAD)",
-         "data": [round(float(np.mean(rows["USA"]["bonus"]))) if rows["USA"]["bonus"] else 0,
-                  round(float(np.mean(rows["Rest of World"]["bonus"]))) if rows["Rest of World"]["bonus"] else 0],
-         "color": "#10b981"},
-    ]
-    c["unit"] = "k CAD"
+        rows[key].append((base[idx] + bonus[idx]) / 1000.0)
+    single(
+        round(float(np.mean(rows["USA"]))) if rows["USA"] else 0,
+        round(float(np.mean(rows["Rest of World"]))) if rows["Rest of World"] else 0,
+    )
     c["total"] = int(len(base))
-
-
-@handler("future.yml", "Bonus")
-def _(r, c):
-    s = r["bonus_cad"].map(clean).dropna()
-    bins = Counter()
-    for v in s:
-        v = float(v)
-        if v <= 0:
-            bins["None"] += 1
-        elif v < 5000:
-            bins["<$5k"] += 1
-        elif v < 10000:
-            bins["$5-10k"] += 1
-        elif v < 20000:
-            bins["$10-20k"] += 1
-        else:
-            bins["$20k+"] += 1
-    n_none = int(r["bonus_cad"].map(clean).isna().sum())
-    bins["None"] += n_none
-    set_bar(c, dict(bins), order=["None", "<$5k", "$5-10k", "$10-20k", "$20k+"])
 
 
 @handler("future.yml", "Plan to Pursue Further Education")

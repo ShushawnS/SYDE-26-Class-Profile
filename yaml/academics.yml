@@ -355,7 +355,8 @@ charts:
     color: '#2563eb'
 - type: metrics-bar
   title: Average Stress Level Over Semesters
-  xAxisTitle: Academic term (1 = lowest, 5 = highest)
+  xAxisTitle: Academic term
+  yAxisTitle: Average stress level (1 = lowest, 5 = highest)
   description: Average self-reported stress level (1 = lowest, 5 = highest) across
     all academic terms.
   max: 5
