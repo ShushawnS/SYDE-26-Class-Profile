@@ -1,6 +1,693 @@
+/* ===========================================================================
+   SYDE 26 Class Profile — design system
+
+   Two materials, one ramp.
+     - NIGHT (deep slate teal) is where the survey's numbers live.
+     - PAPER (cool grey) is where the class's own words live.
+   Type carries the same split: Archivo is the survey speaking, Newsreader is
+   the class speaking. The term ramp (t1..t6) means "how far along you are"
+   and is reused across every term-ordered chart.
+   ======================================================================== */
+
+:root {
+  /* grounds */
+  --night:      #16313A;
+  --night-2:    #1D3D47;
+  --night-rule: #2C525D;
+  --paper:      #E7E6E0;
+  --paper-rule: #C7C6BD;
+
+  /* type colours */
+  --ink:      #141A1C;   /* on paper  */
+  --ink-2:    #465055;   /* on paper, secondary */
+  --lit:      #DDE4E2;   /* on night  */
+  --lit-2:    #93A8AD;   /* on night, secondary */
+
+  /* term ramp, first work term to sixth: cold to warm, rising lightness.
+     All six clear 3:1 on --night; blue-green-gold so it survives CVD. */
+  --t1: #4E8494;
+  --t2: #58A08F;
+  --t3: #7CB566;
+  --t4: #B2C055;
+  --t5: #E3BB45;
+  --t6: #F2C260;
+
+  /* Categorical set, for answers that have no order. Deliberately NOT the
+     ramp: hues jump rather than progress, and lightness is held roughly even
+     so no category looks ranked above another. */
+  --k1: #5B93A6;   /* blue       */
+  --k2: #E6BF52;   /* gold       */
+  --k3: #7FB86A;   /* green      */
+  --k4: #D08FA6;   /* rose       */
+  --k5: #9E93C9;   /* periwinkle */
+  --k6: #55A79A;   /* teal       */
+  --k7: #C4B07A;   /* stone      */
+
+  --flag: #E2574B;   /* reserved: reneged, rescinded, failed, harm */
+  --mute: #5F7A82;   /* the uninteresting half of a binary */
+
+  /* type */
+  --sans: 'Archivo', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+  --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+
+  --fs-xs:   0.8125rem;  /* 13 */
+  --fs-s:    0.9375rem;  /* 15 */
+  --fs-base: 1.0625rem;  /* 17 */
+  --fs-m:    1.25rem;    /* 20 */
+  --fs-l:    1.5rem;     /* 24 */
+  --fs-xl:   1.875rem;   /* 30 */
+  --fs-3xl:  3.625rem;   /* 58 */
+
+  --wrap: 78rem;
+  --panel-pad: clamp(1.25rem, 3.2vw, 2.5rem);
+  --measure: 34rem;      /* ~62ch of Newsreader at 17px */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--night);
+  color: var(--lit);
+  font-family: var(--sans);
+  font-size: var(--fs-base);
+  line-height: 1.45;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, video, iframe { display: block; max-width: 100%; }
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--t6);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 50;
+  padding: 0.7rem 1rem;
+  background: var(--t6);
+  color: var(--ink);
+  font-size: var(--fs-s);
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip:focus { left: 0; }
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 5vw, 3.5rem);
+}
+
+/* ---------------------------------------------------------------- top bar */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: stretch;
+  gap: clamp(1rem, 4vw, 2.75rem);
+  padding: 0 clamp(1.25rem, 5vw, 3.5rem);
+  background: color-mix(in srgb, var(--night) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--night-rule);
+}
+
+.mark {
+  flex: none;
+  align-self: center;
+  padding: 0.85rem 0;
+  font-size: var(--fs-s);
+  font-weight: 700;
+  font-stretch: 125%;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: var(--lit);
+}
+
+.rail { min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.rail::-webkit-scrollbar { display: none; }
+
+.rail ul {
+  display: flex;
+  gap: 1.15rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.rail a {
+  display: block;
+  padding: 0.95rem 0;
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  font-stretch: 82%;
+  letter-spacing: 0.015em;
+  color: var(--lit-2);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.rail a:hover { color: var(--lit); }
+.rail a[aria-current="true"] {
+  color: var(--t6);
+  border-bottom-color: var(--t6);
+}
+
+/* Twelve section names do not fit a phone bar, so below 60rem the rail
+   becomes a panel behind this button. */
+.menu-btn {
+  display: none;
+  margin-left: auto;
+  align-self: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--lit);
+  cursor: pointer;
+}
+
+.menu-bars {
+  position: relative;
+  width: 1.15rem;
+  height: 2px;
+  background: currentColor;
+}
+.menu-bars::before,
+.menu-bars::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+}
+.menu-bars::before { top: -6px; }
+.menu-bars::after { top: 6px; }
+
+.menu-btn[aria-expanded="true"] .menu-bars { background: transparent; }
+.menu-btn[aria-expanded="true"] .menu-bars::before { top: 0; transform: rotate(45deg); }
+.menu-btn[aria-expanded="true"] .menu-bars::after { top: 0; transform: rotate(-45deg); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .menu-bars,
+  .menu-bars::before,
+  .menu-bars::after { transition: transform 0.18s ease, top 0.18s ease, background 0.18s ease; }
+}
+
+/* ------------------------------------------------------------------- hero */
+
+.hero { padding: clamp(2.25rem, 5vw, 4rem) 0 clamp(2.5rem, 5vw, 4rem); }
+
+
+/* The headline takes the full measure so its longest line stays on one line;
+   the lede and the class photo share the row beneath it. */
+.classpic {
+  position: relative;
+  max-width: 46rem;
+  margin: clamp(1.5rem, 3.5vw, 2.5rem) 0 0;
+  aspect-ratio: 3 / 2;
+  background: var(--night-2);
+  overflow: hidden;
+}
+.classpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.classpic figcaption { display: none; }
+
+/* Until the photo lands, the slot explains itself rather than showing a
+   broken image. */
+.classpic.is-empty { outline: 1px dashed var(--night-rule); outline-offset: -1px; }
+.classpic.is-empty img { display: none; }
+.classpic.is-empty figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 1.5rem;
+  font-size: var(--fs-s);
+  font-weight: 600;
+  font-stretch: 92%;
+  line-height: 1.5;
+  color: var(--lit-2);
+}
+.classpic.is-empty figcaption span { font-weight: 400; }
+.classpic code {
+  font-family: var(--sans);
+  font-stretch: 78%;
+  color: var(--t6);
+}
+
+.hero-title span { display: block; }
+
+.hero-title {
+  margin: 0;
+  overflow-wrap: break-word;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 800;
+  font-stretch: 125%;
+  line-height: 0.94;
+  letter-spacing: -0.022em;
+}
+
+/* Wide screens have the width to spare: title beside the photo rather than
+   stacked, which roughly halves the hero's height. Must come after the base
+   .hero-title / .classpic rules to win on order. */
+@media (min-width: 76rem) {
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(2.5rem, 4vw, 3.5rem);
+  }
+  /* Sized so "Eight academic" clears the column on one line; at 3.5rem the
+     first phrase shattered into three. */
+  .hero-title { font-size: 3rem; }
+  .classpic { max-width: none; margin: 0; }
+}
+
+/* ---------------------------------------------------------------- sections */
+
+/* A section is two bands: its words on paper, then its numbers on night. */
+
+.sec {
+  background: var(--paper);
+  color: var(--ink);
+  padding: clamp(3rem, 7vw, 5rem) 0 clamp(3rem, 7vw, 4.5rem);
+}
+
+.sec-title {
+  margin: 0;
+  font-size: clamp(1.875rem, 5.5vw, var(--fs-3xl));
+  font-weight: 800;
+  font-stretch: 125%;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.sec-desc {
+  max-width: var(--measure);
+  margin: 1.5rem 0 0;
+  font-family: var(--serif);
+  font-size: var(--fs-m);
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.sec-quote {
+  max-width: 44rem;
+  margin: clamp(2rem, 5vw, 3rem) 0 0;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--t1);
+  font-family: var(--serif);
+  font-size: clamp(var(--fs-m), 2.6vw, var(--fs-xl));
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.42;
+  color: var(--ink);
+}
+.sec-quote cite {
+  display: block;
+  margin-top: 0.85rem;
+  font-family: var(--sans);
+  font-size: var(--fs-xs);
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 78%;
+  color: var(--ink-2);
+}
+
+.sec-data { padding: clamp(3rem, 7vw, 5rem) 0 clamp(3.5rem, 8vw, 6rem); }
+
+/* ------------------------------------------------------------------ charts */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  /* dense lets a later small chart back-fill the gap a wide one leaves, so a
+     section of 19 questions does not scroll for a screen and a half of air */
+  grid-auto-flow: row dense;
+  gap: clamp(2.25rem, 4.5vw, 3.5rem) clamp(1.5rem, 2.6vw, 2.25rem);
+}
+
+.fig { grid-column: 1 / -1; margin: 0; min-width: 0; }
+.fig--half { grid-column: span 6; }
+.fig--third { grid-column: span 4; }
+
+.fig-title {
+  margin: 0;
+  font-size: var(--fs-m);
+  font-weight: 600;
+  font-stretch: 105%;
+  line-height: 1.22;
+  letter-spacing: -0.008em;
+  color: var(--lit);
+  text-wrap: balance;
+}
+
 .chart-count {
-  text-align: left;
-  color: #6b7280;
-  font-size: 0.85rem;
-  margin: 0.25rem 0 0.5rem;
+  margin: 0.45rem 0 0;
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  font-stretch: 78%;
+  font-variant-numeric: tabular-nums;
+  color: var(--lit-2);
+}
+
+.fig-desc {
+  max-width: 32rem;
+  margin: 0.7rem 0 0;
+  font-family: var(--serif);
+  font-size: var(--fs-s);
+  line-height: 1.58;
+  color: var(--lit-2);
+}
+
+.fig-plot { margin-top: 1.1rem; }
+
+/* ApexCharts paints its own text; keep it inside the system */
+.apexcharts-canvas { background: transparent !important; }
+.apexcharts-tooltip.apexcharts-theme-dark {
+  border: 1px solid var(--night-rule) !important;
+  background: #0F262C !important;
+  box-shadow: none !important;
+  font-family: var(--sans) !important;
+  font-size: var(--fs-xs) !important;
+}
+.apexcharts-tooltip-title {
+  background: #0F262C !important;
+  border-bottom: 1px solid var(--night-rule) !important;
+  font-weight: 600 !important;
+}
+.apexcharts-legend-text {
+  font-family: var(--sans) !important;
+  font-stretch: 82% !important;
+  color: var(--lit-2) !important;
+}
+.apexcharts-boxPlot-area { stroke-width: 1.5; }
+
+/* ------------------------------- free-text: a weighted field of short terms */
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2em 0.62em;
+  margin-top: 1.4rem;
+}
+
+.field b {
+  font-weight: 700;
+  font-stretch: 88%;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  color: var(--lit);
+  font-size: var(--sz);
+}
+.field b sup {
+  margin-left: 0.12em;
+  font-size: 0.42em;
+  font-weight: 600;
+  font-stretch: 100%;
+  vertical-align: super;
+  color: var(--t6);
+}
+.field b.is-one {
+  font-weight: 500;
+  color: var(--lit-2);
+}
+
+/* ------------------------------ free-text: verbatim answers, in their voice */
+
+/* The panel reaches out by its own padding so its title still lands on the
+   page's left spine with every chart title above it. */
+.verbatim {
+  grid-column: 1 / -1;
+  margin: 0 calc(-1 * var(--panel-pad));
+  background: var(--paper);
+  color: var(--ink);
+  padding: clamp(1.75rem, 4vw, 2.75rem) var(--panel-pad) clamp(2rem, 4vw, 3rem);
+}
+.verbatim .fig-title { color: var(--ink); }
+.verbatim .chart-count { color: var(--ink-2); }
+.verbatim .fig-desc { color: var(--ink-2); }
+
+.answers {
+  columns: 19rem;
+  column-gap: 2.75rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.answers li {
+  break-inside: avoid;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--paper-rule);
+  font-family: var(--serif);
+  font-size: var(--fs-base);
+  line-height: 1.52;
+  color: var(--ink);
+}
+.answers li:last-child { border-bottom: 0; }
+
+.answers small {
+  margin-left: 0.4em;
+  font-family: var(--sans);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  font-stretch: 78%;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+/* --------------------------------- paging long answer sets on a phone */
+
+/* Only active when a .fig is marked .paged, which JS does below 42rem. */
+.pager {
+  display: none;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.35rem;
+}
+.paged > .pager { display: flex; }
+.paged .is-hidden { display: none !important; }
+.paged .answers li.is-last { border-bottom: 0; }
+
+.pager-btn {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  font-family: var(--sans);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.75;
+}
+.pager-btn:hover:not(:disabled) { opacity: 1; }
+.pager-btn:disabled { opacity: 0.25; cursor: default; }
+
+.pager-at {
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  font-stretch: 78%;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.75;
+}
+
+/* ----------------------------------------------------------------- gallery */
+
+/* The gallery is a child of the 12-column chart grid, so it has to claim the
+   full row or it collapses into a single column. */
+.gallery-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 1.5rem;
+  max-width: 58rem;
+  margin: 0;
+}
+.gallery-grid img,
+.gallery-grid video { width: 100%; height: auto; }
+.gallery-grid iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; }
+
+/* ------------------------------ stepping through questions on a phone */
+
+/* Hidden until the layout goes one-column, where scrolling 123 questions by
+   thumb is the real problem. */
+.jump {
+  display: none;
+  position: fixed;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  z-index: 45;
+  gap: 1px;
+  background: var(--night-rule);
+  border: 1px solid var(--night-rule);
+}
+
+.jump-btn {
+  width: 2.9rem;
+  height: 2.9rem;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: color-mix(in srgb, var(--night) 92%, transparent);
+  backdrop-filter: blur(8px);
+  color: var(--t6);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.jump-btn:hover { background: var(--night-2); }
+.jump-btn:disabled { color: var(--lit-2); opacity: 0.4; cursor: default; }
+
+/* ------------------------------------------------------------------ footer */
+
+.foot {
+  background: var(--night-2);
+  border-top: 1px solid var(--night-rule);
+  padding: clamp(2.5rem, 6vw, 4rem) 0;
+}
+.foot-line {
+  max-width: var(--measure);
+  margin: 0;
+  font-size: var(--fs-s);
+  font-stretch: 92%;
+  color: var(--lit);
+}
+.foot-note {
+  max-width: 40rem;
+  margin: 0.85rem 0 0;
+  font-family: var(--serif);
+  font-size: var(--fs-s);
+  line-height: 1.55;
+  color: var(--lit-2);
+}
+
+/* -------------------------------------------------------------- responsive */
+
+/* The inline rail needs about 1030px; below that it becomes a panel. Matched
+   to the hero breakpoint so there is one place the layout changes. */
+@media (max-width: 75.99rem) {
+  .menu-btn { display: grid; }
+
+  .rail {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 100%);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: var(--night-2);
+    border-bottom: 1px solid var(--night-rule);
+  }
+  .rail.is-open { display: block; }
+
+  .rail ul {
+    flex-direction: column;
+    gap: 0;
+    white-space: normal;
+  }
+
+  .rail a {
+    padding: 0.95rem clamp(1.25rem, 5vw, 3.5rem);
+    font-size: var(--fs-base);
+    font-stretch: 92%;
+    border-bottom: 1px solid var(--night-rule);
+    border-left: 3px solid transparent;
+  }
+  .rail li:last-child a { border-bottom: 0; }
+  .rail a[aria-current="true"] {
+    border-bottom-color: var(--night-rule);
+    border-left-color: var(--t6);
+  }
+}
+
+@media (max-width: 60rem) {
+  .fig--half { grid-column: 1 / -1; }
+  .fig--third { grid-column: span 6; }
+
+}
+
+@media (max-width: 42rem) {
+  :root { --fs-m: 1.125rem; }
+
+  .fig--third { grid-column: 1 / -1; }
+  .jump { display: flex; }
+}
+
+/* ------------------------------------------------- chart text, inside system */
+
+.apexcharts-text,
+.apexcharts-title-text,
+.apexcharts-yaxis-title text,
+.apexcharts-xaxis-title text { font-stretch: 82%; }
+
+/* ------------------------------------------------------------- page not found */
+
+.lost {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+.lost-title {
+  margin: 0;
+  font-size: clamp(2.25rem, 8vw, var(--fs-3xl));
+  font-weight: 800;
+  font-stretch: 125%;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+}
+.lost-note {
+  max-width: var(--measure);
+  margin: 1.75rem 0 2.25rem;
+  font-family: var(--serif);
+  font-size: var(--fs-m);
+  line-height: 1.6;
+  color: var(--lit-2);
+}
+.lost-go {
+  display: inline-block;
+  padding: 0.7rem 1.1rem;
+  background: var(--t6);
+  color: #10262C;
+  font-size: var(--fs-s);
+  font-weight: 600;
+  font-stretch: 92%;
+  text-decoration: none;
+}
+.lost-go:hover { filter: brightness(1.1); }
+
+/* Legend swatches follow the system's zero-radius language */
+.apexcharts-legend-marker {
+  border-radius: 0 !important;
+  margin-right: 5px !important;
 }

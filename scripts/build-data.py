@@ -15,13 +15,17 @@ for section in main_data["sections"]:
     with open(filepath, encoding="utf-8") as f:
         data = yaml.safe_load(f)
 
-    sections.append({
+    entry = {
         "id": section["id"],
         "title": section["title"],
         "description": section["description"],
         "charts": data.get("charts", []),
         "images": data.get("images", []),
-    })
+    }
+    # Optional verbatim survey answer used as the section's pull-quote.
+    if section.get("quote"):
+        entry["quote"] = section["quote"]
+    sections.append(entry)
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 output_path = os.path.join(OUTPUT_DIR, "class-profile.json")

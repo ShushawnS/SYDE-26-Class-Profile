@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co-op location journey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #16313A;
+      font-family: 'Archivo', system-ui, sans-serif;
+    }
+    #sankey { width: 100%; }
+    /* the export button is the only chrome in the design; drop it */
+    #sankey button,
+    #sankey [class*="toolbar"],
+    #sankey [class*="download"],
+    #sankey [class*="export"] { display: none !important; }
+    #sankey text { font-family: 'Archivo', system-ui, sans-serif; font-stretch: 82%; }
+  </style>
+  <!--
+    This page is loaded in an isolated iframe by js/main.js. svg.js MUST live
+    here and NOT on the main page: loading it globally pollutes shared SVG
+    prototypes and breaks every ApexCharts chart. svg.js is pinned to 3.2.4
+    because 3.2.5+ floods the console with "parser Error" during ApexSankey's
+    edge animation.
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.2.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexsankey@1.12.2/apexsankey.min.js"></script>
+</head>
+<body>
+  <div id="sankey"></div>
+  <script>
+    // Places, in a stable order, so a location keeps its colour across all
+    // six columns and a flow can be followed from term 1 to term 6.
+    var PLACES = [
+      "Toronto/GTA", "KW", "Ottawa", "Other Ontario", "Other Canada",
+      "California", "NYC", "Other USA", "Other International"
+    ];
+    // Working from a childhood bedroom is the neutral state, not a
+    // destination — it stays grey so leaving reads as colour.
+    var HOME = "#6E8B93";
+
+    function reportHeight() {
+      var h = document.getElementById("sankey").getBoundingClientRect().height;
+      parent.postMessage({ type: "sankey-height", value: Math.ceil(h) || 560 }, "*");
+    }
+
+    function renderSankey(payload) {
+      var p = payload.palette || {};
+      var cat = p.cat || ["#4E8494"];
+      var container = document.getElementById("sankey");
+      container.innerHTML = "";
+
+      var nodes = (payload.nodes || []).map(function (n) {
+        var name = n.title || n.id;
+        var color;
+        if (name === "Remote/At-Home") color = HOME;
+        else if (name === "Unemployed") color = p.mute || "#5F7A82";
+        else {
+          var i = PLACES.indexOf(name);
+          color = cat[(i < 0 ? PLACES.length : i) % cat.length];
+        }
+        return { id: n.id, title: name, color: color };
+      });
+
+      var sankey = new ApexSankey(container, {
+        width: "100%",
+        height: 860,
+        nodeWidth: 12,
+        spacing: 16,
+        fontSize: "11px",
+        fontFamily: "'Archivo', system-ui, sans-serif",
+        fontColor: p.lit || "#DDE4E2",
+        fontWeight: 500,
+        edgeOpacity: 0.24,
+        edgeGradientFill: true,
+        enableTooltip: true,
+        canvasStyle: "background:#16313A",
+        nodeBorderColor: "transparent"
+      });
+
+      sankey.render({ nodes: nodes, edges: payload.edges || [] });
+      requestAnimationFrame(reportHeight);
+    }
+
+    window.addEventListener("message", function (e) {
+      if (e.data && e.data.type === "sankey-data") renderSankey(e.data);
+    });
+
+    // Let the parent know we're ready to receive data.
+    parent.postMessage({ type: "sankey-ready" }, "*");
+  </script>
+</body>
+</html>

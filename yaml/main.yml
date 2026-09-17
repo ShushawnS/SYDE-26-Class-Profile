@@ -1,65 +1,74 @@
 sections:
   - id: about
     title: About
-    description: Learn more about the SYDE 26 class.
+    description: Five years of Systems Design Engineering, in numbers we probably
+      should not have written down. Start with the recap.
     file: about.yml
+    quote: You are influenced to think of real human beings as you build. Technology for technology's sake is shallow and SYDE helps you realize that.
 
   - id: demographics
     title: Demographics
-    description: A look at the diverse backgrounds of our class.
+    description: Who we were before Waterloo got hold of us.
     file: demographics.yml
+    quote: Incredibly well split (personality, gender etc) and well socialized class.
 
   - id: pre-university
     title: Pre-University
-    description: Where we came from before Waterloo.
+    description: The version of us that still thought engineering would be chill.
     file: pre-university.yml
 
   - id: academics
     title: Academics
-    description: How we survived the coursework.
+    description: Eight study terms. 2B was the worst one, and we can prove it.
     file: academics.yml
+    quote: It's eng but chill and fun.
 
   - id: capstone
     title: Capstone
-    description: Our fourth-year design project journey.
+    description: Two terms, one problem, and a group chat that never fully recovered.
     file: capstone.yml
+    quote: We're "multifaceted" — prof nasser
 
   - id: exchange
     title: Exchange
-    description: Our experiences studying abroad.
+    description: Thirty-eight of us left for a term. Some of us came back different.
     file: exchange.yml
+    quote: Climbing Mt Batur during exchange.
 
   - id: co-op
     title: Co-op
-    description: Work experiences throughout the program.
+    description: Six work terms, from a childhood bedroom in Ontario to an office
+      in Cupertino.
     file: co-op.yml
+    quote: When I got my first big coop and my friends were dragging me across the party room and celebrating.
 
   - id: social-lifestyle
     title: Social & Lifestyle
-    description: Life outside the classroom.
+    description: Snowball fights outside E7, and whatever happened at Coffeehouse.
     file: social-lifestyle.yml
+    quote: Spontaneous snowball fights outside of E7.
 
   - id: mental-health-relationships
     title: Mental Health & Relationships
-    description: How we kept it together.
+    description: The part of the survey nobody enjoyed filling out. Anxiety was the
+      most common answer; co-op was the most common cause.
     file: mental-health-relationships.yml
+    quote: Don't let the grind consume you!!!!! pls!!!!!!!!!!!!!!!!!!!!!!
 
   - id: future
     title: Future
-    description: What's next for SYDE 26.
+    description: In April we scatter. Most of us say we'll come back.
     file: future.yml
+    quote: Living in one place for more than 4 months.
 
   - id: ai
     title: AI
-    description: How AI shaped our university experience.
+    description: Forty of us think it is coming for the job we just accepted. We
+      accepted anyway.
     file: ai.yml
 
   - id: miscellaneous
     title: Miscellaneous
-    description: Everything else that didn't fit anywhere else.
+    description: Asked what was great about SYDE, we mostly just said each other.
     file: miscellaneous.yml
-
-  - id: gallery
-    title: Gallery
-    description: Photos and memories from our journey.
-    file: gallery.yml
+    quote: Take video journals every term and don't watch them until final year when you piece it all together.

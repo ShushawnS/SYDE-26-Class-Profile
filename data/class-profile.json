@@ -3,14 +3,21 @@
     {
       "id": "about",
       "title": "About",
-      "description": "Learn more about the SYDE 26 class.",
+      "description": "Five years of Systems Design Engineering, in numbers we probably should not have written down. Start with the recap.",
       "charts": [],
-      "images": []
+      "images": [
+        {
+          "src": "https://youtu.be/3NK_Er_k_go",
+          "type": "youtube",
+          "alt": "SYDE 2026 Grad Toast video"
+        }
+      ],
+      "quote": "You are influenced to think of real human beings as you build. Technology for technology's sake is shallow and SYDE helps you realize that."
     },
     {
       "id": "demographics",
       "title": "Demographics",
-      "description": "A look at the diverse backgrounds of our class.",
+      "description": "Who we were before Waterloo got hold of us.",
       "charts": [
         {
           "type": "bar",
@@ -481,12 +488,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [],
+      "quote": "Incredibly well split (personality, gender etc) and well socialized class."
     },
     {
       "id": "pre-university",
       "title": "Pre-University",
-      "description": "Where we came from before Waterloo.",
+      "description": "The version of us that still thought engineering would be chill.",
       "charts": [
         {
           "type": "bar",
@@ -668,7 +676,7 @@
         },
         {
           "type": "bar",
-          "title": "Industry Working in",
+          "title": "Expected Industry Before University",
           "xAxisTitle": "Field",
           "description": "",
           "total": 66,
@@ -755,7 +763,7 @@
     {
       "id": "academics",
       "title": "Academics",
-      "description": "How we survived the coursework.",
+      "description": "Eight study terms. 2B was the worst one, and we can prove it.",
       "charts": [
         {
           "type": "wordcloud",
@@ -1400,7 +1408,8 @@
         {
           "type": "metrics-bar",
           "title": "Average Stress Level Over Semesters",
-          "xAxisTitle": "Academic term (1 = lowest, 5 = highest)",
+          "xAxisTitle": "Academic term",
+          "yAxisTitle": "Average stress level (1 = lowest, 5 = highest)",
           "description": "Average self-reported stress level (1 = lowest, 5 = highest) across all academic terms.",
           "max": 5,
           "labels": [
@@ -2040,12 +2049,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [],
+      "quote": "It's eng but chill and fun."
     },
     {
       "id": "capstone",
       "title": "Capstone",
-      "description": "Our fourth-year design project journey.",
+      "description": "Two terms, one problem, and a group chat that never fully recovered.",
       "charts": [
         {
           "type": "pie",
@@ -2189,12 +2199,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [],
+      "quote": "We're \"multifaceted\" \u2014 prof nasser"
     },
     {
       "id": "exchange",
       "title": "Exchange",
-      "description": "Our experiences studying abroad.",
+      "description": "Thirty-eight of us left for a term. Some of us came back different.",
       "charts": [
         {
           "type": "pie",
@@ -2678,12 +2689,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [],
+      "quote": "Climbing Mt Batur during exchange."
     },
     {
       "id": "co-op",
       "title": "Co-op",
-      "description": "Work experiences throughout the program.",
+      "description": "Six work terms, from a childhood bedroom in Ontario to an office in Cupertino.",
       "charts": [
         {
           "type": "percent-stacked-bar",
@@ -2870,6 +2882,1011 @@
               "color": "#06b6d4"
             }
           ]
+        },
+        {
+          "type": "sankey",
+          "title": "Co-op Location Journey",
+          "description": "How students moved between work locations across their co-op terms. Each column is a co-op term; the width of each flow is the number of students who went from one location to the next.",
+          "nodes": [
+            {
+              "id": "c1:Toronto/GTA",
+              "title": "Toronto/GTA",
+              "color": "#2563eb"
+            },
+            {
+              "id": "c1:KW",
+              "title": "KW",
+              "color": "#10b981"
+            },
+            {
+              "id": "c1:Ottawa",
+              "title": "Ottawa",
+              "color": "#f59e0b"
+            },
+            {
+              "id": "c1:Other Ontario",
+              "title": "Other Ontario",
+              "color": "#84cc16"
+            },
+            {
+              "id": "c1:Other Canada",
+              "title": "Other Canada",
+              "color": "#06b6d4"
+            },
+            {
+              "id": "c1:California",
+              "title": "California",
+              "color": "#ef4444"
+            },
+            {
+              "id": "c1:Remote/At-Home",
+              "title": "Remote/At-Home",
+              "color": "#14b8a6"
+            },
+            {
+              "id": "c2:Toronto/GTA",
+              "title": "Toronto/GTA",
+              "color": "#2563eb"
+            },
+            {
+              "id": "c2:KW",
+              "title": "KW",
+              "color": "#10b981"
+            },
+            {
+              "id": "c2:Ottawa",
+              "title": "Ottawa",
+              "color": "#f59e0b"
+            },
+            {
+              "id": "c2:Other Ontario",
+              "title": "Other Ontario",
+              "color": "#84cc16"
+            },
+            {
+              "id": "c2:Other Canada",
+              "title": "Other Canada",
+              "color": "#06b6d4"
+            },
+            {
+              "id": "c2:California",
+              "title": "California",
+              "color": "#ef4444"
+            },
+            {
+              "id": "c2:Other International",
+              "title": "Other International",
+              "color": "#f97316"
+            },
+            {
+              "id": "c2:Remote/At-Home",
+              "title": "Remote/At-Home",
+              "color": "#14b8a6"
+            },
+            {
+              "id": "c3:Toronto/GTA",
+              "title": "Toronto/GTA",
+              "color": "#2563eb"
+            },
+            {
+              "id": "c3:KW",
+              "title": "KW",
+              "color": "#10b981"
+            },
+            {
+              "id": "c3:Ottawa",
+              "title": "Ottawa",
+              "color": "#f59e0b"
+            },
+            {
+              "id": "c3:Other Ontario",
+              "title": "Other Ontario",
+              "color": "#84cc16"
+            },
+            {
+              "id": "c3:Other Canada",
+              "title": "Other Canada",
+              "color": "#06b6d4"
+            },
+            {
+              "id": "c3:California",
+              "title": "California",
+              "color": "#ef4444"
+            },
+            {
+              "id": "c3:NYC",
+              "title": "NYC",
+              "color": "#8b5cf6"
+            },
+            {
+              "id": "c3:Other USA",
+              "title": "Other USA",
+              "color": "#ec4899"
+            },
+            {
+              "id": "c3:Other International",
+              "title": "Other International",
+              "color": "#f97316"
+            },
+            {
+              "id": "c3:Remote/At-Home",
+              "title": "Remote/At-Home",
+              "color": "#14b8a6"
+            },
+            {
+              "id": "c3:Unemployed",
+              "title": "Unemployed",
+              "color": "#9ca3af"
+            },
+            {
+              "id": "c4:Toronto/GTA",
+              "title": "Toronto/GTA",
+              "color": "#2563eb"
+            },
+            {
+              "id": "c4:KW",
+              "title": "KW",
+              "color": "#10b981"
+            },
+            {
+              "id": "c4:Ottawa",
+              "title": "Ottawa",
+              "color": "#f59e0b"
+            },
+            {
+              "id": "c4:Other Ontario",
+              "title": "Other Ontario",
+              "color": "#84cc16"
+            },
+            {
+              "id": "c4:Other Canada",
+              "title": "Other Canada",
+              "color": "#06b6d4"
+            },
+            {
+              "id": "c4:California",
+              "title": "California",
+              "color": "#ef4444"
+            },
+            {
+              "id": "c4:NYC",
+              "title": "NYC",
+              "color": "#8b5cf6"
+            },
+            {
+              "id": "c4:Other USA",
+              "title": "Other USA",
+              "color": "#ec4899"
+            },
+            {
+              "id": "c4:Other International",
+              "title": "Other International",
+              "color": "#f97316"
+            },
+            {
+              "id": "c4:Remote/At-Home",
+              "title": "Remote/At-Home",
+              "color": "#14b8a6"
+            },
+            {
+              "id": "c5:Toronto/GTA",
+              "title": "Toronto/GTA",
+              "color": "#2563eb"
+            },
+            {
+              "id": "c5:KW",
+              "title": "KW",
+              "color": "#10b981"
+            },
+            {
+              "id": "c5:Ottawa",
+              "title": "Ottawa",
+              "color": "#f59e0b"
+            },
+            {
+              "id": "c5:Other Ontario",
+              "title": "Other Ontario",
+              "color": "#84cc16"
+            },
+            {
+              "id": "c5:Other Canada",
+              "title": "Other Canada",
+              "color": "#06b6d4"
+            },
+            {
+              "id": "c5:California",
+              "title": "California",
+              "color": "#ef4444"
+            },
+            {
+              "id": "c5:NYC",
+              "title": "NYC",
+              "color": "#8b5cf6"
+            },
+            {
+              "id": "c5:Other USA",
+              "title": "Other USA",
+              "color": "#ec4899"
+            },
+            {
+              "id": "c5:Other International",
+              "title": "Other International",
+              "color": "#f97316"
+            },
+            {
+              "id": "c5:Remote/At-Home",
+              "title": "Remote/At-Home",
+              "color": "#14b8a6"
+            },
+            {
+              "id": "c5:Unemployed",
+              "title": "Unemployed",
+              "color": "#9ca3af"
+            },
+            {
+              "id": "c6:Toronto/GTA",
+              "title": "Toronto/GTA",
+              "color": "#2563eb"
+            },
+            {
+              "id": "c6:KW",
+              "title": "KW",
+              "color": "#10b981"
+            },
+            {
+              "id": "c6:Ottawa",
+              "title": "Ottawa",
+              "color": "#f59e0b"
+            },
+            {
+              "id": "c6:Other Ontario",
+              "title": "Other Ontario",
+              "color": "#84cc16"
+            },
+            {
+              "id": "c6:Other Canada",
+              "title": "Other Canada",
+              "color": "#06b6d4"
+            },
+            {
+              "id": "c6:California",
+              "title": "California",
+              "color": "#ef4444"
+            },
+            {
+              "id": "c6:NYC",
+              "title": "NYC",
+              "color": "#8b5cf6"
+            },
+            {
+              "id": "c6:Other USA",
+              "title": "Other USA",
+              "color": "#ec4899"
+            },
+            {
+              "id": "c6:Other International",
+              "title": "Other International",
+              "color": "#f97316"
+            },
+            {
+              "id": "c6:Remote/At-Home",
+              "title": "Remote/At-Home",
+              "color": "#14b8a6"
+            },
+            {
+              "id": "c6:Unemployed",
+              "title": "Unemployed",
+              "color": "#9ca3af"
+            }
+          ],
+          "edges": [
+            {
+              "source": "c1:Remote/At-Home",
+              "target": "c2:KW",
+              "value": 1
+            },
+            {
+              "source": "c2:KW",
+              "target": "c3:Other USA",
+              "value": 2
+            },
+            {
+              "source": "c3:Other USA",
+              "target": "c4:KW",
+              "value": 1
+            },
+            {
+              "source": "c4:KW",
+              "target": "c5:Toronto/GTA",
+              "value": 5
+            },
+            {
+              "source": "c5:Toronto/GTA",
+              "target": "c6:Other Canada",
+              "value": 3
+            },
+            {
+              "source": "c1:KW",
+              "target": "c2:KW",
+              "value": 3
+            },
+            {
+              "source": "c2:KW",
+              "target": "c3:Remote/At-Home",
+              "value": 2
+            },
+            {
+              "source": "c3:Remote/At-Home",
+              "target": "c4:Toronto/GTA",
+              "value": 8
+            },
+            {
+              "source": "c4:Toronto/GTA",
+              "target": "c5:Other International",
+              "value": 1
+            },
+            {
+              "source": "c5:Other International",
+              "target": "c6:Other International",
+              "value": 2
+            },
+            {
+              "source": "c1:California",
+              "target": "c2:Toronto/GTA",
+              "value": 1
+            },
+            {
+              "source": "c2:Toronto/GTA",
+              "target": "c3:Toronto/GTA",
+              "value": 8
+            },
+            {
+              "source": "c3:Toronto/GTA",
+              "target": "c4:Toronto/GTA",
+              "value": 10
+            },
+            {
+              "source": "c4:Toronto/GTA",
+              "target": "c5:California",
+              "value": 4
+            },
+            {
+              "source": "c5:California",
+              "target": "c6:Other USA",
+              "value": 1
+            },
+            {
+              "source": "c2:KW",
+              "target": "c3:KW",
+              "value": 2
+            },
+            {
+              "source": "c3:KW",
+              "target": "c4:KW",
+              "value": 4
+            },
+            {
+              "source": "c5:Toronto/GTA",
+              "target": "c6:Unemployed",
+              "value": 3
+            },
+            {
+              "source": "c1:Remote/At-Home",
+              "target": "c2:Remote/At-Home",
+              "value": 23
+            },
+            {
+              "source": "c2:Remote/At-Home",
+              "target": "c3:Remote/At-Home",
+              "value": 15
+            },
+            {
+              "source": "c3:Remote/At-Home",
+              "target": "c4:KW",
+              "value": 4
+            },
+            {
+              "source": "c4:KW",
+              "target": "c5:Other Canada",
+              "value": 2
+            },
+            {
+              "source": "c5:Other Canada",
+              "target": "c6:KW",
+              "value": 1
+            },
+            {
+              "source": "c2:Remote/At-Home",
+              "target": "c3:KW",
+              "value": 2
+            },
+            {
+              "source": "c3:KW",
+              "target": "c4:Remote/At-Home",
+              "value": 3
+            },
+            {
+              "source": "c4:Remote/At-Home",
+              "target": "c5:Unemployed",
+              "value": 1
+            },
+            {
+              "source": "c5:Unemployed",
+              "target": "c6:Other International",
+              "value": 1
+            },
+            {
+              "source": "c1:Remote/At-Home",
+              "target": "c2:Other Ontario",
+              "value": 1
+            },
+            {
+              "source": "c2:Other Ontario",
+              "target": "c3:Unemployed",
+              "value": 1
+            },
+            {
+              "source": "c3:Unemployed",
+              "target": "c4:Other Ontario",
+              "value": 1
+            },
+            {
+              "source": "c4:Other Ontario",
+              "target": "c5:Other Ontario",
+              "value": 1
+            },
+            {
+              "source": "c5:Other Ontario",
+              "target": "c6:Other Ontario",
+              "value": 1
+            },
+            {
+              "source": "c1:Remote/At-Home",
+              "target": "c2:Toronto/GTA",
+              "value": 12
+            },
+            {
+              "source": "c4:Toronto/GTA",
+              "target": "c5:Remote/At-Home",
+              "value": 3
+            },
+            {
+              "source": "c5:Remote/At-Home",
+              "target": "c6:Other USA",
+              "value": 1
+            },
+            {
+              "source": "c1:Toronto/GTA",
+              "target": "c2:California",
+              "value": 1
+            },
+            {
+              "source": "c2:California",
+              "target": "c3:California",
+              "value": 1
+            },
+            {
+              "source": "c3:California",
+              "target": "c4:California",
+              "value": 2
+            },
+            {
+              "source": "c4:California",
+              "target": "c5:Other USA",
+              "value": 1
+            },
+            {
+              "source": "c5:Other USA",
+              "target": "c6:California",
+              "value": 1
+            },
+            {
+              "source": "c1:Other Canada",
+              "target": "c2:Other Canada",
+              "value": 1
+            },
+            {
+              "source": "c2:Other Canada",
+              "target": "c3:Other Canada",
+              "value": 1
+            },
+            {
+              "source": "c3:Other Canada",
+              "target": "c4:Other Canada",
+              "value": 1
+            },
+            {
+              "source": "c4:Other Canada",
+              "target": "c5:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c5:Remote/At-Home",
+              "target": "c6:Remote/At-Home",
+              "value": 2
+            },
+            {
+              "source": "c2:Toronto/GTA",
+              "target": "c3:Remote/At-Home",
+              "value": 6
+            },
+            {
+              "source": "c3:Remote/At-Home",
+              "target": "c4:Other Canada",
+              "value": 2
+            },
+            {
+              "source": "c4:Other Canada",
+              "target": "c5:Toronto/GTA",
+              "value": 1
+            },
+            {
+              "source": "c5:Toronto/GTA",
+              "target": "c6:Other USA",
+              "value": 3
+            },
+            {
+              "source": "c1:Ottawa",
+              "target": "c2:KW",
+              "value": 1
+            },
+            {
+              "source": "c4:Remote/At-Home",
+              "target": "c5:Remote/At-Home",
+              "value": 7
+            },
+            {
+              "source": "c5:Remote/At-Home",
+              "target": "c6:KW",
+              "value": 1
+            },
+            {
+              "source": "c3:Toronto/GTA",
+              "target": "c4:Remote/At-Home",
+              "value": 4
+            },
+            {
+              "source": "c5:Remote/At-Home",
+              "target": "c6:NYC",
+              "value": 2
+            },
+            {
+              "source": "c1:Toronto/GTA",
+              "target": "c2:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c2:Remote/At-Home",
+              "target": "c3:Toronto/GTA",
+              "value": 6
+            },
+            {
+              "source": "c5:Remote/At-Home",
+              "target": "c6:Toronto/GTA",
+              "value": 4
+            },
+            {
+              "source": "c4:Toronto/GTA",
+              "target": "c5:NYC",
+              "value": 1
+            },
+            {
+              "source": "c5:NYC",
+              "target": "c6:California",
+              "value": 2
+            },
+            {
+              "source": "c1:Toronto/GTA",
+              "target": "c2:Toronto/GTA",
+              "value": 7
+            },
+            {
+              "source": "c3:Toronto/GTA",
+              "target": "c4:KW",
+              "value": 2
+            },
+            {
+              "source": "c4:KW",
+              "target": "c5:NYC",
+              "value": 1
+            },
+            {
+              "source": "c5:NYC",
+              "target": "c6:NYC",
+              "value": 2
+            },
+            {
+              "source": "c4:Toronto/GTA",
+              "target": "c5:Toronto/GTA",
+              "value": 6
+            },
+            {
+              "source": "c5:Toronto/GTA",
+              "target": "c6:Toronto/GTA",
+              "value": 5
+            },
+            {
+              "source": "c3:Remote/At-Home",
+              "target": "c4:California",
+              "value": 1
+            },
+            {
+              "source": "c4:California",
+              "target": "c5:California",
+              "value": 2
+            },
+            {
+              "source": "c5:California",
+              "target": "c6:California",
+              "value": 8
+            },
+            {
+              "source": "c4:Toronto/GTA",
+              "target": "c5:Ottawa",
+              "value": 1
+            },
+            {
+              "source": "c5:Ottawa",
+              "target": "c6:Ottawa",
+              "value": 2
+            },
+            {
+              "source": "c2:KW",
+              "target": "c3:Other International",
+              "value": 1
+            },
+            {
+              "source": "c3:Other International",
+              "target": "c4:KW",
+              "value": 1
+            },
+            {
+              "source": "c4:KW",
+              "target": "c5:KW",
+              "value": 3
+            },
+            {
+              "source": "c5:KW",
+              "target": "c6:KW",
+              "value": 2
+            },
+            {
+              "source": "c3:Remote/At-Home",
+              "target": "c4:Ottawa",
+              "value": 1
+            },
+            {
+              "source": "c4:Ottawa",
+              "target": "c5:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c3:Remote/At-Home",
+              "target": "c4:Remote/At-Home",
+              "value": 9
+            },
+            {
+              "source": "c4:Remote/At-Home",
+              "target": "c5:KW",
+              "value": 3
+            },
+            {
+              "source": "c5:KW",
+              "target": "c6:Other USA",
+              "value": 1
+            },
+            {
+              "source": "c5:Remote/At-Home",
+              "target": "c6:California",
+              "value": 2
+            },
+            {
+              "source": "c1:Other Canada",
+              "target": "c2:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c2:Remote/At-Home",
+              "target": "c3:California",
+              "value": 1
+            },
+            {
+              "source": "c3:California",
+              "target": "c4:Other USA",
+              "value": 1
+            },
+            {
+              "source": "c4:Other USA",
+              "target": "c5:California",
+              "value": 1
+            },
+            {
+              "source": "c1:Remote/At-Home",
+              "target": "c2:Ottawa",
+              "value": 2
+            },
+            {
+              "source": "c2:Ottawa",
+              "target": "c3:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c4:Other Canada",
+              "target": "c5:Other Canada",
+              "value": 1
+            },
+            {
+              "source": "c2:Toronto/GTA",
+              "target": "c3:Ottawa",
+              "value": 2
+            },
+            {
+              "source": "c3:Ottawa",
+              "target": "c4:Toronto/GTA",
+              "value": 1
+            },
+            {
+              "source": "c4:Remote/At-Home",
+              "target": "c5:Toronto/GTA",
+              "value": 4
+            },
+            {
+              "source": "c1:KW",
+              "target": "c2:Toronto/GTA",
+              "value": 5
+            },
+            {
+              "source": "c2:Remote/At-Home",
+              "target": "c3:Other International",
+              "value": 1
+            },
+            {
+              "source": "c3:Other International",
+              "target": "c4:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c4:Toronto/GTA",
+              "target": "c5:Other USA",
+              "value": 1
+            },
+            {
+              "source": "c5:Other USA",
+              "target": "c6:Other USA",
+              "value": 2
+            },
+            {
+              "source": "c5:Remote/At-Home",
+              "target": "c6:Other Ontario",
+              "value": 1
+            },
+            {
+              "source": "c1:Other Canada",
+              "target": "c2:KW",
+              "value": 1
+            },
+            {
+              "source": "c1:Ottawa",
+              "target": "c2:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c5:KW",
+              "target": "c6:Remote/At-Home",
+              "value": 2
+            },
+            {
+              "source": "c2:Toronto/GTA",
+              "target": "c3:Other Ontario",
+              "value": 1
+            },
+            {
+              "source": "c3:Other Ontario",
+              "target": "c4:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c4:Remote/At-Home",
+              "target": "c5:Ottawa",
+              "value": 1
+            },
+            {
+              "source": "c2:Toronto/GTA",
+              "target": "c3:KW",
+              "value": 5
+            },
+            {
+              "source": "c5:Other Canada",
+              "target": "c6:California",
+              "value": 2
+            },
+            {
+              "source": "c4:Remote/At-Home",
+              "target": "c5:California",
+              "value": 1
+            },
+            {
+              "source": "c5:Toronto/GTA",
+              "target": "c6:KW",
+              "value": 2
+            },
+            {
+              "source": "c1:Remote/At-Home",
+              "target": "c2:Other Canada",
+              "value": 1
+            },
+            {
+              "source": "c2:Other Canada",
+              "target": "c3:Toronto/GTA",
+              "value": 1
+            },
+            {
+              "source": "c4:KW",
+              "target": "c5:Other USA",
+              "value": 1
+            },
+            {
+              "source": "c4:Remote/At-Home",
+              "target": "c5:Other International",
+              "value": 1
+            },
+            {
+              "source": "c2:Toronto/GTA",
+              "target": "c3:NYC",
+              "value": 1
+            },
+            {
+              "source": "c3:NYC",
+              "target": "c4:NYC",
+              "value": 1
+            },
+            {
+              "source": "c4:NYC",
+              "target": "c5:NYC",
+              "value": 1
+            },
+            {
+              "source": "c3:Ottawa",
+              "target": "c4:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c3:KW",
+              "target": "c4:Other International",
+              "value": 1
+            },
+            {
+              "source": "c4:Other International",
+              "target": "c5:Toronto/GTA",
+              "value": 1
+            },
+            {
+              "source": "c1:Other Ontario",
+              "target": "c2:KW",
+              "value": 1
+            },
+            {
+              "source": "c3:Other USA",
+              "target": "c4:California",
+              "value": 1
+            },
+            {
+              "source": "c2:Toronto/GTA",
+              "target": "c3:Other Canada",
+              "value": 1
+            },
+            {
+              "source": "c3:Other Canada",
+              "target": "c4:KW",
+              "value": 1
+            },
+            {
+              "source": "c2:Remote/At-Home",
+              "target": "c3:Other Ontario",
+              "value": 1
+            },
+            {
+              "source": "c3:Other Ontario",
+              "target": "c4:KW",
+              "value": 1
+            },
+            {
+              "source": "c4:KW",
+              "target": "c5:California",
+              "value": 1
+            },
+            {
+              "source": "c1:KW",
+              "target": "c2:Other International",
+              "value": 1
+            },
+            {
+              "source": "c2:Other International",
+              "target": "c3:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c4:KW",
+              "target": "c5:Remote/At-Home",
+              "value": 1
+            },
+            {
+              "source": "c5:KW",
+              "target": "c6:Other Canada",
+              "value": 1
+            },
+            {
+              "source": "c3:KW",
+              "target": "c4:Toronto/GTA",
+              "value": 1
+            },
+            {
+              "source": "c4:Remote/At-Home",
+              "target": "c5:Other Canada",
+              "value": 1
+            },
+            {
+              "source": "c4:Toronto/GTA",
+              "target": "c5:Unemployed",
+              "value": 1
+            },
+            {
+              "source": "c5:Unemployed",
+              "target": "c6:California",
+              "value": 1
+            },
+            {
+              "source": "c2:Ottawa",
+              "target": "c3:Toronto/GTA",
+              "value": 1
+            },
+            {
+              "source": "c4:Toronto/GTA",
+              "target": "c5:KW",
+              "value": 1
+            },
+            {
+              "source": "c5:KW",
+              "target": "c6:California",
+              "value": 1
+            },
+            {
+              "source": "c5:Toronto/GTA",
+              "target": "c6:California",
+              "value": 1
+            },
+            {
+              "source": "c2:Toronto/GTA",
+              "target": "c3:California",
+              "value": 1
+            },
+            {
+              "source": "c4:California",
+              "target": "c5:NYC",
+              "value": 1
+            },
+            {
+              "source": "c1:Ottawa",
+              "target": "c2:Ottawa",
+              "value": 1
+            },
+            {
+              "source": "c2:Ottawa",
+              "target": "c3:Ottawa",
+              "value": 1
+            },
+            {
+              "source": "c3:Ottawa",
+              "target": "c4:Ottawa",
+              "value": 1
+            },
+            {
+              "source": "c4:Ottawa",
+              "target": "c5:Toronto/GTA",
+              "value": 1
+            }
+          ],
+          "total": 66
         },
         {
           "type": "percent-stacked-bar",
@@ -4597,12 +5614,13 @@
           }
         }
       ],
-      "images": []
+      "images": [],
+      "quote": "When I got my first big coop and my friends were dragging me across the party room and celebrating."
     },
     {
       "id": "social-lifestyle",
       "title": "Social & Lifestyle",
-      "description": "Life outside the classroom.",
+      "description": "Snowball fights outside E7, and whatever happened at Coffeehouse.",
       "charts": [
         {
           "type": "wordcloud",
@@ -5390,12 +6408,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [],
+      "quote": "Spontaneous snowball fights outside of E7."
     },
     {
       "id": "mental-health-relationships",
       "title": "Mental Health & Relationships",
-      "description": "How we kept it together.",
+      "description": "The part of the survey nobody enjoyed filling out. Anxiety was the most common answer; co-op was the most common cause.",
       "charts": [
         {
           "type": "bar",
@@ -5832,12 +6851,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [],
+      "quote": "Don't let the grind consume you!!!!! pls!!!!!!!!!!!!!!!!!!!!!!"
     },
     {
       "id": "future",
       "title": "Future",
-      "description": "What's next for SYDE 26.",
+      "description": "In April we scatter. Most of us say we'll come back.",
       "charts": [
         {
           "type": "doughnut",
@@ -6186,87 +7206,26 @@
           "total": 34
         },
         {
-          "type": "boxplot",
-          "title": "Base Salary",
-          "description": "",
-          "boxFormat": "%sk CAD/yr",
-          "labels": [
-            "Base Salary"
-          ],
-          "data": [
-            [
-              35.0,
-              100.0,
-              177.0,
-              212.0,
-              292.0
-            ]
-          ],
-          "colors": {
-            "fill": [
-              "#2563eb"
-            ],
-            "stroke": [
-              "#1e40af"
-            ]
-          }
-        },
-        {
           "type": "grouped-bar",
           "title": "Total Compensation by Region",
-          "description": "Average first-year base salary and bonus, split between the US and everywhere else.",
+          "description": "Average first-year total compensation (base + bonus), split between the US and everywhere else.",
           "xLabels": [
             "USA",
             "Rest of World"
           ],
           "unit": "k CAD",
+          "yAxisTitle": "Average total compensation (k CAD)",
           "datasets": [
             {
-              "label": "Average Base (k CAD)",
+              "label": "Average Total Compensation (k CAD)",
               "data": [
-                205,
-                103
+                255,
+                117
               ],
               "color": "#2563eb"
-            },
-            {
-              "label": "Average Bonus (k CAD)",
-              "data": [
-                50,
-                14
-              ],
-              "color": "#10b981"
             }
           ],
           "total": 43
-        },
-        {
-          "type": "bar",
-          "title": "Bonus",
-          "xAxisTitle": "Bonus amount",
-          "description": "",
-          "total": 66,
-          "labels": [
-            "None",
-            "<$5k",
-            "$5-10k",
-            "$10-20k",
-            "$20k+"
-          ],
-          "data": [
-            35,
-            0,
-            4,
-            7,
-            20
-          ],
-          "colors": [
-            "#9ca3af",
-            "#f97316",
-            "#f59e0b",
-            "#10b981",
-            "#2563eb"
-          ]
         },
         {
           "type": "doughnut",
@@ -6572,12 +7531,13 @@
           ]
         }
       ],
-      "images": []
+      "images": [],
+      "quote": "Living in one place for more than 4 months."
     },
     {
       "id": "ai",
       "title": "AI",
-      "description": "How AI shaped our university experience.",
+      "description": "Forty of us think it is coming for the job we just accepted. We accepted anyway.",
       "charts": [
         {
           "type": "pie",
@@ -6703,7 +7663,7 @@
     {
       "id": "miscellaneous",
       "title": "Miscellaneous",
-      "description": "Everything else that didn't fit anywhere else.",
+      "description": "Asked what was great about SYDE, we mostly just said each other.",
       "charts": [
         {
           "type": "wordcloud",
@@ -7870,27 +8830,8 @@
           ]
         }
       ],
-      "images": []
-    },
-    {
-      "id": "gallery",
-      "title": "Gallery",
-      "description": "Photos and memories from our journey.",
-      "charts": [],
-      "images": [
-        {
-          "src": "https://placehold.co/600x400",
-          "alt": "SYDE 26 group photo"
-        },
-        {
-          "src": "https://placehold.co/600x400",
-          "alt": "Capstone presentation day"
-        },
-        {
-          "src": "https://placehold.co/600x400",
-          "end": "FRC team photo"
-        }
-      ]
+      "images": [],
+      "quote": "Take video journals every term and don't watch them until final year when you piece it all together."
     }
   ]
 }

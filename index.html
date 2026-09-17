@@ -3,30 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SYDE 26 - Class Profile</title>
+  <title>SYDE 26 — Class Profile</title>
+  <meta name="description" content="Eight academic terms, six co-ops, one class. Five years of Systems Design Engineering at Waterloo, in numbers we probably should not have written down.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- NOTE: ApexSankey + @svgdotjs/svg.js are loaded only inside sankey.html
+       (an isolated iframe). Loading svg.js on this page pollutes shared SVG
+       prototypes and breaks all ApexCharts rendering. -->
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">SYDE 26</div>
-      <ul class="nav-links" id="nav-links"></ul>
+  <a class="skip" href="#about">Skip to the data</a>
+
+  <header class="topbar">
+    <a class="mark" href="#top">SYDE 26</a>
+    <button class="menu-btn" id="menu-btn" type="button"
+            aria-expanded="false" aria-controls="nav-panel" aria-label="Sections">
+      <span class="menu-bars" aria-hidden="true"></span>
+    </button>
+    <nav class="rail" id="nav-panel" aria-label="Sections">
+      <ul id="nav-links"></ul>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <h1>SYDE 26 Class Profile</h1>
-      <p>Systems Design Engineering — Class of 2026</p>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <!-- Phrases are blocks rather than <br>s, so a narrow column wraps at
+             a phrase boundary first instead of mid-thought. -->
+        <h1 class="hero-title" id="hero-title">
+          <span>Eight academic terms,</span>
+          <span>six co-ops,</span>
+          <span>one class</span>
+        </h1>
+
+        <!-- If the file ever goes missing the slot explains itself rather
+             than showing a broken image. -->
+        <figure class="classpic" id="classpic">
+          <img src="images/class-photo.jpg" alt="The SYDE 26 class on the steps of E5" width="1600" height="1066">
+          <figcaption>
+            Class photo goes here.<br>
+            <span>Save it as <code>images/class-photo.jpg</code></span>
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
     <div id="sections"></div>
   </main>
 
-  <footer>
-    <p>&copy; 2026 SYDE 26. All rights reserved.</p>
+  <nav class="jump" aria-label="Move between questions">
+    <button type="button" class="jump-btn" data-dir="-1" aria-label="Previous question">&#8593;</button>
+    <button type="button" class="jump-btn" data-dir="1" aria-label="Next question">&#8595;</button>
+  </nav>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p class="foot-line">SYDE 26 Class Profile — Systems Design Engineering, University of Waterloo.</p>
+      <p class="foot-note">The count under each question is the people who answered that one, not the whole class. Free-text answers are printed exactly as they were written, typos and all.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
