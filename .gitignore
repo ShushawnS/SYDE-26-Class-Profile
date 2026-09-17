@@ -3,3 +3,8 @@ node_modules/
 *.log
 data/data.tsv
 data/data_clean.xlsx
+
+# Agent skills installed with `npx skills add` — the lockfile below records
+# which ones, so they can be reinstalled rather than vendored in here.
+.agents/skills/
+.claude/skills/
