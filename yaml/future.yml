@@ -1,0 +1,443 @@
+charts:
+- type: doughnut
+  title: Plans After 1st Year
+  description: Where our class envisioned themselves heading after first year — and
+    how things actually turned out.
+  total: 64
+  labels:
+  - Continuing education
+  - Entreprenuership
+  - Not sure
+  - Travelling
+  - Work
+  data:
+  - 1
+  - 1
+  - 3
+  - 1
+  - 58
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#8b5cf6'
+  - '#9ca3af'
+- type: doughnut
+  title: Full-Time Job Secured?
+  description: ''
+  total: 63
+  labels:
+  - 'Yes'
+  - 'No'
+  - Still Searching
+  data:
+  - 50
+  - 13
+  - 0
+  colors:
+  - '#10b981'
+  - '#ef4444'
+  - '#f59e0b'
+- type: pie
+  title: Returning to Previous Employer
+  description: ''
+  total: 54
+  labels:
+  - 'Yes'
+  - 'No'
+  data:
+  - 29
+  - 25
+  colors:
+  - '#10b981'
+  - '#ef4444'
+- type: metrics-bar
+  title: When Did You Get Your Offer
+  description: >-
+    Full-time offers, in the order they actually arrived. The rush is the
+    autumn milkround; the tail is everyone who signed in the new year.
+  labels:
+  - Aug 2025
+  - Sep 2025
+  - Oct 2025
+  - Nov 2025
+  - Dec 2025
+  - Jan 2026
+  - Feb 2026
+  - Mar 2026
+  - Apr 2026
+  - May 2026
+  - Jun 2026
+  - Jul 2026
+  data:
+  - 3
+  - 6
+  - 9
+  - 2
+  - 9
+  - 3
+  - 2
+  - 4
+  - 5
+  - 3
+  - 3
+  - 1
+  total: 50
+- type: bar
+  title: Where Will You Be Working?
+  xAxisTitle: Location
+  description: ''
+  total: 61
+  labels:
+  - California
+  - KW
+  - NYC
+  - Other Canada
+  - Other International
+  - Other Ontario
+  - Other USA
+  - Ottawa
+  - Remote/At-Home
+  - Toronto/GTA
+  - Unemployed
+  data:
+  - 18
+  - 4
+  - 7
+  - 2
+  - 2
+  - 1
+  - 3
+  - 1
+  - 2
+  - 11
+  - 10
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+  - '#9ca3af'
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+- type: bar
+  title: Leaving Canada? Plan to Come Back?
+  xAxisTitle: Plan
+  description: ''
+  total: 37
+  labels:
+  - 'No'
+  - Not sure
+  - 'Yes'
+  data:
+  - 5
+  - 11
+  - 21
+  colors:
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+- type: bar
+  title: If Leaving, When Will You Return
+  xAxisTitle: Timeline
+  description: ''
+  total: 31
+  labels:
+  - 1 year
+  - 2-3 years
+  - 4-7 years
+  - 7-10 years
+  - 20+ years
+  - Not Sure
+  data:
+  - 1
+  - 5
+  - 9
+  - 5
+  - 2
+  - 9
+  colors:
+  - '#10b981'
+  - '#2563eb'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#9ca3af'
+  - '#2563eb'
+- type: wordcloud
+  title: Company You'll Be Working At
+  description: ''
+  words:
+  - text: Altruist
+    weight: 1
+  - text: Apple
+    weight: 3
+  - text: AWS
+    weight: 1
+  - text: BinSentry
+    weight: 1
+  - text: Bloomberg
+    weight: 1
+  - text: Bombardier
+    weight: 1
+  - text: Dominion Dynamics
+    weight: 1
+  - text: EliseAI
+    weight: 1
+  - text: Empire Life
+    weight: 1
+  - text: Energy Aspects
+    weight: 1
+  - text: Etched
+    weight: 1
+  - text: GlossGenius
+    weight: 1
+  - text: Harmonic
+    weight: 1
+  - text: Imperial Oil
+    weight: 1
+  - text: Intelliware
+    weight: 1
+  - text: Junip
+    weight: 1
+  - text: Kodiak Robotics
+    weight: 1
+  - text: Latent Health
+    weight: 1
+  - text: Manulife
+    weight: 1
+  - text: Microsoft
+    weight: 2
+  - text: Nvidia
+    weight: 1
+  - text: Proofpoint
+    weight: 1
+  - text: Ramp
+    weight: 1
+  - text: Relay
+    weight: 1
+  - text: Shopify
+    weight: 1
+  - text: Siemens
+    weight: 1
+  - text: TikTok
+    weight: 1
+  - text: Uber
+    weight: 1
+  - text: University of Waterloo
+    weight: 1
+  - text: Upside Robotics
+    weight: 1
+  - text: xAI
+    weight: 1
+  total: 34
+- type: boxplot
+  title: Total Compensation by Region
+  description: First-year total compensation (base + bonus). The bar is the middle
+    half of each group, the notch is the median and the hairline is the full range
+    — the averages were 255k and 117k, but one 285k outlier drags the
+    rest-of-world average well above its median.
+  boxFormat: '%sk'
+  unit: CAD
+  labels:
+  - USA
+  - Rest of World
+  data:
+  -
+    - 90.3
+    - 219.6
+    - 243.2
+    - 291.9
+    - 389.2
+  -
+    - 78.5
+    - 87.0
+    - 103.5
+    - 122.9
+    - 285.1
+  total: 43
+- type: doughnut
+  title: Plan to Pursue Further Education
+  description: ''
+  total: 66
+  labels:
+  - 'Yes'
+  - 'No'
+  - Maybe
+  data:
+  - 27
+  - 36
+  - 3
+  colors:
+  - '#10b981'
+  - '#ef4444'
+  - '#f59e0b'
+- type: grouped-bar
+  title: Get Married By
+  description: ''
+  xAxisTitle: Age
+  xLabels:
+  - '25'
+  - 26-28
+  - 29-31
+  - 32+
+  - Never
+  datasets:
+  - label: Male
+    data:
+    - 1
+    - 17
+    - 10
+    - 1
+    - 0
+    color: '#2563eb'
+  - label: Female
+    data:
+    - 3
+    - 9
+    - 11
+    - 3
+    - 1
+    color: '#ec4899'
+- type: grouped-bar
+  title: Age to Have Children
+  description: ''
+  xAxisTitle: Age
+  xLabels:
+  - 25-27
+  - 28-30
+  - 31-33
+  - 34+
+  - Never
+  datasets:
+  - label: Male
+    data:
+    - 1
+    - 14
+    - 8
+    - 5
+    - 0
+    color: '#2563eb'
+  - label: Female
+    data:
+    - 1
+    - 13
+    - 8
+    - 1
+    - 2
+    color: '#ec4899'
+- type: wordcloud
+  title: Grad Trip Locations
+  description: ''
+  total: 50
+  words:
+  - text: Austria
+    weight: 5
+  - text: Bosnia
+    weight: 2
+  - text: Canada
+    weight: 2
+  - text: China
+    weight: 11
+  - text: Croatia
+    weight: 8
+  - text: France
+    weight: 5
+  - text: Germany
+    weight: 4
+  - text: Greece
+    weight: 3
+  - text: Guatemala
+    weight: 1
+  - text: Hong Kong
+    weight: 13
+  - text: India
+    weight: 1
+  - text: Indonesia
+    weight: 3
+  - text: Ireland
+    weight: 1
+  - text: Italy
+    weight: 9
+  - text: Japan
+    weight: 27
+  - text: Korea
+    weight: 5
+  - text: Laos
+    weight: 4
+  - text: Liechtenstein
+    weight: 2
+  - text: Mainland China
+    weight: 1
+  - text: Malaysia
+    weight: 3
+  - text: Malta
+    weight: 4
+  - text: Mexico
+    weight: 4
+  - text: Netherlands
+    weight: 2
+  - text: Philippines
+    weight: 7
+  - text: Phillipines
+    weight: 2
+  - text: Poland
+    weight: 1
+  - text: Portugal
+    weight: 12
+  - text: Serbia
+    weight: 1
+  - text: Singapore
+    weight: 1
+  - text: Slovenia
+    weight: 2
+  - text: South Korea
+    weight: 10
+  - text: Spain
+    weight: 11
+  - text: Sweden
+    weight: 1
+  - text: Switzerland
+    weight: 2
+  - text: Taiwan
+    weight: 4
+  - text: Thailand
+    weight: 14
+  - text: Turkey
+    weight: 5
+  - text: United Kingdom
+    weight: 7
+  - text: United States
+    weight: 1
+  - text: USA
+    weight: 1
+  - text: Vatican City
+    weight: 3
+  - text: Vietnam
+    weight: 13
+- type: bar
+  title: Money Spent on Grad Trip
+  xAxisTitle: Spend range
+  description: ''
+  total: 53
+  labels:
+  - <$1k
+  - $1-2k
+  - $2-3k
+  - $3-5k
+  - $5k+
+  data:
+  - 4
+  - 3
+  - 2
+  - 17
+  - 27
+  colors:
+  - '#ef4444'
+  - '#f97316'
+  - '#f59e0b'
+  - '#10b981'
+  - '#2563eb'

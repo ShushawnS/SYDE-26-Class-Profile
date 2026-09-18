@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYDE 26 — Class Profile</title>
+  <meta name="description" content="Eight academic terms, six co-ops, one class. First co-op: mostly childhood bedrooms. Last: California, more than anywhere else. Five years of Systems Design Engineering at Waterloo, on the record.">
+  <meta name="theme-color" content="#171614">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#demographics">Skip to the data</a>
+
+  <header class="topbar">
+    <a class="mark" href="#top">
+      <span class="dot" aria-hidden="true"></span>SYDE 26
+    </a>
+    <!-- On wide screens the tick rail replaces the inline list of section
+         names, so the bar states which one you are in. -->
+    <p class="mark-sec micro" id="mark-sec" aria-hidden="true"></p>
+    <button class="find-btn" id="find-btn" type="button" aria-label="Search the questions">
+      <span class="find-ico" aria-hidden="true"></span>
+      <span class="find-word">Search</span>
+      <kbd aria-hidden="true">/</kbd>
+    </button>
+    <button class="menu-btn" id="menu-btn" type="button"
+            aria-expanded="false" aria-controls="nav-panel" aria-label="Sections">
+      <span class="menu-bars" aria-hidden="true"></span>
+    </button>
+    <nav class="rail" id="nav-panel" aria-label="Sections">
+      <ul id="nav-links"></ul>
+    </nav>
+  </header>
+
+  <!-- 123 questions is more than anyone will scroll through looking for
+       one. Opens on / or Cmd-K. -->
+  <div class="find" id="find" hidden>
+    <div class="find-scrim" id="find-scrim"></div>
+    <div class="find-box" role="dialog" aria-modal="true" aria-label="Search the questions">
+      <input class="find-input" id="find-input" type="search" autocomplete="off"
+             spellcheck="false" placeholder="Search 123 questions&hellip;"
+             aria-label="Search the questions" aria-controls="find-results">
+      <ul class="find-results" id="find-results" role="listbox"
+          aria-label="Matching questions"></ul>
+      <p class="find-empty micro" id="find-empty" hidden>Nothing matches that.</p>
+      <div class="find-foot">
+        <span class="mark-sm"><span class="dot" aria-hidden="true"></span>SYDE 26</span>
+        <span class="find-hint micro">
+          <b><kbd>&#8593;</kbd><kbd>&#8595;</kbd><span>move</span></b>
+          <b><kbd>&#8629;</kbd><span>go</span></b>
+          <b><kbd>esc</kbd><span>close</span></b>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- One bar per section down the left edge; the bar for the section you
+       are in runs longer and darker. Populated from the same data as the
+       menu, and hidden below 76rem where that menu takes over. -->
+  <nav class="ticks" id="ticks" aria-label="Sections">
+    <ol id="tick-list"></ol>
+  </nav>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <p class="hero-eyebrow micro">
+          Systems Design Engineering <span class="accent">/</span>
+          University of Waterloo <span class="accent">/</span> Class of 2026
+        </p>
+
+        <div class="hero-grid">
+          <div>
+            <!-- Phrases are blocks rather than <br>s, so a narrow column
+                 wraps at a phrase boundary first instead of mid-thought. -->
+            <h1 class="hero-title" id="hero-title">
+              <span>Eight academic terms,</span>
+              <span>six co-ops,</span>
+              <span><em>one class</em></span>
+            </h1>
+            <p class="hero-lede">
+              First co-op: mostly childhood bedrooms. Last: California, more
+              than anywhere else. Wages, situationships, cGPAs &mdash; all
+              on the record.
+            </p>
+          </div>
+
+          <!-- If the file ever goes missing the slot explains itself rather
+               than showing a broken image. -->
+          <figure class="classpic" id="classpic">
+            <img src="images/class-photo.jpg" alt="The SYDE 26 class on the steps of E5" width="1600" height="1066">
+            <figcaption>
+              Class photo goes here.<br>
+              <span>Save it as <code>images/class-photo.jpg</code></span>
+            </figcaption>
+          </figure>
+
+          <dl class="hero-stats">
+            <div class="stat">
+              <dd class="stat-n"><span data-reel="66">66</span></dd>
+              <dt class="stat-k micro">People answered</dt>
+            </div>
+            <div class="stat">
+              <dd class="stat-n"><span data-reel="123">123</span></dd>
+              <dt class="stat-k micro">Questions</dt>
+            </div>
+            <div class="stat">
+              <dd class="stat-n"><span data-reel="1049">1049</span></dd>
+              <dt class="stat-k micro">Written answers</dt>
+            </div>
+            <div class="stat">
+              <dd class="stat-n"><span data-reel="8">8</span></dd>
+              <dt class="stat-k micro">Study terms</dt>
+            </div>
+            <div class="stat">
+              <dd class="stat-n"><span data-reel="6">6</span></dd>
+              <dt class="stat-k micro">Work terms</dt>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div id="sections"></div>
+  </main>
+
+  <nav class="jump" aria-label="Move between sections">
+    <button type="button" class="jump-btn" data-dir="-1" aria-label="Previous section">&#8593;</button>
+    <button type="button" class="jump-btn" data-dir="1" aria-label="Next section">&#8595;</button>
+  </nav>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p class="foot-line">That's us — five years of Systems Design Engineering at Waterloo, tallied up and handed over.</p>
+      <p class="foot-note">Counts are per question, not per person; plenty of us skipped the awkward ones. Free-text answers are printed exactly as written: typos, swearing and all.</p>
+      <p class="foot-contact">Questions, corrections, or a plea to take your answer down —
+        <a href="mailto:shushawn.saha@gmail.com">shushawn.saha@gmail.com</a></p>
+      <nav class="foot-years" aria-label="Class profiles from earlier years">
+        <span class="micro">Earlier profiles</span>
+        <ul>
+          <li><a href="https://joeyloi.com/SYDE2017classprofile.pdf" target="_blank" rel="noopener noreferrer">2017</a></li>
+          <li><a href="https://krishn.me/syde-2018-profile.pdf" target="_blank" rel="noopener noreferrer">2018</a></li>
+          <li><a href="https://nolandey.github.io/syde_2019_class_profile.pdf" target="_blank" rel="noopener noreferrer">2019</a></li>
+          <li><a href="https://uwaterloo.ca/systems-design-engineering/sites/default/files/uploads/documents/syde2020profile_0.pdf" target="_blank" rel="noopener noreferrer">2020</a></li>
+          <li><a href="https://drive.google.com/file/d/1xlyGjjL1iOEVX0SMGwcQb-M0WJmcMqwk/view" target="_blank" rel="noopener noreferrer">2021</a></li>
+          <li><a href="https://nguyen-kha.github.io/SYDE_2023_Class_Profile_Official.pdf" target="_blank" rel="noopener noreferrer">2023</a></li>
+          <li><a href="https://syde2024.vercel.app/" target="_blank" rel="noopener noreferrer">2024</a></li>
+        </ul>
+      </nav>
+      <div class="foot-rule">
+        <p class="micro">Class of 2026</p>
+        <p class="micro">123 questions / 12 sections</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

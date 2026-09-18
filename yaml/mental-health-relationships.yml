@@ -1,0 +1,361 @@
+charts:
+- type: bar
+  title: Mental Health Concerns
+  xAxisTitle: Concern
+  description: The most common mental health challenges students faced during university.
+  total: 63
+  labels:
+  - Addictive Disorder
+  - Anxiety
+  - Depression
+  - Disassociation
+  - Eating Disorder
+  - None
+  - OCD
+  - PTSD
+  - Suicidal Thoughts
+  data:
+  - 1
+  - 32
+  - 11
+  - 3
+  - 2
+  - 18
+  - 1
+  - 2
+  - 2
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+  - '#ec4899'
+  - '#9ca3af'
+  - '#2563eb'
+  - '#2563eb'
+- type: bar
+  title: Causes for Mental Health
+  xAxisTitle: Cause
+  description: ''
+  total: 45
+  labels:
+  - Academics
+  - Co-op/Jobs
+  - Cohort
+  - Environment
+  - Extracurricular
+  - Family
+  - Friends
+  - Relationships
+  data:
+  - 31
+  - 35
+  - 1
+  - 1
+  - 5
+  - 9
+  - 11
+  - 26
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+  - '#ec4899'
+  - '#06b6d4'
+  - '#9ca3af'
+- type: bar
+  title: Duration of Uni in Relationships (Months)
+  description: ''
+  total: 62
+  labels:
+  - '0'
+  - 1-6
+  - 6-12
+  - 13-18
+  - 19-24
+  - 25-30
+  - 31-36
+  - 37-42
+  - 43-48
+  - 55-60
+  data:
+  - 12
+  - 11
+  - 6
+  - 6
+  - 5
+  - 4
+  - 7
+  - 4
+  - 5
+  - 2
+  colors:
+  - '#ef4444'
+  - '#f97316'
+  - '#f59e0b'
+  - '#10b981'
+  - '#2563eb'
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+- type: bar
+  title: Where You Met Your Significant Other
+  xAxisTitle: Where you met
+  description: ''
+  total: 49
+  labels:
+  - Co-op
+  - Exchange
+  - Extracurricular
+  - Friends
+  - High School
+  - Online/App
+  - Party/Social Event
+  - Residence
+  - SYDE 2026
+  data:
+  - 3
+  - 5
+  - 5
+  - 10
+  - 11
+  - 10
+  - 9
+  - 2
+  - 13
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+  - '#ec4899'
+  - '#9ca3af'
+  - '#2563eb'
+  - '#10b981'
+- type: pie
+  title: Committed Sydecest?
+  description: ''
+  total: 60
+  labels:
+  - 'Yes'
+  - 'No'
+  data:
+  - 15
+  - 45
+  colors:
+  - '#ef4444'
+  - '#10b981'
+- type: bar
+  title: Relationships During Uni
+  xAxisTitle: Partners
+  description: ''
+  total: 56
+  labels:
+  - None
+  - One
+  - Two
+  - Three
+  - Four+
+  - Prefer Not to Say
+  data:
+  - 9
+  - 32
+  - 12
+  - 2
+  - 1
+  - 0
+  colors:
+  - '#9ca3af'
+  - '#10b981'
+  - '#2563eb'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#d1d5db'
+- type: bar
+  title: Situationships During Uni
+  xAxisTitle: Situationships
+  description: ''
+  total: 57
+  labels:
+  - None
+  - One
+  - Two
+  - Three
+  - Four+
+  - Prefer Not to Say
+  data:
+  - 24
+  - 15
+  - 9
+  - 4
+  - 5
+  - 0
+  colors:
+  - '#9ca3af'
+  - '#10b981'
+  - '#2563eb'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#d1d5db'
+- type: pie
+  title: Currently in a Relationship
+  description: ''
+  total: 62
+  labels:
+  - 'Yes'
+  - 'No'
+  data:
+  - 31
+  - 31
+  colors:
+  - '#10b981'
+  - '#ef4444'
+- type: pie
+  title: First Kiss?
+  description: ''
+  total: 59
+  labels:
+  - Before Uni
+  - During Uni
+  - Has Not Happened
+  data:
+  - 26
+  - 24
+  - 9
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#ef4444'
+- type: bar
+  title: Unique Kissing Partners
+  xAxisTitle: Partners
+  description: ''
+  total: 54
+  labels:
+  - '0'
+  - '1'
+  - 2-3
+  - 4-5
+  - 6-10
+  - 10+
+  data:
+  - 9
+  - 13
+  - 13
+  - 6
+  - 9
+  - 4
+  colors:
+  - '#ef4444'
+  - '#f97316'
+  - '#f59e0b'
+  - '#10b981'
+  - '#2563eb'
+  - '#8b5cf6'
+- type: pie
+  title: First Had Sex
+  description: ''
+  total: 55
+  labels:
+  - Before Uni
+  - During Uni
+  - Has Not Happened
+  data:
+  - 8
+  - 31
+  - 16
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#ef4444'
+- type: bar
+  title: Unique Sexual Partners
+  xAxisTitle: Partners
+  description: ''
+  total: 47
+  labels:
+  - '0'
+  - '1'
+  - 2-3
+  - 4-5
+  - 6-10
+  - 10+
+  data:
+  - 9
+  - 21
+  - 7
+  - 4
+  - 4
+  - 2
+  colors:
+  - '#ef4444'
+  - '#f97316'
+  - '#f59e0b'
+  - '#10b981'
+  - '#2563eb'
+  - '#8b5cf6'
+- type: bar
+  title: Drugs People Have Tried
+  xAxisTitle: Drug
+  description: ''
+  total: 57
+  labels:
+  - Adderall
+  - Alcohol
+  - Ketamine
+  - LSD
+  - Marijuana
+  - MDMA/Ecstasy
+  - Shrooms
+  - Vyvanse but I have ADHD lol
+  data:
+  - 2
+  - 56
+  - 2
+  - 5
+  - 37
+  - 5
+  - 4
+  - 1
+  colors:
+  - '#10b981'
+  - '#8b5cf6'
+  - '#ef4444'
+  - '#f59e0b'
+  - '#ec4899'
+  - '#2563eb'
+  - '#06b6d4'
+  - '#9ca3af'
+- type: grouped-bar
+  title: Substance Usage First Year vs 3rd/4th Year
+  total: 61
+  description: How often, on average, per term — not how many of us. Drinking
+    and weed barely moved; cigarettes went up.''
+  unit: ''
+  yAxisTitle: Avg frequency per term (0 = Never, 6 = 4-7x per week)
+  xLabels:
+  - Drink
+  - Vape
+  - Weed
+  - Cigs
+  datasets:
+  - label: 1st Year
+    data:
+    - 2.4
+    - 0.4
+    - 0.9
+    - 0.1
+    color: '#60a5fa'
+  - label: 3rd/4th Year
+    data:
+    - 2.3
+    - 0.4
+    - 0.8
+    - 0.5
+    color: '#2563eb'

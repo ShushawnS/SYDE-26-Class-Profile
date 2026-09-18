@@ -1,0 +1,76 @@
+sections:
+  - id: about
+    title: About
+    description: >-
+      We graduated high school during the pandemic. Entered uni in masks and
+      leave with AI. Watch the recap to witness the special energy of our
+      class.
+    file: about.yml
+    quote: The people! So much intelligence in one class in so many different forms
+
+  - id: demographics
+    title: Demographics
+    description: Who we were before Waterloo got hold of us.
+    file: demographics.yml
+    quote: Incredibly well split (personality, gender etc) and well socialized class.
+
+  - id: pre-university
+    title: Pre-University
+    description: The version of us that still thought engineering would be chill.
+    file: pre-university.yml
+
+  - id: academics
+    title: Academics
+    description: Eight study terms. 2B was the worst one, and we can prove it.
+    file: academics.yml
+    quote: It's eng but chill and fun.
+
+  - id: capstone
+    title: Capstone
+    description: Two terms, one problem, and a group chat that never fully recovered.
+    file: capstone.yml
+    quote: We're "multifaceted" — prof nasser
+
+  - id: exchange
+    title: Exchange
+    description: Thirty-eight of us left for a term. Some of us came back different.
+    file: exchange.yml
+    quote: Climbing Mt Batur during exchange.
+
+  - id: co-op
+    title: Co-op
+    description: Six work terms, from a childhood bedroom in Ontario to an office
+      in Cupertino.
+    file: co-op.yml
+    quote: When I got my first big coop and my friends were dragging me across the party room and celebrating.
+
+  - id: social-lifestyle
+    title: Social & Lifestyle
+    description: Snowball fights outside E7, and whatever happened at Coffeehouse.
+    file: social-lifestyle.yml
+    quote: Spontaneous snowball fights outside of E7.
+
+  - id: mental-health-relationships
+    title: Mental Health & Relationships
+    description: The part of the survey nobody enjoyed filling out. Anxiety was the
+      most common answer; co-op was the most common cause.
+    file: mental-health-relationships.yml
+    quote: Don't let the grind consume you!!!!! pls!!!!!!!!!!!!!!!!!!!!!!
+
+  - id: future
+    title: Future
+    description: In April we scatter. Most of us say we'll come back.
+    file: future.yml
+    quote: Living in one place for more than 4 months.
+
+  - id: ai
+    title: AI
+    description: Forty of us think it is coming for the job we just accepted. We
+      accepted anyway.
+    file: ai.yml
+
+  - id: miscellaneous
+    title: Miscellaneous
+    description: Asked what was great about SYDE, we mostly just said each other.
+    file: miscellaneous.yml
+    quote: Take video journals every term and don't watch them until final year when you piece it all together.

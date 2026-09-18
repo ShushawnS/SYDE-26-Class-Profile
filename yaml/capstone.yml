@@ -1,0 +1,113 @@
+charts:
+- type: pie
+  title: SYDE or Multidisciplinary
+  description: A breakdown of whether our fourth-year design projects were within
+    SYDE or cross-disciplinary.
+  total: 66
+  labels:
+  - SYDE
+  - Multi-Disciplinary
+  data:
+  - 56
+  - 10
+  colors:
+  - '#2563eb'
+  - '#10b981'
+- type: doughnut
+  title: Problem Space Tackled
+  description: ''
+  total: 65
+  labels:
+  - Art and Creativity
+  - Cleaning
+  - Communication
+  - Education
+  - Environment and sustainability
+  - Health
+  - Infrastructure
+  - Music
+  - Security
+  data:
+  - 1
+  - 1
+  - 1
+  - 7
+  - 24
+  - 27
+  - 1
+  - 2
+  - 5
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+  - '#ec4899'
+  - '#06b6d4'
+  - '#84cc16'
+  - '#2563eb'
+- type: pie
+  title: Proud of Completed FYDP
+  description: ''
+  total: 66
+  labels:
+  - 'Yes'
+  - 'No'
+  - Maybe
+  data:
+  - 33
+  - 14
+  - 19
+  colors:
+  - '#10b981'
+  - '#ef4444'
+  - '#f59e0b'
+- type: pie
+  title: Continue Working on FYDP
+  description: ''
+  total: 66
+  labels:
+  - 'Yes'
+  - 'No'
+  - Maybe
+  data:
+  - 0
+  - 55
+  - 11
+  colors:
+  - '#10b981'
+  - '#ef4444'
+  - '#f59e0b'
+- type: pie
+  title: FYDP Group Got Along
+  description: ''
+  total: 65
+  labels:
+  - 'Yes'
+  - 'No'
+  data:
+  - 60
+  - 5
+  colors:
+  - '#10b981'
+  - '#ef4444'
+- type: doughnut
+  title: FYDP Software Component Completed with AI
+  description: ''
+  total: 60
+  labels:
+  - 0 - 25%
+  - 26 - 50%
+  - 51 - 75%
+  - 76 - 100%
+  data:
+  - 8
+  - 12
+  - 17
+  - 23
+  colors:
+  - '#10b981'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
