@@ -6597,24 +6597,21 @@
             "One",
             "Two",
             "Three",
-            "Four+",
-            "Prefer Not to Say"
+            "Four+"
           ],
           "data": [
             9,
             32,
             12,
             2,
-            1,
-            0
+            1
           ],
           "colors": [
             "#9ca3af",
             "#10b981",
             "#2563eb",
             "#f59e0b",
-            "#ef4444",
-            "#d1d5db"
+            "#ef4444"
           ]
         },
         {
@@ -6628,24 +6625,21 @@
             "One",
             "Two",
             "Three",
-            "Four+",
-            "Prefer Not to Say"
+            "Four+"
           ],
           "data": [
             24,
             15,
             9,
             4,
-            5,
-            0
+            5
           ],
           "colors": [
             "#9ca3af",
             "#10b981",
             "#2563eb",
             "#f59e0b",
-            "#ef4444",
-            "#d1d5db"
+            "#ef4444"
           ]
         },
         {
@@ -6886,18 +6880,15 @@
           "total": 63,
           "labels": [
             "Yes",
-            "No",
-            "Still Searching"
+            "No"
           ],
           "data": [
             50,
-            13,
-            0
+            13
           ],
           "colors": [
             "#10b981",
-            "#ef4444",
-            "#f59e0b"
+            "#ef4444"
           ]
         },
         {

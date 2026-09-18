@@ -162,21 +162,18 @@ charts:
   - Two
   - Three
   - Four+
-  - Prefer Not to Say
   data:
   - 9
   - 32
   - 12
   - 2
   - 1
-  - 0
   colors:
   - '#9ca3af'
   - '#10b981'
   - '#2563eb'
   - '#f59e0b'
   - '#ef4444'
-  - '#d1d5db'
 - type: bar
   title: Situationships During Uni
   xAxisTitle: Situationships
@@ -188,21 +185,18 @@ charts:
   - Two
   - Three
   - Four+
-  - Prefer Not to Say
   data:
   - 24
   - 15
   - 9
   - 4
   - 5
-  - 0
   colors:
   - '#9ca3af'
   - '#10b981'
   - '#2563eb'
   - '#f59e0b'
   - '#ef4444'
-  - '#d1d5db'
 - type: pie
   title: Currently in a Relationship
   description: ''

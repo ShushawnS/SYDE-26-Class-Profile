@@ -29,15 +29,12 @@ charts:
   labels:
   - 'Yes'
   - 'No'
-  - Still Searching
   data:
   - 50
   - 13
-  - 0
   colors:
   - '#10b981'
   - '#ef4444'
-  - '#f59e0b'
 - type: pie
   title: Returning to Previous Employer
   description: ''

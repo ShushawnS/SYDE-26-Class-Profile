@@ -1017,7 +1017,7 @@ def _(r, c):
         else:
             bins[["None", "One", "Two", "Three"][x]] += 1
     set_bar(c, dict(bins),
-            order=["None", "One", "Two", "Three", "Four+", "Prefer Not to Say"])
+            order=["None", "One", "Two", "Three", "Four+"])
 
 
 @handler("mental-health-relationships.yml", "Situationships During Uni")
@@ -1031,7 +1031,7 @@ def _(r, c):
         else:
             bins[["None", "One", "Two", "Three"][x]] += 1
     set_bar(c, dict(bins),
-            order=["None", "One", "Two", "Three", "Four+", "Prefer Not to Say"])
+            order=["None", "One", "Two", "Three", "Four+"])
 
 
 @handler("mental-health-relationships.yml", "Currently in a Relationship")
@@ -1134,7 +1134,7 @@ def _(r, c):
 
 @handler("future.yml", "Full-Time Job Secured?")
 def _(r, c):
-    set_bar(c, count_series(r["full_time_job"]), order=["Yes", "No", "Still Searching"])
+    set_bar(c, count_series(r["full_time_job"]), order=["Yes", "No"])
 
 
 @handler("future.yml", "Returning to Previous Employer")
