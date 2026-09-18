@@ -1051,6 +1051,11 @@ button[aria-selected="true"] .find-go { opacity: 1; }
 .donut {
   display: flex;
   align-items: center;
+  /* Centres the ring once the key wraps beneath it, which is what happens on
+     a phone: a 200px ring left-aligned under a full-width key reads as
+     stranded. No effect while the two sit side by side, because the key
+     grows to fill the line and leaves nothing to distribute. */
+  justify-content: center;
   gap: clamp(1rem, 2.5vw, 2rem);
   flex-wrap: wrap;
   margin-top: 1rem;
@@ -1165,16 +1170,24 @@ button[aria-selected="true"] .find-go { opacity: 1; }
 
 /* A course code says nothing to anyone outside the program, so the ones we
    have a title for carry it on hover and on keyboard focus. Codes with no
-   title behave exactly as before — no cursor change, no empty bubble. */
+   title behave exactly as before — no cursor change, no empty bubble.
+
+   `content: none` generates no box at all, so the bubble costs nothing when
+   idle. It has to be none rather than opacity 0: an absolutely positioned
+   ::after still counts toward an ancestor's scrollable width even when
+   invisible, and 16rem of unseen tooltip was making the page 79px wider than
+   a phone viewport. The fade is therefore an animation on creation rather
+   than a transition. */
 .field b[data-name] { cursor: help; }
 .field b[data-name]::after {
-  content: attr(data-name);
+  content: none;
   position: absolute;
   left: 0;
   top: calc(100% + 0.45rem);
   z-index: 6;
   width: max-content;
-  max-width: 16rem;
+  /* Never wider than the screen it has to fit on. */
+  max-width: min(16rem, 68vw);
   padding: 0.45rem 0.6rem 0.5rem;
   border-radius: var(--radius-inner);
   background: var(--dark);
@@ -1185,20 +1198,20 @@ button[aria-selected="true"] .find-go { opacity: 1; }
   line-height: 1.35;
   letter-spacing: 0;
   text-transform: none;
-  opacity: 0;
   pointer-events: none;
-  transform: translateY(-4px);
 }
+
 .field b[data-name]:hover::after,
-.field b[data-name]:focus::after {
-  opacity: 1;
-  transform: none;
-}
+.field b[data-name]:focus::after { content: attr(data-name); }
+
 @media (prefers-reduced-motion: no-preference) {
-  .field b[data-name]::after {
-    transition:
-      opacity var(--duration-fast) var(--ease-smooth-out),
-      transform var(--duration-fast) var(--ease-smooth-out);
+  .field b[data-name]:hover::after,
+  .field b[data-name]:focus::after {
+    animation: tip-in var(--duration-fast) var(--ease-smooth-out) both;
+  }
+  @keyframes tip-in {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: none; }
   }
 }
 
