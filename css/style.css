@@ -1299,9 +1299,17 @@ button[aria-selected="true"] .find-go { opacity: 1; }
 }
 
 .pager { display: flex; align-items: center; gap: 0.5rem; }
-/* The weighted term fields only page on a phone. */
-.fig:not(.verbatim) > .pager { display: none; }
-.paged > .pager { display: flex; }
+
+/* A field's pager is a direct child of the figure and only applies on a
+   phone, where js adds .paged; the deck's pager lives inside .deck-bar and
+   is untouched by this.
+
+   This used to be two rules — hide on `.fig:not(.verbatim) > .pager`, show
+   on `.paged > .pager` — and the hiding selector carried one more class, so
+   it won on specificity and the pager never appeared at any width. The items
+   past the first page were unreachable. One selector now, stated as the
+   condition for hiding. */
+.fig:not(.paged) > .pager { display: none; }
 .is-hidden { display: none !important; }
 .answers li.is-last { border-bottom: 0; }
 
@@ -1416,6 +1424,16 @@ button[aria-selected="true"] .find-go { opacity: 1; }
 
 .pager-at { font-family: var(--mono); font-size: var(--fs-micro);
   letter-spacing: var(--micro-track); font-variant-numeric: tabular-nums; color: var(--ink-3); }
+
+/* A field's pager has to carry the fact that more exists, so its label is
+   readable rather than a micro caption, and it sits between two arrows that
+   read as buttons. */
+.pager-field { margin-top: 1.25rem; gap: 0.6rem; }
+.pager-field .pager-at {
+  font-size: var(--fs-s);
+  letter-spacing: 0;
+  color: var(--ink-2);
+}
 
 /* ----------------------------------------------------------------- gallery */
 

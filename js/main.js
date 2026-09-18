@@ -485,13 +485,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Short terms stay a single weighted field — there is nothing to read
   // one at a time — so these only need dealing out on a narrow screen.
+
+  // Fields page on a phone so a 48-company list is not a wall of text. The
+  // label names the totals rather than the page number: "1-14 of 48" answers
+  // "am I seeing all of them?", which a bare "1 / 4" did not — the companies
+  // held back simply read as missing.
   const paginateField = (fig, items, per) => {
     if (items.length <= per) return;
     const pages = Math.ceil(items.length / per);
     let page = 0;
 
     const pager = document.createElement("div");
-    pager.className = "pager";
+    pager.className = "pager pager-field";
 
     const mk = (label, text) => {
       const b = document.createElement("button");
@@ -501,8 +506,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       b.textContent = text;
       return b;
     };
-    const prev = mk("Previous answers", "\u2039");
-    const next = mk("More answers", "\u203A");
+    const prev = mk("Previous page", "\u2039");
+    const next = mk("Next page", "\u203A");
     const at = document.createElement("span");
     at.className = "pager-at";
     at.setAttribute("aria-live", "polite");
@@ -513,7 +518,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       items.forEach((el, i) =>
         el.classList.toggle("is-hidden", Math.floor(i / per) !== page)
       );
-      at.textContent = `${page + 1} / ${pages}`;
+      const from = page * per + 1;
+      const to = Math.min(items.length, (page + 1) * per);
+      at.textContent = `${from}\u2013${to} of ${items.length}`;
       prev.disabled = page === 0;
       next.disabled = page === pages - 1;
     };
