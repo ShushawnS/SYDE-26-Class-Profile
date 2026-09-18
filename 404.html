@@ -18,8 +18,21 @@
       <p class="micro">Error 404</p>
       <h1 class="lost-title">This page did not answer the survey.</h1>
       <p class="lost-note">Whatever you were looking for is not here. The class profile is, though.</p>
-      <a class="lost-go" href="/">Back to the profile <span aria-hidden="true">&#8594;</span></a>
+      <a class="lost-go" id="lost-home" href="/">Back to the profile <span aria-hidden="true">&#8594;</span></a>
     </div>
   </main>
+  <script>
+    // On a GitHub Pages *project* site the profile lives under /<repo>/, not
+    // at the domain root, so a bare "/" sends people to the org root instead
+    // of back here. Derive the base from wherever this 404 was served; a
+    // custom domain or user site keeps plain "/".
+    (function () {
+      var seg = location.pathname.split("/").filter(Boolean);
+      var onGitHub = /\.github\.io$/.test(location.hostname);
+      document.getElementById("lost-home").setAttribute(
+        "href", onGitHub && seg.length ? "/" + seg[0] + "/" : "/"
+      );
+    })();
+  </script>
 </body>
 </html>
