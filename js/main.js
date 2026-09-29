@@ -80,6 +80,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const ORDERED_WORDS = [
     ["outstanding", "excellent", "very good", "good", "satisfactory"],
     ["micro", "small", "medium", "large", "extra large"],
+    // How often — a scale, so it takes the ramp rather than six unrelated
+    // hues. Read from "never" upward, so the ramp runs light to dark and the
+    // heaviest band is the darkest.
+    ["never", "1-2 a term", "monthly", "biweekly", "weekly",
+     "several times a week"],
   ];
 
   // Co-op #1..#6, or the eight study terms 1A..4B.
@@ -846,7 +851,29 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const charts = [];
 
+  // Every plot goes through mount(), so this is the one place that needs to
+  // know whether the plotting library actually arrived. When it has not, the
+  // failure is the same for all 123 questions, so it is tagged and handled as
+  // one event rather than caught 123 times as if each chart were malformed.
+  const NO_PLOTTER = "no-plotter";
+  const hasECharts = () => typeof echarts !== "undefined" && !!echarts.init;
+
+  // init() reads the host's measured box, and a cell that has not been laid
+  // out yet reports nothing. One observer for every plot repairs those on the
+  // first real measurement; before this, only a window resize would.
+  const sizer =
+    typeof ResizeObserver === "undefined"
+      ? null
+      : new ResizeObserver((entries) => {
+          for (const e of entries) {
+            const { width, height } = e.contentRect;
+            if (!width || !height) continue;
+            echarts.getInstanceByDom(e.target)?.resize();
+          }
+        });
+
   const mount = (host, height, option) => {
+    if (!hasECharts()) throw new Error(NO_PLOTTER);
     // A key may already be sitting in the plot, so the chart gets its own
     // box rather than taking the host's full height.
     if (host.firstChild) {
@@ -858,6 +885,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const inst = echarts.init(host, null, { renderer: "svg" });
     inst.setOption(option);
     charts.push(inst);
+    sizer?.observe(host);
     return inst;
   };
 
@@ -1022,10 +1050,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         lineStyle: { width: 2.5 },
         areaStyle: {
           opacity: 1,
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-            { offset: 0, color: colors[i] + "2E" },
-            { offset: 1, color: colors[i] + "00" },
-          ]),
+          // Reachable only if the library loaded far enough to draw but not
+          // far enough to have graphic/: fall back to the flat wash.
+          color: echarts.graphic
+            ? new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: colors[i] + "2E" },
+                { offset: 1, color: colors[i] + "00" },
+              ])
+            : colors[i] + "2E",
         },
       },
       // Two series that finish at the same value would print their names on
@@ -1073,6 +1105,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const labels = sets.map((d) => d.label);
     const colors = colorsFor({ ...chart, data: [] }, labels, true);
     const pct = chart.type === "percent-stacked-bar";
+    // Past six columns the labels collide, and ECharts' own answer is to
+    // hide every other one. On a chart built to be read in pairs that
+    // quietly deletes half the comparison, so turn them instead.
+    const manyCols = (chart.xLabels || []).length > 6;
 
     const cols = sets[0]?.data.length || 0;
     const totals = Array.from({ length: cols }, (_, i) =>
@@ -1101,7 +1137,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     plot.appendChild(keyList(labels, colors));
 
-    mount(plot, 320, {
+    mount(plot, manyCols ? 370 : 320, {
       ...base(),
       grid: { left: 2, right: 10, top: 10, bottom: 2, containLabel: true },
       tooltip: {
@@ -1119,7 +1155,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         data: chart.xLabels,
         axisLine: { lineStyle: { color: RULE2 } },
         axisTick: noTick,
-        axisLabel: tickLabel(chart.xLabels),
+        axisLabel: manyCols
+          ? { ...tickLabel(chart.xLabels), interval: 0, rotate: 30 }
+          : tickLabel(chart.xLabels),
       },
       yAxis: {
         type: "value",
@@ -1551,7 +1589,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       case "boxplot": return 320;
       case "line": return 300;
       case "stacked-bar":
-      case "percent-stacked-bar": return 320 + 30;   // + its key
+      case "percent-stacked-bar":
+        // + its key; taller when the columns have to turn their labels
+        return ((chart.xLabels || []).length > 6 ? 370 : 320) + 30;
       case "grouped-bar": return 310 + 30;
       case "pie":
       case "doughnut":
@@ -1603,14 +1643,120 @@ document.addEventListener("DOMContentLoaded", async () => {
     grid.style.minHeight = Math.round(total) + "px";
   };
 
+  /* ---------------------------------------------------------- when it fails */
+
+  // Two different failures, so two different messages. Missing plots on an
+  // otherwise working page is not the same as no page at all, and saying
+  // nothing — which is what this used to do — makes a broken page and a
+  // still-loading one look identical.
+
+  let noticed = false;
+  const plotterMissing = () => {
+    if (noticed) return;
+    noticed = true;
+    const bar = document.createElement("div");
+    bar.className = "notice";
+    bar.setAttribute("role", "status");
+
+    const msg = document.createElement("p");
+    msg.className = "notice-msg";
+    msg.textContent = "The charts could not load. Everything written is still here.";
+    bar.appendChild(msg);
+
+    const again = document.createElement("button");
+    again.type = "button";
+    again.className = "notice-btn";
+    again.textContent = "Try again";
+    again.addEventListener("click", () => {
+      // If the library turned up after all, the failed grids can simply be
+      // drawn again now that they were never latched shut.
+      if (!hasECharts()) return location.reload();
+      bar.remove();
+      noticed = false;
+      document.querySelectorAll('.grid[data-drawn="failed"]').forEach(drawGrid);
+    });
+    bar.appendChild(again);
+
+    document.body.appendChild(bar);
+  };
+
+  const bootError = (err) => {
+    const sec = document.createElement("section");
+    sec.className = "sec band-a boot-err";
+    const wrap = document.createElement("div");
+    wrap.className = "wrap";
+    const head = document.createElement("div");
+    head.className = "sec-head";
+
+    const idx = document.createElement("p");
+    idx.className = "sec-index micro";
+    idx.textContent = "Error";
+    head.appendChild(idx);
+
+    const h2 = document.createElement("h2");
+    h2.className = "sec-title";
+    h2.textContent = "The data didn’t load.";
+    head.appendChild(h2);
+
+    const d = document.createElement("p");
+    d.className = "sec-desc";
+    d.textContent =
+      "The whole class profile is one file, and this browser could not fetch " +
+      "it. Usually a flaky connection; occasionally us.";
+    head.appendChild(d);
+
+    const why = document.createElement("p");
+    why.className = "boot-err-why micro";
+    why.textContent = `data/class-profile.json — ${err && err.message ? err.message : err}`;
+    head.appendChild(why);
+
+    const acts = document.createElement("div");
+    acts.className = "boot-err-acts";
+    const again = document.createElement("button");
+    again.type = "button";
+    again.className = "notice-btn";
+    again.textContent = "Try again";
+    again.addEventListener("click", () => location.reload());
+    acts.appendChild(again);
+    const mail = document.createElement("a");
+    mail.className = "boot-err-mail";
+    mail.href = "mailto:shushawn.saha@gmail.com";
+    mail.textContent = "Tell us";
+    acts.appendChild(mail);
+    head.appendChild(acts);
+
+    wrap.appendChild(head);
+    sec.appendChild(wrap);
+    const into = document.getElementById("sections");
+    if (into) into.replaceChildren(sec);
+    else document.body.appendChild(sec);
+  };
+
   /* ------------------------------------------------------------- page build */
 
   const [res, courseRes] = await Promise.all([
-    fetch("data/class-profile.json"),
+    // Not optional, so unlike the one below this is allowed to reject — but
+    // a 404 or a 500 resolves, and a truncated body parses to nothing, and
+    // both used to take the entire page down with no message at all.
+    fetch("data/class-profile.json").catch((e) => {
+      throw new Error(e && e.message ? e.message : "network request failed");
+    }),
     // Optional: the page works without it, the codes just lose their names.
     fetch("data/course-names.json").catch(() => null),
-  ]);
-  const config = JSON.parse(await res.text());
+  ]).catch((e) => [e, null]);
+
+  if (res instanceof Error || !res.ok) {
+    bootError(res instanceof Error ? res : new Error(`${res.status} ${res.statusText || "request failed"}`));
+    return;
+  }
+
+  let config;
+  try {
+    config = JSON.parse(await res.text());
+  } catch {
+    bootError(new Error("the file arrived but could not be read"));
+    return;
+  }
   if (courseRes && courseRes.ok) {
     try { COURSE = await courseRes.json(); } catch { COURSE = {}; }
   }
@@ -1798,31 +1944,78 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* ----------------------------------------- draw only what is nearly in view */
 
+  // A frame at a time keeps a section of nineteen charts from locking the
+  // main thread while someone is reading it. A hidden tab gets no frames, so
+  // fall back to a timer there: nobody is looking, jank costs nothing, and
+  // the grid must not be left half drawn.
+  const schedule = (fn) =>
+    document.visibilityState === "hidden"
+      ? setTimeout(fn, 0)
+      : requestAnimationFrame(fn);
+
+  // grid -> the function that advances its chain, so a second call can nudge
+  // a stalled run instead of starting a rival one over the same index.
+  const pumps = new WeakMap();
+
   const drawGrid = (grid) => {
     // Search can ask for a grid the observer has not reached yet, so the
     // guard lives here rather than relying on unobserve alone.
-    if (grid.dataset.drawn) return;
-    grid.dataset.drawn = "1";
+    const state = grid.dataset.drawn;
+    if (state === "done") return;
+    if (state === "drawing") {
+      pumps.get(grid)?.();
+      return;
+    }
+    // A failed attempt leaves its figures on the page. Clear them before
+    // retrying so the second pass cannot double them up.
+    if (state === "failed") grid.replaceChildren();
+
+    grid.dataset.drawn = "drawing";
     const list = JSON.parse(grid.dataset.charts || "[]");
     const images = JSON.parse(grid.dataset.images || "[]");
 
     let i = 0;
+    let scheduled = false;
+    let noPlotter = false;
+
     const next = () => {
+      scheduled = false;
       if (i >= list.length) {
         // Real content is in place; stop holding the estimate open so the
         // grid can settle to its true height.
         grid.style.minHeight = "";
+        // Only now is the grid finished. Latching before the first chart
+        // drew is what turned a flaky network into a permanent blank: the
+        // flag was set, the observer dropped the grid, and nothing ever
+        // looked at it again — reloading was the only way out.
+        if (noPlotter) {
+          grid.dataset.drawn = "failed";
+          plotterMissing();
+        } else {
+          grid.dataset.drawn = "done";
+          drawer.unobserve(grid);
+        }
         return;
       }
       const chart = list[i++];
       try {
         renderChart(chart, grid);
       } catch (e) {
-        console.warn(`Could not render "${chart.title}"`, e);
+        // One unplottable question is not the same event as the plotting
+        // library being absent, which fails all of them identically.
+        if (e && e.message === NO_PLOTTER) noPlotter = true;
+        else console.warn(`Could not render "${chart.title}"`, e);
       }
-      requestAnimationFrame(next);
+      kick();
     };
-    requestAnimationFrame(next);
+
+    const kick = () => {
+      if (scheduled || grid.dataset.drawn !== "drawing") return;
+      scheduled = true;
+      schedule(next);
+    };
+    pumps.set(grid, kick);
+    kick();
 
     if (images.length) {
       const gal = document.createElement("div");
@@ -1870,12 +2063,23 @@ document.addEventListener("DOMContentLoaded", async () => {
         } catch (err) {
           console.error("drawGrid failed", err);
         }
-        drawer.unobserve(e.target);
+        // Dropped in drawGrid's terminal branch instead, once the charts are
+        // actually on the page. Unobserving here would forfeit the only
+        // nudge a grid gets if its run never finished.
       }
     },
     { rootMargin: "400px 0px" }
   );
   document.querySelectorAll(".grid").forEach((g) => drawer.observe(g));
+
+  // Coming back to a tab that was hidden mid-run: the timer or frame that
+  // would have carried the chain on may have been dropped when the tab was
+  // frozen. A no-op in the ordinary case, because kick() ignores a nudge it
+  // has already scheduled.
+  addEventListener("visibilitychange", () => {
+    if (document.visibilityState !== "visible") return;
+    document.querySelectorAll('.grid[data-drawn="drawing"]').forEach(drawGrid);
+  });
 
   // One listener for every chart, coalesced to a frame.
   let resizing = null;
@@ -1890,6 +2094,18 @@ document.addEventListener("DOMContentLoaded", async () => {
         reserveGrid(g, JSON.parse(g.dataset.charts || "[]"));
       });
     });
+  });
+
+  // Axis labels are measured as they are drawn, so anything drawn before the
+  // webfonts swapped was measured in the fallback face. Only the charts
+  // already on screen need redoing — the rest mount after the swap, and
+  // relaying out all 123 at once is a visible lock-up.
+  document.fonts?.ready.then(() => {
+    for (const c of charts) {
+      const box = c.getDom()?.getBoundingClientRect();
+      if (!box) continue;
+      if (box.bottom > -400 && box.top < innerHeight + 400) c.resize();
+    }
   });
 
   /* ----------------------------------------- landing on a linked section */

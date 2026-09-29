@@ -950,6 +950,83 @@ button[aria-selected="true"] .find-go { opacity: 1; }
 
 .sec-data { padding: clamp(2rem, 4vw, 3rem) 0 clamp(3rem, 6vw, 4.5rem); }
 
+/* ----------------------------------------------------------- when it fails */
+
+/* Missing plots on a page whose words all arrived. It sits on the dark band,
+   the same material as the hero and the footer, so it reads as the site
+   talking about itself rather than as one more panel of content. */
+.notice {
+  position: fixed;
+  z-index: 60;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  width: calc(100% - 2 * var(--gutter));
+  max-width: 34rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0.75rem 0.75rem 1rem;
+  border-radius: var(--radius);
+  background-color: var(--dark);
+  background-image: var(--grain-lit);
+  box-shadow: var(--shadow-cell-hover);
+}
+.notice-msg {
+  margin: 0;
+  flex: 1 1 auto;
+  font-size: var(--fs-s);
+  line-height: 1.3;
+  color: var(--on-dark);
+}
+.notice-btn {
+  flex: none;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--rule-2);
+  border-radius: var(--radius-inner);
+  background: transparent;
+  color: var(--ink-2);
+  font-family: var(--mono);
+  font-size: var(--fs-micro);
+  font-weight: 500;
+  letter-spacing: var(--micro-track);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.notice .notice-btn {
+  border-color: color-mix(in srgb, var(--on-dark) 35%, transparent);
+  color: var(--on-dark);
+}
+.notice-btn:hover { border-color: var(--accent); color: var(--accent); }
+.notice-btn:active { transform: scale(0.96); }
+
+/* No data at all. Stated as a section, because ending after the hero with no
+   explanation is indistinguishable from still loading. */
+.boot-err { min-height: 60svh; display: grid; align-content: center; }
+.boot-err .sec-title { max-width: 18ch; }
+.boot-err-why {
+  margin: 0;
+  /* Sized to the status it carries, not to the page */
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.55rem 0.75rem;
+  border-left: 2px solid var(--accent);
+  background: var(--ground-2);
+  border-radius: 0 var(--radius-inner) var(--radius-inner) 0;
+  /* .micro uppercases, and a file path in capitals is unreadable */
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+.boot-err-acts { display: flex; align-items: center; gap: 1rem; }
+.boot-err-mail {
+  font-size: var(--fs-s);
+  color: var(--ink-2);
+  text-decoration-color: var(--rule-2);
+  text-underline-offset: 0.2em;
+}
+
 /* ------------------------------------------------------------------ charts */
 
 .grid {

@@ -10,10 +10,18 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  <!-- Loaded without blocking. A stylesheet holds up every deferred script on
+       the page, so a slow fonts.googleapis.com used to stall the charts, the
+       data fetch and the whole boot. The URL already asks for display=swap, so
+       the first paint was always going to be in the fallback face anyway. -->
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..800;1,62..125,400..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap">
+  </noscript>
+  <!-- Self-hosted on purpose. Every plot on this page needs it, and a CDN that
+       is blocked or slow left the questions on screen with nothing under them. -->
+  <script src="js/echarts-5.5.1.min.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
