@@ -1504,20 +1504,16 @@
               "weight": 1
             },
             {
-              "text": "but not STEM related",
-              "weight": 1
-            },
-            {
-              "text": "Cognitve Science",
+              "text": "Cognitve Science, Interaction Design",
               "weight": 1
             },
             {
               "text": "Computer Engineering",
-              "weight": 5
+              "weight": 4
             },
             {
               "text": "Computer Science",
-              "weight": 5
+              "weight": 4
             },
             {
               "text": "Data Science",
@@ -1532,10 +1528,6 @@
               "weight": 1
             },
             {
-              "text": "Engineering Physics",
-              "weight": 1
-            },
-            {
               "text": "Engineering Science",
               "weight": 2
             },
@@ -1544,7 +1536,7 @@
               "weight": 1
             },
             {
-              "text": "Global Business & Digital Arts",
+              "text": "Global Business & Digital Arts, Engineering Physics",
               "weight": 1
             },
             {
@@ -1553,10 +1545,6 @@
             },
             {
               "text": "Informatics",
-              "weight": 1
-            },
-            {
-              "text": "Interaction Design",
               "weight": 1
             },
             {
@@ -1593,7 +1581,11 @@
             },
             {
               "text": "Not sure",
-              "weight": 2
+              "weight": 1
+            },
+            {
+              "text": "Not sure, but not STEM related",
+              "weight": 1
             },
             {
               "text": "Planning",
@@ -1605,10 +1597,14 @@
             },
             {
               "text": "Track One Engineering",
-              "weight": 6
+              "weight": 5
             },
             {
-              "text": "University of Toronto",
+              "text": "Track One Engineering, Computer Science",
+              "weight": 1
+            },
+            {
+              "text": "University of Toronto, Computer Engineering",
               "weight": 1
             },
             {
@@ -5369,12 +5365,12 @@
           "total": 52,
           "words": [
             {
-              "text": "and frequent fun company outings",
+              "text": "Broadway Show",
               "weight": 1
             },
             {
-              "text": "Broadway Show",
-              "weight": 2
+              "text": "Broadway show",
+              "weight": 1
             },
             {
               "text": "Business travel",
@@ -5401,7 +5397,7 @@
               "weight": 1
             },
             {
-              "text": "Either getting to keep a free brand new 4k monitor I got when requesting peripherals",
+              "text": "Either getting to keep a free brand new 4k monitor I got when requesting peripherals, or being able to order from Ritual for lunch whenever I was in person",
               "weight": 1
             },
             {
@@ -5430,7 +5426,7 @@
             },
             {
               "text": "Free lunch and snacks",
-              "weight": 15
+              "weight": 14
             },
             {
               "text": "Free movies!",
@@ -5445,7 +5441,7 @@
               "weight": 1
             },
             {
-              "text": "Free snacks from vending machines",
+              "text": "Free snacks from vending machines, and frequent fun company outings",
               "weight": 1
             },
             {
@@ -5465,11 +5461,11 @@
               "weight": 1
             },
             {
-              "text": "Gym",
+              "text": "Gym at the office I guess",
               "weight": 1
             },
             {
-              "text": "Gym at the office I guess",
+              "text": "Gym,  Free lunch and snacks",
               "weight": 1
             },
             {
@@ -5494,10 +5490,6 @@
             },
             {
               "text": "Nothing",
-              "weight": 1
-            },
-            {
-              "text": "or being able to order from Ritual for lunch whenever I was in person",
               "weight": 1
             },
             {
@@ -6802,38 +6794,98 @@
           ]
         },
         {
-          "type": "grouped-bar",
+          "type": "percent-stacked-bar",
           "title": "Substance Usage First Year vs 3rd/4th Year",
           "total": 61,
-          "description": "How often, on average, per term \u2014 not how many of us. Drinking and weed barely moved; cigarettes went up.''",
-          "unit": "",
-          "yAxisTitle": "Avg frequency per term (0 = Never, 6 = 4-7x per week)",
+          "description": "Share of the class in each frequency band. Drinking left the extremes for the middle, weed barely shifted, and cigarettes are the one habit that picked up on the way out.",
           "xLabels": [
-            "Drink",
-            "Vape",
-            "Weed",
-            "Cigs"
+            "Drink \u00b7 1st",
+            "Drink \u00b7 3rd/4th",
+            "Vape \u00b7 1st",
+            "Vape \u00b7 3rd/4th",
+            "Weed \u00b7 1st",
+            "Weed \u00b7 3rd/4th",
+            "Cigs \u00b7 1st",
+            "Cigs \u00b7 3rd/4th"
           ],
           "datasets": [
             {
-              "label": "1st Year",
+              "label": "Never",
               "data": [
-                2.4,
-                0.4,
-                0.9,
-                0.1
-              ],
-              "color": "#60a5fa"
+                14,
+                7,
+                52,
+                52,
+                32,
+                38,
+                56,
+                46
+              ]
             },
             {
-              "label": "3rd/4th Year",
+              "label": "1-2 a term",
               "data": [
-                2.3,
-                0.4,
-                0.8,
-                0.5
-              ],
-              "color": "#2563eb"
+                12,
+                13,
+                5,
+                3,
+                17,
+                14,
+                2,
+                6
+              ]
+            },
+            {
+              "label": "Monthly",
+              "data": [
+                6,
+                15,
+                0,
+                0,
+                6,
+                2,
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Biweekly",
+              "data": [
+                6,
+                13,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "label": "Weekly",
+              "data": [
+                13,
+                9,
+                0,
+                1,
+                0,
+                1,
+                0,
+                3
+              ]
+            },
+            {
+              "label": "Several times a week",
+              "data": [
+                10,
+                4,
+                3,
+                3,
+                4,
+                4,
+                1,
+                0
+              ]
             }
           ]
         }
@@ -6941,7 +6993,21 @@
             3,
             1
           ],
-          "total": 50
+          "total": 50,
+          "colors": [
+            "#2563eb",
+            "#10b981",
+            "#f59e0b",
+            "#ef4444",
+            "#8b5cf6",
+            "#ec4899",
+            "#06b6d4",
+            "#84cc16",
+            "#f97316",
+            "#9ca3af",
+            "#2563eb",
+            "#10b981"
+          ]
         },
         {
           "type": "bar",
@@ -7647,34 +7713,6 @@
               "weight": 1
             },
             {
-              "text": "almost like it won't even happen to you",
-              "weight": 1
-            },
-            {
-              "text": "and a friendly attitude you can do impossible things with those around you.",
-              "weight": 1
-            },
-            {
-              "text": "and make memories",
-              "weight": 1
-            },
-            {
-              "text": "and maybe uncomfortable",
-              "weight": 1
-            },
-            {
-              "text": "and the people around you make you happy too.",
-              "weight": 1
-            },
-            {
-              "text": "and try to enjoy this time!",
-              "weight": 1
-            },
-            {
-              "text": "ask that girl or guy out if you\u2019re interested",
-              "weight": 1
-            },
-            {
               "text": "Be involved in design teams and clubs!",
               "weight": 1
             },
@@ -7691,26 +7729,6 @@
               "weight": 1
             },
             {
-              "text": "both good and bad",
-              "weight": 1
-            },
-            {
-              "text": "branch outside of your program",
-              "weight": 1
-            },
-            {
-              "text": "but if you keep your head down and keep grinding",
-              "weight": 1
-            },
-            {
-              "text": "but just push through it. It will ALWAYS get better.   Talk to everyone and be open to making friends but be comfortable with knowing that they may change throughout university.",
-              "weight": 1
-            },
-            {
-              "text": "but what matters is that you're doing the things that make you happy",
-              "weight": 1
-            },
-            {
               "text": "Do everything",
               "weight": 1
             },
@@ -7723,7 +7741,7 @@
               "weight": 1
             },
             {
-              "text": "Don't stress",
+              "text": "Don't stress, try having a life outside of school and co-ops, that's what you will remember the most after graduating!",
               "weight": 1
             },
             {
@@ -7735,11 +7753,7 @@
               "weight": 1
             },
             {
-              "text": "don\u2019t put too much pressure on yourself",
-              "weight": 1
-            },
-            {
-              "text": "Don\u2019t stress so much about school/co-op",
+              "text": "Don\u2019t stress so much about school/co-op, meet new people, try new things, and try to enjoy this time!",
               "weight": 1
             },
             {
@@ -7747,19 +7761,11 @@
               "weight": 1
             },
             {
-              "text": "Don\u2019t worry about gunning for big co-ops or high paying jobs",
+              "text": "Don\u2019t worry about gunning for big co-ops or high paying jobs, they will come as long as you put in some work. Make good friends and help each other out. Undergrad is a marathon not a sprint and having good friends around you will make the experience so much more fun and so much more enjoyable",
               "weight": 1
             },
             {
-              "text": "effort",
-              "weight": 1
-            },
-            {
-              "text": "embrace your design courses because a cynical attitude will remove all value you can draw from them.  Oh ALSO you can literally just do things! Things are not out of reach for you. You go to Waterloo. With time",
-              "weight": 1
-            },
-            {
-              "text": "enjoy every moment",
+              "text": "enjoy every moment, it's a really special time",
               "weight": 1
             },
             {
@@ -7767,39 +7773,23 @@
               "weight": 1
             },
             {
-              "text": "focus above all on making memories and having novel experiences. Say no to studying for that one party",
-              "weight": 1
-            },
-            {
               "text": "Focus on building good relationships (but don't fail)",
               "weight": 1
             },
             {
-              "text": "Focus on co-ops early",
+              "text": "Focus on co-ops early, ignore academics",
               "weight": 1
             },
             {
-              "text": "Get out of the house every day",
+              "text": "Get out of the house every day, join clubs, stay active",
               "weight": 1
             },
             {
-              "text": "get out of your comfort zone",
-              "weight": 1
-            },
-            {
-              "text": "get your work done early so you can say yes to spontaneous fun with friends.  Oh also",
-              "weight": 1
-            },
-            {
-              "text": "Give yourself time to have fun",
+              "text": "Give yourself time to have fun, school isn\u2019t everything, your grades aren\u2019t everything. You\u2019ll remember the fun more than anything else.",
               "weight": 1
             },
             {
               "text": "go on exchange",
-              "weight": 1
-            },
-            {
-              "text": "have fun",
               "weight": 1
             },
             {
@@ -7823,19 +7813,7 @@
               "weight": 1
             },
             {
-              "text": "I know that graduation seems like something so far away",
-              "weight": 1
-            },
-            {
-              "text": "ignore academics",
-              "weight": 1
-            },
-            {
-              "text": "it'll come up behind you in the blink of an eye. Make sure you take that initiative",
-              "weight": 1
-            },
-            {
-              "text": "it's a really special time",
+              "text": "I know that graduation seems like something so far away, almost like it won't even happen to you, but if you keep your head down and keep grinding, it'll come up behind you in the blink of an eye. Make sure you take that initiative, get out of your comfort zone, and make memories, both good and bad, with your friends in uni. Eventually, you'll realize that grades or even money doesn't matter - there's always going to be someone smarter, richer, or more successful than you, but what matters is that you're doing the things that make you happy, and the people around you make you happy too.",
               "weight": 1
             },
             {
@@ -7847,7 +7825,7 @@
               "weight": 1
             },
             {
-              "text": "It\u2019s okay to fuck up",
+              "text": "It\u2019s okay to fuck up, focus above all on making memories and having novel experiences. Say no to studying for that one party, ask that girl or guy out if you\u2019re interested",
               "weight": 1
             },
             {
@@ -7855,15 +7833,7 @@
               "weight": 1
             },
             {
-              "text": "join clubs",
-              "weight": 1
-            },
-            {
               "text": "Join clubs and go to social events!!",
-              "weight": 1
-            },
-            {
-              "text": "join clubs to explore your interest even if you don\u2019t think you would.",
               "weight": 1
             },
             {
@@ -7875,11 +7845,7 @@
               "weight": 1
             },
             {
-              "text": "learn how to take of yourself",
-              "weight": 1
-            },
-            {
-              "text": "Make friends",
+              "text": "Make friends, try new things, learn how to take of yourself, have fun, don\u2019t put too much pressure on yourself",
               "weight": 1
             },
             {
@@ -7887,23 +7853,7 @@
               "weight": 1
             },
             {
-              "text": "meet new people",
-              "weight": 1
-            },
-            {
-              "text": "not just things for money/grades",
-              "weight": 1
-            },
-            {
               "text": "Nothing is a big deal",
-              "weight": 1
-            },
-            {
-              "text": "or more successful than you",
-              "weight": 1
-            },
-            {
-              "text": "our advisors are great",
               "weight": 1
             },
             {
@@ -7915,7 +7865,7 @@
               "weight": 1
             },
             {
-              "text": "Reach out to somebody if you need help",
+              "text": "Reach out to somebody if you need help, our advisors are great",
               "weight": 1
             },
             {
@@ -7923,31 +7873,11 @@
               "weight": 1
             },
             {
-              "text": "richer",
+              "text": "Spend your time on things you love, not just things for money/grades",
               "weight": 1
             },
             {
-              "text": "school isn\u2019t everything",
-              "weight": 1
-            },
-            {
-              "text": "Singapore",
-              "weight": 1
-            },
-            {
-              "text": "Singaporeally",
-              "weight": 1
-            },
-            {
-              "text": "Spend your time on things you love",
-              "weight": 1
-            },
-            {
-              "text": "stay active",
-              "weight": 1
-            },
-            {
-              "text": "Take it seriously because this actually does matter for your future. But within that",
+              "text": "Take it seriously because this actually does matter for your future. But within that, get your work done early so you can say yes to spontaneous fun with friends.  Oh also, embrace your design courses because a cynical attitude will remove all value you can draw from them.  Oh ALSO you can literally just do things! Things are not out of reach for you. You go to Waterloo. With time, effort, and a friendly attitude you can do impossible things with those around you.",
               "weight": 1
             },
             {
@@ -7959,11 +7889,7 @@
               "weight": 1
             },
             {
-              "text": "Talk to as many people as you can",
-              "weight": 1
-            },
-            {
-              "text": "that's what you will remember the most after graduating!",
+              "text": "Talk to as many people as you can, branch outside of your program, join clubs to explore your interest even if you don\u2019t think you would.",
               "weight": 1
             },
             {
@@ -7971,35 +7897,15 @@
               "weight": 1
             },
             {
-              "text": "they will come as long as you put in some work. Make good friends and help each other out. Undergrad is a marathon not a sprint and having good friends around you will make the experience so much more fun and so much more enjoyable",
+              "text": "TRY NEW THINGS",
               "weight": 1
             },
             {
-              "text": "try having a life outside of school and co-ops",
-              "weight": 1
-            },
-            {
-              "text": "try new things",
-              "weight": 3
-            },
-            {
-              "text": "Uni will feel very different",
-              "weight": 1
-            },
-            {
-              "text": "with your friends in uni. EveNanyang Technological University (NTU)",
+              "text": "Uni will feel very different, and maybe uncomfortable, but just push through it. It will ALWAYS get better.   Talk to everyone and be open to making friends but be comfortable with knowing that they may change throughout university.",
               "weight": 1
             },
             {
               "text": "You will find your people even if it takes a while! Say yes to everything in first year and remember that people change a lot (including you) throughout 5 years.",
-              "weight": 1
-            },
-            {
-              "text": "you'll realize that grades or even money doesn't matter - there's always going to be someone smarter",
-              "weight": 1
-            },
-            {
-              "text": "your grades aren\u2019t everything. You\u2019ll remember the fun more than anything else.",
               "weight": 1
             }
           ]
@@ -8027,10 +7933,6 @@
               "weight": 1
             },
             {
-              "text": "ASG",
-              "weight": 1
-            },
-            {
               "text": "ASG post-party hangs",
               "weight": 1
             },
@@ -8040,10 +7942,6 @@
             },
             {
               "text": "Climbing Mt Batur during exchange",
-              "weight": 1
-            },
-            {
-              "text": "coffeehouse",
               "weight": 1
             },
             {
@@ -8083,19 +7981,15 @@
               "weight": 1
             },
             {
-              "text": "frisbee at Waterloo park",
+              "text": "Going on exchange",
               "weight": 1
             },
             {
-              "text": "Going on exchange",
-              "weight": 2
+              "text": "Going on exchange, going to portugal",
+              "weight": 1
             },
             {
               "text": "Going to a cottage with my best friends",
-              "weight": 1
-            },
-            {
-              "text": "going to portugal",
               "weight": 1
             },
             {
@@ -8112,26 +8006,18 @@
             },
             {
               "text": "Hanging out with friends",
-              "weight": 2
+              "weight": 1
+            },
+            {
+              "text": "hanging out with friends",
+              "weight": 1
             },
             {
               "text": "Hanging out with my roommates and the late night study sessions on campus",
               "weight": 1
             },
             {
-              "text": "hangouts with friends",
-              "weight": 1
-            },
-            {
               "text": "Hide and seek",
-              "weight": 1
-            },
-            {
-              "text": "intramural sports",
-              "weight": 1
-            },
-            {
-              "text": "intramurals",
               "weight": 1
             },
             {
@@ -8144,10 +8030,6 @@
             },
             {
               "text": "Playing frisbee/spikeball in summerloo",
-              "weight": 1
-            },
-            {
-              "text": "reading week trips",
               "weight": 1
             },
             {
@@ -8171,15 +8053,15 @@
               "weight": 1
             },
             {
-              "text": "so many",
-              "weight": 1
-            },
-            {
               "text": "So many deep friendships that I know will last a long time",
               "weight": 1
             },
             {
-              "text": "so many! coffeehouse",
+              "text": "so many! coffeehouse, intramural sports, reading week trips, hangouts with friends",
+              "weight": 1
+            },
+            {
+              "text": "so many, intramurals, frisbee at Waterloo park, coffeehouse, ASG",
               "weight": 1
             },
             {
@@ -8211,23 +8093,7 @@
           "total": 50,
           "words": [
             {
-              "text": "Academically",
-              "weight": 1
-            },
-            {
-              "text": "ambiguous program allowing for career flexibility",
-              "weight": 1
-            },
-            {
-              "text": "and so many friends to make!",
-              "weight": 1
-            },
-            {
-              "text": "and successful (but very friendly!!) people that inspire you to try harder and do more",
-              "weight": 1
-            },
-            {
-              "text": "and the diversity of projects/courses you will work on.",
+              "text": "Academically, it's really great that we get to learn about and get hands on with many difference engineering aspects (from hardware, software, design etc). I also think the community syde has is great, everyone is willing to help out and hang out!!",
               "weight": 1
             },
             {
@@ -8239,7 +8105,7 @@
               "weight": 1
             },
             {
-              "text": "cohort system",
+              "text": "cohort system, ambiguous program allowing for career flexibility",
               "weight": 1
             },
             {
@@ -8247,35 +8113,11 @@
               "weight": 1
             },
             {
-              "text": "design etc). I also think the community syde has is great",
-              "weight": 1
-            },
-            {
               "text": "Design Projects",
               "weight": 1
             },
             {
-              "text": "don't take things personally.",
-              "weight": 1
-            },
-            {
-              "text": "everyone is willing to help out and hang out!!",
-              "weight": 1
-            },
-            {
               "text": "Everything",
-              "weight": 1
-            },
-            {
-              "text": "fun courses and projects",
-              "weight": 1
-            },
-            {
-              "text": "gender etc) and well socialized class",
-              "weight": 1
-            },
-            {
-              "text": "get close",
               "weight": 1
             },
             {
@@ -8299,11 +8141,7 @@
               "weight": 1
             },
             {
-              "text": "Incredibly well split (personality",
-              "weight": 1
-            },
-            {
-              "text": "interesting people in the program that you won\u2019t find in other programs.",
+              "text": "Incredibly well split (personality, gender etc) and well socialized class",
               "weight": 1
             },
             {
@@ -8311,11 +8149,7 @@
               "weight": 1
             },
             {
-              "text": "It is a good introduction to multiple fields of engineering so it makes it easier to pick your path. With that being said",
-              "weight": 1
-            },
-            {
-              "text": "it's really great that we get to learn about and get hands on with many difference engineering aspects (from hardware",
+              "text": "It is a good introduction to multiple fields of engineering so it makes it easier to pick your path. With that being said, you are not an expert in any one field unless you find co ops in it and/or focus on side projects for it.",
               "weight": 1
             },
             {
@@ -8327,27 +8161,15 @@
               "weight": 1
             },
             {
-              "text": "no matter how long it\u2019s been since you saw them last",
-              "weight": 1
-            },
-            {
-              "text": "people",
-              "weight": 1
-            },
-            {
               "text": "People value community and kindness",
               "weight": 1
             },
             {
-              "text": "relatively social",
+              "text": "people, fun courses and projects",
               "weight": 1
             },
             {
-              "text": "Schools not that hard relative to other engs",
-              "weight": 1
-            },
-            {
-              "text": "software",
+              "text": "Schools not that hard relative to other engs, relatively social",
               "weight": 1
             },
             {
@@ -8355,12 +8177,12 @@
               "weight": 1
             },
             {
-              "text": "the cohort. Make friends",
-              "weight": 1
+              "text": "The community",
+              "weight": 3
             },
             {
-              "text": "The community",
-              "weight": 5
+              "text": "the community",
+              "weight": 1
             },
             {
               "text": "The community and the co-op prospects!",
@@ -8368,6 +8190,10 @@
             },
             {
               "text": "The community!",
+              "weight": 1
+            },
+            {
+              "text": "The community, type of people the program atteacts",
               "weight": 1
             },
             {
@@ -8379,12 +8205,12 @@
               "weight": 1
             },
             {
-              "text": "The flexibility",
+              "text": "The flexibility, the cohort. Make friends, get close, don't take things personally.",
               "weight": 1
             },
             {
               "text": "The people",
-              "weight": 5
+              "weight": 4
             },
             {
               "text": "The people and our traditions",
@@ -8395,7 +8221,7 @@
               "weight": 1
             },
             {
-              "text": "The people is what makes SYDE so great. There are so many fun",
+              "text": "The people is what makes SYDE so great. There are so many fun, interesting people in the program that you won\u2019t find in other programs.",
               "weight": 1
             },
             {
@@ -8403,11 +8229,11 @@
               "weight": 2
             },
             {
-              "text": "The people! So much intelligence in one class in so many different forms",
+              "text": "The people! So much intelligence in one class in so many different forms, and so many friends to make!",
               "weight": 1
             },
             {
-              "text": "type of people the program atteacts",
+              "text": "The people, and the diversity of projects/courses you will work on.",
               "weight": 1
             },
             {
@@ -8415,15 +8241,11 @@
               "weight": 1
             },
             {
-              "text": "unique",
-              "weight": 1
-            },
-            {
               "text": "Upper year support network",
               "weight": 1
             },
             {
-              "text": "Variety of very ambitious",
+              "text": "Variety of very ambitious, unique, and successful (but very friendly!!) people that inspire you to try harder and do more, while having each other's backs no matter what",
               "weight": 1
             },
             {
@@ -8431,15 +8253,7 @@
               "weight": 1
             },
             {
-              "text": "while having each other's backs no matter what",
-              "weight": 1
-            },
-            {
               "text": "You are influenced to think of real human beings as you build. Technology for technology's sake is shallow and SYDE helps you realize that.",
-              "weight": 1
-            },
-            {
-              "text": "you are not an expert in any one field unless you find co ops in it and/or focus on side projects for it.",
               "weight": 1
             },
             {
@@ -8451,7 +8265,7 @@
               "weight": 1
             },
             {
-              "text": "You\u2019re on good terms with everyone and can chat with the whole class when you run into them",
+              "text": "You\u2019re on good terms with everyone and can chat with the whole class when you run into them, no matter how long it\u2019s been since you saw them last",
               "weight": 1
             }
           ]
@@ -8463,19 +8277,11 @@
           "total": 44,
           "words": [
             {
-              "text": "1) No more engineering! 2) I have money from co ops and I'm not in debt so this enables me to have a lot of freedom to do the activities I want to do",
+              "text": "1) No more engineering! 2) I have money from co ops and I'm not in debt so this enables me to have a lot of freedom to do the activities I want to do, and travel for a while",
               "weight": 1
             },
             {
               "text": "Adulthood",
-              "weight": 1
-            },
-            {
-              "text": "and hobbies",
-              "weight": 1
-            },
-            {
-              "text": "and travel for a while",
               "weight": 1
             },
             {
@@ -8511,19 +8317,11 @@
               "weight": 1
             },
             {
-              "text": "friends",
-              "weight": 1
-            },
-            {
               "text": "Having money",
               "weight": 1
             },
             {
               "text": "Having money and free time to live my life",
-              "weight": 1
-            },
-            {
-              "text": "having my own place",
               "weight": 1
             },
             {
@@ -8559,7 +8357,7 @@
               "weight": 1
             },
             {
-              "text": "Making money and growing my career",
+              "text": "Making money and growing my career, having my own place",
               "weight": 1
             },
             {
@@ -8575,7 +8373,7 @@
               "weight": 1
             },
             {
-              "text": "more time for family",
+              "text": "more time for family, friends, and hobbies",
               "weight": 1
             },
             {
@@ -8667,15 +8465,11 @@
               "weight": 1
             },
             {
-              "text": "and literature teacher.",
-              "weight": 1
-            },
-            {
               "text": "Astronaut",
               "weight": 1
             },
             {
-              "text": "Athlete",
+              "text": "Athlete, investor, and literature teacher.",
               "weight": 1
             },
             {
@@ -8708,10 +8502,6 @@
             },
             {
               "text": "Idk",
-              "weight": 1
-            },
-            {
-              "text": "investor",
               "weight": 1
             },
             {

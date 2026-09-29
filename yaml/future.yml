@@ -50,8 +50,7 @@ charts:
   - '#ef4444'
 - type: metrics-bar
   title: When Did You Get Your Offer
-  description: >-
-    Full-time offers, in the order they actually arrived. The rush is the
+  description: Full-time offers, in the order they actually arrived. The rush is the
     autumn milkround; the tail is everyone who signed in the new year.
   labels:
   - Aug 2025
@@ -80,6 +79,19 @@ charts:
   - 3
   - 1
   total: 50
+  colors:
+  - '#2563eb'
+  - '#10b981'
+  - '#f59e0b'
+  - '#ef4444'
+  - '#8b5cf6'
+  - '#ec4899'
+  - '#06b6d4'
+  - '#84cc16'
+  - '#f97316'
+  - '#9ca3af'
+  - '#2563eb'
+  - '#10b981'
 - type: bar
   title: Where Will You Be Working?
   xAxisTitle: Location
@@ -235,22 +247,20 @@ charts:
   title: Total Compensation by Region
   description: First-year total compensation (base + bonus). The bar is the middle
     half of each group, the notch is the median and the hairline is the full range
-    — the averages were 255k and 117k, but one 285k outlier drags the
-    rest-of-world average well above its median.
+    — the averages were 255k and 117k, but one 285k outlier drags the rest-of-world
+    average well above its median.
   boxFormat: '%sk'
   unit: CAD
   labels:
   - USA
   - Rest of World
   data:
-  -
-    - 90.3
+  - - 90.3
     - 219.6
     - 243.2
     - 291.9
     - 389.2
-  -
-    - 78.5
+  - - 78.5
     - 87.0
     - 103.5
     - 122.9

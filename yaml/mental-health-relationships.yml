@@ -326,30 +326,79 @@ charts:
   - '#2563eb'
   - '#06b6d4'
   - '#9ca3af'
-- type: grouped-bar
+- type: percent-stacked-bar
   title: Substance Usage First Year vs 3rd/4th Year
   total: 61
-  description: How often, on average, per term — not how many of us. Drinking
-    and weed barely moved; cigarettes went up.''
-  unit: ''
-  yAxisTitle: Avg frequency per term (0 = Never, 6 = 4-7x per week)
+  description: Share of the class in each frequency band. Drinking left the extremes
+    for the middle, weed barely shifted, and cigarettes are the one habit that
+    picked up on the way out.
   xLabels:
-  - Drink
-  - Vape
-  - Weed
-  - Cigs
+  - Drink · 1st
+  - Drink · 3rd/4th
+  - Vape · 1st
+  - Vape · 3rd/4th
+  - Weed · 1st
+  - Weed · 3rd/4th
+  - Cigs · 1st
+  - Cigs · 3rd/4th
   datasets:
-  - label: 1st Year
+  - label: Never
     data:
-    - 2.4
-    - 0.4
-    - 0.9
-    - 0.1
-    color: '#60a5fa'
-  - label: 3rd/4th Year
+    - 14
+    - 7
+    - 52
+    - 52
+    - 32
+    - 38
+    - 56
+    - 46
+  - label: 1-2 a term
     data:
-    - 2.3
-    - 0.4
-    - 0.8
-    - 0.5
-    color: '#2563eb'
+    - 12
+    - 13
+    - 5
+    - 3
+    - 17
+    - 14
+    - 2
+    - 6
+  - label: Monthly
+    data:
+    - 6
+    - 15
+    - 0
+    - 0
+    - 6
+    - 2
+    - 0
+    - 5
+  - label: Biweekly
+    data:
+    - 6
+    - 13
+    - 0
+    - 0
+    - 1
+    - 1
+    - 0
+    - 0
+  - label: Weekly
+    data:
+    - 13
+    - 9
+    - 0
+    - 1
+    - 0
+    - 1
+    - 0
+    - 3
+  - label: Several times a week
+    data:
+    - 10
+    - 4
+    - 3
+    - 3
+    - 4
+    - 4
+    - 1
+    - 0

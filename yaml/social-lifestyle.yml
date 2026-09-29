@@ -159,10 +159,9 @@ charts:
 - type: grouped-bar
   title: Cooking Ability — Pre Uni vs After Uni
   total: 63
-  description: >-
-    Self-rated 0 to 5, worst to best, before university and after. The
-    median moved from 1 to 3: the bulge left the bottom of the scale and
-    settled in the middle.
+  description: 'Self-rated 0 to 5, worst to best, before university and after. The
+    median moved from 1 to 3: the bulge left the bottom of the scale and settled in
+    the middle.'
   xLabels:
   - '0'
   - '1'
@@ -192,10 +191,9 @@ charts:
 - type: grouped-bar
   title: Fitness Level — Pre Uni vs After Uni
   total: 63
-  description: >-
-    Self-rated 0 to 5, worst to best, before university and after. The
-    median moved from 2 to 3 here too, but the top of the scale thinned
-    out: five of us rated ourselves a 5 before, one does now.
+  description: 'Self-rated 0 to 5, worst to best, before university and after. The
+    median moved from 2 to 3 here too, but the top of the scale thinned out: five
+    of us rated ourselves a 5 before, one does now.'
   xLabels:
   - '0'
   - '1'

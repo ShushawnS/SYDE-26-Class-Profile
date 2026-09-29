@@ -433,33 +433,27 @@ charts:
   words:
   - text: Business
     weight: 1
-  - text: but not STEM related
-    weight: 1
-  - text: Cognitve Science
+  - text: Cognitve Science, Interaction Design
     weight: 1
   - text: Computer Engineering
-    weight: 5
+    weight: 4
   - text: Computer Science
-    weight: 5
+    weight: 4
   - text: Data Science
     weight: 1
   - text: Electrical Engineering
     weight: 1
   - text: Engineering + Master of Managment
     weight: 1
-  - text: Engineering Physics
-    weight: 1
   - text: Engineering Science
     weight: 2
   - text: Gap Year
     weight: 1
-  - text: Global Business & Digital Arts
+  - text: Global Business & Digital Arts, Engineering Physics
     weight: 1
   - text: idk
     weight: 1
   - text: Informatics
-    weight: 1
-  - text: Interaction Design
     weight: 1
   - text: Ivey + Eng
     weight: 1
@@ -478,14 +472,18 @@ charts:
   - text: Mechatronics Engineering
     weight: 1
   - text: Not sure
-    weight: 2
+    weight: 1
+  - text: Not sure, but not STEM related
+    weight: 1
   - text: Planning
     weight: 1
   - text: Software Engineering
     weight: 2
   - text: Track One Engineering
-    weight: 6
-  - text: University of Toronto
+    weight: 5
+  - text: Track One Engineering, Computer Science
+    weight: 1
+  - text: University of Toronto, Computer Engineering
     weight: 1
   - text: UofT Track One Engineering
     weight: 1

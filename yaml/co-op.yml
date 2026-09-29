@@ -1558,10 +1558,10 @@ charts:
   description: ''
   total: 52
   words:
-  - text: and frequent fun company outings
-    weight: 1
   - text: Broadway Show
-    weight: 2
+    weight: 1
+  - text: Broadway show
+    weight: 1
   - text: Business travel
     weight: 1
   - text: Company Retreat in Downtown Toronto
@@ -1575,7 +1575,8 @@ charts:
   - text: Dogs at the office
     weight: 1
   - text: Either getting to keep a free brand new 4k monitor I got when requesting
-      peripherals
+      peripherals, or being able to order from Ritual for lunch whenever I was in
+      person
     weight: 1
   - text: Free company product
     weight: 1
@@ -1590,14 +1591,14 @@ charts:
   - text: Free GSW and 49ers tickets.
     weight: 1
   - text: Free lunch and snacks
-    weight: 15
+    weight: 14
   - text: Free movies!
     weight: 1
   - text: Free playstation
     weight: 1
   - text: Free rent and flights
     weight: 1
-  - text: Free snacks from vending machines
+  - text: Free snacks from vending machines, and frequent fun company outings
     weight: 1
   - text: Free stuff
     weight: 1
@@ -1607,9 +1608,9 @@ charts:
     weight: 1
   - text: Got to keep my brand new M1 MacBook Pro
     weight: 1
-  - text: Gym
-    weight: 1
   - text: Gym at the office I guess
+    weight: 1
+  - text: Gym,  Free lunch and snacks
     weight: 1
   - text: housing stipend 🤣 and intern events
     weight: 1
@@ -1622,8 +1623,6 @@ charts:
   - text: north face puffer jacket
     weight: 1
   - text: Nothing
-    weight: 1
-  - text: or being able to order from Ritual for lunch whenever I was in person
     weight: 1
   - text: Perks plus (400 USD reimbursement)
     weight: 1
@@ -1643,9 +1642,6 @@ charts:
   title: Co-op Earnings Over the Semesters
   description: ''
   boxFormat: '%s CAD/hr'
-
-
-
   labels:
   - 'Co-op #1'
   - 'Co-op #2'

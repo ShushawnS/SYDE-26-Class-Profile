@@ -351,7 +351,11 @@ def fold_case(counts):
 
 def split_freq_words(series, n=None):
     """Wordcloud words from a comma-separated list column.
-    Returns (words, total_respondents)."""
+    Returns (words, total_respondents).
+
+    Only for columns that really are lists — clubs, intramurals, countries.
+    On a prose answer the commas are punctuation and this shreds it into
+    fragments that start mid-sentence; use phrase_cloud() for those."""
     c = Counter()
     for v in series.map(clean).dropna():
         for part in re.split(r"\s*,\s*", v):
@@ -584,7 +588,7 @@ def _(r, c):
 
 @handler("academics.yml", "Program If Not SYDE")
 def _(r, c):
-    words, total = split_freq_words(r["alternate_program"])
+    words, total = phrase_cloud(r["alternate_program"])
     c["words"] = words
     c["total"] = int(total)
 
@@ -746,7 +750,7 @@ for _n in range(1, 7):
 
 @handler("co-op.yml", "Coolest Company Perk")
 def _(r, c):
-    word_cloud(c, *split_freq_words(r["coolest_perk"]))
+    word_cloud(c, *phrase_cloud(r["coolest_perk"]))
 
 
 @handler("co-op.yml", "Co-op Earnings Over the Semesters")
@@ -1105,24 +1109,42 @@ def _(r, c):
 
 @handler("mental-health-relationships.yml", "Substance Usage First Year vs 3rd/4th Year")
 def _(r, c):
-    def mean_of(col):
-        s = r[col].map(clean).dropna()
-        vals = [FREQ_SCALE.get(str(v)) for v in s if FREQ_SCALE.get(str(v)) is not None]
-        return round(float(np.mean(vals)) if vals else 0.0, 1)
+    # This used to plot the mean of FREQ_SCALE, which is a rank on an unevenly
+    # spaced ladder, not a rate — so "Drink, 1st year = 2.4" read as 2.4 drinks
+    # a term when it actually meant somewhere between Monthly and Biweekly, and
+    # the auto-fitted axis topped out at 2.5. Plot the distribution instead and
+    # let each band name itself. The last two scale points are merged because
+    # six bands map onto the ordinal ramp exactly and two slivers read as noise.
+    BANDS = [
+        ("Never", ["Never"]),
+        ("1-2 a term", ["1-2 times a term"]),
+        ("Monthly", ["Monthly"]),
+        ("Biweekly", ["Biweekly"]),
+        ("Weekly", ["Weekly"]),
+        ("Several times a week", ["2-3 times/week", "4-7 times/week"]),
+    ]
+    SUBS = [("Drink", "drink"), ("Vape", "vape"), ("Weed", "weed"), ("Cigs", "cigs")]
+    PHASES = [("1st", "firstyear"), ("3rd/4th", "upper_years")]
 
-    first = [mean_of(f"{s}_firstyear") for s in ["drink", "vape", "weed", "cigs"]]
-    upper = [mean_of(f"{s}_upper_years") for s in ["drink", "vape", "weed", "cigs"]]
-    # These bars are averages, so the count cannot be inferred from them.
-    cols = [f"{s}_{p}" for s in ["drink", "vape", "weed", "cigs"]
-            for p in ["firstyear", "upper_years"]]
+    cols, labels = [], []
+    for name, key in SUBS:
+        for phase_label, phase in PHASES:
+            cols.append(f"{key}_{phase}")
+            labels.append(f"{name} \u00b7 {phase_label}")
+
+    counts = []
+    for col in cols:
+        s = r[col].map(clean).dropna().astype(str)
+        counts.append(Counter(s))
+
+    c["xLabels"] = labels
+    c["datasets"] = [
+        {"label": band,
+         "data": [int(sum(cnt.get(a, 0) for a in answers)) for cnt in counts]}
+        for band, answers in BANDS
+    ]
     have = [x for x in cols if x in r.columns]
     c["total"] = int(r[have].notna().any(axis=1).sum()) if have else 0
-    c["datasets"] = [
-        {"label": "1st Year", "data": first,
-         "color": c["datasets"][0].get("color", "#60a5fa")},
-        {"label": "3rd/4th Year", "data": upper,
-         "color": c["datasets"][1].get("color", "#2563eb")},
-    ]
 
 
 # -------------------------------- future.yml --------------------------------
@@ -1285,27 +1307,27 @@ def _(r, c):
 
 @handler("miscellaneous.yml", "Advice for First Years")
 def _(r, c):
-    word_cloud(c, *split_freq_words(r["advice_first_years"]))
+    word_cloud(c, *phrase_cloud(r["advice_first_years"]))
 
 
 @handler("miscellaneous.yml", "Favourite Memory of Undergrad")
 def _(r, c):
-    word_cloud(c, *split_freq_words(r["favourite_memory"]))
+    word_cloud(c, *phrase_cloud(r["favourite_memory"]))
 
 
 @handler("miscellaneous.yml", "What Was Great About SYDE")
 def _(r, c):
-    word_cloud(c, *split_freq_words(r["great_about_syde"]))
+    word_cloud(c, *phrase_cloud(r["great_about_syde"]))
 
 
 @handler("miscellaneous.yml", "What Excites You About New Grad")
 def _(r, c):
-    word_cloud(c, *split_freq_words(r["new_grad_excitement"]))
+    word_cloud(c, *phrase_cloud(r["new_grad_excitement"]))
 
 
 @handler("miscellaneous.yml", "Dream Job")
 def _(r, c):
-    word_cloud(c, *split_freq_words(r["dream_job"]))
+    word_cloud(c, *phrase_cloud(r["dream_job"]))
 
 
 # ---------------------------------------------------------------------------
